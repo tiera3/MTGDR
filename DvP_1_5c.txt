@@ -2,7 +2,7 @@
 {
     "name": "DvP 1.5c",
     "withReplacement": true,
-    "showSlots": true ,
+    "showSheets": true ,
     "layouts": {
       "Dragon1":{"weight": 55 ,"slots":[
          {"name":"Common##D","count": 4 },{"name":"Common##X","count": 1 },{"name":"Common##P","count": 4 },
@@ -35,7 +35,7 @@
    "set": "BBD", "mana_cost": "{2}{W}" , "rarity": "mythic",
    "collector_number": "10","related_cards": ["Khorvath Brightflame (BBD) 9"],
    "type": "Legendary Creature" ,"subtypes": ["Human","Knight"],
-   "image": "https://api.scryfall.com/cards/bbd/10?format=image&version=normal",
+   "image": "https://api.scryfall.com/cards/bbd/10?format=image&version=crop",
    "oracle_text": "Get both Sylvia Brightspear and Khorvath Brightflame with one pick",
    "draft_effects": [{ "type": "AddCards", "count": 1, "cards": ["Khorvath Brightflame (BBD) 9"] }]
  }]
