@@ -1,0 +1,587 @@
+[Settings]
+{
+    "name": "DvP 1.5c",
+    "withReplacement": true,
+    "showSlots": true ,
+    "layouts": {
+      "Dragon1":{"weight": 55 ,"slots":[
+         {"name":"Common##D","count": 4 },{"name":"Common##X","count": 1 },{"name":"Common##P","count": 4 },
+         {"name":"Uncommon##D","count": 1 },{"name":"Uncommon##P","count": 2 },
+         {"name":"RareMythic","count": 1 ,"sheets":[{"name":"Rare##D","weight": 9 },{"name":"Mythic##D","weight": 1 }]},
+         {"name":"Special##D","count": 1 }
+      ]},
+      "Dragon2":{"weight": 4 ,"slots":[
+         {"name":"Common##D","count": 4 },{"name":"Common##X","count": 2 },{"name":"Common##P","count": 3 },
+         {"name":"Uncommon##D","count": 1 },{"name":"Uncommon##P","count": 2 },
+         {"name":"RareMythic","count": 1 ,"sheets":[{"name":"Rare##D","weight": 9 },{"name":"Mythic##D","weight": 1 }]},
+         {"name":"Special##D","count": 1 }
+      ]},
+      "Praetor1":{"weight": 55 ,"slots":[
+         {"name":"Common##D","count": 4 },{"name":"Common##X","count": 1 },{"name":"Common##P","count": 4 },
+         {"name":"Uncommon##D","count": 2 },{"name":"Uncommon##P","count": 1 },
+         {"name":"RareMythic","count": 1 ,"sheets":[{"name":"Rare##P","weight": 9 },{"name":"Mythic##P","weight": 1 }]},
+         {"name":"Special##P","count": 1 }
+      ]},
+      "Praetor2":{"weight": 4 ,"slots":[
+         {"name":"Common##D","count": 3 },{"name":"Common##X","count": 2 },{"name":"Common##P","count": 4 },
+         {"name":"Uncommon##D","count": 2 },{"name":"Uncommon##P","count": 1 },
+         {"name":"RareMythic","count": 1 ,"sheets":[{"name":"Rare##P","weight": 9 },{"name":"Mythic##P","weight": 1 }]},
+         {"name":"Special##P","count": 1 }
+      ]}, 
+    } 
+}
+[CustomCards]
+[{ "name": "Sylvia Brightspear",
+   "set": "BBD", "mana_cost": "{2}{W}" , "rarity": "mythic",
+   "collector_number": "10","related_cards": ["Khorvath Brightflame (BBD) 9"],
+   "type": "Legendary Creature" ,"subtypes": ["Human","Knight"],
+   "image": "https://api.scryfall.com/cards/bbd/10?format=image&version=normal",
+   "oracle_text": "Get both Sylvia Brightspear and Khorvath Brightflame with one pick",
+   "draft_effects": [{ "type": "AddCards", "count": 1, "cards": ["Khorvath Brightflame (BBD) 9"] }]
+ }]
+[Common##X {"collation":"printRun"}]
+1 Silumgar Scavenger (mh1) 107
+1 Phyrexian Archivist (mom) 262
+1 Gurmag Nightwatch (tdm) 190
+1 Chimney Rabble (one) 126
+1 Feral Deathgorger (tdm) 80
+1 Grave Upheaval (c16) 31
+1 Caustic Exhale (tdm) 74
+1 Perilous Myr (som) 192
+1 Silumgar Scavenger (mh1) 107
+1 Volt Charge (nph) 100
+1 Spiteful Squad (stx) 237
+1 Rusted Slasher (mbs) 128
+1 Gurmag Angler (frf) 72
+1 Perilous Myr (som) 192
+1 Feral Deathgorger (tdm) 80
+1 Volt Charge (nph) 100
+1 Grixis Grimblade (arb) 134
+1 Marauding Dreadship (mom) 153
+1 Caustic Exhale (tdm) 74
+1 Phyrexian Archivist (mom) 262
+1 Spiteful Squad (stx) 237
+1 Chimney Rabble (one) 126
+1 Gurmag Nightwatch (tdm) 190
+1 Grave Upheaval (c16) 31
+1 Grixis Grimblade (arb) 134
+1 Marauding Dreadship (mom) 153
+1 Gurmag Angler (frf) 72
+1 Rusted Slasher (mbs) 128
+
+[Common##D {"collation":"printRun"}]
+1 Jund Hackblade (arb) 138
+1 War Flare (frf) 158
+1 Draconic Disciple (m19) 215
+1 Young Blue Dragon (clb) 106
+1 Young Red Dragon (clb) 210
+1 Destroy Evil (dmu) 17
+1 Hooting Mandrills (ktk) 137
+1 Baton of Courage (5dn) 105
+1 Stormshriek Feral (tdm) 124
+1 Argivian Cavalier (dmu) 4
+1 Servant of the Scale (dtk) 203
+1 Gurmag Drowner (dtk) 57
+1 Dragon Fodder (ala) 97
+1 Bant Sureblade (arb) 143
+1 Naya Hushblade (arb) 141
+1 Force Away (ktk) 40
+1 Dragonlord's Servant (ima) 126
+1 Captain's Call (dmu) 9
+1 Temur Tawnyback (tdm) 229
+1 Jeskai Elder (2x2) 53
+1 Kargan Dragonrider (m19) 297
+1 Medicine Runner (shm) 230
+1 Piercing Exhale (tdm) 151
+1 Treasure Cruise (ktk) 59
+1 Sarkhan's Rage (j25) 594
+1 Feat of Resistance (ktk) 10
+1 Morselhoarder (shm) 212
+1 Elemental Masterpiece (stx) 182
+1 Big Score (snc) 102
+1 Riling Dawnbreaker (tdm) 21
+1 Longshot Squad (ktk) 140
+1 Common Bond (rtr) 151
+1 Plundering Barbarian (afr) 158
+1 Settle Beyond Reality (mh1) 27
+1 Scaled Nurturer (clb) 252
+1 Burdened Aerialist (mh2) 38
+1 Hardened Berserker (dtk) 139
+1 Osseous Exhale (tdm) 17
+1 Sagu Wildling (tdm) 157
+1 Monastery Messenger (tdm) 208
+1 Boulderborn Dragon (tdm) 239
+1 Defibrillating Current (tdm) 177
+1 Courier's Briefcase (snc) 142
+1 Esper Stormblade (arb) 132
+1 Molten Exhale (tdm) 113
+1 Thrilling Discovery (stx) 243
+1 Ambitious Dragonborn (clb) 213
+1 Dragonstorm Globe (tdm) 241
+1 Sudden Breakthrough (stx) 116
+1 Fortress Kin-Guard (tdm) 12
+1 Kin-Tree Severance (tdm) 200
+1 Dispelling Exhale (tdm) 41
+1 Dragon Fodder (ala) 97
+1 Destroy Evil (dmu) 17
+1 Sagu Wildling (tdm) 157
+1 Jeskai Elder (2x2) 53
+1 Kargan Dragonrider (m19) 297
+1 Thrilling Discovery (stx) 243
+1 Naya Hushblade (arb) 141
+1 Force Away (ktk) 40
+1 Molten Exhale (tdm) 113
+1 Riling Dawnbreaker (tdm) 21
+1 Piercing Exhale (tdm) 151
+1 Common Bond (rtr) 151
+1 Young Red Dragon (clb) 210
+1 Feat of Resistance (ktk) 10
+1 Draconic Disciple (m19) 215
+1 Monastery Messenger (tdm) 208
+1 Jund Hackblade (arb) 138
+1 Osseous Exhale (tdm) 17
+1 Servant of the Scale (dtk) 203
+1 Burdened Aerialist (mh2) 38
+1 Hardened Berserker (dtk) 139
+1 Fortress Kin-Guard (tdm) 12
+1 Kin-Tree Severance (tdm) 200
+1 Esper Stormblade (arb) 132
+1 Sudden Breakthrough (stx) 116
+1 Settle Beyond Reality (mh1) 27
+1 Temur Tawnyback (tdm) 229
+1 Baton of Courage (5dn) 105
+1 Sarkhan's Rage (j25) 594
+1 War Flare (frf) 158
+1 Ambitious Dragonborn (clb) 213
+1 Dispelling Exhale (tdm) 41
+1 Plundering Barbarian (afr) 158
+1 Medicine Runner (shm) 230
+1 Scaled Nurturer (clb) 252
+1 Young Blue Dragon (clb) 106
+1 Boulderborn Dragon (tdm) 239
+1 Argivian Cavalier (dmu) 4
+1 Hooting Mandrills (ktk) 137
+1 Gurmag Drowner (dtk) 57
+1 Big Score (snc) 102
+1 Defibrillating Current (tdm) 177
+1 Morselhoarder (shm) 212
+1 Elemental Masterpiece (stx) 182
+1 Stormshriek Feral (tdm) 124
+1 Captain's Call (dmu) 9
+1 Courier's Briefcase (snc) 142
+1 Dragonstorm Globe (tdm) 241
+1 Dragonlord's Servant (ima) 126
+1 Bant Sureblade (arb) 143
+1 Longshot Squad (ktk) 140
+1 Treasure Cruise (ktk) 59
+
+[Common##P {"collation":"printRun"}]
+1 Ichor Drinker (mom) 111
+1 Spined Thopter (nph) 45
+1 Flayer Husk (mbs) 107
+1 Carnivorous Canopy (one) 162
+1 First-Sphere Gargantua (mh1) 91
+1 Eyes of Gitaxias (mom) 57
+1 Recommission (bro) 22
+1 Pentad Prism (5dn) 143
+1 Whisper of the Dross (one) 117
+1 Surgical Skullbomb (one) 243
+1 Mandible Justiciar (one) 21
+1 Thirsting Roots (one) 185
+1 Blood Fountain (vow) 95
+1 Glistener Seer (one) 54
+1 Swooping Lookout (one) 35
+1 Scout the Borders (ktk) 148
+1 Fume Spitter (som) 63
+1 Mesmerizing Dose (one) 62
+1 Pith Driller (nph) 69
+1 Death-Hood Cobra (nph) 108
+1 Phyrexian Vivisector (dmu) 100
+1 Meldweb Strider (one) 60
+1 Arsenal Thresher (arb) 131
+1 Ichor Wellspring (mbs) 110
+1 Gix's Caress (bro) 96
+1 More of That Strange Oil... (unk) CU13
+1 Strandwalker (mbs) 137
+1 Obelisk Spider (hou) 141
+1 Annihilating Glare (one) 80
+1 Disturbing Conversion (mom) 54
+1 Unbounded Potential (mh2) 36
+1 Applied Biomancy (rna) 153
+1 Gulping Scraptrap (one) 96
+1 Vivisurgeon's Insight (one) 77
+1 Seraph of New Capenna (mom) 36
+1 Adaptive Sporesinger (one) 157
+1 Phyrexian Rager (dmu) 99
+1 Eye of Malcator (one) 50
+1 Sanctum Gargoyle (ala) 24
+1 Mycosynth Wellspring (nph) 145
+1 Cutthroat Centurion (one) 89
+1 Thoughtcast (mrd) 54
+1 Chrome Courier (mh2) 190
+1 Copper Longlegs (one) 165
+1 Deadly Dispute (afr) 94
+1 Voidwing Hybrid (one) 221
+1 Basilica Shepherd (one) 4
+1 Dihada's Ploy (mh2) 193
+1 Grim Affliction (nph) 63
+1 Malcator's Watcher (one) 58
+1 Vault Skirge (nph) 76
+1 Blighted Burgeoning (mom) 177
+1 Blood Fountain (vow) 95
+1 Eyes of Gitaxias (mom) 57
+1 Sanctum Gargoyle (ala) 24
+1 Death-Hood Cobra (nph) 108
+1 Phyrexian Vivisector (dmu) 100
+1 Voidwing Hybrid (one) 221
+1 Swooping Lookout (one) 35
+1 Scout the Borders (ktk) 148
+1 Deadly Dispute (afr) 94
+1 Disturbing Conversion (mom) 54
+1 Arsenal Thresher (arb) 131
+1 Applied Biomancy (rna) 153
+1 First-Sphere Gargantua (mh1) 91
+1 More of That Strange Oil... (unk) CU13
+1 Flayer Husk (mbs) 107
+1 Mycosynth Wellspring (nph) 145
+1 Ichor Drinker (mom) 111
+1 Eye of Malcator (one) 50
+1 Mandible Justiciar (one) 21
+1 Adaptive Sporesinger (one) 157
+1 Phyrexian Rager (dmu) 99
+1 Malcator's Watcher (one) 58
+1 Vault Skirge (nph) 76
+1 Copper Longlegs (one) 165
+1 Grim Affliction (nph) 63
+1 Vivisurgeon's Insight (one) 77
+1 Pith Driller (nph) 69
+1 Pentad Prism (5dn) 143
+1 Gix's Caress (bro) 96
+1 Spined Thopter (nph) 45
+1 Basilica Shepherd (one) 4
+1 Blighted Burgeoning (mom) 177
+1 Gulping Scraptrap (one) 96
+1 Meldweb Strider (one) 60
+1 Seraph of New Capenna (mom) 36
+1 Carnivorous Canopy (one) 162
+1 Cutthroat Centurion (one) 89
+1 Surgical Skullbomb (one) 243
+1 Recommission (bro) 22
+1 Thirsting Roots (one) 185
+1 Annihilating Glare (one) 80
+1 Thoughtcast (mrd) 54
+1 Strandwalker (mbs) 137
+1 Obelisk Spider (hou) 141
+1 Whisper of the Dross (one) 117
+1 Mesmerizing Dose (one) 62
+1 Chrome Courier (mh2) 190
+1 Dihada's Ploy (mh2) 193
+1 Fume Spitter (som) 63
+1 Glistener Seer (one) 54
+1 Unbounded Potential (mh2) 36
+1 Ichor Wellspring (mbs) 110
+
+[Uncommon##D]
+1 Enduring Bondwarden (MOM)
+1 Dragon's Disciple (AFR)
+1 Orator of Ojutai (DTK)
+1 Abzan Falconer (KTK)
+1 Crystal Dragon (CLB)
+1 Teeming Dragonstorm (tdm) 30
+1 Renari, Merchant of Marvels (CLB)
+1 Dragonstorm Forecaster (tdm)
+1 Sapphire Dragon (CLB)
+1 Silumgar's Scorn (DTK)
+1 Roiling Dragonstorm (tdm) 55
+1 Draconic Lore (CLB)
+1 Bladewing's Thrall (IMA)
+1 Topaz Dragon (CLB)
+1 Corroding Dragonstorm (tdm) 75
+1 Dead Drop (KTK)
+1 Nogi, Draco-Zealot (GN3)
+1 Ganax, Astral Hunter (CLB)
+1 Stoke the Flames (MOM)
+1 Fang Dragon (CLB)
+1 Breaching Dragonstorm (tdm) 101
+1 Widespread Thieving (SNC)
+1 Surreal Memoir (ROE)
+1 Sarkhan, Dragonsoul (M19)
+1 Fallaji Wayfarer (DMC)
+1 Tuskguard Captain (KTK)
+1 Dread Linnorm (CLB)
+1 Encroaching Dragonstorm (tdm) 142
+1 Sight of the Scalelords (DTK)
+1 Towashi Guide-Bot (NEO)
+1 Dragon Arch (2X2)
+1 Jubilant Skybonder (IKO)
+1 Waterlogged Teachings (MH3)
+1 Rakdos Cackler (GK2)
+1 Swift Warkite (DTK)
+1 Svella, Ice Shaper (KHM)
+1 Treacherous Terrain (c16)
+1 Invigorating Hot Spring (NEO)
+1 Jenson Carthalion, Druid Exile (DMC)
+1 Reborn Hope (arb)
+1 Buried in the Garden (MKM)
+1 Gloryscale Viashino (arb)
+1 Master the Way (KTK)
+1 Ordruun Mentor (CLU)
+1 Rip Apart (STX)
+1 Prosperous Partnership (NCC)
+1 Korlessa, Scale Singer (CLB)
+1 Scuttling Sentinel (CLU)
+1 Crystallization (ARB)
+1 Slave of Bolas (ARB)
+1 Giant Ambush Beetle (ARB)
+1 Trace of Abundance (ARB)
+1 Sonic Shrieker (tdm)
+1 Karakyk Guardian (tdm)
+1 Armament Dragon (tdm)
+1 Jeskai Shrinekeeper (tdm)
+1 Kheru Goldkeeper (tdm)
+
+[Uncommon##P]
+1 Bladed Ambassador (ONE)
+1 Against All Odds (one) 1
+1 Mandibular Kite (MH3)
+1 Veil of Assimilation (ONE)
+1 Choking Fumes (MBS)
+1 Phyrexian Awakening (MOM)
+1 Invasion of Dominaria (MOM)
+1 Thrummingbird (SOM)
+1 Skyclave Aerialist (MOM)
+1 Vedalken Anatomist (MBS)
+1 Transplant Theorist (ONE)
+1 Serum Snare (ONE)
+1 Hidden Stockpile (aer)
+1 Tamiyo's Immobilizer (ONE)
+1 Invasion of Kamigawa (MOM)
+1 Corruption of Towashi (MOM)
+1 Scheming Aspirant (ONE)
+1 Blightreaper Thallid (MOM)
+1 Keskit, the Flesh Sculptor (CMR)
+1 Compleated Huntmaster (MOM)
+1 Entomber Exarch (NPH)
+1 Vat of Rebirth (ONE)
+1 Lethal Throwdown (MH3)
+1 Gift of Compleation (MOM)
+1 Drown in Ichor (ONE)
+1 Spread the Sickness (MBS)
+1 Incremental Blight (SHM)
+1 Khenra Spellspear (MOM)
+1 Arcbound Tracker (MH2)
+1 Tormentor Exarch (NPH)
+1 Arcbound Slasher (MH2)
+1 Gleeful Demolition (ONE)
+1 Armored Scrapgorger (ONE)
+1 Cankerbloom (ONE)
+1 Herbology Instructor (MOM)
+1 Contagious Vorrac (ONE)
+1 Brutalizer Exarch (NPH)
+1 Incubation Sac (ONE)
+1 Expand the Sphere (ONE)
+1 Tangled Skyline (MOM)
+1 Iron Apprentice (NEO)
+1 Porcelain Legionnaire (NPH)
+1 Atraxa's Skitterfang (ONE)
+1 Contagion Clasp (DDF)
+1 Culling Dais (SOM)
+1 Mortarpod (MBS)
+1 Throne of Geth (SOM)
+1 Sphere of the Suns (MBS)
+1 Conversion Chamber (NPH)
+1 Tezzeret's Gambit (NPH)
+1 Cephalopod Sentry (ONE)
+1 Vohar, Vodalian Desecrator (DMU)
+1 Sculpted Perfection (MOM)
+1 Serum-Core Chimera (ONE)
+1 Ravenous Squirrel (MH2)
+1 Elvish Vatkeeper (MOM)
+1 Thopter Foundry (ARB)
+
+[Rare##D]
+1 Hero of Precinct One (rna) 11
+1 Guardian of the Forgotten (mh3) 28
+1 Eternal Dragon (c20) 88
+1 Nomads' Assembly (roe) 39
+1 Sword Coast Serpent (clb) 99
+1 Dig Through Time (ktk) 36
+1 Mardu Strike Leader (frf) 75
+1 Sidisi, Undead Vizier (dtk) 120
+1 Malevolent Witchkite (woe) 315
+1 Goro-Goro, Disciple of Ryusei (neo) 145
+1 Sarkhan, Dragon Ascendant (tdm) 118
+1 Amethyst Dragon (clb) 160
+1 Themberchaud (sld) 728
+1 Orb of Dragonkind (afr) 157
+1 Dragonstorm (mma) 111
+1 Ion Storm (5dn) 68
+1 Mana Cannons (dmc) 7
+1 Dragonsguard Elite (stx) 127
+1 Bloomvine Regent (tdm) 136
+1 Goreclaw, Terror of Qal Sisma (m19) 186
+1 Silkguard (nec) 29
+1 Vivid Revival (grn) 148
+1 Coalition Relic (fut) 161
+1 The Mana Rig (dmc) 28
+1 Tome of the Guildpact (rna) 242
+1 Sivitri, Dragon Master (dmc) 43
+1 Taigam, Sidisi's Hand (c17) 47
+1 Bladewing the Risen (ima) 193
+1 Nikya of the Old Ways (rna) 193
+1 Roxanne, Starfall Savant (otj) 228
+1 Glittering Wish (fut) 156
+1 Knight of New Alara (arb) 70
+1 Ondu Knotmaster (mh3) 196
+1 Lilah, Undefeated Slickshot (otj) 217
+1 The Belligerent (lci) 225
+1 Witherbloom Command (stx) 248
+1 General Ferrous Rokiric (mh2) 198
+1 Solar Blaze (war) 216
+1 Mardu Ascendancy (ktk) 185
+1 Temur Ascendancy (ktk) 207
+1 Sarkhan Unbroken (dtk) 230
+1 Abzan Ascendancy (ktk) 160
+1 Jeskai Ascendancy (2x2) 231
+1 Sultai Ascendancy (ktk) 203
+1 Invasion of Alara (mom) 230
+[Rare##P]
+1 Progenitor Exarch (mom) 32
+1 Metastatic Evangel (mh3) 35
+1 Phyrexian Censor (mom)
+1 Vulpine Harvester (moc) 19
+1 Essence of Orthodoxy (mom) 323
+1 Chancellor of the Annex (nph) 6
+1 Rout (c21) 101
+1 Mercurial Spelldancer (one) 61
+1 Rona, Herald of Invasion (mom) 75
+1 Chrome Host Seedshark (mom) 51
+1 Unctus, Grand Metatect (one) 75
+1 Viral Drake (nph) 49
+1 Chancellor of the Spires (nph) 31
+1 Mirage Mockery (onc) 22
+1 Corrupted Conscience (mbs) 22
+1 Inexorable Tide (som) 35
+1 Grafted Butcher (mom) 109
+1 Vraan, Executioner Thane (one) 114
+1 Arcbound Condor (mh3) 81
+1 Skinrender (som) 78
+1 Phyrexian Plaguelord (j22) 123
+1 Chancellor of the Dross (nph) 54
+1 Lashwrithe (nph) 143
+1 Phyrexian Arena (one) 104
+1 Chancellor of the Forge (nph) 81
+1 Urabrask's Forge (one) 153
+1 Imminent Doom (hou) 98
+1 Evolved Spinoderm (one) 166
+1 Chancellor of the Tangle (nph) 106
+1 Glistening Dawn (mom) 187
+1 Triumph of the Hordes (nph) 123
+1 Birthing Pod (nph) 104
+1 Colossal Dreadmask (mh3) 148
+1 Scrawling Crawler (fdn) 132
+1 Phyrexian Metamorph (nph) 42
+1 Moltensteel Dragon (nph) 88
+1 Serrated Arrows (gvl) 20
+1 Dance of the Manse (eld) 186
+1 Malcator, Purity Overseer (one) 208
+1 Cranial Ram (mh3) 180
+1 Brimaz, Blight of Oreskos (moc) 2
+1 Atomize (pip) 622
+1 Agent's Toolkit (ncc) 66
+1 Ezuri, Stalker of Spheres (one) 201
+1 Omnath, Locus of All (mom) 249
+
+[Mythic##D]
+1 Icingdeath, Frost Tyrant (afr) 20
+1 Ao, the Dawn Sky (neo) 2
+1 Yosei, the Morning Star (mma) 35
+1 Kairi, the Swirling Sky (neo) 408
+1 Keiga, the Tide Star (mma) 48
+1 Murktide Regent (mh2) 52
+1 Junji, the Midnight Sky (neo) 102
+1 Kokusho, the Evening Star (mma) 89
+1 Atsushi, the Blazing Sky (neo) 134
+1 Ryusei, the Falling Star (c17) 141
+1 Dragon Tempest (dtk) 136
+1 Invasion of Tarkir (mom) 149
+1 Kura, the Boundless Sky (neo) 200
+1 Jugan, the Rising Star (chk) 217
+1 Jugan Defends the Temple (neo) 194
+1 Ojutai, Soul of Winter (frf) 156
+1 Silumgar, the Drifting Death (frf) 157
+1 Kolaghan, the Storm's Fury (frf) 155
+1 Atarka, World Render (frf) 149
+1 Dromoka, the Eternal (frf) 151
+1 Sylvia Brightspear (bbd) 10
+1 Rienne, Angel of Rebirth (dmc) 166
+1 Miirym, Sentinel Wyrm (clb) 284
+1 Tiamat (afr) 235
+1 Scion of Draco (mh2) 234
+[Mythic##P]
+1 Elesh Norn (mom) 12
+1 Mondrak, Glory Dominus (one) 23
+1 Elesh Norn, Mother of Machines (one) 10
+1 Tekuthal, Inquiry Dominus (one) 71
+1 Jin-Gitaxias, Progress Tyrant (neo) 59
+1 Jace, the Perfected Mind (one) 360
+1 Skithiryx, the Blight Dragon (som) 79
+1 Drivnod, Carnage Dominus (one) 90
+1 Sheoldred, Whispering One (nph) 73
+1 Vraska, Betrayal's Sting (one) 115
+1 Solphim, Mayhem Dominus (one) 150
+1 Urabrask the Hidden (nph) 98
+1 Vorinclex, Monstrous Raider (khm) 199
+1 Zopandrel, Hunger Dominus (one) 195
+1 Nissa, Ascended Animist (one) 175
+1 Wurmcoil Engine (som) 223
+1 Blightsteel Colossus (mbs) 99
+1 Weatherlight Compleated (dmu) 242
+1 Staff of Compleation (one) 242
+1 Moira and Teshar (moc) 7
+1 Brudiclad, Telchor Engineer (m3c) 257
+1 Glissa, Herald of Predation (mom) 226
+1 Tamiyo, Compleated Sage (neo) 238
+1 Atraxa, Praetors' Voice (c16) 28
+1 Etched Monstrosity (nph) 135
+
+[Special##D]
+1 Crucible of the Spirit Dragon (afc) 231
+1 Temple of the Dragon Queen (afr) 260
+1 Evolving Wilds (dtk) 248
+1 Vivid Crag (lrw) 275
+1 Vivid Creek (lrw) 276
+1 Vivid Grove (lrw) 277
+1 Vivid Marsh (lrw) 278
+1 Vivid Meadow (lrw) 279
+1 Guildmages' Forum (grn) 250
+1 Nomad Outpost (ddn) 34
+1 Frontier Bivouac (ktk) 234
+1 Sandsteppe Citadel (ktk) 241
+1 Mystic Monastery (ddn) 73
+1 Opulent Palace (ktk) 238
+1 Fieldmist Borderpost (arb) 5
+1 Mistvein Borderpost (arb) 27
+1 Veinfire Borderpost (arb) 48
+1 Firewild Borderpost (arb) 54
+1 Wildfield Borderpost (arb) 80
+[Special##P]
+1 Terramorphic Expanse (one) 261
+1 The Mycosynth Gardens (one) 256
+1 Power Depot (mh2) 251
+1 Razortide Bridge (mh2) 252
+1 Mistvault Bridge (mh2) 249
+1 Drossforge Bridge (mh2) 246
+1 Slagwoods Bridge (mh2) 256
+1 Thornglint Bridge (mh2) 258
+1 Goldmire Bridge (mh2) 247
+1 Silverbluff Bridge (mh2) 255
+1 Darkmoss Bridge (mh2) 245
+1 Rustvale Bridge (mh2) 253
+1 Tanglepool Bridge (mh2) 257
+1 Seachrome Coast (one) 258
+1 Darkslick Shores (otc) 281
+1 Blackcleave Cliffs (otc) 272
+1 Copperline Gorge (one) 249
+1 Razorverge Thicket (one) 257
+1 Inkmoth Nexus (sld) 1207
