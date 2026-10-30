@@ -1,25 +1,4 @@
-`      60 comments
-I would like to calculate the odds for selecting a number of items, sometimes consecutive items from a cyclic run (ie repeats) and sometimes from a grid (that repeats vertically). I am after the odds of how many unique items, and also of the different combinations.
-So: 5 unique, 4 unique, 3 unique (if >0), 2 unique (if >0)
-Then breaking down 4 unique into the 5 combinations, 4 unique into the the 10 combinations, etc.
-
-when selecting from a grid, first randomly select:
-* an initial window: 20/63 two rows , 20/63 three rows , 15/63 four rows , 8/63 five rows
-* a top row: even chance for all 11 rows
-* the grid wraps around so the first row continues under the 11th row
-* a random start item (row/column) within the window 
-the next item will be:
-* if the current item isn't at the top of the window, the item above
-* if the current item is at the top of the window but not the first column, the bottom of the window in the prior column
-* if the current item is at the top left corner of the window ... the bottom right item in a new window, where the new window is directly above the initial window and consists of 20% two rows , 30% three rows , 30% four rows , 20% five rows.
-
-Scenario one:
-cyclic_mir GRUWB
-select 11 items total as either:
-* 2/3 chance 3+3+3+2 from cyclic_mir (four different selections)
-* 1/3 chance 4+3+2+2 from cyclic_mir
-
-
+`      39 comments
 # mir commons - A: GRUWB , B: GRUWB , C: GRUWB D: GRUWB
 11 grid_mir
 BRUWGBRUWG
