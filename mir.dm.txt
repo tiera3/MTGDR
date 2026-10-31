@@ -40,54 +40,78 @@ UGBWRUGBWR
 GBWRUGBWRU
 [Settings]
 {
-`      1 init mirA back_mir lay_mirA p1_mirA p2_mirA p3_mirA c_mirA u_mirB r_mir
-    "name": "MIR c(A) u(B)",
-`      1 init mirB back_mir lay_mirB p1_mirB p2_mirB p3_mirB c_mirB u_mirB r_mir
+`      2 init mirB back_mir lay_mirB p1_mirB p2_mirB p3_mirB c_mirB u_mirB r_mir
+# mirage (Belgium)
     "name": "MIR cu(B)",
-`      1 init mirC back_mir lay_mirC p1_mirC p2_mirC p3_mirC c_mirA u_mirB r_mir
+`      2 init mirA back_mir lay_mirA p1_mirA p2_mirA p3_mirA c_mirA u_mirB r_mir
+# mirage (US)
+    "name": "MIR c(A) u(B)",
+`      2 init mirC back_mir lay_mirC p1_mirC p2_mirC p3_mirC c_mirA u_mirB r_mir
+# mirage - colourfixed US
     "name": "MIR c(C)u(B)",
-`      1 init visA back_vis lay_visA p1_visA p2_visA p3_visA c_visA u_visB r_vis
-    "name": "VIS c(A)u(B)",
-`      1 init visB back_vis lay_visB p1_visB p2_visB p3_visB c_visB u_visB r_vis
+`      2 init visB back_vis lay_visB p1_visB p2_visB p3_visB c_visB u_visB r_vis
+# visions (Belgium)
     "name": "VIS cu(B)",
-`      1 init wthB back_wth lay_wthB p1_wthB p2_wthB p3_wthB c_wthB u_wth r_wth
+`      2 init visA back_vis lay_visA p1_visA p2_visA p3_visA c_visA u_visB r_vis
+# visions (US)
+    "name": "VIS c(A)u(B)",
+`      2 init wthB back_wth lay_wthB p1_wthB p2_wthB p3_wthB c_wthB u_wth r_wth
+# weatherlight (Belgium)
     "name": "WTH c(B)",
-`      1 init b_visA back_mmv lay_mirA p1_mirA p2_mirA lay_visA p3_visA c_mirA u_mirB r_mir c_visA u_visB r_vis
-    "name": "MIR/MIR/VIS c(A)u(B)",
-`      1 init b_visB back_mmv lay_mirB p1_mirB p2_mirB lay_visB p3_visB c_mirB u_mirB r_mir c_visB u_visB r_vis
+`      2 init b_visB back_mmv lay_mirB p1_mirB p2_mirB lay_visB p3_visB c_mirB u_mirB r_mir c_visB u_visB r_vis
+# block - visions (Belgium)
     "name": "MIR/MIR/VIS cu(B)",
-`      1 init b_visC back_mmv lay_mirC p1_mirC p2_mirC lay_visA p3_visA c_mirA u_mirB r_mir c_visA u_visB r_vis
+`      2 init b_visA back_mmv lay_mirA p1_mirA p2_mirA lay_visA p3_visA c_mirA u_mirB r_mir c_visA u_visB r_vis
+# block - visions (US)
+    "name": "MIR/MIR/VIS c(A)u(B)",
+`      2 init b_visC back_mmv lay_mirC p1_mirC p2_mirC lay_visA p3_visA c_mirA u_mirB r_mir c_visA u_visB r_vis
+# block - visions - colourfixed US
     "name": "MIR/MIR/VIS c(CA)u(B)",
-`      1 init b_wthA back_mvw lay_mirA p1_mirA lay_visA p2_visA lay_wthB p3_wthB c_mirA u_mirB r_mir c_visA u_visB r_vis c_wthB u_wth r_wth
-    "name": "MIR/VIS/WTH c(AAB)u(BB-)",
-`      1 init b_wthB back_mvw lay_mirB p1_mirB lay_visB p2_visB lay_wthB p3_wthB c_mirB u_mirB r_mir c_visB u_visB r_vis c_wthB u_wth r_wth
+`      2 init b_wthB back_mvw lay_mirB p1_mirB lay_visB p2_visB lay_wthB p3_wthB c_mirB u_mirB r_mir c_visB u_visB r_vis c_wthB u_wth r_wth
+# block - weatherlight (Belgium)
     "name": "MIR/VIS/WTH c(B)u(BB-)",
-`      1 init b_wthC back_mvw lay_mirC p1_mirC lay_visA p2_visA lay_wthB p3_wthB c_mirA u_mirB r_mir c_visA u_visB r_vis c_wthB u_wth r_wth
+`      2 init b_wthA back_mvw lay_mirA p1_mirA lay_visA p2_visA lay_wthB p3_wthB c_mirA u_mirB r_mir c_visA u_visB r_vis c_wthB u_wth r_wth
+# block - weatherlight (US)
+    "name": "MIR/VIS/WTH c(AAB)u(BB-)",
+`      2 init b_wthC back_mvw lay_mirC p1_mirC lay_visA p2_visA lay_wthB p3_wthB c_mirA u_mirB r_mir c_visA u_visB r_vis c_wthB u_wth r_wth
+# block - weatherlight - colourfixed US
     "name": "MIR/VIS/WTH c(CAB)u(BB-)",
-`      1 init s_visA back_mv lay_visA p1_visA p2_s_visA lay_mirA p3_mirA c_mirA u_mirB r_mir c_visA u_visB r_vis
-    "name": "VIS/|/MIR c(A)u(B)",
-`      1 init s_visB back_mv lay_visB p1_visB p2_s_visB lay_mirB p3_mirB c_mirB u_mirB r_mir c_visB u_visB r_vis
+`      2 init s_visB back_mv lay_visB p1_visB p2_s_visB lay_mirB p3_mirB c_mirB u_mirB r_mir c_visB u_visB r_vis
+# spotlight - visions (Belgium)
     "name": "VIS/|/MIR cu(B)",
-`      1 init s_visC back_mv lay_visA p1_visA p2_s_visC lay_mirC p3_mirC c_mirA u_mirB r_mir c_visA u_visB r_vis
+`      2 init s_visA back_mv lay_visA p1_visA p2_s_visA lay_mirA p3_mirA c_mirA u_mirB r_mir c_visA u_visB r_vis
+# spotlight - visions (US)
+    "name": "VIS/|/MIR c(A)u(B)",
+`      2 init s_visC back_mv lay_visA p1_visA p2_s_visC lay_mirC p3_mirC c_mirA u_mirB r_mir c_visA u_visB r_vis
+# spotlight - visions - colourfixed US
     "name": "VIS/|/MIR c(AC)u(B)",
-`      1 init s_wthA back_mw lay_wthB p1_wthB p2_s_wthA lay_mirA p3_mirA c_mirA u_mirB r_mir c_wthB u_wth r_wth
-    "name": "WTH/|/MIR c(BA)u(-B)",
-`      1 init s_wthB back_mw lay_wthB p1_wthB p2_s_wthB lay_mirB p3_mirB c_mirB u_mirB r_mir c_wthB u_wth r_wth
+`      2 init s_wthB back_mw lay_wthB p1_wthB p2_s_wthB lay_mirB p3_mirB c_mirB u_mirB r_mir c_wthB u_wth r_wth
+# spotlight - weatherlight (Belgium)
     "name": "WTH/|/MIR c(B)u(-B)",
-`      1 init s_wthC back_mw lay_wthB p1_wthB p2_s_wthC lay_mirC p3_mirC c_mirC u_mirB r_mir c_wthB u_wth r_wth
+`      2 init s_wthA back_mw lay_wthB p1_wthB p2_s_wthA lay_mirA p3_mirA c_mirA u_mirB r_mir c_wthB u_wth r_wth
+# spotlight - weatherlight (US)
+    "name": "WTH/|/MIR c(BA)u(-B)",
+`      2 init s_wthC back_mw lay_wthB p1_wthB p2_s_wthC lay_mirC p3_mirC c_mirA u_mirB r_mir c_wthB u_wth r_wth
+# spotlight - weatherlight - colourfixed US
     "name": "WTH/|/MIR c(BC)u(-B)",
-`      1 init x_visB_mmv back_mmv lay_x_mmv_B p1_x_mmv_B p2_x_mmv_B p3_x_mmv_B p3_mirB c_mirB u_mirB r_mir c_visB u_visB r_vis
-    "name": "MIR+MIR+VIS cu(B) redist",
-`      1 init x_visB_mv back_mv lay_x_mv_B p1_x_mv_B p2_x_mv_B p3_x_mv_B p3_mirB c_mirB u_mirB r_mir c_visB u_visB r_vis
-    "name": "MIR+VIS cu(B) redist",
-`      1 init x_visB_mvv back_mvv lay_x_mvv_B p1_x_mvv_B p2_x_mvv_B p3_x_mvv_B p3_mirB c_mirB u_mirB r_mir c_visB u_visB r_vis
-    "name": "MIR+VIS+VIS cu(B) redist",
-`      1 init x_wthB_mvw back_mvw lay_x_mvw_B p1_x_mvw_B p2_x_mvw_B p3_x_mvw_B c_mirB u_mirB r_mir c_visB u_visB r_vis c_wthB u_wth r_wth
+`      2 init x_wthB_mvw back_mvw lay_x_mvw_B p1_x_mvw_B p2_x_mvw_B p3_x_mvw_B c_mirB u_mirB r_mir c_visB u_visB r_vis c_wthB u_wth r_wth c_viswthB
+# redistributed block - weatherlight (Belgium)
     "name": "MIR+VIS+WTH c(B)u(BB-) redist",
-`      1 init x_wthB_mw back_mw lay_x_mw_B p1_x_mw_B p2_x_mw_B p3_x_mw_B c_mirB u_mirB r_mir c_wthB u_wth r_wth
+`      2 init x_visB_mmv back_mmv lay_x_mmv_B p1_x_mmv_B p2_x_mmv_B p3_x_mmv_B c_mirB u_mirB r_mir c_visB u_visB r_vis
+# redistributed block - visions (Belgium)
+    "name": "MIR+MIR+VIS cu(B) redist",
+`      2 init x_visB_mv back_mv lay_x_mv_B p1_x_mv_B p2_x_mv_B p3_x_mv_B c_mirB u_mirB r_mir c_visB u_visB r_vis
+# redistributed spotlight - visions (Belgium)
+    "name": "MIR+VIS cu(B) redist",
+`      2 init x_wthB_mw back_mw lay_x_mw_B p1_x_mw_B p2_x_mw_B p3_x_mw_B c_mirB u_mirB r_mir c_wthB u_wth r_wth
+# redistributed spotlight - weatherlight (Belgium)
     "name": "MIR+WTH c(B)u(B-) redist",
-`      1 init x_wthB_vw back_vw lay_x_vw_B p1_x_vw_B p2_x_vw_B p3_x_vw_B c_visB u_visB r_vis c_wthB u_wth r_wth
+`      2 init x_wthB_vw back_vw lay_x_vw_B p1_x_vw_B p2_x_vw_B p3_x_vw_B c_visB u_visB r_vis c_wthB u_wth r_wth c_viswthB
+# redistributed cross - vis+wth (Belgium)
     "name": "VIS+WTH c(B)u(B-) redist",
+`      2 init x_visB_mvv back_mvv lay_x_mvv_B p1_x_mvv_B p2_x_mvv_B p3_x_mvv_B c_mirB u_mirB r_mir c_visB u_visB r_vis
+# redistributed major - visions (Belgium)
+    "name": "MIR+VIS+VIS cu(B) redist",
     "duplicateProtection": true,
     "withReplacement": true,
     "showSheets": true,
@@ -135,10 +159,10 @@ GBWRUGBWRU
 "mir_4B2D": { "weight": 1, "slots": { "common##mirB": 4, "common##mirA": 2, "common##mirD": 2, "common##mirC": 3, "rare##mir":  1, "uncommon##mir": 3 }},
 `      9 lay_mirC
 # Common colour balance guaranteed
-"mir_5A2C": { "weight": 2, "slots": { "common##mirA": 5, "common##mirB": 1, "common##mirC": 2, "common##mirD": 2, "rare##mir":  1, "uncommon##mir": 3 }},
-"mir_5A2D": { "weight": 2, "slots": { "common##mirA": 5, "common##mirB": 1, "common##mirD": 2, "common##mirC": 2, "rare##mir":  1, "uncommon##mir": 3 }},
-"mir_5B2C": { "weight": 2, "slots": { "common##mirB": 5, "common##mirA": 1, "common##mirC": 2, "common##mirD": 2, "rare##mir":  1, "uncommon##mir": 3 }},
-"mir_5B2D": { "weight": 2, "slots": { "common##mirB": 5, "common##mirA": 1, "common##mirD": 2, "common##mirC": 2, "rare##mir":  1, "uncommon##mir": 3 }},
+"mir_5A2C": { "weight": 2, "slots": { "common##mirA": 5, "common##mirB": 2, "common##mirC": 2, "common##mirD": 2, "rare##mir":  1, "uncommon##mir": 3 }},
+"mir_5A2D": { "weight": 2, "slots": { "common##mirA": 5, "common##mirB": 2, "common##mirD": 2, "common##mirC": 2, "rare##mir":  1, "uncommon##mir": 3 }},
+"mir_5B2C": { "weight": 2, "slots": { "common##mirB": 5, "common##mirA": 2, "common##mirC": 2, "common##mirD": 2, "rare##mir":  1, "uncommon##mir": 3 }},
+"mir_5B2D": { "weight": 2, "slots": { "common##mirB": 5, "common##mirA": 2, "common##mirD": 2, "common##mirC": 2, "rare##mir":  1, "uncommon##mir": 3 }},
 "mir_3A5C": { "weight": 2, "slots": { "common##mirA": 3, "common##mirB": 2, "common##mirC": 5, "common##mirD": 1, "rare##mir":  1, "uncommon##mir": 3 }},
 "mir_3B5C": { "weight": 2, "slots": { "common##mirB": 3, "common##mirA": 2, "common##mirC": 5, "common##mirD": 1, "rare##mir":  1, "uncommon##mir": 3 }},
 "mir_3A5D": { "weight": 2, "slots": { "common##mirA": 3, "common##mirB": 2, "common##mirD": 5, "common##mirC": 1, "rare##mir":  1, "uncommon##mir": 3 }},
@@ -153,19 +177,20 @@ GBWRUGBWRU
 "vis_2": { "weight": 1, "slots": { "common##visA": 9,                    "common##visC": 2, "rare##vis": 1, "uncommon##vis": 3 }},
 `      6 lay_wthB
 # Common colour balance 5(97.4892%) 4(2.5108%) .... /2079e5 (-R:1511837,-B:1175276,-G:982550,-W:856818,-U:693418)
-"wth_Wxx": { "weight":1,"slots":[{"name":"uncommon##wthW","count":1},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthU","weight":2},{"name":"uncommon##wthB","weight":2},{"name":"uncommon##wthR","weight":2},{"name":"uncommon##wthG","weight":2},{"name":"uncommon##wthC","weight":3}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##wthB","count":10} ]},
-"wth_Uxx": { "weight":1,"slots":[{"name":"uncommon##wthU","count":1},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":2},{"name":"uncommon##wthB","weight":2},{"name":"uncommon##wthR","weight":2},{"name":"uncommon##wthG","weight":2},{"name":"uncommon##wthC","weight":3}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##wthB","count":10} ]},
-"wth_Bxx": { "weight":1,"slots":[{"name":"uncommon##wthB","count":1},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":2},{"name":"uncommon##wthU","weight":2},{"name":"uncommon##wthR","weight":2},{"name":"uncommon##wthG","weight":2},{"name":"uncommon##wthC","weight":3}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##wthB","count":10} ]},
-"wth_Rxx": { "weight":1,"slots":[{"name":"uncommon##wthR","count":1},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":2},{"name":"uncommon##wthU","weight":2},{"name":"uncommon##wthB","weight":2},{"name":"uncommon##wthG","weight":2},{"name":"uncommon##wthC","weight":3}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##wthB","count":10} ]},
-"wth_Gxx": { "weight":1,"slots":[{"name":"uncommon##wthG","count":1},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":2},{"name":"uncommon##wthU","weight":2},{"name":"uncommon##wthB","weight":2},{"name":"uncommon##wthR","weight":2},{"name":"uncommon##wthC","weight":3}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##wthB","count":10} ]},
-`      5 lay_x_mvw_B
+"wth_Wxx": { "weight":1,"slots":[{"name":"uncommon##wthW","count":1},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthU","weight":183},{"name":"uncommon##wthB","weight":183},{"name":"uncommon##wthR","weight":183},{"name":"uncommon##wthG","weight":183},{"name":"uncommon##wthC","weight":71}]},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthU","weight":109},{"name":"uncommon##wthB","weight":109},{"name":"uncommon##wthR","weight":109},{"name":"uncommon##wthG","weight":109},{"name":"uncommon##wthC","weight":367}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##wthB","count":10} ]},
+"wth_Uxx": { "weight":1,"slots":[{"name":"uncommon##wthU","count":1},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":183},{"name":"uncommon##wthB","weight":183},{"name":"uncommon##wthR","weight":183},{"name":"uncommon##wthG","weight":183},{"name":"uncommon##wthC","weight":71}]},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":109},{"name":"uncommon##wthB","weight":109},{"name":"uncommon##wthR","weight":109},{"name":"uncommon##wthG","weight":109},{"name":"uncommon##wthC","weight":367}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##wthB","count":10} ]},
+"wth_Bxx": { "weight":1,"slots":[{"name":"uncommon##wthB","count":1},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":183},{"name":"uncommon##wthU","weight":183},{"name":"uncommon##wthR","weight":183},{"name":"uncommon##wthG","weight":183},{"name":"uncommon##wthC","weight":71}]},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":109},{"name":"uncommon##wthU","weight":109},{"name":"uncommon##wthR","weight":109},{"name":"uncommon##wthG","weight":109},{"name":"uncommon##wthC","weight":367}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##wthB","count":10} ]},
+"wth_Rxx": { "weight":1,"slots":[{"name":"uncommon##wthR","count":1},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":183},{"name":"uncommon##wthU","weight":183},{"name":"uncommon##wthB","weight":183},{"name":"uncommon##wthG","weight":183},{"name":"uncommon##wthC","weight":71}]},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":109},{"name":"uncommon##wthU","weight":109},{"name":"uncommon##wthB","weight":109},{"name":"uncommon##wthG","weight":109},{"name":"uncommon##wthC","weight":367}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##wthB","count":10} ]},
+"wth_Gxx": { "weight":1,"slots":[{"name":"uncommon##wthG","count":1},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":183},{"name":"uncommon##wthU","weight":183},{"name":"uncommon##wthB","weight":183},{"name":"uncommon##wthR","weight":183},{"name":"uncommon##wthC","weight":71}]},{"name":"uncommon","count": 1,"sheets":[{"name":"uncommon##wthW","weight":109},{"name":"uncommon##wthU","weight":109},{"name":"uncommon##wthB","weight":109},{"name":"uncommon##wthR","weight":109},{"name":"uncommon##wthC","weight":367}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##wthB","count":10} ]},
+`      6 lay_x_mvw_B
 # Common colour balance 5(88.7495%) 4(11.0362%) 3(0.2143%)
-"mirviswth_416":{"weight":4,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rar","count":1,"sheets":[{"name":"rare##vis"},{"name":"rare##wth"}]},{"name":"common##mir","count":4},{"name":"com","count":1,"sheets":[{"name":"common##visA"},{"name":"common##wthA"}]},{"name":"common##viswth","count":6} ]},
-"mirviswth_47" :{"weight":2,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rar","count":1,"sheets":[{"name":"rare##vis"},{"name":"rare##wth"}]},{"name":"common##mir","count":4},                                                                                    {"name":"common##viswth","count":7} ]},
-"mirviswth_38" :{"weight":2,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rare##mir","count":1},                                               {"name":"common##mir","count":3},                                                                                    {"name":"common##viswth","count":8} ]},
-"mirviswth_326":{"weight":1,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rare##mir","count":1},                                               {"name":"common##mir","count":3},{"name":"common##visA","count":1},{"name":"common##wthA","count":1},                {"name":"common##viswth","count":6} ]},
+"mirviswth_4v6":{"weight":2,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rare##wth","count":1},                                               {"name":"common##mir","count":4},{"name":"common##visA","count":1},                                  {"name":"common##viswth","count":6} ]},
+"mirviswth_4w6":{"weight":2,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rare##vis","count":1},                                               {"name":"common##mir","count":4},{"name":"common##wthA","count":1},                                  {"name":"common##viswth","count":6} ]},
+"mirviswth_47" :{"weight":2,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rar","count":1,"sheets":[{"name":"rare##vis"},{"name":"rare##wth"}]},{"name":"common##mir","count":4},                                                                    {"name":"common##viswth","count":7} ]},
+"mirviswth_38" :{"weight":2,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rare##mir","count":1},                                               {"name":"common##mir","count":3},                                                                    {"name":"common##viswth","count":8} ]},
+"mirviswth_326":{"weight":1,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rare##mir","count":1},                                               {"name":"common##mir","count":3},{"name":"common##visA","count":1},{"name":"common##wthA","count":1},{"name":"common##viswth","count":6} ]},
 `      5 lay_x_mmv_B
-# Common colour balance 5(95.4773%) 4(4.5019%) 3(0.0207%)
+# Common colour balance 6(95.4773%) 4(4.5019%) 3(0.0207%)
 "mirvis_74" :{"weight":4,"slots":[{"name":"uncommon##mir","count":2},{"name":"uncommon##vis","count":1},{"name":"rare##mir","count":1},{"name":"common##mir","count":7},                                  {"name":"common##visB","count":4} ]},
 "mirvis_713":{"weight":2,"slots":[{"name":"uncommon##mir","count":2},{"name":"uncommon##vis","count":1},{"name":"rare##mir","count":1},{"name":"common##mir","count":7},{"name":"common##visA","count":1},{"name":"common##visB","count":3} ]},
 "mirvis_83" :{"weight":2,"slots":[{"name":"uncommon##mir","count":2},{"name":"uncommon##vis","count":1},{"name":"rare##vis","count":1},{"name":"common##mir","count":8},                                  {"name":"common##visB","count":3} ]},
@@ -180,7 +205,6 @@ GBWRUGBWRU
 "mirvis_47" :{"weight":2,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":2},{"name":"rare##vis","count":1},{"name":"common##mir","count":4},                                  {"name":"common##visB","count":7} ]},
 "mirvis_317":{"weight":2,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":2},{"name":"rare##mir","count":1},{"name":"common##mir","count":3},{"name":"common##visA","count":1},{"name":"common##visB","count":7} ]},
 "mirvis_38" :{"weight":1,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##vis","count":2},{"name":"rare##mir","count":1},{"name":"common##mir","count":3},                                  {"name":"common##visB","count":8} ]},
-    },
 `      5 lay_x_mmw_B
 # Common colour balance 5(95.3613%) 4(4.6177%) 3(0.0210%)
 "mirwth_74" :{"weight":4,"slots":[{"name":"uncommon##mir","count":2},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rare##mir","count":1},{"name":"common##mir","count":7},                                  {"name":"common##wthB","count":4} ]},
@@ -219,14 +243,13 @@ GBWRUGBWRU
 "mirwth_g38" :{"weight":1,"slots":[{"name":"uncommon##mir","count":1},{"name":"uncommon##wthU","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":7},{"name":"uncommon##wthU","weight":7},{"name":"uncommon##wthB","weight":7},{"name":"uncommon##wthR","weight":7},{"name":"uncommon##wthC","weight":16}]},{"name":"rare##mir","count":1},{"name":"common##mir","count":3},                                  {"name":"common##wthB","count":8} ]},
 `      7 lay_x_vw_B
 # Common colour balance 5(99.8115%) 4(0.1885%)
-"viswth_1":{"weight":5,"slots":[{"name":"uncommon##vis","count":2},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rare##wth","count":1},{"name":"common##wthA","count":1},{"name":"common##viswth","count":10} ]},
-"viswth_w":{"weight":1,"slots":[{"name":"uncommon##vis","count":1},{"name":"uncommon##wthW","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthU","weight":7},{"name":"uncommon##wthB","weight":7},{"name":"uncommon##wthR","weight":7},{"name":"uncommon##wthG","weight":7},{"name":"uncommon##wthC","weight":16}]}, {"name":"rare##vis","count":1},{"name":"common##visA","count":1},{"name":"common##viswth","count":10} ]},
-"viswth_u":{"weight":1,"slots":[{"name":"uncommon##vis","count":1},{"name":"uncommon##wthU","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":7},{"name":"uncommon##wthB","weight":7},{"name":"uncommon##wthR","weight":7},{"name":"uncommon##wthG","weight":7},{"name":"uncommon##wthC","weight":16}]}, {"name":"rare##vis","count":1},{"name":"common##visA","count":1},{"name":"common##viswth","count":10} ]},
-"viswth_b":{"weight":1,"slots":[{"name":"uncommon##vis","count":1},{"name":"uncommon##wthB","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":7},{"name":"uncommon##wthU","weight":7},{"name":"uncommon##wthR","weight":7},{"name":"uncommon##wthG","weight":7},{"name":"uncommon##wthC","weight":16}]}, {"name":"rare##vis","count":1},{"name":"common##visA","count":1},{"name":"common##viswth","count":10} ]},
-"viswth_r":{"weight":1,"slots":[{"name":"uncommon##vis","count":1},{"name":"uncommon##wthR","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":7},{"name":"uncommon##wthU","weight":7},{"name":"uncommon##wthB","weight":7},{"name":"uncommon##wthG","weight":7},{"name":"uncommon##wthC","weight":16}]}, {"name":"rare##vis","count":1},{"name":"common##visA","count":1},{"name":"common##viswth","count":10} ]},
-"viswth_g":{"weight":1,"slots":[{"name":"uncommon##vis","count":1},{"name":"uncommon##wthG","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":7},{"name":"uncommon##wthU","weight":7},{"name":"uncommon##wthB","weight":7},{"name":"uncommon##wthR","weight":7},{"name":"uncommon##wthC","weight":16}]}, {"name":"rare##vis","count":1},{"name":"common##visA","count":1},{"name":"common##viswth","count":10} ]},
-    },
-    "predeterminedLayouts": [[
+"viswth_1":{"weight":5,"slots":[{"name":"uncommon##vis","count":2},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":9},{"name":"uncommon##wthU","weight":9},{"name":"uncommon##wthB","weight":9},{"name":"uncommon##wthR","weight":9},{"name":"uncommon##wthG","weight":9},{"name":"uncommon##wthC","weight":10}]},{"name":"rare##wth","count":1},{"name":"common##visA","count":1},{"name":"common##viswth","count":10} ]},
+"viswth_w":{"weight":1,"slots":[{"name":"uncommon##vis","count":1},{"name":"uncommon##wthW","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthU","weight":7},{"name":"uncommon##wthB","weight":7},{"name":"uncommon##wthR","weight":7},{"name":"uncommon##wthG","weight":7},{"name":"uncommon##wthC","weight":16}]}, {"name":"rare##vis","count":1},{"name":"common##wthA","count":1},{"name":"common##viswth","count":10} ]},
+"viswth_u":{"weight":1,"slots":[{"name":"uncommon##vis","count":1},{"name":"uncommon##wthU","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":7},{"name":"uncommon##wthB","weight":7},{"name":"uncommon##wthR","weight":7},{"name":"uncommon##wthG","weight":7},{"name":"uncommon##wthC","weight":16}]}, {"name":"rare##vis","count":1},{"name":"common##wthA","count":1},{"name":"common##viswth","count":10} ]},
+"viswth_b":{"weight":1,"slots":[{"name":"uncommon##vis","count":1},{"name":"uncommon##wthB","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":7},{"name":"uncommon##wthU","weight":7},{"name":"uncommon##wthR","weight":7},{"name":"uncommon##wthG","weight":7},{"name":"uncommon##wthC","weight":16}]}, {"name":"rare##vis","count":1},{"name":"common##wthA","count":1},{"name":"common##viswth","count":10} ]},
+"viswth_r":{"weight":1,"slots":[{"name":"uncommon##vis","count":1},{"name":"uncommon##wthR","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":7},{"name":"uncommon##wthU","weight":7},{"name":"uncommon##wthB","weight":7},{"name":"uncommon##wthG","weight":7},{"name":"uncommon##wthC","weight":16}]}, {"name":"rare##vis","count":1},{"name":"common##wthA","count":1},{"name":"common##viswth","count":10} ]},
+"viswth_g":{"weight":1,"slots":[{"name":"uncommon##vis","count":1},{"name":"uncommon##wthG","count":1},{"name":"unc","count":1,"sheets":[{"name":"uncommon##wthW","weight":7},{"name":"uncommon##wthU","weight":7},{"name":"uncommon##wthB","weight":7},{"name":"uncommon##wthR","weight":7},{"name":"uncommon##wthC","weight":16}]}, {"name":"rare##vis","count":1},{"name":"common##wthA","count":1},{"name":"common##viswth","count":10} ]},
+    },"predeterminedLayouts": [[
 `      1 p1_mirB
 "mir"
 `      1 p1_mirA
@@ -240,17 +263,17 @@ GBWRUGBWRU
 `      1 p1_wthB
 "wth_Wxx","wth_Uxx","wth_Bxx","wth_Rxx","wth_Gxx"
 `      1 p1_x_mvw_B
-"mirviswth_416","mirviswth_47","mirviswth_38","mirviswth_326"
+"mirviswth_4v6","mirviswth_4w6","mirviswth_47","mirviswth_38","mirviswth_326"
 `      1 p1_x_mmv_B
 "mirvis_74","mirvis_713","mirvis_83","mirvis_812"
 `      1 p1_x_mv_B
-"mirvis_65","mmirvis_515"
+"mirvis_65","mirvis_515"
 `      1 p1_x_mvv_B
 "mirvis_416","mirvis_47","mirvis_317","mirvis_38"
 `      1 p1_x_mmw_B
-"mirwth_74 ","mirwth_713","mirwth_83 ","mirwth_812"
+"mirwth_74","mirwth_713","mirwth_83","mirwth_812"
 `      1 p1_x_mw_B
-"mirwth_65 ","mirwth_w515","mirwth_u515","mirwth_b515","mirwth_r515","mirwth_g515"
+"mirwth_65","mirwth_w515","mirwth_u515","mirwth_b515","mirwth_r515","mirwth_g515"
 `      1 p1_x_mww_B
 "mirwth_w416","mirwth_u416","mirwth_b416","mirwth_r416","mirwth_g416","mirwth_w47 ","mirwth_u47 ","mirwth_b47 ","mirwth_r47 ","mirwth_g47 ","mirwth_w317","mirwth_u317","mirwth_b317","mirwth_r317","mirwth_g317","mirwth_w38 ","mirwth_u38 ","mirwth_b38 ","mirwth_r38 ","mirwth_g38 "
 `      1 p1_x_vw_B
@@ -281,17 +304,17 @@ GBWRUGBWRU
 `      1 p2_s_wthC
 "mir_5A2C","mir_5A2D","mir_5B2C","mir_5B2D","mir_3A5C","mir_3B5C","mir_3A5D","mir_3B5D","wth_Wxx","wth_Uxx","wth_Bxx","wth_Rxx","wth_Gxx"
 `      1 p2_x_mvw_B
-"mirviswth_416","mirviswth_47","mirviswth_38","mirviswth_326"
+"mirviswth_4v6","mirviswth_4w6","mirviswth_47","mirviswth_38","mirviswth_326"
 `      1 p2_x_mmv_B
 "mirvis_74","mirvis_713","mirvis_83","mirvis_812"
 `      1 p2_x_mv_B
-"mirvis_65","mmirvis_515"
+"mirvis_65","mirvis_515"
 `      1 p2_x_mvv_B
 "mirvis_416","mirvis_47","mirvis_317","mirvis_38"
 `      1 p2_x_mmw_B
-"mirwth_74 ","mirwth_713","mirwth_83 ","mirwth_812"
+"mirwth_74","mirwth_713","mirwth_83","mirwth_812"
 `      1 p2_x_mw_B
-"mirwth_65 ","mirwth_w515","mirwth_u515","mirwth_b515","mirwth_r515","mirwth_g515"
+"mirwth_65","mirwth_w515","mirwth_u515","mirwth_b515","mirwth_r515","mirwth_g515"
 `      1 p2_x_mww_B
 "mirwth_w416","mirwth_u416","mirwth_b416","mirwth_r416","mirwth_g416","mirwth_w47 ","mirwth_u47 ","mirwth_b47 ","mirwth_r47 ","mirwth_g47 ","mirwth_w317","mirwth_u317","mirwth_b317","mirwth_r317","mirwth_g317","mirwth_w38 ","mirwth_u38 ","mirwth_b38 ","mirwth_r38 ","mirwth_g38 "
 `      1 p2_x_vw_B
@@ -310,17 +333,17 @@ GBWRUGBWRU
 `      1 p3_wthB
 "wth_Wxx","wth_Uxx","wth_Bxx","wth_Rxx","wth_Gxx"
 `      1 p3_x_mvw_B
-"mirviswth_416","mirviswth_47","mirviswth_38","mirviswth_326"
+"mirviswth_4v6","mirviswth_4w6","mirviswth_47","mirviswth_38","mirviswth_326"
 `      1 p3_x_mmv_B
 "mirvis_74","mirvis_713","mirvis_83","mirvis_812"
 `      1 p3_x_mv_B
-"mirvis_65","mmirvis_515"
+"mirvis_65","mirvis_515"
 `      1 p3_x_mvv_B
 "mirvis_416","mirvis_47","mirvis_317","mirvis_38"
 `      1 p3_x_mmw_B
-"mirwth_74 ","mirwth_713","mirwth_83 ","mirwth_812"
+"mirwth_74","mirwth_713","mirwth_83","mirwth_812"
 `      1 p3_x_mw_B
-"mirwth_65 ","mirwth_w515","mirwth_u515","mirwth_b515","mirwth_r515","mirwth_g515"
+"mirwth_65","mirwth_w515","mirwth_u515","mirwth_b515","mirwth_r515","mirwth_g515"
 `      1 p3_x_mww_B
 "mirwth_w416","mirwth_u416","mirwth_b416","mirwth_r416","mirwth_g416","mirwth_w47 ","mirwth_u47 ","mirwth_b47 ","mirwth_r47 ","mirwth_g47 ","mirwth_w317","mirwth_u317","mirwth_b317","mirwth_r317","mirwth_g317","mirwth_w38 ","mirwth_u38 ","mirwth_b38 ","mirwth_r38 ","mirwth_g38 "
 `      1 p3_x_vw_B
