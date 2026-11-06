@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Collated Draftmancer File Generator</title>
+
+<style>
+:root {
+    --saveIcon: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAGHaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj48dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPjwvcmRmOkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCjw/eHBhY2tldCBlbmQ9J3cnPz4slJgLAAABEUlEQVQ4T8VSMYqEQBCsOxbXRFzQN/gS/7KRaLSJsGBsJOgTNPADGhjOJ3yDiaCBGlgXHMo5c+5y0RVUUlNVDd0D/oI0TWmaJgEQAE3TZJZlso0kCVmYpomapu3hjdfrldM0yXZ+QsIwDFiWRZYxzzOGYZBlKAV/xf8XfJAkALRti3Ec0fc9XNeVfQCApmlwu91gGAYcx/kWt21GUaRs/ozP53O/wuGMYRgqZplBEPyMqP/gVYnv+7JdLeBJyf1+57quspUoy5Jd18k6H4/HHvY8Twl3XceyLAkAFEIcHjckScI4jmWZJCmE2AacF7zCVnCxLAt1XUPX9ePR36CqKti2DeR5TsuylKW9o23bLIqCX8xG1OMRm5q8AAAAAElFTkSuQmCC");
+    --dmIcon: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAGHaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj48dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPjwvcmRmOkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCjw/eHBhY2tldCBlbmQ9J3cnPz4slJgLAAACq0lEQVQ4T5WUT2sTQRiHn2wSSTZsW7IGEi/RQow9iDUkrSKFNpo09BBvrZQi6pdQPHkTRfEkLcTiUatfQDy08SC2WLw2wT8IORdCtdulM9nxEHdNthbrA8OyM+/729l55/cGlFKKHizL4s2btzSazd7pPs5ks1QqZXRd9y+B8lGrLat0+qRKJBKHjnT6pKrVlv2pSimlAqpnh5ZlsXD9Bhsf3pNMJvu/3EOr1WL0fJ6lxacMD5/qW9N6X/b39/n54yfh8DE0TfvrcNn8uMHc3Cy379xlda1Ou90GIKCUUpZlsbXV5NXr16y8fAFAInHcS+7FcRxarRZSdgCQUmAYBuMXL7EwP09gc/OTWlxa4l19je3tbaQUxOPmPwUBwuEwAEIIbNsmk8kQbH7+cq++tgooBgcH0bQAwWCQWOwvFewWkZ2dHQCCwaD3dByF4zho3799JRqNoOsxX+rREUIgpSCXL6Dl8gX29mx/zH8hZQfDMLharaItzM8TjUYQQvjjjoyUgkx2hHLpClqxOMn4xUtY1q4/7kgIIQiFwpRLJVKpJNrQ0BAzlYq3+L/Yto1pmkyXy+Be7GJxinQ6jRD7/vgjcfbcKCMjWXAFh4dPUbxcOrQ4juPgOI5/mr09m0gkwtVq1WsUnpdX1+rcunmz7yyl7BAKde9aL7bdFbJtm2w2y8rKK8/TnjkvjI+RyxeQsoOuxzwX2LbtDdduhmG4aRQvl/oahCeo6zozlYq3I12PYZom8bhJKNQVl1IgZcezWjxuMj3dLYZLX7dxi+P+tmXtejbLZDLk8mOYpvn7KMLk8gVy50d7Jf6cocujx094+OA+UnYYGBjgdHaEcrnE1OQkJ06k2Go0WF/fAODa3OyBfnhAsN1u82z5OY1Gg4mJCcqlK6RShzdbP78AKPJKp9kmQgkAAAAASUVORK5CYII=");
+    --betaIcon: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAGHaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj48dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPjwvcmRmOkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCjw/eHBhY2tldCBlbmQ9J3cnPz4slJgLAAADuklEQVQ4T32U30tkVRzAPzPey8xcGR1nENdfjKuYiUjjoLvFJrjjzg/2wSGz3RSJaP0PYot83oii6EnWMgmfKhjLF0FWIVMiF3ZTEGxWxjQGZ3oxRPR65Z6Z04PObcZqP3Dgcr7f++F8z/fwtUkpJUXous7CwiOSz54Vb5fwYlsbsVgETdMuh0BeYmpqWvr9TbK6uvp/l9/fJKempi//KqWU0iaLTqjrOqNvvc3jX36moaGBrq4uGhsbyefzpFIptra2yOfzpNNpAl3dTD6coLn5askBS4SHh4fcuTvCTmqbe/feYXR0FNM0cblc6LrOxMQEKysrpNNphMjR0tJMqD9MNBoh2BXA4/Gcl3xyciKfPPlVvvf+B9Lvb5LRaEymUim5uLgo4/G4HBsbk3t7e3J+fl4Gg0FZXV0tq6q8sqrKK91ut6yrq5Ovvf6GnJ39QSpPn67zcHKSn5Z/5ODgACFM/H4/lZWVrK2tsb+/z/7+PplMBofDYZWmKGWoqgo4MU2TpUcL/LG7g/3d+/f5fjaBrp/g8/lwu92oqoIQAlVV6ezsZGxsDI/Hw/LysiUsRlVVFEXl4OAv7Hu/7+ByOdG0citBSokQgpqaGuLxOIODg3i9Xmw2W4mogGmaCGES7O7BHuzu4fTUuJyDoihks1mmp6cZHx8nmUwyPDz8n29PiBxut5v4wAD20ZERXK7zeyjGbrej6zrZbJaNjQ1mZmZwOByUl/9TSQEhTFrb2omEb2EPhfq4/soNdP3kcl4Juq6Ty+X+VbZpmiiKSiQcprb2CnaPx8PtWMwKAuRyeRwOBx0dHdTX19PQ0MDQ0BBOpxPDKL0ewzDw+XxEIxEAFIBQ6CZ+v59MJgMXTbHZbITDYQKBAKqqomkac3NzHB8flwgBOl8K0N7eBgVhc/NVQv1hpr78ApfLSVmZnbOzM5aWltje3kZRFDKZDJubm+TzeUt0emrgdDqJDwxYzVIKwWg0wnfffmPdpaZprK6ukkgkLEEBwzgXCWHS0tJM76s3rJi98PHy9WsEu3sQIkc2+yeJRILd3T0Mw7CWEDkA3G63JQj1h0sGhCXUNI3bsRiKUsb6+joPHnxIKpXC6/WhKCpcPA8hcpimiWEYeL0+otHzZhSwhBQ1p1C2rp9wdHQEQGtrK8Hua/h8PoTIoSgqwe4egl2BYkXp+AL49LPP+eTjjxAiR0VFBS+0tROJhLnZ10ddXS2/JZOsrT0G4M27d54/D7mYiV9Nf00ymaS3t5dI+Ba1tVeKU57L35ucwo2RwntSAAAAAElFTkSuQmCC");
+}
+
+
+body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+h2 { margin-bottom: 15px; }
+#alternative { font-size: 16px; padding: 7px; min-width: 300px; max-width: 100%; }
+#sourcefile { font-size: 15px; }
+#status { margin: 12px 0; color: #555; }
+#status.error { color: #c00000; font-weight: bold; }
+#buttons { margin: 8px 0 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+button { padding: 8px 16px; font-size: 14px; cursor: pointer; }
+button:disabled { cursor: default; opacity: 0.5; }
+#buttons button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+
+.buttonIcon { display: inline-block; width: 20px; height: 20px; background-position: center; background-repeat: no-repeat; background-size: contain; }
+.saveIcon { background-image: var(--saveIcon); }
+.dmIcon { background-image: var(--dmIcon); }
+.betaIcon { background-image: var(--betaIcon); }
+
+#output { background: white; border: 1px solid #ccc; padding: 12px; overflow: auto; white-space: pre; overflow-wrap: normal; word-wrap: normal; max-height: 80vh; font-family: Consolas, "Courier New", monospace; font-size: 13px; line-height: 1.4; tab-size: 4; }
+
+/* =========================================
+   GROUP SELECTOR
+   ========================================= */
+
+#menuCategoryMenu { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 5px; }
+.menuCategoryOption { padding: 5px 14px; border: 1px solid #aaa; border-radius: 5px; background: #e8e8e8; color: #333; cursor: pointer; font-size: 14px; }
+.menuCategoryOption.selected { background: #444; color: white; border-color: #444; }
+
+/* =========================================
+   SOURCE MENU
+   ========================================= */
+
+#sourceMenu { display: flex; flex-wrap: nowrap; align-items: center; gap: 6px; overflow-x: auto; overflow-y: hidden; padding: 4px 5px; min-height: 30px; scroll-behavior: smooth; scrollbar-width: thin; }
+
+.source-entry { position: relative; display: inline-flex; flex: 0 0 auto; width: max-content; align-items: center; justify-content: center; }
+
+.sourceOption { outline: none; display: inline-flex; flex: 0 0 auto;
+    width: max-content; min-width: max-content; box-sizing: border-box;
+    align-items: center; justify-content: center; padding: 3px 5px; margin: 0;
+    border: 2px solid transparent; border-radius: 5px; background: transparent; cursor: pointer; }
+
+.sourceOption img { display: inline-block; flex: 0 0 auto; object-fit: contain; max-height: 30px; max-width: 100px; vertical-align: middle; }
+.sourceOption.selected { border-color: green; }
+.sourceOption.selected-error { border-color: red; }
+.sourceOption:disabled { opacity: 0.30; filter: grayscale(100%); cursor: default; }
+
+/* =========================================
+   TOOLTIP
+   ========================================= */
+
+#sourceTooltip { position: fixed; display: none; width: 400px; max-width: calc(100vw - 20px);
+    box-sizing: border-box; background: #555; color: white; text-align: center;
+    border-radius: 6px; padding: 7px; z-index: 100000; font-size: 14px;
+    pointer-events: none; white-space: normal; }
+
+#sourceTooltip::before { content: ""; position: absolute; top: 100%;
+    left: var(--pointer-position, 50%); transform: translateX(-50%);
+    border-width: 5px; border-style: solid;
+    border-color: #555 transparent transparent transparent; }
+
+#sourceName { margin-top: 12px; font-size: 18px; font-weight: bold; min-height: 22px; }
+.icon-content { display: inline-flex; flex: 0 0 auto; width: max-content; align-items: center; justify-content: center; white-space: nowrap; }
+.icon-content img { display: inline-block; flex: 0 0 auto; object-fit: contain; max-height: 30px; max-width: 100px; vertical-align: middle; }
+
+</style>
+
+<!-- Socket.IO -->
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<h2>Collated Draftmancer File Generator</h2>
+
+<div id="menuCategoryMenu"></div><div id="sourceMenu"></div>
+<div id="sourceName"></div>
+<div id="localFileSection" style="display:none">
+    <label for="sourcefile">Select source file: </label>
+    <input type="file" id="sourcefile" accept=".txt">
+    <br><br>
+</div>
+
+<div id="alternativeSection">
+<label for="alternative">Select format: </label><select id="alternative" tabindex="6" disabled><option>Select source file first...</option></select>
+</div>
+
+<div id="status">Initialising...</div>
+
+<div id="buttons">
+<button id="saveButton" tabindex="1" onclick="saveGeneratedText()" disabled><span class="buttonIcon saveIcon"></span>Save File</button>
+<button id="draftButton" tabindex="2" onclick="sendToDraftmancer('release', false)" disabled><span class="buttonIcon dmIcon"></span>Draftmancer</button>
+<button id="betaButton" tabindex="3" onclick="sendToDraftmancer('beta', false)" disabled><span class="buttonIcon betaIcon"></span>Beta</button>
+<button id="testButton" tabindex="4" onclick="sendToDraftmancer('beta', true)" disabled style="display:none">Test Mode</button>
+</div>
+
+<pre id="output" tabindex="5"></pre>
+<script>
+
+
+// ==================================================
+// GLOBAL VARIABLES
+// ==================================================
+
+let sourceLines = []; let alternatives = []; let sources = []; let selectedSource = null; let currentSource = null; let generatedText = ""; let generatedFilename = "";
+let temporaryErrorSource = null; let currentMenuCategory = "main";
+
+// ==================================================
+// SOURCE CONFIGURATION
+// ==================================================
+
+const SOURCE_BASE = "https://raw.githubusercontent.com/tiera3/MTGDR/refs/heads/main/";
+
+function sourceFileURL(id) { return SOURCE_BASE + encodeURIComponent(id) + ".dm.txt"; }
+
+    async function sourceFileExists(id) {
+        try {
+const response = await fetch(sourceFileURL(id), { method: "HEAD", cache: "no-cache" });
+            return response.ok;
+        } catch (error) {
+console.error("Unable to check source:", id, error);
+            return false;
+    }   }
+
+    async function loadSources() {
+const response = await fetch(SOURCE_BASE + "dm_gen.json", { cache: "no-cache" });
+if (!response.ok) throw new Error("Unable to load dm_gen.json: HTTP " + response.status);
+sources = await response.json();
+if (!Array.isArray(sources)) throw new Error("Invalid dm_gen.json format.");
+    // Check availability of all menu entries.
+await Promise.all(sources.map(async source => { source.enabled = await sourceFileExists(source.id); }));
+    // Find all available menu categories.
+const categories = [...new Set(sources.map(source => source.category))];
+if (!categories.includes(currentMenuCategory)) currentMenuCategory = categories[0] || "main";
+renderMenuCategories(); renderSourceMenu();
+    }
+
+// ==================================================
+// TOOLTIP
+// ==================================================
+
+const sourceTooltip = document.createElement("div");
+sourceTooltip.id = "sourceTooltip";
+document.body.appendChild(sourceTooltip);
+
+    function showSourceTooltip(button, name) {
+sourceTooltip.textContent = name; sourceTooltip.style.whiteSpace = "pre-line"; sourceTooltip.style.display = "block";
+const rect = button.getBoundingClientRect(); const tooltipWidth = sourceTooltip.offsetWidth;
+    // Pointer target: 20% across the menu item.
+const pointerTarget = rect.left + rect.width * 0.5;
+    // Initially centre the tooltip on the pointer target.
+let left = pointerTarget - tooltipWidth * 0.2;
+    // Keep tooltip within the viewport.
+left = Math.max(10, Math.min(left, window.innerWidth - tooltipWidth - 10));
+    // Position tooltip above the menu item.
+sourceTooltip.style.left = left + "px";
+sourceTooltip.style.top = (rect.top - sourceTooltip.offsetHeight - 8) + "px";
+    // Adjust pointer to continue pointing at the menu item.
+const pointerPosition = pointerTarget - left;
+sourceTooltip.style.setProperty("--pointer-position", pointerPosition + "px");
+    }
+
+function hideSourceTooltip() { sourceTooltip.style.display = "none"; }
+
+// ==================================================
+// RENDER MENU CATEGORIES
+// ==================================================
+
+    function categoryLabel(category) {
+const labels = { main: "Main", custom: "Custom", pickapack: "PickApack", chaos: "Chaos" };
+        return (
+labels[category.toLowerCase()] || category.charAt(0).toUpperCase() + category.slice(1) ) ;
+    }
+
+    function renderMenuCategories() {
+const menu = document.getElementById("menuCategoryMenu"); menu.innerHTML = "";
+const categories = [...new Set(sources.map(source => source.category))];
+        categories.forEach(category => {
+const button = document.createElement("button");
+button.type = "button"; button.className = "menuCategoryOption"; button.textContent = categoryLabel(category);
+button.classList.toggle("selected", category === currentMenuCategory);
+          button.addEventListener("click", () => {
+currentMenuCategory = category; renderMenuCategories(); renderSourceMenu(); updateSourceMenu();
+          });
+menu.appendChild(button);
+        });
+    }
+
+// ==================================================
+// RENDER SOURCE MENU
+// ==================================================
+
+    function renderSourceMenu() {
+const menu = document.getElementById("sourceMenu");
+menu.innerHTML = "";
+        sources.filter(source => source.category === currentMenuCategory).forEach(source => {
+const wrapper = document.createElement("div");
+wrapper.className = "source-entry";
+const button = document.createElement("button");
+button.type = "button"; button.className = "sourceOption"; button.tabIndex = -1;
+        // Icon wrapper
+const icon = document.createElement("span");
+icon.className = "icon-content"; icon.innerHTML = source.icons || "";
+button.appendChild(icon);
+button.disabled = !source.enabled;
+          button.addEventListener("click", () => selectSource(source.id, "mouse"));
+          button.addEventListener("mouseenter", () => showSourceTooltip(button, source.name));
+          button.addEventListener("mouseleave", hideSourceTooltip);
+          button.addEventListener("focus", () => showSourceTooltip(button, source.name));
+          button.addEventListener("blur", hideSourceTooltip);
+wrapper.appendChild(button); menu.appendChild(wrapper);
+source.button = button; source.wrapper = wrapper;
+        });
+    }
+
+// ==================================================
+// SELECT SOURCE
+// ==================================================
+
+    function selectSource(sourceID) {
+const source = sources.find(item => item.id === sourceID);
+    if (!source) return;
+    // Don't allow selection of disabled items, except the temporarily enabled error item.
+    if (!source.enabled && sourceID !== temporaryErrorSource) return;
+    // If moving away from the temporary error item, remove its temporary status.
+if (temporaryErrorSource && sourceID !== temporaryErrorSource) temporaryErrorSource = null;
+selectedSource = sourceID; updateSourceMenu(); loadRemoteSource(sourceID);
+    }
+
+// ==================================================
+// UPDATE SOURCE MENU
+// ==================================================
+
+    function updateSourceMenu() {
+        sources.forEach(source => {
+    if (!source.button) return;
+        // Temporarily enable the requested missing item.
+source.button.disabled = !source.enabled && source.id !== temporaryErrorSource;
+        // Normal green selection.
+source.button.classList.toggle("selected", source.id === selectedSource && source.id !== temporaryErrorSource);
+        // Red selection for a temporarily enabled item.
+source.button.classList.toggle("selected-error", source.id === temporaryErrorSource && source.id === selectedSource);
+        });
+const sourceName = document.getElementById("sourceName");
+        if (currentSource) {
+sourceName.textContent = currentSource.name;
+        } else if (selectedSource) {
+const source = sources.find(item => item.id === selectedSource);
+sourceName.textContent = source ? source.name : "";
+        } else {
+sourceName.textContent = "";
+    }   }
+
+// ==================================================
+// KEYBOARD SELECTION POSITIONING
+// ==================================================
+
+    function positionKeyboardSelection(source, forceCentre = false) {
+    if (!source || !source.wrapper) return;
+const menu = document.getElementById("sourceMenu");
+const menuRect = menu.getBoundingClientRect(); const itemRect = source.wrapper.getBoundingClientRect();
+const menuWidth = menu.clientWidth;
+let targetScroll;
+        if (forceCentre) {
+        // Initial selection: centre the item.
+targetScroll = menu.scrollLeft + (itemRect.left + itemRect.width / 2) - (menuRect.left + menuWidth / 2);
+        } else {
+        // Preferred selection zone: middle 50%.
+const zoneLeft = menuRect.left + menuWidth * 0.25; const zoneRight = menuRect.left + menuWidth * 0.75;
+targetScroll = menu.scrollLeft;
+          if (itemRect.width > menuWidth * 0.5) {
+targetScroll += (itemRect.left + itemRect.width / 2) - (menuRect.left + menuWidth / 2);
+          } else if (itemRect.left < zoneLeft) {
+targetScroll += itemRect.left - zoneLeft;
+          } else if (itemRect.right > zoneRight) {
+targetScroll += itemRect.right - zoneRight;
+        } }
+menu.scrollTo({ left: targetScroll, behavior: "smooth" });
+    }
+
+// ==================================================
+// KEYBOARD NAVIGATION
+// ==================================================
+
+    document.addEventListener("keydown", function(event) {
+const target = event.target;
+    // Generated text has priority. All four arrow keys scroll the output normally.
+    if (target.id === "output") return;
+    // Preserve normal keyboard behaviour for inputs, including the local file selector.
+    if (target.matches("input, textarea, [contenteditable=true]")) return;
+    // --------------------------------------------------
+    // LEFT / RIGHT: SOURCE MENU
+    // --------------------------------------------------
+        if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+event.preventDefault();
+const navigableSources = sources.filter(source => source.category === currentMenuCategory && (source.enabled || source.id === temporaryErrorSource));
+    if (navigableSources.length === 0) return;
+const currentIndex = navigableSources.findIndex(source => source.id === selectedSource);
+    if (currentIndex === -1) return;
+const direction = event.key === "ArrowRight" ? 1 : -1;
+const nextIndex =
+  (currentIndex + direction + navigableSources.length) % navigableSources.length;
+const nextSource = navigableSources[nextIndex];
+selectSource(nextSource.id); positionKeyboardSelection(nextSource, false);
+    return;
+        }
+    // --------------------------------------------------
+    // UP / DOWN: ALTERNATIVES DROPDOWN
+    // --------------------------------------------------
+        if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+const dropdown = document.getElementById("alternative");
+        // When the dropdown has focus, let its native up/down behaviour handle the selection.
+    if (target === dropdown) return;
+event.preventDefault();
+    if (dropdown.disabled || dropdown.options.length === 0) return;
+const direction = event.key === "ArrowDown" ? 1 : -1;
+const nextIndex = Math.max(0, Math.min(dropdown.options.length - 1, dropdown.selectedIndex + direction));
+          if (nextIndex !== dropdown.selectedIndex) {
+dropdown.selectedIndex = nextIndex;
+generateAlternative();
+        } }
+    });
+
+// ==================================================
+// LOAD REMOTE SOURCE
+// ==================================================
+
+    async function loadRemoteSource(sourceID) {
+const status = document.getElementById("status");
+const dropdown = document.getElementById("alternative");
+currentSource = { id: sourceID, name: sourceID.toUpperCase() };
+const menuSource = sources.find(item => item.id === sourceID);
+    if (menuSource) currentSource.name = menuSource.name;
+updateSourceMenu();
+status.className = ""; status.textContent = "Downloading " + sourceID + ".dm.txt...";
+dropdown.disabled = true;
+document.getElementById("saveButton").disabled = true;
+document.getElementById("draftButton").disabled = true;
+document.getElementById("betaButton").disabled = true;
+document.getElementById("testButton").disabled = true;
+generatedText = ""; generatedFilename = "";
+document.getElementById("output").textContent = "";
+const cubefile = sourceFileURL(sourceID);
+        try {
+const response = await fetch(cubefile);
+            if (!response.ok) throw new Error("HTTP error " + response.status + " - " + response.statusText);
+const CubeFile = await response.text();
+    if (selectedSource !== null && selectedSource !== sourceID) return;
+processFile(CubeFile);
+        } catch (error) {
+status.className = "error"; status.textContent = "Error loading " + sourceID + ".dm.txt: " + error.message;
+console.error(error);
+    }   }
+
+// ==================================================
+// PROCESS SOURCE FILE
+// ==================================================
+
+    function processFile(CubeFile) {
+const status = document.getElementById("status");
+const dropdown = document.getElementById("alternative");
+sourceLines = CubeFile.split(/\r?\n/);
+findAlternatives(); populateDropdown();
+dropdown.disabled = false;
+status.className = "";
+status.textContent = alternatives.length + " alternatives loaded.";
+        if (dropdown.options.length > 0) {
+dropdown.selectedIndex = 0; generateAlternative();
+    }   }
+
+// ==================================================
+// LOAD SOURCE / INITIALISE
+// ==================================================
+
+    async function loadFile() {
+const params = new URLSearchParams(window.location.search);
+const urlSource = params.get("source");
+const testMode = params.has("testmode");
+const localSection = document.getElementById("localFileSection");
+const fileInput = document.getElementById("sourcefile");
+const status = document.getElementById("status");
+    // Test mode button
+if (testMode) document.getElementById("testButton").style.display = "inline-block";
+    // Local file selection is only available in test mode
+localSection.style.display = testMode ? "block" : "none";
+    // Local file handling
+        fileInput.addEventListener("change", async function() {
+const file = fileInput.files[0];
+    if (!file) return;
+          try {
+status.className = ""; status.textContent = "Reading " + file.name + "...";
+currentSource = { id: "", name: file.name };
+selectedSource = null; temporaryErrorSource = null;
+updateSourceMenu();
+const CubeFile = await file.text();
+    if (selectedSource !== null) return;
+processFile(CubeFile);
+          } catch (error) {
+status.className = "error"; status.textContent = "Error reading file: " + error.message;
+console.error(error);
+          }
+        });
+    // Load menu configuration
+        try {
+await loadSources();
+        } catch (error) {
+status.className = "error"; status.textContent = error.message; console.error(error);
+        }
+    // ==================================================
+    // INITIAL SOURCE SELECTION
+    // ==================================================
+    // Prefer Main as the initial category.
+    // Fall back to the first category if Main doesn't exist.
+const categories = [...new Set(sources.map(source => source.category))];
+currentMenuCategory = categories.includes("main") ? "main" : (categories[0] || "main");
+const initialSources = sources.filter(source => source.category === currentMenuCategory);
+    // URL source takes precedence.
+        if (urlSource) {
+const requestedSource = sources.find(item => item.id === urlSource);
+        // Switch to the category containing the requested source.
+if (requestedSource) { currentMenuCategory = requestedSource.category; renderMenuCategories(); renderSourceMenu(); }
+        // Clear any previous temporary error selection.
+temporaryErrorSource = null;
+        // Requested source exists in the menu but is disabled.
+            if (requestedSource && !requestedSource.enabled) {
+            // Temporarily enable and select it.
+temporaryErrorSource = urlSource; selectedSource = urlSource; updateSourceMenu();
+            // Attempt to load it anyway.
+            // The resulting error will be displayed normally.
+await loadRemoteSource(urlSource);
+    return;
+            }
+        // Normal enabled menu item, or a source that doesn't appear in the menu.
+selectedSource = requestedSource ? urlSource : null; updateSourceMenu();
+if (selectedSource) positionKeyboardSelection(requestedSource, true);
+await loadRemoteSource(urlSource);
+    return;
+        }
+    // ==================================================
+    // NO URL SOURCE SPECIFIED
+    // ==================================================
+currentSource = null;
+const firstEnabled = initialSources.find(source => source.enabled);
+selectedSource = firstEnabled ? firstEnabled.id : null;
+renderMenuCategories(); renderSourceMenu(); updateSourceMenu();
+if (firstEnabled) positionKeyboardSelection(firstEnabled, true);
+        if (!firstEnabled) {
+status.className = "error"; status.textContent = "No available sources were found.";
+        } else if (testMode) {
+status.className = ""; status.textContent = "Please select a source file or select a source from the menu.";
+        } else {
+status.className = ""; status.textContent = "Please select a source.";
+    }   }
+
+// ==================================================
+// PARSE CONTROL LINE
+// ==================================================
+
+    function parseControlLine(line) {
+    // Unlimited block
+const unlimitedMatch = line.match(/^`\s+\*\s+(\S+)(?:\s+(.*))?$/);
+    if (unlimitedMatch) return {
+unlimited: true, count: null, identifier: unlimitedMatch[1],
+  parameters: (unlimitedMatch[2] || "").trim().split(/\s+/).filter(Boolean) };
+    // Numbered block (existing notation)
+const numberedMatch = line.match(/^`\s*(\d+)\s+(\S+)(?:\s+(.*))?$/);
+    if (!numberedMatch) return null;
+    return {
+unlimited: false, count: parseInt(numberedMatch[1], 10), identifier: numberedMatch[2],
+  parameters: (numberedMatch[3] || "").trim().split(/\s+/).filter(Boolean) };
+    }
+
+function isEndDelimiter(line) { return /^`\s*end\s*$/.test(line); }
+
+// ==================================================
+// FIND ALTERNATIVES AND VALIDATE IDENTIFIERS
+// ==================================================
+
+    function findAlternatives() {
+alternatives = [];
+    // ==================================================
+    // COMPLETE FILE (NO CONTROL LINES)
+    // ==================================================
+        if (!sourceLines.some(line => line.startsWith("`"))) {
+let description = "Full file (no name found)";
+        // Look for the Settings block.
+const settingsStart = sourceLines.findIndex(line => /^\s*\[Settings\]\s*$/i.test(line));
+          if (settingsStart !== -1) {
+          // Find the next section header.
+let settingsEnd = sourceLines.findIndex((line, index) => index > settingsStart && /^\s*\[[^\]]+\]\s*$/.test(line));
+if (settingsEnd === -1) settingsEnd = sourceLines.length;
+          // Remove comment lines and extract JSON.
+let settingsJSON = sourceLines.slice(settingsStart + 1, settingsEnd)
+  .filter(line => !line.trimStart().startsWith("#")).join("\n");
+          // Allow trailing commas before closing braces and brackets.
+settingsJSON = settingsJSON.replace(/,\s*([}\]])/g, "$1");
+            try {
+const settings = JSON.parse(settingsJSON);
+if (typeof settings.name === "string" && settings.name.trim() !== "") description = settings.name;
+            } catch (error) {
+console.warn("Unable to parse Settings JSON:", error);
+          } }
+          alternatives.push({
+id: "fullfile", description: description, includes: [],
+initLine: -1, descriptionLine: -1, count: null,
+missing: [], errors: [], fullFile: true
+          });
+    return;
+        }
+    // ==================================================
+    // NORMAL CONTROL-LINE PROCESSING
+    // ==================================================
+const knownIdentifiers = new Set();
+        let i = 0; while (i < sourceLines.length) {
+const line = sourceLines[i];
+if (!line.startsWith("`")) { i++; continue; }
+const control = parseControlLine(line);
+        if (!control) { i++; continue; }
+const { count, identifier, parameters, unlimited } = control;
+knownIdentifiers.add(identifier);
+          if (identifier === "init") {
+const altID = parameters[0]; const includes = parameters.slice(1);
+const descriptionLine = sourceLines[i + 1] || "";
+const descriptionMatch = descriptionLine.match(/^\s*#\s*(.*?)\s*$/);
+const description = descriptionMatch ? descriptionMatch[1] : "(Missing description)";
+alternatives.push({ id: altID, description: description, includes: includes,
+  initLine: i, descriptionLine: i + 1, count: count, missing: [], errors: [] });
+          }
+
+    // Find the end of the block
+          if (unlimited) {
+let end = i + 1;
+while (end < sourceLines.length && sourceLines[end].trim() !== "` end") { end++; }
+            if (end >= sourceLines.length) {
+console.error("Missing closing delimiter for:", identifier);
+        i++;
+            } else {
+        i = end + 1;
+            }
+          } else {
+        i += count + 1;
+          }
+        }
+
+    // Validate referenced identifiers
+        for (const alt of alternatives) {
+alt.missing = alt.includes.filter(id => !knownIdentifiers.has(id));
+if (alt.count !== null && alt.count < 1) { alt.errors.push("init block must contain at least one line"); }
+const descriptionLine = sourceLines[alt.descriptionLine] || "";
+if (!/^\s*#\s*/.test(descriptionLine)) { alt.errors.push("Missing or invalid description comment"); }
+    }   }
+
+// ==================================================
+// POPULATE DROPDOWN
+// ==================================================
+
+    function populateDropdown() {
+const dropdown = document.getElementById("alternative");
+dropdown.innerHTML = "";
+
+        alternatives.forEach((alt, index) => {
+const option = document.createElement("option");
+option.value = index; option.textContent = alt.description;
+dropdown.appendChild(option);
+        });
+
+dropdown.onchange = generateAlternative;
+    }
+
+// ==================================================
+// GENERATE SELECTED ALTERNATIVE
+// ==================================================
+
+    function generateAlternative() {
+const selectedIndex = document.getElementById("alternative").value;
+const alt = alternatives[Number(selectedIndex)];
+
+    if (!alt) return;
+
+    // ==================================================
+    // COMPLETE FILE
+    // ==================================================
+        if (alt.fullFile) {
+        // Preserve the entire original file unchanged.
+generatedText = sourceLines.join("\n"); generatedFilename = "dmc_fullfile.txt";
+document.getElementById("output").textContent = generatedText;
+document.getElementById("saveButton").disabled = false;
+document.getElementById("draftButton").disabled = false;
+document.getElementById("betaButton").disabled = false;
+document.getElementById("testButton").disabled = false;
+
+const status = document.getElementById("status");
+status.className = ""; status.textContent = "Generated: " + alt.description;
+    return;
+        }
+    // ==================================================
+    // NORMAL ALTERNATIVE PROCESSING
+    // ==================================================
+const included = new Set(alt.includes); const output = [];
+        let i = 0; while (i < sourceLines.length) {
+const line = sourceLines[i];
+        // Uncontrolled lines are included
+          if (!line.startsWith("`")) {
+output.push(line);
+        i++; continue;
+          }
+const control = parseControlLine(line);
+        if (!control) { i++; continue; }
+const { count, identifier, unlimited } = control;
+const isSelectedInit = identifier === "init" && i === alt.initLine;
+const shouldInclude = included.has(identifier) || isSelectedInit;
+            if (unlimited) {
+            // Find closing delimiter
+let end = i + 1; while (end < sourceLines.length && !isEndDelimiter(sourceLines[end])) { end++; }
+if (shouldInclude) { for (let j = i + 1; j < end; j++) { output.push(sourceLines[j]); } }
+            // Skip entire block, including delimiter
+        i = end < sourceLines.length ? end + 1 : sourceLines.length;
+            } else {
+            // Existing numbered block
+if (shouldInclude) { for (let j = 1; j <= count; j++) { if (i + j < sourceLines.length) {
+  output.push(sourceLines[i + j]); } } }
+        i += count + 1;
+        }   }
+generatedText = output.join("\n");
+generatedFilename = "dmc_" + alt.id + ".txt";
+document.getElementById("output").textContent = generatedText;
+document.getElementById("saveButton").disabled = false;
+document.getElementById("draftButton").disabled = false;
+document.getElementById("betaButton").disabled = false;
+document.getElementById("testButton").disabled = false;
+const status = document.getElementById("status"); const problems = [];
+if (alt.missing.length > 0) { problems.push("Missing identifiers: " + alt.missing.join(", ")); }
+if (alt.errors.length > 0) { problems.push(...alt.errors); }
+        if (problems.length > 0) {
+status.className = "error"; 
+status.textContent = "WARNING: " + alt.description + " - " + problems.join("; ");
+        } else {
+status.className = ""; status.textContent = "Generated: " + alt.description + " (" + alt.id + ")";
+    }   }
+
+// ==================================================
+// SAVE GENERATED TEXT
+// ==================================================
+
+    function saveGeneratedText() {
+    if (!generatedText) return;
+const blob = new Blob([generatedText], { type: "text/plain;charset=utf-8" });
+const url = URL.createObjectURL(blob);
+const link = document.createElement("a");
+link.href = url; link.download = generatedFilename;
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link);
+URL.revokeObjectURL(url);
+    }
+
+// ==================================================
+// TEST MODE TEXT TRANSFORMATION
+// ==================================================
+
+    function generateTestText(text) {
+const lines = text.split(/\r?\n/);
+let inPredeterminedLayouts = false;
+    return (
+        lines.map(line => {
+        // Replace all instances of ## with #
+line = line.replace(/##/g, "#");
+
+          if (line.includes('"predeterminedLayouts"')) {
+inPredeterminedLayouts = true;
+    return line;
+          }
+          if (inPredeterminedLayouts) {
+          // Replace separators between items
+line = line.replace(/","/g, '"],["');
+          // End of predeterminedLayouts section
+if (line.trim().endsWith("]]")) { inPredeterminedLayouts = false; }
+          }
+    return line;
+        }).join("\n") );
+    }
+
+// ==================================================
+// SEND TO DRAFTMANCER
+// ==================================================
+    async function sendToDraftmancer(draft, testMode = false) {
+    if (!generatedText) { alert("No generated text available."); return; }
+    if (typeof io !== "function") { alert("Socket.IO failed to load."); return; }
+const Domain = draft === "beta" ? "https://beta.draftmancer.com" : "https://draftmancer.com";
+    // Open tab immediately to avoid popup blocking
+const draftWindow = window.open("about:blank", "_blank");
+    if (!draftWindow) { alert("Please allow popups for this page."); return; }
+draftWindow.document.title = "Connecting to Draftmancer...";
+draftWindow.document.body.textContent = "Connecting to Draftmancer...\nPlease wait.";
+    // Generate unique IDs
+const sourceID = currentSource.id || "test"; const BotID = "bot_" + sourceID + Date.now(); const botName = sourceID + " bot";
+const query = { userID: BotID, userName: botName, sessionSettings: "{}", sessionID: BotID };
+
+let stage = "Connecting to Draftmancer"; let finished = false;
+const status = document.getElementById("status");
+
+        function showProgress(message) {
+stage = message; status.className = ""; status.textContent = message;
+if (!draftWindow.closed) { draftWindow.document.title = "Draftmancer";
+  draftWindow.document.body.textContent = message + "\nPlease wait."; }
+console.log(message);
+        }
+
+    // Connect
+const socket = io(Domain, { query, transports: ["websocket"] });
+    // Error handling
+let connectionTimeout;
+        function handleError(message) {
+        if (finished) return;
+        finished = true;
+clearTimeout(connectionTimeout); socket.disconnect();
+const errorMessage = "Draftmancer error:\n" + message;
+status.className = "error"; status.textContent = errorMessage;
+if (!draftWindow.closed) { draftWindow.document.title = "Draftmancer error";
+  draftWindow.document.body.textContent = errorMessage + "\n\nYou can close this tab."; }
+console.error(errorMessage);
+        }
+
+    // Timeout
+connectionTimeout = setTimeout(() => { handleError("Timed out while: " + stage); }, 90000);
+    // Socket connected
+socket.on("connect", () => { showProgress("Socket connected. Waiting for session ownership..."); });
+socket.on("connect_error", (error) => { handleError("Connection error: " + error.message); });
+socket.on("disconnect", (reason) => { if (!finished) { handleError("Socket disconnected: " + reason); } });
+    // Check session ownership
+        socket.once("sessionOwner", (ownerID) => {
+    if (finished) return;
+          if (ownerID !== BotID) {
+handleError("Not the session owner!\nExpected: " + BotID + "\nReceived: " + ownerID);
+    return;
+          }
+showProgress("Session ownership confirmed. Sending configuration...");
+console.log("Sending configuration, characters:", generatedText.length);
+
+        // Send generated text to Draftmancer
+const textToSend = testMode ? generateTestText(generatedText) : generatedText;
+          socket.emit("parseCustomCardList", textToSend, (res) => {
+    if (finished) return;
+console.log("Draftmancer response:", res);
+
+            if (!res || res.code < 0) {
+handleError("Configuration rejected:\n" + JSON.stringify(res));
+    return;
+            }
+
+          // Configuration accepted
+showProgress("Configuration accepted. Opening Draftmancer...");
+
+          // IMPORTANT:
+          // Only now register the sessionUsers listener.
+          // This follows the order in your original function.
+socket.once("sessionUsers", () => { socket.disconnect(); });
+
+          // Open Draftmancer
+finished = true; clearTimeout(connectionTimeout);
+draftWindow.location.href = Domain + "/?session=" + BotID;
+console.log("Draftmancer session created:", BotID);
+          }); // socket.emit(
+        }); // socket.once(
+    }
+
+// ==================================================
+// START
+// ==================================================
+
+let positioningDone = false;
+
+    function runPositioning() {
+    if (positioningDone) return;
+    // Find the currently selected source.
+const source = sources.find(item => item.id === selectedSource);
+    if (!source || !source.wrapper) return;
+positioningDone = true;
+    // Centre the selected source in the menu.
+positionKeyboardSelection(source, true);
+    }
+
+// Wait for images in the source menu.
+    function waitForImages(container) {
+const images = [...container.querySelectorAll("img")];
+    return Promise.all(
+        images.map(img => {
+    if (img.complete) { return Promise.resolve(); }
+    return (
+          new Promise(resolve => {
+            img.addEventListener("load", resolve, { once: true });
+            img.addEventListener("error", resolve, { once: true });
+          }) );
+        }) );
+    }
+
+// Start loading the file and menu.
+    loadFile().then(async () => {
+const menuContainer = document.getElementById("sourceMenu");
+    // Normal positioning mechanism.
+await waitForImages(menuContainer);
+runPositioning();
+    });
+
+// Five-second safety fallback.
+setTimeout(runPositioning, 5000);
+
+</script>
