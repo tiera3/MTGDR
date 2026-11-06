@@ -252,4 +252,6 @@
    "icons": "<img height=20 src=\"https://cdn.cardsrealm.com/images/sets/set-2ed-unlimited-edition.svg\">"
 },{"category": "main", "id": "leb", "name": "Limited Edition Beta",
    "icons": "<img height=20 src=\"https://cdn.cardsrealm.com/images/sets/set-leb-limited-edition-beta.svg\">"
+},{"category": "custom", "id": "_dvp", "name": "Dragons vs Praetors\nby coopergfrye",
+   "icons": "DvP"
 }]
