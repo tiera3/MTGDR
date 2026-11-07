@@ -15,11 +15,10 @@
     --betaIcon: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAGHaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj48dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPjwvcmRmOkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCjw/eHBhY2tldCBlbmQ9J3cnPz4slJgLAAADuklEQVQ4T32U30tkVRzAPzPey8xcGR1nENdfjKuYiUjjoLvFJrjjzg/2wSGz3RSJaP0PYot83oii6EnWMgmfKhjLF0FWIVMiF3ZTEGxWxjQGZ3oxRPR65Z6Z04PObcZqP3Dgcr7f++F8z/fwtUkpJUXous7CwiOSz54Vb5fwYlsbsVgETdMuh0BeYmpqWvr9TbK6uvp/l9/fJKempi//KqWU0iaLTqjrOqNvvc3jX36moaGBrq4uGhsbyefzpFIptra2yOfzpNNpAl3dTD6coLn5askBS4SHh4fcuTvCTmqbe/feYXR0FNM0cblc6LrOxMQEKysrpNNphMjR0tJMqD9MNBoh2BXA4/Gcl3xyciKfPPlVvvf+B9Lvb5LRaEymUim5uLgo4/G4HBsbk3t7e3J+fl4Gg0FZXV0tq6q8sqrKK91ut6yrq5Ovvf6GnJ39QSpPn67zcHKSn5Z/5ODgACFM/H4/lZWVrK2tsb+/z/7+PplMBofDYZWmKGWoqgo4MU2TpUcL/LG7g/3d+/f5fjaBrp/g8/lwu92oqoIQAlVV6ezsZGxsDI/Hw/LysiUsRlVVFEXl4OAv7Hu/7+ByOdG0citBSokQgpqaGuLxOIODg3i9Xmw2W4mogGmaCGES7O7BHuzu4fTUuJyDoihks1mmp6cZHx8nmUwyPDz8n29PiBxut5v4wAD20ZERXK7zeyjGbrej6zrZbJaNjQ1mZmZwOByUl/9TSQEhTFrb2omEb2EPhfq4/soNdP3kcl4Juq6Ty+X+VbZpmiiKSiQcprb2CnaPx8PtWMwKAuRyeRwOBx0dHdTX19PQ0MDQ0BBOpxPDKL0ewzDw+XxEIxEAFIBQ6CZ+v59MJgMXTbHZbITDYQKBAKqqomkac3NzHB8flwgBOl8K0N7eBgVhc/NVQv1hpr78ApfLSVmZnbOzM5aWltje3kZRFDKZDJubm+TzeUt0emrgdDqJDwxYzVIKwWg0wnfffmPdpaZprK6ukkgkLEEBwzgXCWHS0tJM76s3rJi98PHy9WsEu3sQIkc2+yeJRILd3T0Mw7CWEDkA3G63JQj1h0sGhCXUNI3bsRiKUsb6+joPHnxIKpXC6/WhKCpcPA8hcpimiWEYeL0+otHzZhSwhBQ1p1C2rp9wdHQEQGtrK8Hua/h8PoTIoSgqwe4egl2BYkXp+AL49LPP+eTjjxAiR0VFBS+0tROJhLnZ10ddXS2/JZOsrT0G4M27d54/D7mYiV9Nf00ymaS3t5dI+Ba1tVeKU57L35ucwo2RwntSAAAAAElFTkSuQmCC");
 }
 
-
-body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+body { font-family: Arial, sans-serif; margin: 20px 20px 20px 118px; background: #f5f5f5; }
 h2 { margin-bottom: 15px; }
 #alternative { font-size: 16px; padding: 7px; min-width: 300px; max-width: 100%; }
-#sourcefile { font-size: 15px; }
+#sourcefile { font-size: 14px; height: 36px; max-width: 220px; }
 #status { margin: 12px 0; color: #555; }
 #status.error { color: #c00000; font-weight: bold; }
 #buttons { margin: 8px 0 12px; display: flex; flex-wrap: wrap; gap: 8px; }
@@ -32,28 +31,52 @@ button:disabled { cursor: default; opacity: 0.5; }
 .dmIcon { background-image: var(--dmIcon); }
 .betaIcon { background-image: var(--betaIcon); }
 
-#output { background: white; border: 1px solid #ccc; padding: 12px; overflow: auto; white-space: pre; overflow-wrap: normal; word-wrap: normal; max-height: 80vh; font-family: Consolas, "Courier New", monospace; font-size: 13px; line-height: 1.4; tab-size: 4; }
+#output { position: relative; left: -98px; width: calc(100% + 98px);
+  box-sizing: border-box; background: white; border: 1px solid #ccc;
+  padding: 12px; overflow: auto; white-space: pre; overflow-wrap: normal; max-height: 80vh; word-wrap: normal;
+  line-height: 1.4; tab-size: 4; font-size: 13px; font-family: Consolas, "Courier New", monospace; }
+
+/* =========================================
+   CONTROL AREA
+   ========================================= */
+
+#controlArea { position: relative; margin-bottom: 5px; }
+#mainControls { min-width: 0; }
 
 /* =========================================
    GROUP SELECTOR
    ========================================= */
 
-#menuCategoryMenu { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 5px; }
-.menuCategoryOption { padding: 5px 14px; border: 1px solid #aaa; border-radius: 5px; background: #e8e8e8; color: #333; cursor: pointer; font-size: 14px; }
-.menuCategoryOption.selected { background: #444; color: white; border-color: #444; }
+#groupMenu { position: absolute; left: -98px; top: 0; bottom: 0;
+  display: flex; width: 90px; flex-direction: column; align-items: stretch;
+  gap: 4px; min-height: 0; overflow-y: auto; }
+.groupOption { width: 100%; box-sizing: border-box; flex: 0 0 auto;
+  padding: 5px 7px; border: 1px solid #aaa; border-radius: 5px;
+  background: #e8e8e8; color: #333; cursor: pointer;
+  font-size: 14px; text-align: center; white-space: nowrap; overflow: hidden; }
+.groupOption.selected { background: #444; color: white; border-color: #444; }
+.groupOption:focus-visible { outline: 2px solid #1677d2; outline-offset: 2px; }
+.categoryShort { display: none; }
+
+/* =========================================
+   SMALL SCREENS
+   ========================================= */
+
+@media (max-width: 600px) { body { margin-left: 73px; } #groupMenu { left: -53px; width: 45px; }
+  #output { left: -53px; width: calc(100% + 53px); }
+  .categoryFull { display: none; } .categoryShort { display: inline; } }
 
 /* =========================================
    SOURCE MENU
    ========================================= */
 
-#sourceMenu { display: flex; flex-wrap: nowrap; align-items: center; gap: 6px; overflow-x: auto; overflow-y: hidden; padding: 4px 5px; min-height: 30px; scroll-behavior: smooth; scrollbar-width: thin; }
-
+#sourceMenu { display: flex; flex: 1 1 auto; min-width: 0; flex-wrap: nowrap; align-items: center; gap: 6px; overflow-x: auto; overflow-y: hidden; padding: 4px 5px; min-height: 30px; scroll-behavior: smooth; scrollbar-width: thin; }
 .source-entry { position: relative; display: inline-flex; flex: 0 0 auto; width: max-content; align-items: center; justify-content: center; }
 
 .sourceOption { outline: none; display: inline-flex; flex: 0 0 auto;
-    width: max-content; min-width: max-content; box-sizing: border-box;
-    align-items: center; justify-content: center; padding: 3px 5px; margin: 0;
-    border: 2px solid transparent; border-radius: 5px; background: transparent; cursor: pointer; }
+  width: max-content; min-width: max-content; box-sizing: border-box;
+  align-items: center; justify-content: center; padding: 3px 5px; margin: 0;
+  border: 2px solid transparent; border-radius: 5px; background: transparent; cursor: pointer; }
 
 .sourceOption img { display: inline-block; flex: 0 0 auto; object-fit: contain; max-height: 30px; max-width: 100px; vertical-align: middle; }
 .sourceOption.selected { border-color: green; }
@@ -88,28 +111,28 @@ button:disabled { cursor: default; opacity: 0.5; }
 
 <h2>Collated Draftmancer File Generator</h2>
 
-<div id="menuCategoryMenu"></div><div id="sourceMenu"></div>
-<div id="sourceName"></div>
-<div id="localFileSection" style="display:none">
-    <label for="sourcefile">Select source file: </label>
-    <input type="file" id="sourcefile" accept=".txt">
-    <br><br>
+<div id="controlArea">
+  <div id="groupMenu" tabindex="0"></div>
+  <div id="mainControls">
+    <div id="sourceMenu" tabIndex="-1"></div>
+    <div id="sourceName"></div>
+
+    <div id="alternativeSection"><label for="alternative">Select format: </label>
+      <select id="alternative" tabindex="0" disabled><option>Select source file first...</option></select></div>
+  
+    <div id="status">Initialising...</div>
+
+    <div id="buttons">
+      <button id="saveButton" tabindex="0" onclick="saveGeneratedText()" disabled><span class="buttonIcon saveIcon"></span>Save File</button>
+      <button id="draftButton" tabindex="0" onclick="sendToDraftmancer('release', false)" disabled><span class="buttonIcon dmIcon"></span>Draftmancer</button>
+      <button id="betaButton" tabindex="0" onclick="sendToDraftmancer('beta', false)" disabled><span class="buttonIcon betaIcon"></span>Beta</button>
+      <button id="testButton" tabindex="0" onclick="sendToDraftmancer('beta', true)" disabled style="display:none">Test Mode</button>
+      <input id="sourcefile" tabindex="0" type="file" accept=".txt" style="display:none">
+    </div>
+  </div>
 </div>
 
-<div id="alternativeSection">
-<label for="alternative">Select format: </label><select id="alternative" tabindex="6" disabled><option>Select source file first...</option></select>
-</div>
-
-<div id="status">Initialising...</div>
-
-<div id="buttons">
-<button id="saveButton" tabindex="1" onclick="saveGeneratedText()" disabled><span class="buttonIcon saveIcon"></span>Save File</button>
-<button id="draftButton" tabindex="2" onclick="sendToDraftmancer('release', false)" disabled><span class="buttonIcon dmIcon"></span>Draftmancer</button>
-<button id="betaButton" tabindex="3" onclick="sendToDraftmancer('beta', false)" disabled><span class="buttonIcon betaIcon"></span>Beta</button>
-<button id="testButton" tabindex="4" onclick="sendToDraftmancer('beta', true)" disabled style="display:none">Test Mode</button>
-</div>
-
-<pre id="output" tabindex="5"></pre>
+<pre id="output" tabindex="0"></pre>
 <script>
 
 
@@ -119,6 +142,9 @@ button:disabled { cursor: default; opacity: 0.5; }
 
 let sourceLines = []; let alternatives = []; let sources = []; let selectedSource = null; let currentSource = null; let generatedText = ""; let generatedFilename = "";
 let temporaryErrorSource = null; let currentMenuCategory = "main";
+const sourceMenu = document.getElementById("sourceMenu");
+Object.defineProperty(Element.prototype, "_hasClass", {
+  value: function(name) { return this.classList.contains(name); } });
 
 // ==================================================
 // SOURCE CONFIGURATION
@@ -126,24 +152,20 @@ let temporaryErrorSource = null; let currentMenuCategory = "main";
 
 const SOURCE_BASE = "https://raw.githubusercontent.com/tiera3/MTGDR/refs/heads/main/";
 
-function sourceFileURL(id) { return SOURCE_BASE + encodeURIComponent(id) + ".dm.txt"; }
-
-    async function sourceFileExists(id) {
-        try {
-const response = await fetch(sourceFileURL(id), { method: "HEAD", cache: "no-cache" });
-            return response.ok;
-        } catch (error) {
-console.error("Unable to check source:", id, error);
-            return false;
-    }   }
-
+    async function getAvailableSourceFiles() {
+const response = await fetch("https://api.github.com/repos/tiera3/MTGDR/contents?ref=main", { cache: "no-cache" });
+if (!response.ok) throw new Error("Unable to check GitHub source directory: HTTP " + response.status);
+const files = await response.json();
+    return new Set(files.filter(file => file.type === "file").map(file => file.name));
+    }
     async function loadSources() {
 const response = await fetch(SOURCE_BASE + "dm_gen.json", { cache: "no-cache" });
 if (!response.ok) throw new Error("Unable to load dm_gen.json: HTTP " + response.status);
 sources = await response.json();
 if (!Array.isArray(sources)) throw new Error("Invalid dm_gen.json format.");
     // Check availability of all menu entries.
-await Promise.all(sources.map(async source => { source.enabled = await sourceFileExists(source.id); }));
+(dir => { sources.forEach(source => { source.enabled = dir.has(source.id + ".dm.txt"); });
+  })(await getAvailableSourceFiles());
     // Find all available menu categories.
 const categories = [...new Set(sources.map(source => source.category))];
 if (!categories.includes(currentMenuCategory)) currentMenuCategory = categories[0] || "main";
@@ -181,25 +203,51 @@ function hideSourceTooltip() { sourceTooltip.style.display = "none"; }
 // RENDER MENU CATEGORIES
 // ==================================================
 
-    function categoryLabel(category) {
-const labels = { main: "Main", custom: "Custom", pickapack: "PickApack", chaos: "Chaos" };
-        return (
-labels[category.toLowerCase()] || category.charAt(0).toUpperCase() + category.slice(1) ) ;
-    }
+function categoryLabel(category) { const firstCharacter = category.charAt(0);
+  return /^[a-z]$/.test(firstCharacter) ? category : category.slice(1); }
+
+function categoryShortLabel(category) { return category.charAt(0); }
 
     function renderMenuCategories() {
-const menu = document.getElementById("menuCategoryMenu"); menu.innerHTML = "";
+const menu = document.getElementById("groupMenu"); menu.innerHTML = "";
 const categories = [...new Set(sources.map(source => source.category))];
         categories.forEach(category => {
 const button = document.createElement("button");
-button.type = "button"; button.className = "menuCategoryOption"; button.textContent = categoryLabel(category);
+button.type = "button"; button.className = "groupOption";
 button.classList.toggle("selected", category === currentMenuCategory);
-          button.addEventListener("click", () => {
-currentMenuCategory = category; renderMenuCategories(); renderSourceMenu(); updateSourceMenu();
-          });
+button.tabIndex = category === currentMenuCategory ? menu.tabIndex : -1;
+button.setAttribute("aria-label", categoryLabel(category));
+const fullName = document.createElement("span");
+fullName.className = "categoryFull"; fullName.textContent = categoryLabel(category);
+const shortName = document.createElement("span");
+shortName.className = "categoryShort"; shortName.textContent = categoryShortLabel(category);
+button.appendChild(fullName); button.appendChild(shortName);
 menu.appendChild(button);
         });
     }
+
+// ==================================================
+// MENU CATEGORY EVENTS
+// ==================================================
+
+    function groupEvents(e) {
+const _self = e.target.closest(".groupOption") || e.target;
+const selectedButton = () => document.querySelector("#groupMenu .groupOption.selected");
+
+        if (e.type === "click") {
+          if (_self._hasClass("groupOption") && _self != selectedButton()) {
+currentMenuCategory = [...new Set(sources.map(source => source.category))][
+  [..._self.parentElement.children].indexOf(_self) ]
+renderMenuCategories(); renderSourceMenu(); updateSourceMenu();
+
+( s => { if( s ) s.button.click() ; positionKeyboardSelection(s, true) }
+  )( sources.find(source => source.category === currentMenuCategory && source.enabled) );
+          }
+selectedButton().focus();
+        }
+    }
+
+groupMenu.addEventListener("click", groupEvents);
 
 // ==================================================
 // RENDER SOURCE MENU
@@ -218,15 +266,45 @@ const icon = document.createElement("span");
 icon.className = "icon-content"; icon.innerHTML = source.icons || "";
 button.appendChild(icon);
 button.disabled = !source.enabled;
-          button.addEventListener("click", () => selectSource(source.id, "mouse"));
-          button.addEventListener("mouseenter", () => showSourceTooltip(button, source.name));
-          button.addEventListener("mouseleave", hideSourceTooltip);
-          button.addEventListener("focus", () => showSourceTooltip(button, source.name));
-          button.addEventListener("blur", hideSourceTooltip);
 wrapper.appendChild(button); menu.appendChild(wrapper);
 source.button = button; source.wrapper = wrapper;
         });
     }
+
+// ==================================================
+// SOURCE MENU EVENTS
+// ==================================================
+
+    function sourceMenuEvents(e) {
+const _self = e.target.closest(".sourceOption") || e.target;
+const source = _self._hasClass("sourceOption") ? sources.find(item => item.button === _self) : null;
+
+        if (e.type === "click") {
+    if (e.detail > 0 && ((h, b) => h > 0 && e.clientY >= b - h)(
+sourceMenu.offsetHeight - sourceMenu.clientHeight, sourceMenu.getBoundingClientRect().bottom
+    )) return;
+e.preventDefault();
+          if (!_self._hasClass("sourceOption")) {
+const selectedButton = document.querySelector("#groupMenu .groupOption.selected");
+if (selectedButton) selectedButton.focus();
+    return;
+          }
+    if (source) selectSource(source.id, "mouse");
+
+        } else if (e.type === "mouseover") {
+if (source && !_self.contains(e.relatedTarget)) showSourceTooltip(_self, source.name);
+
+        } else if (e.type === "mouseout") {
+if (!_self.contains(e.relatedTarget)) hideSourceTooltip();
+        } else if (e.type === "mousedown") {
+if (source) e.preventDefault()
+        }
+    }
+
+sourceMenu.addEventListener("click", sourceMenuEvents);
+sourceMenu.addEventListener("mouseover", sourceMenuEvents);
+sourceMenu.addEventListener("mouseout", sourceMenuEvents);
+sourceMenu.addEventListener("mousedown", sourceMenuEvents);
 
 // ==================================================
 // SELECT SOURCE
@@ -299,42 +377,70 @@ menu.scrollTo({ left: targetScroll, behavior: "smooth" });
 
     document.addEventListener("keydown", function(event) {
 const target = event.target;
-    // Generated text has priority. All four arrow keys scroll the output normally.
-    if (target.id === "output") return;
-    // Preserve normal keyboard behaviour for inputs, including the local file selector.
-    if (target.matches("input, textarea, [contenteditable=true]")) return;
-    // --------------------------------------------------
-    // LEFT / RIGHT: SOURCE MENU
-    // --------------------------------------------------
+const dropdown = document.getElementById("alternative");
         if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        // --------------------------------------------------
+        // LEFT / RIGHT: SOURCE MENU
+        // --------------------------------------------------
+          if (
+target._hasClass("groupOption") || target._hasClass("sourceOption") || target.id === "groupMenu"
+          ){
 event.preventDefault();
 const navigableSources = sources.filter(source => source.category === currentMenuCategory && (source.enabled || source.id === temporaryErrorSource));
     if (navigableSources.length === 0) return;
 const currentIndex = navigableSources.findIndex(source => source.id === selectedSource);
-    if (currentIndex === -1) return;
 const direction = event.key === "ArrowRight" ? 1 : -1;
-const nextIndex =
-  (currentIndex + direction + navigableSources.length) % navigableSources.length;
+const nextIndex = currentIndex === -1 ? (direction === 1 ? 0 : navigableSources.length - 1)
+  : (currentIndex + direction + navigableSources.length) % navigableSources.length;
 const nextSource = navigableSources[nextIndex];
 selectSource(nextSource.id); positionKeyboardSelection(nextSource, false);
+
+        // --------------------------------------------------
+        // LEFT / RIGHT: MAIN CONTROLS
+        // --------------------------------------------------
+          } else if (target.parentElement.id === "buttons") {
+event.preventDefault();
+const nextControl = event.key === "ArrowRight" ? target.nextElementSibling : target.previousElementSibling;
+            if (nextControl && !nextControl.disabled && nextControl.getClientRects().length > 0) nextControl.focus();
     return;
-        }
-    // --------------------------------------------------
-    // UP / DOWN: ALTERNATIVES DROPDOWN
-    // --------------------------------------------------
-        if (event.key === "ArrowUp" || event.key === "ArrowDown") {
-const dropdown = document.getElementById("alternative");
-        // When the dropdown has focus, let its native up/down behaviour handle the selection.
-    if (target === dropdown) return;
+        // --------------------------------------------------
+        // LEFT / RIGHT: ALTERNATIVES DROPDOWN
+        // --------------------------------------------------
+          } else if (target === dropdown) {
+event.preventDefault();
+const direction = event.key === "ArrowRight" ? 1 : -1;
+window.scrollBy({ left: direction * 40, behavior: "auto" });
+          }
+    return;
+        } else if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+        // --------------------------------------------------
+        // UP / DOWN: ALTERNATIVES DROPDOWN
+        // --------------------------------------------------
+const controlIDs = ["saveButton", "draftButton", "betaButton", "testButton", "sourcefile"];
+          if (controlIDs.includes(target.id)) {
 event.preventDefault();
     if (dropdown.disabled || dropdown.options.length === 0) return;
 const direction = event.key === "ArrowDown" ? 1 : -1;
 const nextIndex = Math.max(0, Math.min(dropdown.options.length - 1, dropdown.selectedIndex + direction));
-          if (nextIndex !== dropdown.selectedIndex) {
+            if (nextIndex !== dropdown.selectedIndex) {
 dropdown.selectedIndex = nextIndex;
 generateAlternative();
+          } } else if (
+          // --------------------------------------------------
+          // UP / DOWN: SOURCE MENU
+          // --------------------------------------------------
+target._hasClass("groupOption") || target._hasClass("sourceOption") || target.id === "groupMenu"
+          ){
+event.preventDefault();
+event.preventDefault();
+(nb => { if (nb && nb._hasClass("groupOption")) nb.click();
+  })( ((s,k) => s ? (k === "ArrowUp" ? s.previousElementSibling : s.nextElementSibling)
+  : groupMenu.querySelector(".groupOption")
+  )(document.querySelector("#groupMenu .groupOption.selected"), event.key) );
         } }
     });
+
+
 
 // ==================================================
 // LOAD REMOTE SOURCE
@@ -355,7 +461,7 @@ document.getElementById("betaButton").disabled = true;
 document.getElementById("testButton").disabled = true;
 generatedText = ""; generatedFilename = "";
 document.getElementById("output").textContent = "";
-const cubefile = sourceFileURL(sourceID);
+const cubefile = SOURCE_BASE + encodeURIComponent(sourceID) + ".dm.txt"
         try {
 const response = await fetch(cubefile);
             if (!response.ok) throw new Error("HTTP error " + response.status + " - " + response.statusText);
@@ -391,13 +497,12 @@ dropdown.selectedIndex = 0; generateAlternative();
 const params = new URLSearchParams(window.location.search);
 const urlSource = params.get("source");
 const testMode = params.has("testmode");
-const localSection = document.getElementById("localFileSection");
 const fileInput = document.getElementById("sourcefile");
 const status = document.getElementById("status");
     // Test mode button
 if (testMode) document.getElementById("testButton").style.display = "inline-block";
     // Local file selection is only available in test mode
-localSection.style.display = testMode ? "block" : "none";
+fileInput.style.display = testMode ? "block" : "none";
     // Local file handling
         fileInput.addEventListener("change", async function() {
 const file = fileInput.files[0];
