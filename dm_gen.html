@@ -441,7 +441,6 @@ event.preventDefault();
     });
 
 
-
 // ==================================================
 // LOAD REMOTE SOURCE
 // ==================================================
@@ -464,13 +463,15 @@ document.getElementById("output").textContent = "";
 const cubefile = SOURCE_BASE + encodeURIComponent(sourceID) + ".dm.txt"
         try {
 const response = await fetch(cubefile);
-            if (!response.ok) throw new Error("HTTP error " + response.status + " - " + response.statusText);
+if (!response.ok) throw new Error("HTTP error " + response.status + " - " + response.statusText);
 const CubeFile = await response.text();
-    if (selectedSource !== null && selectedSource !== sourceID) return;
+    if (selectedSource !== null && selectedSource !== sourceID) return null;
 processFile(CubeFile);
+    return true ;
         } catch (error) {
 status.className = "error"; status.textContent = "Error loading " + sourceID + ".dm.txt: " + error.message;
 console.error(error);
+    return false ;
     }   }
 
 // ==================================================
@@ -534,6 +535,7 @@ status.className = "error"; status.textContent = error.message; console.error(er
 const categories = [...new Set(sources.map(source => source.category))];
 currentMenuCategory = categories.includes("main") ? "main" : (categories[0] || "main");
 const initialSources = sources.filter(source => source.category === currentMenuCategory);
+let loadResult= null ;
     // URL source takes precedence.
         if (urlSource) {
 const requestedSource = sources.find(item => item.id === urlSource);
@@ -547,15 +549,19 @@ temporaryErrorSource = null;
 temporaryErrorSource = urlSource; selectedSource = urlSource; updateSourceMenu();
             // Attempt to load it anyway.
             // The resulting error will be displayed normally.
-await loadRemoteSource(urlSource);
-    return;
-            }
-        // Normal enabled menu item, or a source that doesn't appear in the menu.
+loadResult= await loadRemoteSource(urlSource);
+            } else {
+            // Normal enabled menu item, or a source that doesn't appear in the menu.
 selectedSource = requestedSource ? urlSource : null; updateSourceMenu();
 if (selectedSource) positionKeyboardSelection(requestedSource, true);
-await loadRemoteSource(urlSource);
-    return;
-        }
+loadResult= await loadRemoteSource(urlSource);
+        }  }
+        if( loadResult === false ) {
+groupMenu.querySelector(".groupOption.selected")?.focus(); 
+        }else if( loadResult === true ) {
+          if (document.activeElement === document.body) {
+document.getElementById( testMode ? "testButton" : "draftButton" ).focus();
+        } } else {
     // ==================================================
     // NO URL SOURCE SPECIFIED
     // ==================================================
@@ -564,13 +570,18 @@ const firstEnabled = initialSources.find(source => source.enabled);
 selectedSource = firstEnabled ? firstEnabled.id : null;
 renderMenuCategories(); renderSourceMenu(); updateSourceMenu();
 if (firstEnabled) positionKeyboardSelection(firstEnabled, true);
-        if (!firstEnabled) {
-status.className = "error"; status.textContent = "No available sources were found.";
-        } else if (testMode) {
+          if (testMode) {
 status.className = ""; status.textContent = "Please select a source file or select a source from the menu.";
-        } else {
-status.className = ""; status.textContent = "Please select a source.";
-    }   }
+fileInput.focus();
+          } else if (!firstEnabled) {
+status.className = "error"; status.textContent = "No available sources were found.";
+groupMenu.querySelector(".groupOption.selected")?.focus();
+          } else {
+loadResult = await loadRemoteSource(firstEnabled.id);
+if (loadResult === false) { groupMenu.querySelector(".groupOption.selected")?.focus();
+  } else if (loadResult === true) { if (document.activeElement === document.body) {
+  document.getElementById( "draftButton" ).focus(); } }
+    }   } }
 
 // ==================================================
 // PARSE CONTROL LINE
