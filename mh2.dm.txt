@@ -15,14 +15,6 @@
 # unimplemented foil slot alternate arts for rare/mythic
 [Settings]
 {
-`      3 init mh2A lay_mh2A p1_mh2A p2_mh2A p3_mh2A c_mh2A c_mh2Af u_mh2A r_mh2
-# Modern Horizons 2 (US) inc foil
-# Common colour balance 5(29.07%)4(79.11%)3(98.29%)2(100%)...(-U|-R|-G:20.36%,-W|-B:16.23%)
-    "name": "MH2 cu(A) inc foil",
-`      3 init mh2An lay_mh2An p1_mh2An p2_mh2An p3_mh2An c_mh2A u_mh2A r_mh2
-# Modern Horizons 2 (US) nofoil
-# Common colour balance 5(91.88%)4(99.72%)3(100%)...(-B:2.7273%,-W:2.1074%,-G:1.8148%,-R:0.8835%,-U:0.8717%)
-    "name": "MH2 cu(A) nofoil",
 `      3 init mh2B lay_mh2B p1_mh2B p2_mh2B p3_mh2B c_mh2B c_mh2Bf u_mh2A r_mh2
 # Modern Horizons 2 (B) inc foil - uses US uncommons
 # Common colour balance 5(99.12%)4(100%)...(-G:0.3433%,-R:0.3364%,-W:0.1049%,-B:0.0945%)
@@ -39,6 +31,14 @@
 # Modern Horizons 2 (J) nofoil - uses US uncommons
 # Common colour balance 5(96.12%)4(99.47%)3(100%)...(-R:2.9376%,-U:1.4688%)
     "name": "MH2 c(J)u(A) nofoil",
+`      3 init mh2A lay_mh2A p1_mh2A p2_mh2A p3_mh2A c_mh2A c_mh2Af u_mh2A r_mh2
+# Modern Horizons 2 (US) inc foil
+# Common colour balance 5(91.88%)4(99.72%)3(100%)...(-B:2.7273%,-W:2.1074%,-G:1.8148%,-R:0.8835%,-U:0.8717%)
+    "name": "MH2 cu(A) inc foil",
+`      3 init mh2An lay_mh2An p1_mh2An p2_mh2An p3_mh2An c_mh2A u_mh2A r_mh2
+# Modern Horizons 2 (US) nofoil
+# Common colour balance 5(89.11%)4(99.53%)3(100%)...(-B:4.5455%,-W:3.5124%,-G:1.6768%,-R:0.8145%,-U:0.8085%)
+    "name": "MH2 cu(A) nofoil",
     "duplicateProtection": false, "colorBalance": false,
     "withReplacement": true,
     "showSheets": true,
