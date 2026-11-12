@@ -1,0 +1,648 @@
+[Settings]
+{
+# common collation US new , uncommon collation US new
+# initial work by MichaelAngelo. I just corrected the layout weights, and merged the uncommon selection, and tidied up the reprint slot
+    "name": "MH2 cu(A) nofoil",
+    "withReplacement": true,
+    "showSheets": true,
+    "boostersPerPlayer": 3,
+    
+    "layouts": {
+# US commons A(33) B(22) C1(27½) B(18⅓) - uncommons A(40) B(40)
+"mh2_BC1":{"weight": 6,"slots":[{"name": "common##mh2A","count":3}, {"name": "common##mh2B","count":2}, {"name": "common##mh2C1","count":5}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2A", "weight":1}, {"name":"uncommon##mh2B", "weight":1}]}, {"name":"reprint", "count":1,"sheets":[{"name":"uncommon##mh2R", "weight":20}, {"name":"rarReprint##mh2", "weight":9}, {"name":"mytReprint##mh2", "weight":1}]}, {"name":"rare", "count":1,"sheets":[{"name":"rare##mh2", "weight":6}, {"name":"mythic##mh2", "weight":1}]} ]},
+"mh2_CC1":{"weight": 5,"slots":[{"name": "common##mh2A","count":3}, {"name": "common##mh2B","count":1}, {"name": "common##mh2C1","count":6}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2A", "weight":1}, {"name":"uncommon##mh2B", "weight":1}]}, {"name":"reprint", "count":1,"sheets":[{"name":"uncommon##mh2R", "weight":20}, {"name":"rarReprint##mh2", "weight":9}, {"name":"mytReprint##mh2", "weight":1}]}, {"name":"rare", "count":1,"sheets":[{"name":"rare##mh2", "weight":6}, {"name":"mythic##mh2", "weight":1}]} ]},
+"mh2_AC2":{"weight": 2,"slots":[{"name": "common##mh2A","count":4}, {"name": "common##mh2B","count":2}, {"name": "common##mh2C2","count":4}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2A", "weight":1}, {"name":"uncommon##mh2B", "weight":1}]}, {"name":"reprint", "count":1,"sheets":[{"name":"uncommon##mh2R", "weight":20}, {"name":"rarReprint##mh2", "weight":9}, {"name":"mytReprint##mh2", "weight":1}]}, {"name":"rare", "count":1,"sheets":[{"name":"rare##mh2", "weight":6}, {"name":"mythic##mh2", "weight":1}]} ]},
+"mh2_BC2":{"weight": 4,"slots":[{"name": "common##mh2A","count":4}, {"name": "common##mh2B","count":3}, {"name": "common##mh2C2","count":3}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2A", "weight":1}, {"name":"uncommon##mh2B", "weight":1}]}, {"name":"reprint", "count":1,"sheets":[{"name":"uncommon##mh2R", "weight":20}, {"name":"rarReprint##mh2", "weight":9}, {"name":"mytReprint##mh2", "weight":1}]}, {"name":"rare", "count":1,"sheets":[{"name":"rare##mh2", "weight":6}, {"name":"mythic##mh2", "weight":1}]} ]},
+"mh2_CC2":{"weight": 5,"slots":[{"name": "common##mh2A","count":3}, {"name": "common##mh2B","count":3}, {"name": "common##mh2C2","count":4}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2A", "weight":1}, {"name":"uncommon##mh2B", "weight":1}]}, {"name":"reprint", "count":1,"sheets":[{"name":"uncommon##mh2R", "weight":20}, {"name":"rarReprint##mh2", "weight":9}, {"name":"mytReprint##mh2", "weight":1}]}, {"name":"rare", "count":1,"sheets":[{"name":"rare##mh2", "weight":6}, {"name":"mythic##mh2", "weight":1}]} ]},
+    },
+    "predetermined_layouts": [[
+"mh2_BC1","mh2_CC1","mh2_AC2","mh2_BC2","mh2_CC2"
+    ],[
+"mh2_BC1","mh2_CC1","mh2_AC2","mh2_BC2","mh2_CC2"
+    ],[
+"mh2_BC1","mh2_CC1","mh2_AC2","mh2_BC2","mh2_CC2"
+    ]]
+}
+[common##mh2A {"collation":"printRun"}]
+Shattered Ego (mh2) 62
+Lightning Spear (mh2) 134
+Burdened Aerialist (mh2) 38
+Duskshell Crawler (mh2) 156
+Mount Velus Manticore (mh2) 136
+Jewel-Eyed Cobra (mh2) 168
+Foul Watcher (mh2) 43
+Rift Sower (mh2) 170
+Unholy Heat (mh2) 145
+Steelfin Whale (mh2) 65
+Crack Open (mh2) 154
+Arcbound Tracker (mh2) 112
+Lose Focus (mh2) 49
+Orchard Strider (mh2) 169
+Gouged Zealot (mh2) 131
+Mental Journey (mh2) 51
+Deepwood Denizen (mh2) 155
+Tavern Scoundrel (mh2) 144
+Hard Evidence (mh2) 46
+Urban Daggertooth (mh2) 181
+Battle Plan (mh2) 114
+Etherium Spinner (mh2) 40
+Smell Fear (mh2) 173
+Arcbound Slasher (mh2) 111
+Recalibrate (mh2) 57
+Flourishing Strike (mh2) 159
+Skophos Reaver (mh2) 140
+Parcel Myr (mh2) 54
+Bannerhide Krushok (mh2) 149
+Revolutionist (mh2) 139
+Shattered Ego (mh2) 62
+Funnel-Web Recluse
+Mount Velus Manticore (mh2) 136
+Burdened Aerialist (mh2) 38
+Jewel-Eyed Cobra (mh2) 168
+Lightning Spear (mh2) 134
+So Shiny (mh2) 63
+Viashino Lashclaw (mh2) 146
+Duskshell Crawler (mh2) 156
+Steelfin Whale (mh2) 65
+Unholy Heat (mh2) 145
+Rift Sower (mh2) 170
+Foul Watcher (mh2) 43
+Gouged Zealot (mh2) 131
+Orchard Strider (mh2) 169
+Mental Journey (mh2) 51
+Battle Plan (mh2) 114
+Crack Open (mh2) 154
+Lose Focus (mh2) 49
+Arcbound Tracker (mh2) 112
+Deepwood Denizen (mh2) 155
+Hard Evidence (mh2) 46
+Skophos Reaver (mh2) 140
+Urban Daggertooth (mh2) 181
+Etherium Spinner (mh2) 40
+Tavern Scoundrel (mh2) 144
+Smell Fear (mh2) 173
+So Shiny (mh2) 63
+Revolutionist (mh2) 139
+Flourishing Strike (mh2) 159
+Recalibrate (mh2) 57
+Arcbound Slasher (mh2) 111
+Funnel-Web Recluse
+Parcel Myr (mh2) 54
+Viashino Lashclaw (mh2) 146
+Bannerhide Krushok (mh2) 149
+
+[common##mh2B {"collation":"printRun"}]
+Guardian Kirin (mh2) 15
+Bone Shards (mh2) 76
+Break Ties (mh2) 8
+Nested Shambler (mh2) 95
+Marble Gargoyle (mh2) 21
+Kitchen Imp (mh2) 89
+Blacksmith's Skill (mh2) 6
+Hell Mongrel (mh2) 88
+Unbounded Potential (mh2) 36
+Gilt-Blade Prowler (mh2) 86
+Arcbound Prototype (mh2) 4
+World-Weary (mh2) 109
+Lens Flare (mh2) 20
+Loathsome Curator (mh2) 91
+Knighted Myr (mh2) 17
+Vermin Gorger (mh2) 107
+Landscaper Colos (mh2) 18
+Cabal Initiate (mh2) 78
+Soul of Migration (mh2) 33
+Sinister Starfish (mh2) 99
+Late to Dinner (mh2) 19
+Bone Shards (mh2) 76
+Guardian Kirin (mh2) 15
+Nested Shambler (mh2) 95
+Break Ties (mh2) 8
+Tizerus Charger (mh2) 101
+Marble Gargoyle (mh2) 21
+Hell Mongrel (mh2) 88
+Blacksmith's Skill (mh2) 6
+Gilt-Blade Prowler (mh2) 86
+Arcbound Prototype (mh2) 4
+Kitchen Imp (mh2) 89 
+Unbounded Potential (mh2) 36
+World-Weary (mh2) 109
+Knighted Myr (mh2) 17
+Loathsome Curator (mh2) 91
+Landscaper Colos (mh2) 18
+Cabal Initiate (mh2) 78
+Lens Flare (mh2) 20 
+Vermin Gorger (mh2) 107
+Guardian Kirin (mh2) 15
+Sinister Starfish (mh2) 99
+Late to Dinner (mh2) 19
+Nested Shambler (mh2) 95 
+Soul of Migration (mh2) 33
+Bone Shards (mh2) 76
+Break Ties (mh2) 8
+Hell Mongrel (mh2) 88
+Marble Gargoyle (mh2) 21 
+Gilt-Blade Prowler (mh2) 86
+Blacksmith's Skill (mh2) 6
+Tizerus Charger (mh2) 101
+Arcbound Prototype (mh2) 4
+World-Weary (mh2) 109 
+Unbounded Potential (mh2) 36
+Loathsome Curator (mh2) 91
+Knighted Myr (mh2) 17
+Kitchen Imp (mh2) 89
+Landscaper Colos (mh2) 18
+Vermin Gorger (mh2) 107
+Lens Flare (mh2) 20
+Cabal Initiate (mh2) 78
+Late to Dinner (mh2) 19
+Sinister Starfish (mh2) 99
+Soul of Migration (mh2) 33
+Tizerus Charger (mh2) 101
+
+[common##mh2C1 {"collation":"printRun"}]
+Arcbound Mouser (mh2) 3
+Drossforge Bridge (mh2) 246
+Piercing Rays (mh2) 24
+Rustvale Bridge (mh2) 253
+Chrome Courier (mh2) 190
+Tourach's Canticle (mh2) 103
+Fodder Tosser (mh2) 226
+Breathless Knight (mh2) 187
+Tormod's Cryptkeeper (mh2) 239
+Razortide Bridge (mh2) 252
+Myr Scrapling (mh2) 230
+Silverbluff Bridge (mh2) 255
+Disciple of the Sun (mh2) 11
+Storm God's Oracle (mh2) 213
+Mistvault Bridge (mh2) 249
+Echoing Return (mh2) 83
+Slagwoods Bridge (mh2) 256
+Tragic Fall (mh2) 104
+Drey Keeper (mh2) 194
+Fairgrounds Patrol (mh2) 13
+Discerning Taste (mh2) 82
+Piercing Rays (mh2) 24
+Tanglepool Bridge (mh2) 257
+Dihada's Ploy (mh2) 193
+Darkmoss Bridge (mh2) 245
+Arcbound Mouser (mh2) 3
+Foundry Helix (mh2) 196
+Sojourner's Companion (mh2) 235
+Drossforge Bridge (mh2) 246
+Captured By Lagacs (mh2) 188
+Bottle Golems (mh2) 222
+Chrome Courier (mh2) 190
+Rustvale Bridge (mh2) 253
+Breathless Knight (mh2) 187
+Razortide Bridge (mh2) 252
+Myr Scrapling (mh2) 230
+Fodder Tosser (mh2) 226
+Silverbluff Bridge (mh2) 255
+Disciple of the Sun (mh2) 11
+Tormod's Cryptkeeper (mh2) 239
+Tourach's Canticle (mh2) 103
+Mistvault Bridge (mh2) 249
+Drey Keeper (mh2) 194
+Tragic Fall (mh2) 104
+Fairgrounds Patrol (mh2) 13
+Discerning Taste (mh2) 82
+Storm God's Oracle (mh2) 213
+Slagwoods Bridge (mh2) 256
+Foundry Helix (mh2) 196
+Darkmoss Bridge (mh2) 245
+Echoing Return (mh2) 83
+Dihada's Ploy (mh2) 193
+Tanglepool Bridge (mh2) 257
+Captured By Lagacs (mh2) 188
+Sojourner's Companion (mh2) 235
+
+[common##mh2C2 {"collation":"printRun"}]
+Terminal Agony (mh2) 215 
+Glimmer Bairn (mh2) 163
+Faithless Salvaging (mh2) 122 
+Jade Avenger (mh2) 167
+Aeromoeba (mh2) 37
+Chatterstorm (mh2) 152
+Ornithopter of Paradise (mh2) 232 
+Goblin Anarchomancer (mh2) 200
+Abundant Harvest (mh2) 147 
+Mine Collapse (mh2) 135 
+Goldmire Bridge (mh2) 247
+Thornglint Bridge (mh2) 258
+Phantasmal Dreadmaw (mh2) 55
+Wavesifter (mh2) 217
+Galvanic Relay (mh2) 127
+Gargadon (mh2) 128 
+Glimmer Bairn (mh2) 163
+Faithless Salvaging (mh2) 122
+Terminal Agony (mh2) 215
+Chatterstorm (mh2) 152
+Step Through (mh2) 66
+Jade Avenger (mh2) 167 
+Floodhound (mh2) 42
+Mine Collapse (mh2) 135 
+Goblin Anarchomancer (mh2) 200
+Abundant Harvest (mh2) 147
+Ornithopter of Paradise (mh2) 232
+Aeromoeba (mh2) 37
+Galvanic Relay (mh2) 127 
+Goldmire Bridge (mh2) 247
+Phantasmal Dreadmaw (mh2) 55
+Thornglint Bridge (mh2) 258
+Wavesifter (mh2) 217
+Gargadon (mh2) 128
+Floodhound (mh2) 42 
+Jade Avenger (mh2) 167
+Terminal Agony (mh2) 215
+Chatterstorm (mh2) 152 
+Step Through (mh2) 66
+Glimmer Bairn (mh2) 163 
+Faithless Salvaging (mh2) 122
+Mine Collapse (mh2) 135 
+Goblin Anarchomancer (mh2) 200 
+Abundant Harvest (mh2) 147
+Ornithopter of Paradise (mh2) 232
+Aeromoeba (mh2) 37 
+Galvanic Relay (mh2) 127
+Phantasmal Dreadmaw (mh2) 55 
+Thornglint Bridge (mh2) 258
+Goldmire Bridge (mh2) 247
+Wavesifter (mh2) 217
+Bottle Golems (mh2) 222
+Step Through (mh2) 66 
+Gargadon (mh2) 128
+Floodhound (mh2) 42
+
+[uncommon##mh2A {"collation":"printRun"}]
+Barbed Spike (mh2) 5
+Monoskelion (mh2) 229
+Scurry Oak (mh2) 172
+Flametongue Yearling (mh2) 125
+Young Necromancer (mh2) 110
+Lazotep Chancellor (mh2) 203 
+Arcbound Javelineer (mh2) 2
+Liquimetal Torque (mh2) 228
+Herd Baloth (mh2) 165
+Fast // Furious (mh2) 123
+Scour the Desert (mh2) 28
+Arcus Acolyte (mh2) 185
+Specimen Collector (mh2) 64
+Blessed Respite (mh2) 150
+Radiant Epicure (mh2) 98
+Glorious Enforcer (mh2) 14
+Glinting Creeper (mh2) 164
+Road // Ruin (mh2) 212 
+Necromancer's Familiar (mh2) 94
+Steel Dromedary (mh2) 237
+Combine Chrysalis (mh2) 191
+Strike It Rich (mh2) 143
+Power Depot (mh2) 251
+Vile Entomber (mh2) 108
+Arcbound Shikari (mh2) 184 
+Batterbone (mh2) 221
+Arcbound Whelp (mh2) 113 
+Timeless Witness (mh2) 179
+Flay Essence (mh2) 85
+Flame Blitz (mh2) 124
+Vectis Gloves (mh2) 241
+Healer's Flock (mh2) 16
+Clattering Augur (mh2) 79
+Raving Visionary (mh2) 56
+Ethersworn Sphinx (mh2) 195
+Break the Ice (mh2) 77
+Altar of the Goyf (mh2) 220
+Arcbound Javelineer (mh2) 2
+Young Necromancer (mh2) 110
+Squirrel Sanctuary (mh2) 174
+Lucid Dreams (mh2) 50
+Barbed Spike (mh2) 5
+Lazotep Chancellor (mh2) 203
+Blazing Rootwalla (mh2) 115 
+Monoskelion (mh2) 229
+Scurry Oak (mh2) 172
+Flametongue Yearling (mh2) 125
+Scour the Desert (mh2) 28
+Liquimetal Torque (mh2) 228
+Blessed Respite (mh2) 150
+Arcus Acolyte (mh2) 185 
+Fast // Furious (mh2) 123
+Radiant Epicure (mh2) 98
+Specimen Collector (mh2) 64
+Herd Baloth (mh2) 165
+Strike It Rich (mh2) 143
+Necromancer's Familiar (mh2) 94
+Glorious Enforcer (mh2) 14
+Glinting Creeper (mh2) 164
+Combine Chrysalis (mh2) 191
+Steel Dromedary (mh2) 237
+Power Depot (mh2) 251
+Road // Ruin (mh2) 212
+Batterbone (mh2) 221
+Vile Entomber (mh2) 108 
+Flame Blitz (mh2) 124
+Timeless Witness (mh2) 179
+Healer's Flock (mh2) 16
+Flay Essence (mh2) 85
+Arcbound Shikari (mh2) 184
+Arcbound Whelp (mh2) 113
+Vectis Gloves (mh2) 241
+Clattering Augur (mh2) 79
+Raving Visionary (mh2) 56
+Ethersworn Sphinx (mh2) 195 
+Break the Ice (mh2) 77
+Squirrel Sanctuary (mh2) 174
+Altar of the Goyf (mh2) 220
+Lucid Dreams (mh2) 50
+Arcbound Javelineer (mh2) 2
+Young Necromancer (mh2) 110
+Blessed Respite (mh2) 150
+Scour the Desert (mh2) 28
+Blazing Rootwalla (mh2) 115
+Monoskelion (mh2) 229
+Barbed Spike (mh2) 5
+Flametongue Yearling (mh2) 125 
+Lazotep Chancellor (mh2) 203
+Scurry Oak (mh2) 172
+Liquimetal Torque (mh2) 228 
+Specimen Collector (mh2) 64
+Radiant Epicure (mh2) 98
+Fast // Furious (mh2) 123
+Herd Baloth (mh2) 165
+Arcus Acolyte (mh2) 185
+Necromancer's Familiar (mh2) 94
+Glorious Enforcer (mh2) 14
+Strike It Rich (mh2) 143
+Road // Ruin (mh2) 212
+Glinting Creeper (mh2) 164
+Batterbone (mh2) 221
+Combine Chrysalis (mh2) 191 
+Power Depot (mh2) 251
+Vile Entomber (mh2) 108
+Flame Blitz (mh2) 124
+Steel Dromedary (mh2) 237
+Timeless Witness (mh2) 179 
+Healer's Flock (mh2) 16
+Arcbound Whelp (mh2) 113
+Arcbound Shikari (mh2) 184
+Altar of the Goyf (mh2) 220
+Flay Essence (mh2) 85
+Ethersworn Sphinx (mh2) 195
+Squirrel Sanctuary (mh2) 174
+Clattering Augur (mh2) 79
+Vectis Gloves (mh2) 241
+Raving Visionary (mh2) 56
+Break the Ice (mh2) 77
+Blazing Rootwalla (mh2) 115
+Lucid Dreams (mh2) 50
+
+[uncommon##mh2B {"collation":"printRun"}]
+Archfiend of Sorrows (mh2) 74
+Prophetic Titan (mh2) 209 
+Slag Strider (mh2) 141
+Said // Done (mh2) 60
+Wren's Run Hydra (mh2) 183
+Skyblade's Boon (mh2) 31
+Sweep the Skies (mh2) 70
+Sanctuary Raptor (mh2) 233
+Constable of the Realm (mh2) 10
+Goblin Traprunner (mh2) 130
+Ravenous Squirrel (mh2) 211
+Tide Shaper (mh2) 72
+Tireless Provisioner (mh2) 180
+Kaleidoscorch (mh2) 133
+Filigree Attendant (mh2) 41
+Foundation Breaker (mh2) 160
+Sudden Edict (mh2) 100 
+Prismatic Ending (mh2) 25
+Dragon's Rage Channeler (mh2) 121
+Junk Winder (mh2) 48
+Rakdos Headliner (mh2) 210
+Legion Vanguard (mh2) 90
+Terramorph (mh2) 177
+Graceful Restoration (mh2) 201
+Thraben Watcher (mh2) 34
+Vedalken Infiltrator (mh2) 73
+Caprichrome (mh2) 9
+The Underworld Cookbook (mh2) 240 
+Captain Ripley Vance (mh2) 119
+Underworld Hermit (mh2) 105
+Abiding Grace (mh2) 1
+Brainstone (mh2) 223 
+Mystic Redaction (mh2) 53
+Feast of Sanity (mh2) 84
+Squirrel Sovereign (mh2) 175
+Ghost-Lit Drifter (mh2) 45
+Slag Strider (mh2) 141
+Blossoming Calm (mh2) 7 
+Said // Done (mh2) 60
+Spreading Insurrection (mh2) 142
+Prophetic Titan (mh2) 209
+Archfiend of Sorrows (mh2) 74
+Scuttletide (mh2) 61
+Fae Offering (mh2) 158
+Sanctuary Raptor (mh2) 233
+Tide Shaper (mh2) 72
+Kaleidoscorch (mh2) 133
+Tireless Provisioner (mh2) 180
+Constable of the Realm (mh2) 10
+Goblin Traprunner (mh2) 130
+Ravenous Squirrel (mh2) 211 
+Foundation Breaker (mh2) 160
+Skyblade's Boon (mh2) 31
+Legion Vanguard (mh2) 90
+Junk Winder (mh2) 48
+Wren's Run Hydra (mh2) 183
+Rakdos Headliner (mh2) 210
+Sweep the Skies (mh2) 70
+Prismatic Ending (mh2) 25 
+Sudden Edict (mh2) 100
+Filigree Attendant (mh2) 41
+Dragon's Rage Channeler (mh2) 121
+Graceful Restoration (mh2) 201
+Caprichrome (mh2) 9
+Vedalken Infiltrator (mh2) 73
+The Underworld Cookbook (mh2) 240
+Terramorph (mh2) 177
+Thraben Watcher (mh2) 34
+Ghost-Lit Drifter (mh2) 45
+Feast of Sanity (mh2) 84
+Squirrel Sovereign (mh2) 175 
+Scuttletide (mh2) 61
+Captain Ripley Vance (mh2) 119
+Abiding Grace (mh2) 1
+Mystic Redaction (mh2) 53
+Underworld Hermit (mh2) 105 
+Brainstone (mh2) 223
+Slag Strider (mh2) 141
+Said // Done (mh2) 60
+Prophetic Titan (mh2) 209
+Spreading Insurrection (mh2) 142
+Blossoming Calm (mh2) 7
+Fae Offering (mh2) 158
+Archfiend of Sorrows (mh2) 74
+Kaleidoscorch (mh2) 133
+Tireless Provisioner (mh2) 180
+Skyblade's Boon (mh2) 31
+Tide Shaper (mh2) 72 
+Ravenous Squirrel (mh2) 211
+Constable of the Realm (mh2) 10
+Sanctuary Raptor (mh2) 233
+Goblin Traprunner (mh2) 130
+Wren's Run Hydra (mh2) 183
+Sweep the Skies (mh2) 70
+Sudden Edict (mh2) 100
+Junk Winder (mh2) 48
+Foundation Breaker (mh2) 160
+Legion Vanguard (mh2) 90
+Prismatic Ending (mh2) 25
+Rakdos Headliner (mh2) 210 
+Dragon's Rage Channeler (mh2) 121
+Filigree Attendant (mh2) 41
+Terramorph (mh2) 177
+Caprichrome (mh2) 9
+The Underworld Cookbook (mh2) 240
+Vedalken Infiltrator (mh2) 73
+Graceful Restoration (mh2) 201
+Thraben Watcher (mh2) 34
+Squirrel Sovereign (mh2) 175
+Ghost-Lit Drifter (mh2) 45
+Brainstone (mh2) 223
+Feast of Sanity (mh2) 84
+Mystic Redaction (mh2) 53 
+Abiding Grace (mh2) 1
+Captain Ripley Vance (mh2) 119
+Underworld Hermit (mh2) 105
+Scuttletide (mh2) 61
+Fae Offering (mh2) 158
+Spreading Insurrection (mh2) 142
+Blossoming Calm (mh2) 7
+
+[mytReprint##mh2]
+Imperial Recruiter (mh2) 281
+Titania, Protector of Argoth (mh2) 287
+Mirari's Wake (mh2) 291
+Cabal Coffers (mh2) 301
+[rarReprint##mh2]
+Karmic Guide (mh2) 263
+Solitary Confinement (mh2) 265
+Upheaval (mh2) 270
+Wonder (mh2) 271
+Braids, Cabal Minion (mh2) 273
+Patriarch's Bidding (mh2) 275
+Chance Encounter (mh2) 277
+Goblin Bombardment (mh2) 279
+Enchantress's Presence (mh2) 283
+Squirrel Mob (mh2) 286
+Chainer, Nightmare Adept (mh2) 289
+Fire // Ice (mh2) 290
+Shardless Agent (mh2) 292
+Sterling Grove (mh2) 293
+Vindicate (mh2) 294
+Cursed Totem (mh2) 295
+Nevinyrral's Disk (mh2) 298
+Riptide Laboratory (mh2) 303
+[uncommon##mh2R]
+Angelic Curator (mh2) 262
+Seal of Cleansing (mh2) 264
+Soul Snare (mh2) 266
+Counterspell (mh2) 267
+Sea Drake (mh2) 268
+Seal of Removal (mh2) 269
+Bone Shredder (mh2) 272
+Greed (mh2) 274
+Skirge Familiar (mh2) 276
+Flame Rift (mh2) 278
+Gorilla Shaman (mh2) 280
+Mogg Salvage (mh2) 282
+Hunting Pack (mh2) 284
+Quirion Ranger (mh2) 285
+Yavimaya Elder (mh2) 288
+Extruder (mh2) 296
+Millikin (mh2) 297
+Patchwork Gnomes (mh2) 299
+Zuran Orb (mh2) 300
+Mishra's Factory (mh2) 302
+
+[rare##mh2]
+Academy Manufactor (MH2) 219
+Aeve, Progenitor Ooze (MH2) 148
+Arid Mesa (MH2) 244
+Asmoranomardicadaistinaculdacar (MH2) 186
+Bloodbraid Marauder (MH2) 116
+Breya's Apprentice (MH2) 117
+Calibrated Blast (MH2) 118
+Carth the Lion (MH2) 189
+Chef's Kiss (MH2) 120
+Chitterspitter (MH2) 153
+Damn (MH2) 80
+Dauthi Voidwalker (MH2) 81
+Dermotaxi (MH2) 224
+Diamond Lion (MH2) 225
+Dress Down (MH2) 39
+Esper Sentinel (MH2) 12
+Fractured Sanity (MH2) 44
+Gaea's Will (MH2) 162
+General Ferrous Rokiric (MH2) 198
+Glimpse of Tomorrow (MH2) 129
+Harmonic Prodigy (MH2) 132
+Ignoble Hierarch (MH2) 166
+Inevitable Betrayal (MH2) 47
+Lonis, Cryptozoologist (MH2) 204
+Magus of the Bridge (MH2) 92
+Marsh Flats (MH2) 248
+Master of Death (MH2) 205
+Misty Rainforest (MH2) 250
+Moderation (MH2) 206
+Necrogoyf (MH2) 93
+Nettlecyst (MH2) 231
+Nykthos Paragon (MH2) 22
+Obsidian Charmaw (MH2) 137
+Out of Time (MH2) 23
+Persist (MH2) 96
+Piru, the Volatile (MH2) 207
+Priest of Fell Rites (MH2) 208
+Profane Tutor (MH2) 97
+Resurgent Belief (MH2) 26
+Rise and Shine (MH2) 58
+Rishadan Dockhand (MH2) 59
+Sanctifier en-Vec (MH2) 27
+Sanctum Weaver (MH2) 171
+Scalding Tarn (MH2) 254
+Search the Premises (MH2) 29
+Sol Talisman (MH2) 236
+Suspend (MH2) 68
+Sylvan Anthem (MH2) 176
+Sythis, Harvest's Hand (MH2) 214
+Territorial Kavu (MH2) 216
+Thought Monitor (MH2) 71
+Timeless Dragon (MH2) 35
+Unmarked Grave (MH2) 106
+Urza's Saga (MH2) 259
+Verdant Catacombs (MH2) 260
+Verdant Command (MH2) 182
+Void Mirror (MH2) 242
+Yavimaya, Cradle of Growth (MH2) 261
+Yusri, Fortune's Flame (MH2) 218
+Zabaz, the Glimmerwasp (MH2) 243
+
+[mythic##mh2]
+Archon of Cruelty (mh2) 75
+Chatterfang, Squirrel General (mh2) 151
+Dakkon, Shadow Slayer (mh2) 192
+Endurance (mh2) 157
+Fury (mh2) 126
+Garth One-Eye (mh2) 197
+Geyadrone Dihada (mh2) 199
+Grief (mh2) 87
+Grist, the Hunger Tide (mh2) 202
+Kaldra Compleat (mh2) 227
+Murktide Regent (mh2) 52
+Ragavan, Nimble Pilferer (mh2) 138
+Scion of Draco (mh2) 234
+Serra's Emissary (mh2) 30
+Solitude (mh2) 32
+Subtlety (mh2) 67
+Svyelun of Sea and Sky (mh2) 69
+Sword of Hearth and Home (mh2) 238
+Thrasta, Tempest's Roar (mh2) 178
+Tourach, Dread Cantor (mh2) 102
