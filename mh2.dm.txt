@@ -15,29 +15,29 @@
 # unimplemented foil slot alternate arts for rare/mythic
 [Settings]
 {
-`      3 init mh2B lay_mh2B p1_mh2B p2_mh2B p3_mh2B c_mh2B c_mh2Bf u_mh2A r_mh2
+`      3 init mh2B lay_mh2B p_mh2B c_mh2B c_mh2Bf u_mh2A r_mh2
 # Modern Horizons 2 (B) inc foil - uses US uncommons
-# Common colour balance 5(99.12%)4(100%)...(-G:0.3433%,-R:0.3364%,-W:0.1049%,-B:0.0945%)
+# Common short(2/3 Bottle Golems), colour balance 5(99.12%)4(100%)...(-G:0.34%,-R:0.34%,-W:0.10%,-B:0.09%)
     "name": "MH2 c(B)u(A) inc foil",
-`      3 init mh2Bn lay_mh2Bn p1_mh2Bn p2_mh2Bn p3_mh2Bn c_mh2B u_mh2A r_mh2
+`      3 init mh2Bn lay_mh2Bn p_mh2Bn c_mh2B u_mh2A r_mh2
 # Modern Horizons 2 (B) nofoil - uses US uncommons
-# Common colour balance 5(100%)
+# Common short(5/6 Bottle Golems), colour balance 5(100%)
     "name": "MH2 c(B)u(A) nofoil",
-`      3 init mh2J lay_mh2J p1_mh2J p2_mh2J p3_mh2J c_mh2J u_mh2A r_mh2
+`      3 init mh2J lay_mh2J p_mh2J c_mh2J u_mh2A r_mh2
 # Modern Horizons 2 (J) inc foil - uses US uncommons
-# Common colour balance 5(95.78%)4(99.36%)3(100%)...(-R:3.2409%,-U:1.6204%)
+# Common colour balance 5(95.78%)4(99.36%)3(100%)...(-R:3.24%,-U:1.62%)
     "name": "MH2 c(J)u(A) inc foil",
-`      3 init mh2Jn lay_mh2Jn p1_mh2Jn p2_mh2Jn p3_mh2Jn c_mh2J u_mh2A r_mh2
+`      3 init mh2Jn lay_mh2Jn p_mh2Jn c_mh2J u_mh2A r_mh2
 # Modern Horizons 2 (J) nofoil - uses US uncommons
-# Common colour balance 5(96.12%)4(99.47%)3(100%)...(-R:2.9376%,-U:1.4688%)
+# Common colour balance 5(96.12%)4(99.47%)3(100%)...(-R:2.94%,-U:1.47%)
     "name": "MH2 c(J)u(A) nofoil",
-`      3 init mh2A lay_mh2A p1_mh2A p2_mh2A p3_mh2A c_mh2A c_mh2Af u_mh2A r_mh2
+`      3 init mh2A lay_mh2A p_mh2A c_mh2Af c_mh2A u_mh2A r_mh2
 # Modern Horizons 2 (US) inc foil
-# Common colour balance 5(91.88%)4(99.72%)3(100%)...(-B:2.7273%,-W:2.1074%,-G:1.8148%,-R:0.8835%,-U:0.8717%)
+# Common short(5/6 Bottle Golems), colour balance 5(91.88%)4(99.72%)3(100%)...(-B:2.73%,-W:2.11%,-G:1.81%,-R:0.88%,-U:0.87%)
     "name": "MH2 cu(A) inc foil",
-`      3 init mh2An lay_mh2An p1_mh2An p2_mh2An p3_mh2An c_mh2A u_mh2A r_mh2
+`      3 init mh2An lay_mh2An p_mh2An c_mh2A u_mh2A r_mh2
 # Modern Horizons 2 (US) nofoil
-# Common colour balance 5(89.11%)4(99.53%)3(100%)...(-B:4.5455%,-W:3.5124%,-G:1.6768%,-R:0.8145%,-U:0.8085%)
+# Common short(5/6 Bottle Golems), colour balance 5(89.11%)4(99.53%)3(100%)...(-B:4.55%,-W:3.51%,-G:1.68%,-R:0.81%,-U:0.81%)
     "name": "MH2 cu(A) nofoil",
     "duplicateProtection": false, "colorBalance": false,
     "withReplacement": true,
@@ -63,66 +63,66 @@
 "mh2_AC2":{"weight": 2,"slots":[{"name": "common##mh2A","count":4}, {"name": "common##mh2B","count":2}, {"name": "common##mh2C2","count":4}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]} ]},
 "mh2_BC2":{"weight": 4,"slots":[{"name": "common##mh2A","count":4}, {"name": "common##mh2B","count":3}, {"name": "common##mh2C2","count":3}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]} ]},
 "mh2_CC2":{"weight": 5,"slots":[{"name": "common##mh2A","count":3}, {"name": "common##mh2B","count":3}, {"name": "common##mh2C2","count":4}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]} ]},
-`      1 c_mh2B
-# Belgian commons A(40⅓) B(40⅓) C(20)
-`      4 lay_mh2B
+`      5 lay_mh2B
+# Belgian commons A(40⅓) B(40⅓) C(20) - US uncommons α(40) β(40)
 "mh2_nf":{"weight":604,"slots":[{"name": "common##mh2A","count":4}, {"name": "common##mh2B","count":4}, {"name": "common##mh2C","count":2}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]} ]},
 "mh2__A":{"weight":115,"slots":[{"name": "common##mh2A","count":3}, {"name": "common##mh2B","count":4}, {"name": "common##mh2C","count":2}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"foil","foil":true,"count":1,"sheets":[{"name":"common##mh2A","weight":22264},{"name":"common##mh2B","weight":22264},{"name":"common##mh2C","weight":11040},{"name":"common##mh2Cx","weight":184},{"name":"uncommon##mh2α","weight":9292},{"name":"uncommon##mh2β","weight":9292},{"name":"uncReprint##mh2","weight":4646},{"name":"rare##mh2","weight":9090},{"name":"mythic##mh2","weight":1515},{"name":"rarReprint##mh2","weight":3030},{"name":"mytReprint##mh2","weight":303}]} ]},
 "mh2__B":{"weight":115,"slots":[{"name": "common##mh2A","count":4}, {"name": "common##mh2B","count":3}, {"name": "common##mh2C","count":2}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"foil","foil":true,"count":1,"sheets":[{"name":"common##mh2A","weight":22264},{"name":"common##mh2B","weight":22264},{"name":"common##mh2C","weight":11040},{"name":"common##mh2Cx","weight":184},{"name":"uncommon##mh2α","weight":9292},{"name":"uncommon##mh2β","weight":9292},{"name":"uncReprint##mh2","weight":4646},{"name":"rare##mh2","weight":9090},{"name":"mythic##mh2","weight":1515},{"name":"rarReprint##mh2","weight":3030},{"name":"mytReprint##mh2","weight":303}]} ]},
 "mh2__C":{"weight": 72,"slots":[{"name": "common##mh2A","count":4}, {"name": "common##mh2B","count":4}, {"name": "common##mh2C","count":1}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"foil","foil":true,"count":1,"sheets":[{"name":"common##mh2A","weight":22264},{"name":"common##mh2B","weight":22264},{"name":"common##mh2C","weight":11040},{"name":"common##mh2Cx","weight":184},{"name":"uncommon##mh2α","weight":9292},{"name":"uncommon##mh2β","weight":9292},{"name":"uncReprint##mh2","weight":4646},{"name":"rare##mh2","weight":9090},{"name":"mythic##mh2","weight":1515},{"name":"rarReprint##mh2","weight":3030},{"name":"mytReprint##mh2","weight":303}]} ]},
-`      1 lay_mh2Bn
+`      2 lay_mh2Bn
+# Belgian commons A(40⅓) B(40⅓) C(20+1/6) - US uncommons α(40) β(40)
 "mh2":{"weight": 1,"slots":[{"name": "common##mh2A","count":4}, {"name": "common##mh2B","count":4}, {"name": "common##mh2C","count":2}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]} ]},
 `      1 c_mh2J
 # Japanese commons A(27) B(37) C(37)
-`      4 lay_mh2J
+`      6 lay_mh2J
 "mh2_A": {"weight":66,"slots":[                                                                                                                                                                                                                                                                                                                                                                                                                                                        {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name": "common##mh2A","count":2}, {"name": "common##mh2B","count":4}, {"name": "common##mh2C","count":4}, ]},
 "mh2_B": {"weight":68,"slots":[                                                                                                                                                                                                                                                                                                                                                                                                                                                        {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name": "common##mh2A","count":3}, {"name": "common##mh2B","count":3}, {"name": "common##mh2C","count":4}, ]},
 "mh2_C": {"weight":68,"slots":[                                                                                                                                                                                                                                                                                                                                                                                                                                                        {"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name": "common##mh2A","count":3}, {"name": "common##mh2B","count":4}, {"name": "common##mh2C","count":3}, ]},
 "mh2_A_":{"weight":41,"slots":[{"name":"foil","foil":true,"count":1,"sheets":[{"name":"common##mh2A","weight":14904},{"name":"common##mh2B","weight":20424},{"name":"common##mh2C","weight":20424},{"name":"uncommon##mh2α","weight":9292},{"name":"uncommon##mh2β","weight":9292},{"name":"uncReprint##mh2","weight":4646},{"name":"rare##mh2","weight":9090},{"name":"mythic##mh2","weight":1515},{"name":"rarReprint##mh2","weight":3030},{"name":"mytReprint##mh2","weight":303}]},{"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name": "common##mh2A","count":3}, {"name": "common##mh2B","count":3}, {"name": "common##mh2C","count":3}, ]},
 "mh2_B_":{"weight":30,"slots":[{"name":"foil","foil":true,"count":1,"sheets":[{"name":"common##mh2A","weight":14904},{"name":"common##mh2B","weight":20424},{"name":"common##mh2C","weight":20424},{"name":"uncommon##mh2α","weight":9292},{"name":"uncommon##mh2β","weight":9292},{"name":"uncReprint##mh2","weight":4646},{"name":"rare##mh2","weight":9090},{"name":"mythic##mh2","weight":1515},{"name":"rarReprint##mh2","weight":3030},{"name":"mytReprint##mh2","weight":303}]},{"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name": "common##mh2A","count":2}, {"name": "common##mh2B","count":4}, {"name": "common##mh2C","count":3}, ]},
 "mh2_C_":{"weight":30,"slots":[{"name":"foil","foil":true,"count":1,"sheets":[{"name":"common##mh2A","weight":14904},{"name":"common##mh2B","weight":20424},{"name":"common##mh2C","weight":20424},{"name":"uncommon##mh2α","weight":9292},{"name":"uncommon##mh2β","weight":9292},{"name":"uncReprint##mh2","weight":4646},{"name":"rare##mh2","weight":9090},{"name":"mythic##mh2","weight":1515},{"name":"rarReprint##mh2","weight":3030},{"name":"mytReprint##mh2","weight":303}]},{"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name": "common##mh2A","count":2}, {"name": "common##mh2B","count":3}, {"name": "common##mh2C","count":4}, ]},
-`      1 lay_mh2Jn
+`      3 lay_mh2Jn
 "mh2_A":{"weight":33,"slots":[{"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name": "common##mh2A","count":2}, {"name": "common##mh2B","count":4}, {"name": "common##mh2C","count":4}, ]},
 "mh2_B":{"weight":34,"slots":[{"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name": "common##mh2A","count":3}, {"name": "common##mh2B","count":3}, {"name": "common##mh2C","count":4}, ]},
 "mh2_C":{"weight":34,"slots":[{"name":"rm","count":1,"sheets":[{"name":"rare##mh2","weight":2850},{"name":"mythic##mh2","weight":475},{"name":"rare##mh2R","weight":145},{"name":"rare##mh2S","weight":105},{"name":"mythic##mh2R","weight":15},{"name":"mythic##mh2S","weight":20},{"name":"mythic##mh2BL","weight":38}]},{"name":"reprint","count":1,"sheets":[{"name":"uncReprint##mh2","weight":520},{"name":"rarReprint##mh2","weight":234},{"name":"mytReprint##mh2","weight":26},{"name":"uncReprint##mh2R","weight":5},{"name":"rarReprint##mh2R","weight":2},{"name":"rarReprint##mh2BL","weight":2},{"name":"mytReprint##mh2R","weight":1},{"name":"mytReprint##mh2BL","weight":1}]}, {"name":"unc","count":3,"sheets":[{"name":"uncommon##mh2α", "weight":1}, {"name":"uncommon##mh2β", "weight":1}]}, {"name": "common##mh2A","count":3}, {"name": "common##mh2B","count":4}, {"name": "common##mh2C","count":3}, ]},
     },"predeterminedLayouts": [[
-`      1 p1_mh2A
+`      1 p_mh2A
 "mh2_BC1","mh2_CC1","mh2_AC2","mh2_BC2","mh2_CC2","mh2_A2_","mh2_B2_","mh2_C2_"
-`      1 p1_mh2An
+`      1 p_mh2An
 "mh2_BC1","mh2_CC1","mh2_AC2","mh2_BC2","mh2_CC2"
-`      1 p1_mh2B
+`      1 p_mh2B
 "mh2_nf","mh2__A","mh2__B","mh2__C"
-`      1 p1_mh2Bn
+`      1 p_mh2Bn
 "mh2"
-`      1 p1_mh2J
+`      1 p_mh2J
 "mh2_A","mh2_B","mh2_C","mh2_A_","mh2_B_","mh2_C_"
-`      1 p1_mh2Jn
+`      1 p_mh2Jn
 "mh2_A","mh2_B","mh2_C"
     ],[
-`      1 p2_mh2A
+`      1 p_mh2A
 "mh2_BC1","mh2_CC1","mh2_AC2","mh2_BC2","mh2_CC2","mh2_A2_","mh2_B2_","mh2_C2_"
-`      1 p2_mh2An
+`      1 p_mh2An
 "mh2_BC1","mh2_CC1","mh2_AC2","mh2_BC2","mh2_CC2"
-`      1 p2_mh2B
+`      1 p_mh2B
 "mh2_nf","mh2__A","mh2__B","mh2__C"
-`      1 p2_mh2Bn
+`      1 p_mh2Bn
 "mh2"
-`      1 p2_mh2J
+`      1 p_mh2J
 "mh2_A","mh2_B","mh2_C","mh2_A_","mh2_B_","mh2_C_"
-`      1 p2_mh2Jn
+`      1 p_mh2Jn
 "mh2_A","mh2_B","mh2_C"
     ],[
-`      1 p3_mh2A
+`      1 p_mh2A
 "mh2_BC1","mh2_CC1","mh2_AC2","mh2_BC2","mh2_CC2","mh2_A2_","mh2_B2_","mh2_C2_"
-`      1 p3_mh2An
+`      1 p_mh2An
 "mh2_BC1","mh2_CC1","mh2_AC2","mh2_BC2","mh2_CC2"
-`      1 p3_mh2B
+`      1 p_mh2B
 "mh2_nf","mh2__A","mh2__B","mh2__C"
-`      1 p3_mh2Bn
+`      1 p_mh2Bn
 "mh2"
-`      1 p3_mh2J
+`      1 p_mh2J
 "mh2_A","mh2_B","mh2_C","mh2_A_","mh2_B_","mh2_C_"
-`      1 p3_mh2Jn
+`      1 p_mh2Jn
 "mh2_A","mh2_B","mh2_C"
     ]]
 }
@@ -754,7 +754,7 @@ Mistvault Bridge (mh2) 249
 `      2 c_mh2Bf
 
 [common##mh2Cx]
-`      1 c_mh2B
+`      2 c_mh2B
 Bottle Golems (mh2) 222
 
 `      * c_mh2J
