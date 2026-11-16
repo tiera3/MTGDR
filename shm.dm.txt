@@ -41,6 +41,22 @@
 # Eventide cu(A) nofoil
 # Common colour balance 5(17.70%)4(56.01%)3(87.72%)2(97.70%)...(-R:30.60%,-G:30.55%,-W:29.53%,-U:28.51%,-B:21.76%)
     "name": "EVE cu(A) nofoil",
+`      3 init r_eve112A back_112eve lay_r_eve112A p_r_eve112A c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+# Redistributed 2x Shadowmoor + Eventide cu(A) inc foil
+# Common colour balance 5(23.31%)4(65.25%)3(91.26%)2(98.96%)...(-U:25.93%,-B:24.48%,-R:23.73%,-W:23.67%,-G:23.42%)
+    "name": "SHM+SHM+EVE cu(A) inc foil",
+`      3 init r_eve112An back_112eve lay_r_eve112An p_r_eve112An c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+# Redistributed 2x Shadowmoor + Eventide cu(A) nofoil
+# Common colour balance 5(24.94%)4(67.18%)3(92.09%)2(99.14%)...(-U:25.06%,-B:23.60%,-R:22.85%,-W:22.58%,-G:22.56%)
+    "name": "SHM+SHM+EVE cu(A) nofoil",
+`      3 init r_eve12A back_12eve lay_r_eve12A p_r_eve12A c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+# Redistributed Shadowmoor + Eventide cu(A) inc foil
+# Common colour balance 5(23.54%)4(65.26%)3(90.60%)2(98.91%)1(99.99%)(-W:25.81%,-U:25.01%,-R:24.26%,-G:23.84%,-B:22.77%)
+    "name": "SHM+EVE cu(A) inc foil",
+`      3 init r_eve12An back_12eve lay_r_eve12An p_r_eve12An c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+# Redistributed Shadowmoor + Eventide cu(A) nofoil
+# Common colour balance 5(24.50%)4(67.37%)3(91.71%)2(99.18%)1(100.00%)(-W:25.45%,-U:23.96%,-R:23.36%,-G:22.76%,-B:21.71%)
+    "name": "SHM+EVE cu(A) nofoil",
     "duplicateProtection": false, "colorBalance": false,
     "withReplacement": true,
     "showSheets": true,
@@ -83,6 +99,25 @@
 "eve_αA": { "weight": 616, "slots": [{"count":7,"name":"common##eveA"},{"count":4,"name":"common##eveB"},{"count":2,"name":"uncommon##eveα"},{"count":1,"name":"uncommon##eveβ"},{"count":1,"name":"rare##eve"} ]},
 "eve_β": { "weight":11704, "slots": [{"count":6,"name":"common##eveA"},{"count":5,"name":"common##eveB"},{"count":1,"name":"uncommon##eveα"},{"count":2,"name":"uncommon##eveβ"},{"count":1,"name":"rare##eve"} ]},
 "eve_βA": { "weight": 616, "slots": [{"count":7,"name":"common##eveA"},{"count":4,"name":"common##eveB"},{"count":1,"name":"uncommon##eveα"},{"count":2,"name":"uncommon##eveβ"},{"count":1,"name":"rare##eve"} ]},
+`      5 lay_r_eve112A
+"r_eve112_614": { "weight":263, "slots": [{"name":"common","count":6,"sheets":[{"name":"common##shmA"},{"name":"common##shmB"}]},{"name":"common","count":1,"sheets":[{"name":"common##shmC"},{"name":"common##shmD"}]},{"name":"common","count":4,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},{"name":"uncommon##eveβ"}]},              {"count":1,           "name":"rare##shm"} ]},
+"r_eve112_254": { "weight":639, "slots": [{"name":"common","count":2,"sheets":[{"name":"common##shmA"},{"name":"common##shmB"}]},{"name":"common","count":5,"sheets":[{"name":"common##shmC"},{"name":"common##shmD"}]},{"name":"common","count":4,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},{"name":"uncommon##eveβ"}]},              {"count":1,           "name":"rare##shm"} ]},
+"r_eve112_623": { "weight":451, "slots": [{"name":"common","count":6,"sheets":[{"name":"common##shmA"},{"name":"common##shmB"}]},{"name":"common","count":2,"sheets":[{"name":"common##shmC"},{"name":"common##shmD"}]},{"name":"common","count":3,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},{"name":"uncommon##eveβ"}]},              {"count":1,                                "name":"rare##eve"} ]},
+"r_eve112_253_":{ "weight":330, "slots": [{"name":"common","count":2,"sheets":[{"name":"common##shmA"},{"name":"common##shmB"}]},{"name":"common","count":5,"sheets":[{"name":"common##shmC"},{"name":"common##shmD"}]},{"name":"common","count":3,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},{"name":"uncommon##eveβ"}]},{"name":"rare","count":1,"sheets":[{"name":"rare##shm"},{"name":"rare##eve"} ]},{"name":"foil","foil":true,"count":1,"sheets":[{"name":"basic##shm","weight":4800},{"name":"common##shmA","weight":7920},{"name":"common##shmB","weight":7920},{"name":"common##shmC","weight":6600},{"name":"common##shmD","weight":6600},{"name":"common##eveA","weight":18612},{"name":"common##eveB","weight":15228},{"name":"uncommon##shmα0","weight":6580},{"name":"uncommon##shmα1","weight":470},{"name":"uncommon##shmβ0","weight":6345},{"name":"uncommon##shmβ1","weight":705},{"name":"uncommon##eveα","weight":7050},{"name":"uncommon##eveβ","weight":7050},{"name":"rare##shm","weight":8460},{"name":"rare##eve","weight":8460} ]} ]},
+"r_eve112_604_":{ "weight":165, "slots": [{"name":"common","count":6,"sheets":[{"name":"common##shmA"},{"name":"common##shmB"}]},                                                                                       {"name":"common","count":4,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},{"name":"uncommon##eveβ"}]},              {"count":1,           "name":"rare##shm"},                        {"name":"foil","foil":true,"count":1,"sheets":[{"name":"basic##shm","weight":4800},{"name":"common##shmA","weight":7920},{"name":"common##shmB","weight":7920},{"name":"common##shmC","weight":6600},{"name":"common##shmD","weight":6600},{"name":"common##eveA","weight":18612},{"name":"common##eveB","weight":15228},{"name":"uncommon##shmα0","weight":6580},{"name":"uncommon##shmα1","weight":470},{"name":"uncommon##shmβ0","weight":6345},{"name":"uncommon##shmβ1","weight":705},{"name":"uncommon##eveα","weight":7050},{"name":"uncommon##eveβ","weight":7050},{"name":"rare##shm","weight":8460},{"name":"rare##eve","weight":8460} ]} ]},
+`      4 lay_r_eve112An
+"r_eve112_614": { "weight":3, "slots": [{"name":"common","count":6,"sheets":[{"name":"common##shmA"},{"name":"common##shmB"}]},{"name":"common","count":1,"sheets":[{"name":"common##shmC"},{"name":"common##shmD"}]},{"name":"common","count":4,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},{"name":"uncommon##eveβ"}]},{"count":1,"name":"rare##shm"} ]},
+"r_eve112_254": { "weight":3, "slots": [{"name":"common","count":2,"sheets":[{"name":"common##shmA"},{"name":"common##shmB"}]},{"name":"common","count":5,"sheets":[{"name":"common##shmC"},{"name":"common##shmD"}]},{"name":"common","count":4,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},{"name":"uncommon##eveβ"}]},{"count":1,"name":"rare##shm"} ]},
+"r_eve112_353": { "weight":2, "slots": [{"name":"common","count":3,"sheets":[{"name":"common##shmA"},{"name":"common##shmB"}]},{"name":"common","count":5,"sheets":[{"name":"common##shmC"},{"name":"common##shmD"}]},{"name":"common","count":3,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},{"name":"uncommon##eveβ"}]},{"count":1,"name":"rare##eve"} ]},
+"r_eve112_623": { "weight":1, "slots": [{"name":"common","count":6,"sheets":[{"name":"common##shmA"},{"name":"common##shmB"}]},{"name":"common","count":2,"sheets":[{"name":"common##shmC"},{"name":"common##shmD"}]},{"name":"common","count":3,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},{"name":"uncommon##eveβ"}]},{"count":1,"name":"rare##eve"} ]},
+`      4 lay_r_eve12A
+"r_eve12_65": { "weight":41, "slots": [{"name":"common","count":6,"sheets":[{"name":"common##shmA"},           {"name":"common##shmB"} ]},                                                                                                {"count":5,                                               "name":"common##eveB"},              {"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8},                                         {"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},                  {"count":1,           "name":"uncommon##eveα"},{"count":1,"name":"uncommon##eveβ"},  {"name":"rare","count":1,"sheets":[{"name":"rare##shm"},{"name":"rare##eve"} ]} ]},
+"r_eve12_56": { "weight":41, "slots": [{"name":"common","count":5,"sheets":[                                                                      {"name":"common##shmC"},           {"name":"common##shmD"}]},                           {"count":6,           "name":"common##eveA"},                                                  {"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},          {"name":"uncommon##eveβ"}]},{"name":"rare","count":1,"sheets":[{"name":"rare##shm"},{"name":"rare##eve"} ]} ]},
+"r_eve12_S_": { "weight":15, "slots": [{"name":"common","count":5,"sheets":[{"name":"common##shmA","weight":6},{"name":"common##shmB","weight":6},{"name":"common##shmC","weight":5},{"name":"common##shmD","weight":5}]},{"name":"common","count":5,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8},                                         {"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},                  {"count":1,           "name":"uncommon##eveα"},{"count":1,"name":"uncommon##eveβ"},                {"count":1,           "name":"rare##shm"},                     {"name":"foil","foil":true,"count":1,"sheets":[{"name":"basic##shm","weight":4800},{"name":"common##shmA","weight":7920},{"name":"common##shmB","weight":7920},{"name":"common##shmC","weight":6600},{"name":"common##shmD","weight":6600},{"name":"common##eveA","weight":18612},{"name":"common##eveB","weight":15228},{"name":"uncommon##shmα0","weight":6580},{"name":"uncommon##shmα1","weight":470},{"name":"uncommon##shmβ0","weight":6345},{"name":"uncommon##shmβ1","weight":705},{"name":"uncommon##eveα","weight":7050},{"name":"uncommon##eveβ","weight":7050},{"name":"rare##shm","weight":8460},{"name":"rare##eve","weight":8460} ]} ]}, 
+"r_eve12_E_": { "weight":15, "slots": [{"name":"common","count":5,"sheets":[{"name":"common##shmA","weight":6},{"name":"common##shmB","weight":6},{"name":"common##shmC","weight":5},{"name":"common##shmD","weight":5}]},{"name":"common","count":5,"sheets":[{"name":"common##eveA","weight":33},{"name":"common##eveB","weight":27}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},          {"name":"uncommon##eveβ"}]},              {"count":1,                                "name":"rare##eve"},{"name":"foil","foil":true,"count":1,"sheets":[{"name":"basic##shm","weight":4800},{"name":"common##shmA","weight":7920},{"name":"common##shmB","weight":7920},{"name":"common##shmC","weight":6600},{"name":"common##shmD","weight":6600},{"name":"common##eveA","weight":18612},{"name":"common##eveB","weight":15228},{"name":"uncommon##shmα0","weight":6580},{"name":"uncommon##shmα1","weight":470},{"name":"uncommon##shmβ0","weight":6345},{"name":"uncommon##shmβ1","weight":705},{"name":"uncommon##eveα","weight":7050},{"name":"uncommon##eveβ","weight":7050},{"name":"rare##shm","weight":8460},{"name":"rare##eve","weight":8460} ]} ]},
+`      2 lay_r_eve12An
+"r_eve12_65": { "weight":1, "slots": [{"name":"common","count":6,"sheets":[{"name":"common##shmA"},           {"name":"common##shmB"} ]},                                                                                {"count":5,                                               "name":"common##eveB"},              {"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8},                                         {"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},                  {"count":1,           "name":"uncommon##eveα"},{"count":1,"name":"uncommon##eveβ"},  {"name":"rare","count":1,"sheets":[{"name":"rare##shm"},{"name":"rare##eve"} ]} ]},
+"r_eve12_56": { "weight":1, "slots": [{"name":"common","count":5,"sheets":[                                                                      {"name":"common##shmC"},           {"name":"common##shmD"}]},           {"count":6,           "name":"common##eveA"},                                                  {"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmα0","weight":112},{"name":"uncommon##shmα1","weight":8}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##shmβ0","weight":108},{"name":"uncommon##shmβ1","weight":12}]},{"name":"uncommon","count":1,"sheets":[{"name":"uncommon##eveα"},          {"name":"uncommon##eveβ"}]},{"name":"rare","count":1,"sheets":[{"name":"rare##shm"},{"name":"rare##eve"} ]} ]},
     },"predeterminedLayouts": [[
 `      1 p1_shmA
 "shm_αAB","shm_αA_","shm_αB_","shm_βAB","shm_βA_","shm_βB_"
@@ -92,6 +127,14 @@
 "eve_αAB","eve_αA_","eve_αB_","eve_βAB","eve_βA_","eve_βB_"
 `      1 p1_eveAn
 "eve_α","eve_αA","eve_β","eve_βA"
+`      1 p_r_eve112A
+"r_eve112_614","r_eve112_254","r_eve112_623","r_eve112_253_","r_eve112_604_"
+`      1 p_r_eve112An
+"r_eve112_614","r_eve112_254","r_eve112_353","r_eve112_623"
+`      1 p_r_eve12A
+"r_eve12_65","r_eve12_56","r_eve12_S_","r_eve12_E_"
+`      1 p_r_eve12An
+"r_eve12_65","r_eve12_56"
     ],[
 `      1 p2_shmA
 "shm_αAB","shm_αA_","shm_αB_","shm_βAB","shm_βA_","shm_βB_"
@@ -105,6 +148,14 @@
 "eve_αAB","eve_αA_","eve_αB_","eve_βAB","eve_βA_","eve_βB_","shm_αAB","shm_αA_","shm_αB_","shm_βAB","shm_βA_","shm_βB_"
 `      1 p2_s_eveAn
 "eve_α","eve_αA","eve_β","eve_βA","shm_α","shm_β"
+`      1 p_r_eve112A
+"r_eve112_614","r_eve112_254","r_eve112_623","r_eve112_253_","r_eve112_604_"
+`      1 p_r_eve112An
+"r_eve112_614","r_eve112_254","r_eve112_353","r_eve112_623"
+`      1 p_r_eve12A
+"r_eve12_65","r_eve12_56","r_eve12_S_","r_eve12_E_"
+`      1 p_r_eve12An
+"r_eve12_65","r_eve12_56"
     ],[
 `      1 p3_shmA
 "shm_αAB","shm_αA_","shm_αB_","shm_βAB","shm_βA_","shm_βB_"
@@ -114,6 +165,14 @@
 "eve_αAB","eve_αA_","eve_αB_","eve_βAB","eve_βA_","eve_βB_"
 `      1 p3_eveAn
 "eve_α","eve_αA","eve_β","eve_βA"
+`      1 p_r_eve112A
+"r_eve112_614","r_eve112_254","r_eve112_623","r_eve112_253_","r_eve112_604_"
+`      1 p_r_eve112An
+"r_eve112_614","r_eve112_254","r_eve112_353","r_eve112_623"
+`      1 p_r_eve12A
+"r_eve12_65","r_eve12_56","r_eve12_S_","r_eve12_E_"
+`      1 p_r_eve12An
+"r_eve12_65","r_eve12_56"
     ]]
 }
 `      * c_shmA
