@@ -15,45 +15,99 @@
 # Shadowmoor cu(A) nofoil
 # Common colour balance 5(37.73%)4(80.66%)3(96.83%)2(99.88%)...(-U:20.14%,-B:17.93%,-G:16.83%,-R:16.80%,-W:13.18%)
     "name": "SHM cu(A) nofoil",
-`      2 init b_eveA lay_shmA back_112eve p1_shmA p2_shmA lay_eveA p3_eveA c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+`      3 init b_eveAX lay_shmA back_112eve p1_shmA p2_shmA lay_eveA p3_eveA c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+# [xmage] Shadowmoor/Shadowmoor/Eventide cu(A) inc foil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+    "name": "SHM/SHM/EVE [x] cu(A) inc foil",
+`      3 init b_eveAnX lay_shmAn back_112eve p1_shmAn p2_shmAn lay_eveAn p3_eveAn c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+# [xmage] Shadowmoor/Shadowmoor/Eventide cu(A) nofoil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+    "name": "SHM/SHM/EVE [x] cu(A) nofoil",
+`      3 init v_eveAX lay_eveA back_112eve p1_eveA lay_shmA p2_shmA p3_shmA c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+# [xmage] Eventide/Shadowmoor/Shadowmoor cu(A) inc foil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+    "name": "EVE/SHM/SHM [x] cu(A) inc foil",
+`      3 init v_eveAnX lay_eveAn back_112eve p1_eveAn lay_shmAn p2_shmAn p3_shmAn c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+# [xmage] Eventide/Shadowmoor/Shadowmoor cu(A) nofoil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+    "name": "EVE/SHM/SHM [x] cu(A) nofoil",
+`      3 init s_eveAX lay_eveA back_12eve p1_eveA lay_shmA p2_s_eveA p3_shmA c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+# [xmage] Small Set Spotlight - Eventide cu(A) inc foil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+    "name": "EVE/ | /SHM [x] cu(A) inc foil",
+`      3 init s_eveAnX lay_eveAn back_12eve p1_eveAn lay_shmAn p2_s_eveAn p3_shmAn c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+# [xmage] Small Set Spotlight - Eventide cu(A) nofoil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+    "name": "EVE/ | /SHM [x] cu(A) nofoil",
+`      4 init eveAX lay_eveA back_eve p1_eveA p2_eveA p3_eveA c_eveA u_eveA r_eve
+# [xmage] Eventide cu(A) inc foil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+# Common colour balance 5(16.40%)4(53.52%)3(86.12%)2(97.32%)...(-R|-G:31.51%,-W:30.63%,-U:29.75%,-B:23.36%)
+    "name": "EVE [x] cu(A) inc foil",
+`      4 init eveAnX lay_eveAn back_eve p1_eveAn p2_eveAn p3_eveAn c_eveA u_eveA r_eve
+# [xmage] Eventide cu(A) nofoil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+# Common colour balance 5(17.70%)4(56.01%)3(87.72%)2(97.70%)...(-R:30.60%,-G:30.55%,-W:29.53%,-U:28.51%,-B:21.76%)
+    "name": "EVE [x] cu(A) nofoil",
+`      2 init b_eveA lay_shmA back_112eve p1_shmA p2_shmA lay_eveA p3_eveA c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve r_eveALL
 # Shadowmoor/Shadowmoor/Eventide cu(A) inc foil
     "name": "SHM/SHM/EVE cu(A) inc foil",
-`      2 init b_eveAn lay_shmAn back_112eve p1_shmAn p2_shmAn lay_eveAn p3_eveAn c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+`      2 init b_eveAn lay_shmAn back_112eve p1_shmAn p2_shmAn lay_eveAn p3_eveAn c_shmA u_shmA r_shm c_eveA u_eveA r_eve r_eveALL
 # Shadowmoor/Shadowmoor/Eventide cu(A) nofoil
     "name": "SHM/SHM/EVE cu(A) nofoil",
-`      2 init v_eveA lay_eveA back_112eve p1_eveA lay_shmA p2_shmA p3_shmA c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+`      2 init v_eveA lay_eveA back_112eve p1_eveA lay_shmA p2_shmA p3_shmA c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve r_eveALL
 # Eventide/Shadowmoor/Shadowmoor cu(A) inc foil
     "name": "EVE/SHM/SHM cu(A) inc foil",
-`      2 init v_eveAn lay_eveAn back_112eve p1_eveAn lay_shmAn p2_shmAn p3_shmAn c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+`      2 init v_eveAn lay_eveAn back_112eve p1_eveAn lay_shmAn p2_shmAn p3_shmAn c_shmA u_shmA r_shm c_eveA u_eveA r_eve r_eveALL
 # Eventide/Shadowmoor/Shadowmoor cu(A) nofoil
     "name": "EVE/SHM/SHM cu(A) nofoil",
-`      2 init s_eveA lay_eveA back_12eve p1_eveA lay_shmA p2_s_eveA p3_shmA c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+`      2 init s_eveA lay_eveA back_12eve p1_eveA lay_shmA p2_s_eveA p3_shmA c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve r_eveALL
 # Small Set Spotlight - Eventide cu(A) inc foil
     "name": "EVE/ | /SHM cu(A) inc foil",
-`      2 init s_eveAn lay_eveAn back_12eve p1_eveAn lay_shmAn p2_s_eveAn p3_shmAn c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+`      2 init s_eveAn lay_eveAn back_12eve p1_eveAn lay_shmAn p2_s_eveAn p3_shmAn c_shmA u_shmA r_shm c_eveA u_eveA r_eve r_eveALL
 # Small Set Spotlight - Eventide cu(A) nofoil
     "name": "EVE/ | /SHM cu(A) nofoil",
-`      3 init eveA lay_eveA back_eve p1_eveA p2_eveA p3_eveA c_eveA u_eveA r_eve
+`      3 init eveA lay_eveA back_eve p1_eveA p2_eveA p3_eveA c_eveA u_eveA r_eve r_eveALL
 # Eventide cu(A) inc foil
 # Common colour balance 5(16.40%)4(53.52%)3(86.12%)2(97.32%)...(-R|-G:31.51%,-W:30.63%,-U:29.75%,-B:23.36%)
     "name": "EVE cu(A) inc foil",
-`      3 init eveAn lay_eveAn back_eve p1_eveAn p2_eveAn p3_eveAn c_eveA u_eveA r_eve
+`      3 init eveAn lay_eveAn back_eve p1_eveAn p2_eveAn p3_eveAn c_eveA u_eveA r_eve r_eveALL
 # Eventide cu(A) nofoil
 # Common colour balance 5(17.70%)4(56.01%)3(87.72%)2(97.70%)...(-R:30.60%,-G:30.55%,-W:29.53%,-U:28.51%,-B:21.76%)
     "name": "EVE cu(A) nofoil",
-`      3 init r_eve112A back_112eve lay_r_eve112A p_r_eve112A c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+`      4 init r_eve112AX back_112eve lay_r_eve112A p_r_eve112A c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+# [xmage] Redistributed 2x Shadowmoor + Eventide cu(A) inc foil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+# Common colour balance 5(23.31%)4(65.25%)3(91.26%)2(98.96%)...(-U:25.93%,-B:24.48%,-R:23.73%,-W:23.67%,-G:23.42%)
+    "name": "SHM+SHM+EVE [x] cu(A) inc foil",
+`      4 init r_eve112AnX back_112eve lay_r_eve112An p_r_eve112An c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+# [xmage] Redistributed 2x Shadowmoor + Eventide cu(A) nofoil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+# Common colour balance 5(24.94%)4(67.18%)3(92.09%)2(99.14%)...(-U:25.06%,-B:23.60%,-R:22.85%,-W:22.58%,-G:22.56%)
+    "name": "SHM+SHM+EVE [x] cu(A) nofoil",
+`      4 init r_eve12AX back_12eve lay_r_eve12A p_r_eve12A c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+# [xmage] Redistributed Shadowmoor + Eventide cu(A) inc foil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+# Common colour balance 5(23.54%)4(65.26%)3(90.60%)2(98.91%)1(99.99%)(-W:25.81%,-U:25.01%,-R:24.26%,-G:23.84%,-B:22.77%)
+    "name": "SHM+EVE [x] cu(A) inc foil",
+`      4 init r_eve12AnX back_12eve lay_r_eve12An p_r_eve12An c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+# [xmage] Redistributed Shadowmoor + Eventide cu(A) nofoil
+# Unimplemented card omitted - rare - Glamerdye (EVE) 21
+# Common colour balance 5(24.50%)4(67.37%)3(91.71%)2(99.18%)1(100.00%)(-W:25.45%,-U:23.96%,-R:23.36%,-G:22.76%,-B:21.71%)
+    "name": "SHM+EVE [x] cu(A) nofoil",
+`      3 init r_eve112A back_112eve lay_r_eve112A p_r_eve112A c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve r_eveALL
 # Redistributed 2x Shadowmoor + Eventide cu(A) inc foil
 # Common colour balance 5(23.31%)4(65.25%)3(91.26%)2(98.96%)...(-U:25.93%,-B:24.48%,-R:23.73%,-W:23.67%,-G:23.42%)
     "name": "SHM+SHM+EVE cu(A) inc foil",
-`      3 init r_eve112An back_112eve lay_r_eve112An p_r_eve112An c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+`      3 init r_eve112An back_112eve lay_r_eve112An p_r_eve112An c_shmA u_shmA r_shm c_eveA u_eveA r_eve r_eveALL
 # Redistributed 2x Shadowmoor + Eventide cu(A) nofoil
 # Common colour balance 5(24.94%)4(67.18%)3(92.09%)2(99.14%)...(-U:25.06%,-B:23.60%,-R:22.85%,-W:22.58%,-G:22.56%)
     "name": "SHM+SHM+EVE cu(A) nofoil",
-`      3 init r_eve12A back_12eve lay_r_eve12A p_r_eve12A c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve
+`      3 init r_eve12A back_12eve lay_r_eve12A p_r_eve12A c_shmA u_shmA r_shm l_shm c_eveA u_eveA r_eve r_eveALL
 # Redistributed Shadowmoor + Eventide cu(A) inc foil
 # Common colour balance 5(23.54%)4(65.26%)3(90.60%)2(98.91%)1(99.99%)(-W:25.81%,-U:25.01%,-R:24.26%,-G:23.84%,-B:22.77%)
     "name": "SHM+EVE cu(A) inc foil",
-`      3 init r_eve12An back_12eve lay_r_eve12An p_r_eve12An c_shmA u_shmA r_shm c_eveA u_eveA r_eve
+`      3 init r_eve12An back_12eve lay_r_eve12An p_r_eve12An c_shmA u_shmA r_shm c_eveA u_eveA r_eve r_eveALL
 # Redistributed Shadowmoor + Eventide cu(A) nofoil
 # Common colour balance 5(24.50%)4(67.37%)3(91.71%)2(99.18%)1(100.00%)(-W:25.45%,-U:23.96%,-R:23.36%,-G:22.76%,-B:21.71%)
     "name": "SHM+EVE cu(A) nofoil",
@@ -1491,7 +1545,10 @@ Fetid Heath (EVE) 176
 Fiery Bombardment (EVE) 52
 Figure of Destiny (EVE) 139
 Flooded Grove (EVE) 177
+`      end
+`      1 r_eveALL
 Glamerdye (EVE) 21
+`      * r_eve
 Glen Elendra Archmage (EVE) 22
 Hallowed Burial (EVE) 7
 Hateflayer (EVE) 55
