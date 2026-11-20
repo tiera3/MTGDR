@@ -1,0 +1,2033 @@
+[Settings]
+{
+`       3 init r_innistrad lay_r p_r sh_r
+# Innistrad Reshuffled ISD, DKA, AVR, SOI, EMN, MID, VOW
+    "name": "Innistrad reshuffled",
+    "colorBalance": true,
+`       4 init x_innistrad lay_x p_x sh_x
+# Innistrad Redistributed ISD, DKA, AVR, SOI, EMN, MID, VOW
+# unc+ dfcs from MID and VOW in normal slots
+    "name": "Innistrad redistributed",
+    "colorBalance": false,
+    "duplicateProtection": true,
+    "withReplacement": true,
+    "showSheets": true,
+    "boostersPerPlayer": 3,
+    "layouts": {
+`       3 lay_r
+"nineC":{"weight":2071,"slots":[{"name":"common","count":9}, {"name":"dfc","count":1,"sheets":[{"name":"comDFC","weight":9615},{"name":"uncDFC","weight":8188} ]}, {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":706},{"name":"mythic","weight":97}]}, {"name":"basic","count":1} ]},
+"dfcRM":{"weight":298,"slots":[{"name":"common","count":8}, {"name":"dfc","count":1,"sheets":[{"name":"comDFC","weight":9615},{"name":"uncDFC","weight":8188} ]}, {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":706},{"name":"mythic","weight":97}]}, {"name":"rdfc","count":1,"sheets":[{"name":"rarDFC","weight":1777},{"name":"mytDFC","weight":400}]}, {"name":"basic","count":1} ]},
+"dfcCU":{"weight":151,"slots":[{"name":"common","count":8}, {"name":"comDFC","count":1},{"name":"uncDFC","count":1},  {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":706},{"name":"mythic","weight":97}]}, {"name":"basic","count":1} ]},
+`       * lay_x
+"uDKA":{"weight":5,"slots":[{"name":"comW","count":1,"sheets":[{"name":"common##isdW","weight":1},{"name":"common##dkaW","weight":1},{"name":"common##avrW","weight":1},{"name":"common##soiW","weight":1},{"name":"common##emnW","weight":1},{"name":"common##midW","weight":1},{"name":"common##vowW","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comU","count":1,"sheets":[{"name":"common##isdU","weight":1},{"name":"common##dkaU","weight":1},{"name":"common##avrU","weight":1},{"name":"common##soiU","weight":1},{"name":"common##emnU","weight":1},{"name":"common##midU","weight":1},{"name":"common##vowU","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comB","count":1,"sheets":[{"name":"common##isdB","weight":1},{"name":"common##dkaB","weight":1},{"name":"common##avrB","weight":1},{"name":"common##soiB","weight":1},{"name":"common##emnB","weight":1},{"name":"common##midB","weight":1},{"name":"common##vowB","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comR","count":1,"sheets":[{"name":"common##isdR","weight":1},{"name":"common##dkaR","weight":1},{"name":"common##avrR","weight":1},{"name":"common##soiR","weight":1},{"name":"common##emnR","weight":1},{"name":"common##midR","weight":1},{"name":"common##vowR","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comG","count":1,"sheets":[{"name":"common##isdG","weight":1},{"name":"common##dkaG","weight":1},{"name":"common##avrG","weight":1},{"name":"common##soiG","weight":1},{"name":"common##emnG","weight":1},{"name":"common##midG","weight":1},{"name":"common##vowG","weight":1}]}
+                          , {"name":"unc","count":1,"sheets":[{"name":"uncommon##isd","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##dka","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##avr","weight":83},{"name":"uncommon##soi","weight":83},{"name":"uncommon##emn","weight":83},{"name":"uncommon##mid","weight":60},{"name":"uncommon##midD","weight":23},{"name":"uncommon##vow","weight":60},{"name":"uncommon##vowD","weight":23} ]}
+                          , {"name":"rm","count":1,"sheets":[{"name":"rare##isd","weight":470640},{"name":"rare##dka","weight":470085},{"name":"rare##avr","weight":470640},{"name":"rare##soi","weight":470640},{"name":"rare##emn","weight":470085},{"name":"rare##mid","weight":769560},{"name":"rare##vow","weight":769560},{"name":"rare##midD","weight":159720},{"name":"rare##vowD","weight":159720},{"name":"mythic##isd","weight":133200},{"name":"mythic##dka","weight":134310},{"name":"mythic##avr","weight":133200},{"name":"mythic##soi","weight":133200},{"name":"mythic##emn","weight":134310},{"name":"mythic##mid","weight":108900},{"name":"mythic##vow","weight":108900},{"name":"mythic##midD","weight":36300},{"name":"mythic##vowD","weight":36300}]}
+                          , {"name":"dfc","count":1,"sheets":[{"name":"common##avrW","weight":6590628},{"name":"common##avrU","weight":6590628},{"name":"common##avrB","weight":6590628},{"name":"common##avrR","weight":6590628},{"name":"common##avrG","weight":6590628},{"name":"common##avrX","weight":4443120},{"name":"comDFC##isd","weight":27197280},{"name":"comDFC##dka","weight":29669760},{"name":"comDFC##soi","weight":16620560},{"name":"comDFC##emn","weight":24930840},{"name":"comDFC##mid","weight":49861680},{"name":"comDFC##vow","weight":49861680},{"name":"uncDFC##isd","weight":17307360},{"name":"uncDFC##dka","weight":14834880},{"name":"uncDFC##soi","weight":33241120},{"name":"uncDFC##emn","weight":24930840},{"name":"rarDFC##isd","weight":4944960},{"name":"rarDFC##dka","weight":3708720},{"name":"rarDFC##soi","weight":4986168},{"name":"rarDFC##emn","weight":5193925},{"name":"mytDFC##isd","weight":412080},{"name":"mytDFC##dka","weight":1648320},{"name":"mytDFC##soi","weight":1246542},{"name":"mytDFC##emn","weight":1038785} ]}
+                          , {"name":"basic","count":1,"sheets":[{"name":"basic##isd","weight":2},{"name":"basic##avr","weight":1},{"name":"basic##soi","weight":2},{"name":"basic##mid","weight":1},{"name":"basic##vow","weight":1}]} ]},
+"uAVR":{"weight":8,"slots":[{"name":"comW","count":1,"sheets":[{"name":"common##isdW","weight":1},{"name":"common##dkaW","weight":1},{"name":"common##avrW","weight":1},{"name":"common##soiW","weight":1},{"name":"common##emnW","weight":1},{"name":"common##midW","weight":1},{"name":"common##vowW","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comU","count":1,"sheets":[{"name":"common##isdU","weight":1},{"name":"common##dkaU","weight":1},{"name":"common##avrU","weight":1},{"name":"common##soiU","weight":1},{"name":"common##emnU","weight":1},{"name":"common##midU","weight":1},{"name":"common##vowU","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comB","count":1,"sheets":[{"name":"common##isdB","weight":1},{"name":"common##dkaB","weight":1},{"name":"common##avrB","weight":1},{"name":"common##soiB","weight":1},{"name":"common##emnB","weight":1},{"name":"common##midB","weight":1},{"name":"common##vowB","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comR","count":1,"sheets":[{"name":"common##isdR","weight":1},{"name":"common##dkaR","weight":1},{"name":"common##avrR","weight":1},{"name":"common##soiR","weight":1},{"name":"common##emnR","weight":1},{"name":"common##midR","weight":1},{"name":"common##vowR","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comG","count":1,"sheets":[{"name":"common##isdG","weight":1},{"name":"common##dkaG","weight":1},{"name":"common##avrG","weight":1},{"name":"common##soiG","weight":1},{"name":"common##emnG","weight":1},{"name":"common##midG","weight":1},{"name":"common##vowG","weight":1}]}
+                          , {"name":"unc","count":1,"sheets":[{"name":"uncommon##isd","weight":1},{"name":"uncommon##dka","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##avr","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##soi","weight":83},{"name":"uncommon##emn","weight":83},{"name":"uncommon##mid","weight":60},{"name":"uncommon##midD","weight":23},{"name":"uncommon##vow","weight":60},{"name":"uncommon##vowD","weight":23} ]}
+                          , {"name":"rm","count":1,"sheets":[{"name":"rare##isd","weight":470640},{"name":"rare##dka","weight":470085},{"name":"rare##avr","weight":470640},{"name":"rare##soi","weight":470640},{"name":"rare##emn","weight":470085},{"name":"rare##mid","weight":769560},{"name":"rare##vow","weight":769560},{"name":"rare##midD","weight":159720},{"name":"rare##vowD","weight":159720},{"name":"mythic##isd","weight":133200},{"name":"mythic##dka","weight":134310},{"name":"mythic##avr","weight":133200},{"name":"mythic##soi","weight":133200},{"name":"mythic##emn","weight":134310},{"name":"mythic##mid","weight":108900},{"name":"mythic##vow","weight":108900},{"name":"mythic##midD","weight":36300},{"name":"mythic##vowD","weight":36300}]}
+                          , {"name":"dfc","count":1,"sheets":[{"name":"common##avrW","weight":6590628},{"name":"common##avrU","weight":6590628},{"name":"common##avrB","weight":6590628},{"name":"common##avrR","weight":6590628},{"name":"common##avrG","weight":6590628},{"name":"common##avrX","weight":4443120},{"name":"comDFC##isd","weight":27197280},{"name":"comDFC##dka","weight":29669760},{"name":"comDFC##soi","weight":16620560},{"name":"comDFC##emn","weight":24930840},{"name":"comDFC##mid","weight":49861680},{"name":"comDFC##vow","weight":49861680},{"name":"uncDFC##isd","weight":17307360},{"name":"uncDFC##dka","weight":14834880},{"name":"uncDFC##soi","weight":33241120},{"name":"uncDFC##emn","weight":24930840},{"name":"rarDFC##isd","weight":4944960},{"name":"rarDFC##dka","weight":3708720},{"name":"rarDFC##soi","weight":4986168},{"name":"rarDFC##emn","weight":5193925},{"name":"mytDFC##isd","weight":412080},{"name":"mytDFC##dka","weight":1648320},{"name":"mytDFC##soi","weight":1246542},{"name":"mytDFC##emn","weight":1038785} ]}
+                          , {"name":"basic","count":1,"sheets":[{"name":"basic##isd","weight":2},{"name":"basic##avr","weight":1},{"name":"basic##soi","weight":2},{"name":"basic##mid","weight":1},{"name":"basic##vow","weight":1}]} ]},
+"uSOI":{"weight":9,"slots":[{"name":"comW","count":1,"sheets":[{"name":"common##isdW","weight":1},{"name":"common##dkaW","weight":1},{"name":"common##avrW","weight":1},{"name":"common##soiW","weight":1},{"name":"common##emnW","weight":1},{"name":"common##midW","weight":1},{"name":"common##vowW","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comU","count":1,"sheets":[{"name":"common##isdU","weight":1},{"name":"common##dkaU","weight":1},{"name":"common##avrU","weight":1},{"name":"common##soiU","weight":1},{"name":"common##emnU","weight":1},{"name":"common##midU","weight":1},{"name":"common##vowU","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comB","count":1,"sheets":[{"name":"common##isdB","weight":1},{"name":"common##dkaB","weight":1},{"name":"common##avrB","weight":1},{"name":"common##soiB","weight":1},{"name":"common##emnB","weight":1},{"name":"common##midB","weight":1},{"name":"common##vowB","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comR","count":1,"sheets":[{"name":"common##isdR","weight":1},{"name":"common##dkaR","weight":1},{"name":"common##avrR","weight":1},{"name":"common##soiR","weight":1},{"name":"common##emnR","weight":1},{"name":"common##midR","weight":1},{"name":"common##vowR","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comG","count":1,"sheets":[{"name":"common##isdG","weight":1},{"name":"common##dkaG","weight":1},{"name":"common##avrG","weight":1},{"name":"common##soiG","weight":1},{"name":"common##emnG","weight":1},{"name":"common##midG","weight":1},{"name":"common##vowG","weight":1}]}
+                          , {"name":"unc","count":1,"sheets":[{"name":"uncommon##isd","weight":1},{"name":"uncommon##dka","weight":1},{"name":"uncommon##avr","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##soi","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##emn","weight":83},{"name":"uncommon##mid","weight":60},{"name":"uncommon##midD","weight":23},{"name":"uncommon##vow","weight":60},{"name":"uncommon##vowD","weight":23} ]}
+                          , {"name":"rm","count":1,"sheets":[{"name":"rare##isd","weight":470640},{"name":"rare##dka","weight":470085},{"name":"rare##avr","weight":470640},{"name":"rare##soi","weight":470640},{"name":"rare##emn","weight":470085},{"name":"rare##mid","weight":769560},{"name":"rare##vow","weight":769560},{"name":"rare##midD","weight":159720},{"name":"rare##vowD","weight":159720},{"name":"mythic##isd","weight":133200},{"name":"mythic##dka","weight":134310},{"name":"mythic##avr","weight":133200},{"name":"mythic##soi","weight":133200},{"name":"mythic##emn","weight":134310},{"name":"mythic##mid","weight":108900},{"name":"mythic##vow","weight":108900},{"name":"mythic##midD","weight":36300},{"name":"mythic##vowD","weight":36300}]}
+                          , {"name":"dfc","count":1,"sheets":[{"name":"common##avrW","weight":6590628},{"name":"common##avrU","weight":6590628},{"name":"common##avrB","weight":6590628},{"name":"common##avrR","weight":6590628},{"name":"common##avrG","weight":6590628},{"name":"common##avrX","weight":4443120},{"name":"comDFC##isd","weight":27197280},{"name":"comDFC##dka","weight":29669760},{"name":"comDFC##soi","weight":16620560},{"name":"comDFC##emn","weight":24930840},{"name":"comDFC##mid","weight":49861680},{"name":"comDFC##vow","weight":49861680},{"name":"uncDFC##isd","weight":17307360},{"name":"uncDFC##dka","weight":14834880},{"name":"uncDFC##soi","weight":33241120},{"name":"uncDFC##emn","weight":24930840},{"name":"rarDFC##isd","weight":4944960},{"name":"rarDFC##dka","weight":3708720},{"name":"rarDFC##soi","weight":4986168},{"name":"rarDFC##emn","weight":5193925},{"name":"mytDFC##isd","weight":412080},{"name":"mytDFC##dka","weight":1648320},{"name":"mytDFC##soi","weight":1246542},{"name":"mytDFC##emn","weight":1038785} ]}
+                          , {"name":"basic","count":1,"sheets":[{"name":"basic##isd","weight":2},{"name":"basic##avr","weight":1},{"name":"basic##soi","weight":2},{"name":"basic##mid","weight":1},{"name":"basic##vow","weight":1}]} ]},
+"uEMN":{"weight":8,"slots":[{"name":"comW","count":1,"sheets":[{"name":"common##isdW","weight":1},{"name":"common##dkaW","weight":1},{"name":"common##avrW","weight":1},{"name":"common##soiW","weight":1},{"name":"common##emnW","weight":1},{"name":"common##midW","weight":1},{"name":"common##vowW","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comU","count":1,"sheets":[{"name":"common##isdU","weight":1},{"name":"common##dkaU","weight":1},{"name":"common##avrU","weight":1},{"name":"common##soiU","weight":1},{"name":"common##emnU","weight":1},{"name":"common##midU","weight":1},{"name":"common##vowU","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comB","count":1,"sheets":[{"name":"common##isdB","weight":1},{"name":"common##dkaB","weight":1},{"name":"common##avrB","weight":1},{"name":"common##soiB","weight":1},{"name":"common##emnB","weight":1},{"name":"common##midB","weight":1},{"name":"common##vowB","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comR","count":1,"sheets":[{"name":"common##isdR","weight":1},{"name":"common##dkaR","weight":1},{"name":"common##avrR","weight":1},{"name":"common##soiR","weight":1},{"name":"common##emnR","weight":1},{"name":"common##midR","weight":1},{"name":"common##vowR","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comG","count":1,"sheets":[{"name":"common##isdG","weight":1},{"name":"common##dkaG","weight":1},{"name":"common##avrG","weight":1},{"name":"common##soiG","weight":1},{"name":"common##emnG","weight":1},{"name":"common##midG","weight":1},{"name":"common##vowG","weight":1}]}
+                          , {"name":"unc","count":1,"sheets":[{"name":"uncommon##isd","weight":1},{"name":"uncommon##dka","weight":1},{"name":"uncommon##avr","weight":1},{"name":"uncommon##soi","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##emn","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##mid","weight":60},{"name":"uncommon##midD","weight":23},{"name":"uncommon##vow","weight":60},{"name":"uncommon##vowD","weight":23} ]}
+                          , {"name":"rm","count":1,"sheets":[{"name":"rare##isd","weight":470640},{"name":"rare##dka","weight":470085},{"name":"rare##avr","weight":470640},{"name":"rare##soi","weight":470640},{"name":"rare##emn","weight":470085},{"name":"rare##mid","weight":769560},{"name":"rare##vow","weight":769560},{"name":"rare##midD","weight":159720},{"name":"rare##vowD","weight":159720},{"name":"mythic##isd","weight":133200},{"name":"mythic##dka","weight":134310},{"name":"mythic##avr","weight":133200},{"name":"mythic##soi","weight":133200},{"name":"mythic##emn","weight":134310},{"name":"mythic##mid","weight":108900},{"name":"mythic##vow","weight":108900},{"name":"mythic##midD","weight":36300},{"name":"mythic##vowD","weight":36300}]}
+                          , {"name":"dfc","count":1,"sheets":[{"name":"common##avrW","weight":6590628},{"name":"common##avrU","weight":6590628},{"name":"common##avrB","weight":6590628},{"name":"common##avrR","weight":6590628},{"name":"common##avrG","weight":6590628},{"name":"common##avrX","weight":4443120},{"name":"comDFC##isd","weight":27197280},{"name":"comDFC##dka","weight":29669760},{"name":"comDFC##soi","weight":16620560},{"name":"comDFC##emn","weight":24930840},{"name":"comDFC##mid","weight":49861680},{"name":"comDFC##vow","weight":49861680},{"name":"uncDFC##isd","weight":17307360},{"name":"uncDFC##dka","weight":14834880},{"name":"uncDFC##soi","weight":33241120},{"name":"uncDFC##emn","weight":24930840},{"name":"rarDFC##isd","weight":4944960},{"name":"rarDFC##dka","weight":3708720},{"name":"rarDFC##soi","weight":4986168},{"name":"rarDFC##emn","weight":5193925},{"name":"mytDFC##isd","weight":412080},{"name":"mytDFC##dka","weight":1648320},{"name":"mytDFC##soi","weight":1246542},{"name":"mytDFC##emn","weight":1038785} ]}
+                          , {"name":"basic","count":1,"sheets":[{"name":"basic##isd","weight":2},{"name":"basic##avr","weight":1},{"name":"basic##soi","weight":2},{"name":"basic##mid","weight":1},{"name":"basic##vow","weight":1}]} ]},
+"uMID":{"weight":5,"slots":[{"name":"comW","count":1,"sheets":[{"name":"common##isdW","weight":1},{"name":"common##dkaW","weight":1},{"name":"common##avrW","weight":1},{"name":"common##soiW","weight":1},{"name":"common##emnW","weight":1},{"name":"common##midW","weight":1},{"name":"common##vowW","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comU","count":1,"sheets":[{"name":"common##isdU","weight":1},{"name":"common##dkaU","weight":1},{"name":"common##avrU","weight":1},{"name":"common##soiU","weight":1},{"name":"common##emnU","weight":1},{"name":"common##midU","weight":1},{"name":"common##vowU","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comB","count":1,"sheets":[{"name":"common##isdB","weight":1},{"name":"common##dkaB","weight":1},{"name":"common##avrB","weight":1},{"name":"common##soiB","weight":1},{"name":"common##emnB","weight":1},{"name":"common##midB","weight":1},{"name":"common##vowB","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comR","count":1,"sheets":[{"name":"common##isdR","weight":1},{"name":"common##dkaR","weight":1},{"name":"common##avrR","weight":1},{"name":"common##soiR","weight":1},{"name":"common##emnR","weight":1},{"name":"common##midR","weight":1},{"name":"common##vowR","weight":1}]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##isdW","weight":1058400},{"name":"common##dkaW","weight":992628},{"name":"common##avrW","weight":1143828},{"name":"common##soiW","weight":1156680},{"name":"common##emnW","weight":1183518},{"name":"common##midW","weight":1068984},{"name":"common##vowW","weight":1068984},{"name":"common##isdU","weight":1058400},{"name":"common##dkaU","weight":1221696},{"name":"common##avrU","weight":1143828},{"name":"common##soiU","weight":1156680},{"name":"common##emnU","weight":989901},{"name":"common##midU","weight":1068984},{"name":"common##vowU","weight":1068984},{"name":"common##isdB","weight":1194480},{"name":"common##dkaB","weight":992628},{"name":"common##avrB","weight":1143828},{"name":"common##soiB","weight":1156680},{"name":"common##emnB","weight":796284},{"name":"common##midB","weight":1068984},{"name":"common##vowB","weight":1068984},{"name":"common##isdR","weight":922320},{"name":"common##dkaR","weight":992628},{"name":"common##avrR","weight":1143828},{"name":"common##soiR","weight":888300},{"name":"common##emnR","weight":989901},{"name":"common##midR","weight":1068984},{"name":"common##vowR","weight":1068984},{"name":"common##isdG","weight":922320},{"name":"common##dkaG","weight":992628},{"name":"common##avrG","weight":1143828},{"name":"common##soiG","weight":888300},{"name":"common##emnG","weight":796284},{"name":"common##midG","weight":1068984},{"name":"common##vowG","weight":1068984},{"name":"common##isdX","weight":952560},{"name":"common##dkaX","weight":916272},{"name":"common##avrX","weight":771120},{"name":"common##soiX","weight":670950},{"name":"common##emnX","weight":1161702},{"name":"common##midX","weight":763560},{"name":"common##vowX","weight":763560} ]}
+                          , {"name":"comG","count":1,"sheets":[{"name":"common##isdG","weight":1},{"name":"common##dkaG","weight":1},{"name":"common##avrG","weight":1},{"name":"common##soiG","weight":1},{"name":"common##emnG","weight":1},{"name":"common##midG","weight":1},{"name":"common##vowG","weight":1}]}
+                          , {"name":"unc","count":1,"sheets":[{"name":"uncommon##isd","weight":1},{"name":"uncommon##dka","weight":1},{"name":"uncommon##avr","weight":1},{"name":"uncommon##soi","weight":1},{"name":"uncommon##emn","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##mid","weight":60},{"name":"uncommon##midD","weight":23} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##vow","weight":60},{"name":"uncommon##vowD","weight":23} ]}
+                          , {"name":"rm","count":1,"sheets":[{"name":"rare##isd","weight":470640},{"name":"rare##dka","weight":470085},{"name":"rare##avr","weight":470640},{"name":"rare##soi","weight":470640},{"name":"rare##emn","weight":470085},{"name":"rare##mid","weight":769560},{"name":"rare##vow","weight":769560},{"name":"rare##midD","weight":159720},{"name":"rare##vowD","weight":159720},{"name":"mythic##isd","weight":133200},{"name":"mythic##dka","weight":134310},{"name":"mythic##avr","weight":133200},{"name":"mythic##soi","weight":133200},{"name":"mythic##emn","weight":134310},{"name":"mythic##mid","weight":108900},{"name":"mythic##vow","weight":108900},{"name":"mythic##midD","weight":36300},{"name":"mythic##vowD","weight":36300}]}
+                          , {"name":"dfc","count":1,"sheets":[{"name":"common##avrW","weight":6590628},{"name":"common##avrU","weight":6590628},{"name":"common##avrB","weight":6590628},{"name":"common##avrR","weight":6590628},{"name":"common##avrG","weight":6590628},{"name":"common##avrX","weight":4443120},{"name":"comDFC##isd","weight":27197280},{"name":"comDFC##dka","weight":29669760},{"name":"comDFC##soi","weight":16620560},{"name":"comDFC##emn","weight":24930840},{"name":"comDFC##mid","weight":49861680},{"name":"comDFC##vow","weight":49861680},{"name":"uncDFC##isd","weight":17307360},{"name":"uncDFC##dka","weight":14834880},{"name":"uncDFC##soi","weight":33241120},{"name":"uncDFC##emn","weight":24930840},{"name":"rarDFC##isd","weight":4944960},{"name":"rarDFC##dka","weight":3708720},{"name":"rarDFC##soi","weight":4986168},{"name":"rarDFC##emn","weight":5193925},{"name":"mytDFC##isd","weight":412080},{"name":"mytDFC##dka","weight":1648320},{"name":"mytDFC##soi","weight":1246542},{"name":"mytDFC##emn","weight":1038785} ]}
+                          , {"name":"basic","count":1,"sheets":[{"name":"basic##isd","weight":2},{"name":"basic##avr","weight":1},{"name":"basic##soi","weight":2},{"name":"basic##mid","weight":1},{"name":"basic##vow","weight":1}]} ]},
+`       end
+    },"predeterminedLayouts": [[
+`       1 p_r
+"nineC","dfcRM","dfcCU"
+`       1 p_x
+"uDKA","uAVR","uSOI","uEMN","uMID"
+    ]]
+}
+
+`       1 sh_r
+[common]
+`       1 sh_x
+[common##isdW]
+Abbey Griffin (ISD) 1
+Avacynian Priest (ISD) 4
+Bonds of Faith (ISD) 5
+Chapel Geist (ISD) 7
+Doomed Traveler (ISD) 11
+Elder Cathar (ISD) 12
+Feeling of Dread (ISD) 14
+Ghostly Possession (ISD) 18
+Moment of Heroism (ISD) 24
+Rebuke (ISD) 29
+Selfless Cathar (ISD) 30
+Silverchase Fox (ISD) 31
+Smite the Monstrous (ISD) 33
+Spare from Evil (ISD) 34
+Thraben Purebloods (ISD) 37
+Unruly Mob (ISD) 39
+Urgent Exorcism (ISD) 40
+Village Bell-Ringer (ISD) 41
+Voiceless Spirit (ISD) 42
+`       1 sh_x
+[common##isdU]
+Armored Skaab (ISD) 43
+Claustrophobia (ISD) 48
+Curse of the Bloody Tome (ISD) 50
+Deranged Assistant (ISD) 52
+Dream Twist (ISD) 54
+Forbidden Alchemy (ISD) 55
+Fortress Crab (ISD) 56
+Frightful Delusion (ISD) 57
+Hysterical Blindness (ISD) 59
+Lost in the Mist (ISD) 63
+Makeshift Mauler (ISD) 65
+Moon Heron (ISD) 69
+Selhoff Occultist (ISD) 73
+Sensory Deprivation (ISD) 74
+Silent Departure (ISD) 75
+Spectral Flight (ISD) 79
+Stitched Drake (ISD) 80
+Stitcher's Apprentice (ISD) 81
+Think Twice (ISD) 83
+`       1 sh_x
+[common##isdB]
+Altar's Reap (ISD) 86
+Brain Weevil (ISD) 91
+Bump in the Night (ISD) 92
+Corpse Lunge (ISD) 93
+Curse of Oblivion (ISD) 95
+Dead Weight (ISD) 96
+Ghoulcaller's Chant (ISD) 101
+Ghoulraiser (ISD) 102
+Gruesome Deformity (ISD) 103
+Manor Skeleton (ISD) 106
+Markov Patrician (ISD) 107
+Maw of the Mire (ISD) 108
+Night Terrors (ISD) 111
+Rotting Fensnake (ISD) 113
+Skeletal Grimace (ISD) 116
+Stromkirk Patrol (ISD) 118
+Typhoid Rats (ISD) 120
+Vampire Interloper (ISD) 123
+Victim of Night (ISD) 124
+Walking Corpse (ISD) 126
+`       1 sh_x
+[common##isdR]
+Ancient Grudge (ISD) 127
+Ashmouth Hound (ISD) 128
+Bloodcrazed Neonate (ISD) 131
+Brimstone Volley (ISD) 132
+Crossway Vampire (ISD) 135
+Curse of the Pierced Heart (ISD) 138
+Feral Ridgewolf (ISD) 142
+Furor of the Bitten (ISD) 143
+Geistflame (ISD) 144
+Harvest Pyre (ISD) 146
+Infernal Plunge (ISD) 148
+Kessig Wolf (ISD) 151
+Night Revelers (ISD) 153
+Nightbird's Clutches (ISD) 154
+Pitchburn Devils (ISD) 156
+Riot Devils (ISD) 160
+Traitorous Blood (ISD) 166
+Vampiric Fury (ISD) 167
+`       1 sh_x
+[common##isdG]
+Ambush Viper (ISD) 169
+Avacyn's Pilgrim (ISD) 170
+Caravan Vigil (ISD) 173
+Darkthicket Wolf (ISD) 175
+Festerhide Boar (ISD) 179
+Gnaw to the Bone (ISD) 183
+Grave Bramble (ISD) 184
+Kindercatch (ISD) 190
+Moonmist (ISD) 195
+Mulch (ISD) 196
+Naturalize (ISD) 197
+Orchard Spirit (ISD) 198
+Prey Upon (ISD) 200
+Ranger's Guile (ISD) 201
+Somberwald Spider (ISD) 202
+Spidery Grasp (ISD) 204
+Travel Preparations (ISD) 206
+Woodland Sleuth (ISD) 210
+`       1 sh_x
+[common##isdX]
+Blazing Torch (ISD) 216
+Cobbled Wings (ISD) 219
+Ghoulcaller's Bell (ISD) 224
+One-Eyed Scarecrow (ISD) 230
+Traveler's Amulet (ISD) 234
+Wooden Stake (ISD) 237
+Shimmering Grotto (ISD) 246
+`       2 sh_x
+
+[common##dkaW]
+Bar the Door (DKA) 2
+Break of Day (DKA) 3
+Burden of Guilt (DKA) 4
+Elgaud Inquisitor (DKA) 6
+Gather the Townsfolk (DKA) 8
+Midnight Guard (DKA) 14
+Niblis of the Mist (DKA) 15
+Ray of Revelation (DKA) 17
+Sanctuary Cat (DKA) 19
+Silverclaw Griffin (DKA) 21
+Skillful Lunge (DKA) 22
+`       1 sh_x
+[common##dkaU]
+Artful Dodge (DKA) 27
+Bone to Ash (DKA) 29
+Chant of the Skifsang (DKA) 31
+Divination (DKA) 35
+Griptide (DKA) 38
+Headless Skaab (DKA) 40
+Nephalia Seakite (DKA) 43
+Saving Grasp (DKA) 46
+Screeching Skaab (DKA) 47
+Shriekgeist (DKA) 49
+Stormbound Geist (DKA) 51
+Thought Scour (DKA) 52
+`       1 sh_x
+[common##dkaB]
+Black Cat (DKA) 54
+Death's Caress (DKA) 59
+Falkenrath Torturer (DKA) 60
+Gravepurge (DKA) 65
+Gruesome Discovery (DKA) 66
+Highborn Ghoul (DKA) 68
+Reap the Seagraf (DKA) 72
+Sightless Ghoul (DKA) 73
+Spiteful Shadows (DKA) 75
+Tragic Slip (DKA) 76
+Undying Evil (DKA) 77
+`       1 sh_x
+[common##dkaR]
+Erdwal Ripper (DKA) 86
+Faithless Looting (DKA) 87
+Fires of Undeath (DKA) 88
+Fling (DKA) 90
+Forge Devil (DKA) 91
+Nearheath Stalker (DKA) 100
+Russet Wolves (DKA) 102
+Scorch the Fields (DKA) 103
+Talons of Falkenrath (DKA) 105
+Torch Fiend (DKA) 106
+Wrack with Madness (DKA) 107
+`       1 sh_x
+[common##dkaG]
+Clinging Mists (DKA) 109
+Crushing Vines (DKA) 110
+Dawntreader Elk (DKA) 111
+Favor of the Woods (DKA) 113
+Hollowhenge Beast (DKA) 118
+Hunger of the Howlpack (DKA) 119
+Kessig Recluse (DKA) 121
+Somberwald Dryad (DKA) 126
+Ulvenwald Bear (DKA) 129
+Wild Hunger (DKA) 132
+Young Wolf (DKA) 134
+`       1 sh_x
+[common##dkaX]
+Executioner's Hood (DKA) 148
+Heavy Mattock (DKA) 150
+Evolving Wilds (DKA) 155
+Haunted Fengraf (DKA) 157
+`       2 sh_x
+
+[common##avrW]
+Angel's Mercy (AVR) 3
+Angelic Wall (AVR) 4
+Call to Serve (AVR) 9
+Cathedral Sanctifier (AVR) 11
+Cloudshift (AVR) 12
+Cursebreak (AVR) 14
+Defang (AVR) 15
+Farbog Explorer (AVR) 21
+Leap of Faith (AVR) 26
+Midnight Duelist (AVR) 27
+Midvast Protector (AVR) 28
+Moonlight Geist (AVR) 29
+Moorland Inquisitor (AVR) 30
+Righteous Blow (AVR) 34
+Seraph of Dawn (AVR) 35
+Spectral Gateguards (AVR) 37
+Thraben Valiant (AVR) 39
+Voice of the Provinces (AVR) 40
+Zealous Strike (AVR) 41
+`       1 sh_x
+[common##avrU]
+Alchemist's Apprentice (AVR) 42
+Amass the Components (AVR) 43
+Crippling Chill (AVR) 46
+Dreadwaters (AVR) 49
+Elgaud Shieldmate (AVR) 50
+Fleeting Distraction (AVR) 53
+Galvanic Alchemist (AVR) 54
+Geist Snatch (AVR) 55
+Ghostform (AVR) 56
+Ghostly Flicker (AVR) 57
+Gryff Vanguard (AVR) 59
+Havengul Skaab (AVR) 60
+Mist Raven (AVR) 67
+Outwit (AVR) 70
+Peel from Reality (AVR) 71
+Rotcrown Ghoul (AVR) 72
+Scrapskin Drake (AVR) 73
+Spectral Prison (AVR) 75
+Wingcrafter (AVR) 83
+`       1 sh_x
+[common##avrB]
+Bloodflow Connoisseur (AVR) 87
+Bone Splinters (AVR) 88
+Butcher Ghoul (AVR) 89
+Crypt Creeper (AVR) 91
+Death Wind (AVR) 93
+Driver of the Dead (AVR) 99
+Essence Harvest (AVR) 100
+Ghoulflesh (AVR) 103
+Grave Exchange (AVR) 105
+Hunted Ghoul (AVR) 110
+Mental Agony (AVR) 114
+Necrobite (AVR) 115
+Polluted Dead (AVR) 116
+Predator's Gambit (AVR) 117
+Renegade Demon (AVR) 118
+Searchlight Geist (AVR) 119
+Soulcage Fiend (AVR) 120
+Undead Executioner (AVR) 123
+Unhallowed Pact (AVR) 124
+`       1 sh_x
+[common##avrR]
+Banners Raised (AVR) 127
+Battle Hymn (AVR) 128
+Dangerous Wager (AVR) 131
+Demolish (AVR) 132
+Fervent Cathar (AVR) 135
+Guise of Fire (AVR) 137
+Hanweir Lancer (AVR) 138
+Heirs of Stromkirk (AVR) 140
+Kruin Striker (AVR) 143
+Mad Prophet (AVR) 146
+Malicious Intent (AVR) 147
+Pillar of Flame (AVR) 149
+Raging Poltergeist (AVR) 150
+Riot Ringleader (AVR) 152
+Scalding Devil (AVR) 155
+Somberwald Vigilante (AVR) 156
+Thatcher Revolt (AVR) 158
+Thunderbolt (AVR) 159
+Uncanny Speed (AVR) 163
+`       1 sh_x
+[common##avrG]
+Abundant Growth (AVR) 167
+Borderland Ranger (AVR) 169
+Diregraf Escort (AVR) 174
+Flowering Lumberknot (AVR) 178
+Geist Trappers (AVR) 179
+Grounded (AVR) 181
+Joint Assault (AVR) 183
+Lair Delve (AVR) 184
+Natural End (AVR) 185
+Nettle Swine (AVR) 186
+Nightshade Peddler (AVR) 187
+Pathbreaker Wurm (AVR) 188
+Sheltering Word (AVR) 192
+Snare the Skies (AVR) 193
+Terrifying Presence (AVR) 196
+Timberland Guide (AVR) 197
+Trusted Forcemage (AVR) 199
+Wandering Wolf (AVR) 202
+Wildwood Geist (AVR) 204
+`       1 sh_x
+[common##avrX]
+Bladed Bracers (AVR) 213
+Narstad Scrapper (AVR) 218
+Scroll of Avacyn (AVR) 220
+Scroll of Griselbrand (AVR) 221
+Vanguard's Shield (AVR) 223
+Seraph Sanctuary (AVR) 228
+`       2 sh_x
+
+[common##soiW]
+Angelic Purge (SOI) 3
+Apothecary Geist (SOI) 4
+Cathar's Companion (SOI) 9
+Chaplain's Blessing (SOI) 10
+Dauntless Cathar (SOI) 11
+Devilthorn Fox (SOI) 14
+Emissary of the Sleepless (SOI) 17
+Ethereal Guidance (SOI) 18
+Expose Evil (SOI) 19
+Inquisitor's Ox (SOI) 24
+Inspiring Captain (SOI) 25
+Militant Inquisitor (SOI) 26
+Moorland Drifter (SOI) 27
+Puncturing Light (SOI) 35
+Stern Constable (SOI) 39
+Strength of Arms (SOI) 40
+Survive the Night (SOI) 41
+Thraben Inspector (SOI) 44
+Unruly Mob (SOI) 47
+Vessel of Ephemera (SOI) 48
+`       1 sh_x
+[common##soiU]
+Catalog (SOI) 51
+Deny Existence (SOI) 55
+Drownyard Explorers (SOI) 56
+Furtive Homunculus (SOI) 64
+Ghostly Wings (SOI) 66
+Gone Missing (SOI) 67
+Jace's Scrutiny (SOI) 70
+Just the Wind (SOI) 71
+Lamplighter of Selhoff (SOI) 72
+Nagging Thoughts (SOI) 74
+Niblis of Dusk (SOI) 76
+Pieces of the Puzzle (SOI) 78
+Press for Answers (SOI) 80
+Seagraf Skaab (SOI) 84
+Silburlind Snapper (SOI) 85
+Silent Observer (SOI) 86
+Sleep Paralysis (SOI) 87
+Stitched Mangler (SOI) 89
+Stormrider Spirit (SOI) 91
+Vessel of Paramnesia (SOI) 95
+`       1 sh_x
+[common##soiB]
+Alms of the Vein (SOI) 98
+Crow of Dark Tidings (SOI) 105
+Dead Weight (SOI) 106
+Farbog Revenant (SOI) 110
+Ghoulcaller's Accomplice (SOI) 112
+Grotesque Mutation (SOI) 115
+Hound of the Farbogs (SOI) 117
+Macabre Waltz (SOI) 121
+Merciless Resolve (SOI) 123
+Murderous Compulsion (SOI) 126
+Rancid Rats (SOI) 130
+Rottenheart Ghoul (SOI) 132
+Sanitarium Skeleton (SOI) 133
+Shamble Back (SOI) 134
+Stallion of Ashmouth (SOI) 136
+Stromkirk Mentor (SOI) 137
+Throttle (SOI) 138
+Twins of Maurer Estate (SOI) 142
+Vampire Noble (SOI) 143
+Vessel of Malignity (SOI) 144
+`       1 sh_x
+[common##soiR]
+Bloodmad Vampire (SOI) 146
+Dual Shot (SOI) 153
+Ember-Eye Wolf (SOI) 154
+Fiery Temper (SOI) 156
+Howlpack Wolf (SOI) 164
+Hulking Devil (SOI) 165
+Insolent Neonate (SOI) 168
+Magmatic Chasm (SOI) 172
+Pyre Hound (SOI) 174
+Reduce to Ashes (SOI) 176
+Rush of Adrenaline (SOI) 177
+Sanguinary Mage (SOI) 178
+Senseless Rage (SOI) 180
+Structural Distortion (SOI) 185
+Tormenting Voice (SOI) 186
+Uncaged Fury (SOI) 188
+Vessel of Volatility (SOI) 189
+Voldaren Duelist (SOI) 191
+`       1 sh_x
+[common##soiG]
+Aim High (SOI) 193
+Byway Courier (SOI) 196
+Clip Wings (SOI) 197
+Confront the Unknown (SOI) 198
+Equestrian Skill (SOI) 204
+Fork in the Road (SOI) 205
+Intrepid Provisioner (SOI) 213
+Kessig Dire Swine (SOI) 214
+Loam Dryad (SOI) 216
+Might Beyond Reason (SOI) 217
+Moldgraf Scavenger (SOI) 218
+Quilled Wolf (SOI) 222
+Rabid Bite (SOI) 223
+Root Out (SOI) 224
+Stoic Builder (SOI) 231
+Thornhide Wolves (SOI) 232
+Vessel of Nascency (SOI) 237
+Watcher in the Web (SOI) 239
+`       1 sh_x
+[common##soiX]
+Explosive Apparatus (SOI) 255
+Shard of Broken Glass (SOI) 262
+True-Faith Censer (SOI) 267
+Wicker Witch (SOI) 268
+Warped Landscape (SOI) 280
+`       2 sh_x
+
+[common##emnW]
+Borrowed Grace (EMN) 14
+Choking Restraints (EMN) 16
+Dawn Gryff (EMN) 19
+Desperate Sentry (EMN) 21
+Faithbearer Paladin (EMN) 25
+Fiend Binder (EMN) 26
+Guardian of Pilgrims (EMN) 30
+Ironclad Slayer (EMN) 31
+Ironwright's Cleansing (EMN) 32
+Lunarch Mantle (EMN) 35
+Sigardian Priest (EMN) 42
+Spectral Reserves (EMN) 43
+Steadfast Cathar (EMN) 44
+Thraben Standard Bearer (EMN) 48
+`       1 sh_x
+[common##emnU]
+Contingency Plan (EMN) 52
+Convolute (EMN) 53
+Displace (EMN) 55
+Drag Under (EMN) 57
+Enlightened Maniac (EMN) 58
+Exultant Cultist (EMN) 59
+Fogwalker (EMN) 60
+Ingenious Skaab (EMN) 66
+Laboratory Brute (EMN) 67
+Spontaneous Mutation (EMN) 74
+Take Inventory (EMN) 76
+Tattered Haunter (EMN) 77
+Turn Aside (EMN) 78
+`       1 sh_x
+[common##emnB]
+Boon of Emrakul (EMN) 81
+Borrowed Malevolence (EMN) 82
+Cemetery Recruitment (EMN) 83
+Certain Death (EMN) 84
+Gavony Unhallowed (EMN) 89
+Olivia's Dragoon (EMN) 100
+Skirsdag Supplicant (EMN) 104
+Strange Augmentation (EMN) 105
+Succumb to Temptation (EMN) 107
+Thraben Foulbloods (EMN) 108
+Wailing Ghoul (EMN) 112
+Weirded Vampire (EMN) 113
+`       1 sh_x
+[common##emnR]
+Alchemist's Greeting (EMN) 116
+Bold Impaler (EMN) 120
+Borrowed Hostility (EMN) 121
+Brazen Wolves (EMN) 122
+Distemper of the Blood (EMN) 126
+Falkenrath Reaver (EMN) 127
+Galvanic Bombardment (EMN) 129
+Make Mischief (EMN) 135
+Otherworldly Outburst (EMN) 138
+Prophetic Ravings (EMN) 139
+Stensia Banquet (EMN) 144
+Stensia Innkeeper (EMN) 145
+Thermo-Alchemist (EMN) 147
+`       1 sh_x
+[common##emnG]
+Backwoods Survivalists (EMN) 150
+Bloodbriar (EMN) 151
+Crossroads Consecrator (EMN) 154
+Grapple with the Past (EMN) 160
+Prey Upon (EMN) 166
+Primal Druid (EMN) 167
+Springsage Ritual (EMN) 172
+Swift Spinner (EMN) 173
+Waxing Moon (EMN) 177
+Wolfkin Bond (EMN) 178
+Woodcutter's Grit (EMN) 179
+Woodland Patrol (EMN) 180
+`       1 sh_x
+[common##emnX]
+It of the Horrid Swarm (EMN) 8
+Wretched Gryff (EMN) 12
+Cathar's Shield (EMN) 192
+Cultist's Staff (EMN) 194
+Field Creeper (EMN) 195
+Terrarion (EMN) 201
+`       2 sh_x
+
+[common##midW]
+Blessed Defiance (MID) 5
+Candlegrove Witch (MID) 8
+Candletrap (MID) 9
+Cathar Commando (MID) 10
+Celestus Sanctifier (MID) 12
+Clarion Cathars (MID) 14
+Flare of Faith (MID) 19
+Gavony Silversmith (MID) 21
+Gavony Trapper (MID) 22
+Hedgewitch's Mask (MID) 23
+Homestead Courage (MID) 24
+Ritual Guardian (MID) 30
+Search Party Captain (MID) 32
+Soul-Guide Gryff (MID) 35
+Sungold Barrage (MID) 36
+Thraben Exorcism (MID) 39
+Unruly Mob (MID) 40
+`       1 sh_x
+[common##midU]
+Component Collector (MID) 43
+Consider (MID) 44
+Devious Cover-Up (MID) 48
+Drownyard Amalgam (MID) 50
+Falcon Abomination (MID) 52
+Flip the Switch (MID) 54
+Geistwave (MID) 56
+Larder Zombie (MID) 58
+Locked in the Cemetery (MID) 60
+Organ Hoarder (MID) 66
+Otherworldly Gaze (MID) 67
+Revenge of the Drowned (MID) 72
+Secrets of the Key (MID) 73
+Shipwreck Sifters (MID) 74
+Startle (MID) 78
+Stormrider Spirit (MID) 79
+Unblinking Observer (MID) 82
+`       1 sh_x
+[common##midB]
+Arrogant Outlaw (MID) 84
+Bat Whisperer (MID) 86
+Bladebrand (MID) 87
+Blood Pact (MID) 88
+Crawl from the Cellar (MID) 93
+Defenestrate (MID) 95
+Diregraf Horde (MID) 96
+Duress (MID) 98
+Eaten Alive (MID) 99
+Hobbling Zombie (MID) 106
+Morkrut Behemoth (MID) 114
+No Way Out (MID) 116
+Novice Occultist (MID) 117
+Olivia's Midnight Ambush (MID) 118
+Rotten Reunion (MID) 119
+Siege Zombie (MID) 121
+Vampire Interloper (MID) 125
+`       1 sh_x
+[common##midR]
+Abandon the Post (MID) 127
+Ardent Elementalist (MID) 128
+Brimstone Vandal (MID) 130
+Burn the Accursed (MID) 132
+Electric Revelation (MID) 135
+Falkenrath Perforator (MID) 136
+Famished Foragers (MID) 138
+Festival Crasher (MID) 140
+Immolation (MID) 144
+Lambholt Harrier (MID) 145
+Moonrager's Slash (MID) 148
+Mounted Dreadknight (MID) 150
+Neonate's Rush (MID) 151
+Pack's Betrayal (MID) 153
+Raze the Effigy (MID) 156
+Stolen Vitality (MID) 161
+Voldaren Stinger (MID) 167
+`       1 sh_x
+[common##midG]
+Bounding Wolf (MID) 170
+Bramble Armor (MID) 171
+Candlelit Cavalry (MID) 175
+Dawnhart Rejuvenator (MID) 180
+Duel for Dominance (MID) 184
+Eccentric Farmer (MID) 185
+Harvesttide Sentry (MID) 186
+Howl of the Hunt (MID) 188
+Might of the Old Ways (MID) 189
+Path to the Festival (MID) 191
+Pestilent Wolf (MID) 192
+Plummet (MID) 193
+Return to Nature (MID) 195
+Shadowbeast Sighting (MID) 198
+Snarling Wolf (MID) 199
+Tapping at the Window (MID) 201
+Timberland Guide (MID) 202
+`       1 sh_x
+[common##midX]
+Crossroads Candleguide (MID) 253
+Jack-o'-Lantern (MID) 254
+Silver Bolt (MID) 258
+Stuffed Bear (MID) 259
+Evolving Wilds (MID) 261
+`       2 sh_x
+
+[common##vowW]
+Adamant Will (VOW) 1
+Estwald Shieldbasher (VOW) 11
+Fierce Retribution (VOW) 13
+Gryff Rider (VOW) 15
+Heron of Hope (VOW) 18
+Heron-Blessed Geist (VOW) 19
+Militia Rallier (VOW) 24
+Nebelgast Beguiler (VOW) 25
+Nurturing Presence (VOW) 26
+Parish-Blade Trainee (VOW) 29
+Piercing Light (VOW) 30
+Sanctify (VOW) 33
+Sigarda's Imprisonment (VOW) 35
+Supernatural Rescue (VOW) 37
+Traveling Minister (VOW) 39
+Unholy Officiant (VOW) 41
+Vampire Slayer (VOW) 43
+`       1 sh_x
+[common##vowU]
+Alchemist's Retrieval (VOW) 47
+Chill of the Grave (VOW) 51
+Cradle of Safety (VOW) 54
+Cruel Witness (VOW) 55
+Dreadlight Monstrosity (VOW) 57
+Fear of Death (VOW) 59
+Repository Skaab (VOW) 73
+Scattered Thoughts (VOW) 74
+Selhoff Entomber (VOW) 76
+Serpentine Ambush (VOW) 77
+Skywarp Skaab (VOW) 78
+Steelclad Spirit (VOW) 80
+Stitched Assistant (VOW) 81
+Syncopate (VOW) 83
+Syphon Essence (VOW) 84
+Wanderlight Spirit (VOW) 86
+Wretched Throng (VOW) 91
+`       1 sh_x
+[common##vowB]
+Aim for the Head (VOW) 92
+Bleed Dry (VOW) 94
+Blood Fountain (VOW) 95
+Bloodcrazed Socialite (VOW) 96
+Courier Bat (VOW) 102
+Diregraf Scavenger (VOW) 105
+Doomed Dissenter (VOW) 106
+Gift of Fangs (VOW) 113
+Gluttonous Guest (VOW) 114
+Grisly Ritual (VOW) 116
+Mindleech Ghoul (VOW) 122
+Persistent Specimen (VOW) 125
+Pointed Discussion (VOW) 126
+Rot-Tide Gargantua (VOW) 129
+Undying Malice (VOW) 134
+Unhallowed Phalanx (VOW) 135
+Vampire's Kiss (VOW) 136
+`       1 sh_x
+[common##vowR]
+Abrade (VOW) 139
+Ancestral Anger (VOW) 142
+Belligerent Guest (VOW) 144
+Blood Petal Celebrant (VOW) 146
+Bloody Betrayal (VOW) 147
+Daybreak Combatants (VOW) 153
+End the Festivities (VOW) 155
+Falkenrath Celebrants (VOW) 156
+Flame-Blessed Bolt (VOW) 158
+Hungry Ridgewolf (VOW) 161
+Kessig Flamebreather (VOW) 164
+Lacerate Flesh (VOW) 166
+Lightning Wolf (VOW) 168
+Pyre Spawn (VOW) 173
+Reckless Impulse (VOW) 174
+Sure Strike (VOW) 179
+Voldaren Epicure (VOW) 182
+`       1 sh_x
+[common##vowG]
+Apprentice Sharpshooter (VOW) 185
+Bramble Armor (VOW) 188
+Crushing Canopy (VOW) 194
+Dawnhart Disciple (VOW) 196
+Flourishing Hunter (VOW) 199
+Massive Might (VOW) 208
+Moldgraf Millipede (VOW) 209
+Mulch (VOW) 210
+Nature's Embrace (VOW) 211
+Rural Recruit (VOW) 216
+Sheltering Boughs (VOW) 218
+Snarling Wolf (VOW) 219
+Spore Crawler (VOW) 222
+Sporeback Wolf (VOW) 223
+Toxic Scorpion (VOW) 224
+Witch's Web (VOW) 227
+Wolf Strike (VOW) 228
+`       1 sh_x
+[common##vowX]
+Blood Servitor (VOW) 252
+Ceremonial Knife (VOW) 254
+Honored Heirloom (VOW) 257
+Wedding Invitation (VOW) 260
+Evolving Wilds (VOW) 263
+
+`       1 sh_r
+[comDFC]
+`       1 sh_x
+[comDFC##isd]
+Thraben Sentry // Thraben Militia (ISD) 38
+Delver of Secrets // Insectile Aberration (ISD) 51
+Tormented Pariah // Rampaging Werewolf (ISD) 165
+Village Ironsmith // Ironfang (ISD) 168
+Grizzled Outcasts // Krallenhorde Wantons (ISD) 185
+Villagers of Estwald // Howlpack of Estwald (ISD) 209
+`       1 sh_x
+[comDFC##dka]
+Loyal Cathar // Unhallowed Cathar (DKA) 13
+Chosen of Markov // Markov's Servant (DKA) 55
+Hinterland Hermit // Hinterland Scourge (DKA) 94
+Scorned Villager // Moonscarred Werewolf (DKA) 125
+`       1 sh_x
+[comDFC##soi]
+Convicted Killer // Branded Howler (SOI) 149
+Gatstaf Arsonists // Gatstaf Ravagers (SOI) 158
+Hinterland Logger // Timber Shredder (SOI) 210
+Solitary Hunter // One of the Pack (SOI) 229
+`       1 sh_x
+[comDFC##emn]
+Graf Rats (EMN) 91
+Midnight Scavengers (EMN) 96
+Vildin-Pack Outcast // Dronepack Kindred (EMN) 148
+Ulvenwald Captive // Ulvenwald Abomination (EMN) 175
+`       1 sh_x
+[comDFC##mid]
+Lunarch Veteran // Luminous Phantom (MID) 27
+Mourning Patrol // Morning Apparition (MID) 28
+Baithook Angler // Hook-Haunt Drifter (MID) 42
+Galedrifter // Waildrifter (MID) 55
+Ecstatic Awakener // Awoken Demon (MID) 100
+Shady Traveler // Stalking Predator (MID) 120
+Harvesttide Infiltrator // Harvesttide Assailant (MID) 143
+Tavern Ruffian // Tavern Smasher (MID) 163
+Bird Admirer // Wing Shredder (MID) 169
+Tireless Hauler // Dire-Strain Brawler (MID) 203
+`       1 sh_x
+[comDFC##vow]
+Drogskol Infantry // Drogskol Armaments (VOW) 10
+Kindly Ancestor // Ancestor's Embrace (VOW) 22
+Binding Geist // Spectral Binding (VOW) 48
+Lantern Bearer // Lanterns' Lift (VOW) 66
+Desperate Farmer // Depraved Harvester (VOW) 104
+Ragged Recluse // Odious Witch (VOW) 127
+Fearful Villager // Fearsome Werewolf (VOW) 157
+Weary Prisoner // Wrathful Jailbreaker (VOW) 184
+Hookhand Mariner // Riphook Raider (VOW) 203
+Weaver of Blossoms // Blossom-Clad Werewolf (VOW) 226
+
+`       1 sh_r
+[uncommon]
+`       1 sh_x
+[uncommon##isd]
+Fiend Hunter (ISD) 15
+Gallows Warden (ISD) 16
+Intangible Virtue (ISD) 19
+Mausoleum Guard (ISD) 20
+Midnight Haunting (ISD) 22
+Paraselene (ISD) 26
+Purify the Grave (ISD) 27
+Rally the Peasants (ISD) 28
+Slayer of the Wicked (ISD) 32
+Spectral Rider (ISD) 35
+Battleground Geist (ISD) 45
+Curiosity (ISD) 49
+Dissipate (ISD) 53
+Grasp of Phantoms (ISD) 58
+Invisible Stalker (ISD) 60
+Lantern Spirit (ISD) 62
+Memory's Journey (ISD) 66
+Murder of Crows (ISD) 70
+Runic Repetition (ISD) 72
+Skaab Goliath (ISD) 76
+Abattoir Ghoul (ISD) 85
+Bitterheart Witch (ISD) 88
+Diregraf Ghoul (ISD) 97
+Disciple of Griselbrand (ISD) 98
+Falkenrath Noble (ISD) 100
+Moan of the Unhallowed (ISD) 109
+Morkrut Banshee (ISD) 110
+Tribute to Hunger (ISD) 119
+Unburial Rites (ISD) 122
+Village Cannibals (ISD) 125
+Burning Vengeance (ISD) 133
+Curse of the Nightly Hunt (ISD) 137
+Desperate Ravings (ISD) 139
+Into the Maw of Hell (ISD) 150
+Rage Thrower (ISD) 157
+Rakish Heir (ISD) 158
+Rolling Temblor (ISD) 161
+Scourge of Geier Reach (ISD) 162
+Skirsdag Cultist (ISD) 163
+Boneyard Wurm (ISD) 171
+Bramblecrush (ISD) 172
+Full Moon's Rise (ISD) 180
+Hamlet Captain (ISD) 187
+Hollowhenge Scavenger (ISD) 188
+Lumberknot (ISD) 191
+Make a Wish (ISD) 192
+Spider Spawning (ISD) 203
+Wreath of Geists (ISD) 211
+Butcher's Cleaver (ISD) 217
+Cellar Door (ISD) 218
+Demonmail Hauberk (ISD) 221
+Galvanic Juggernaut (ISD) 222
+Geistcatcher's Rig (ISD) 223
+Graveyard Shovel (ISD) 225
+Inquisitor's Flail (ISD) 227
+Mask of Avacyn (ISD) 229
+Sharpened Pitchfork (ISD) 232
+Silver-Inlaid Dagger (ISD) 233
+Trepanation Blade (ISD) 235
+Ghost Quarter (ISD) 240
+`       1 sh_x
+[uncommon##dka]
+Curse of Exhaustion (DKA) 5
+Faith's Shield (DKA) 7
+Gavony Ironwright (DKA) 9
+Hollowhenge Spirit (DKA) 10
+Lingering Souls (DKA) 12
+Niblis of the Urn (DKA) 16
+Thraben Heretic (DKA) 26
+Chill of Foreboding (DKA) 32
+Mystic Retrieval (DKA) 42
+Niblis of the Breath (DKA) 44
+Relentless Skaabs (DKA) 45
+Secrets of the Dead (DKA) 48
+Tower Geist (DKA) 53
+Curse of Thirst (DKA) 57
+Deadly Allure (DKA) 58
+Farbog Boneflinger (DKA) 61
+Harrowing Journey (DKA) 67
+Skirsdag Flayer (DKA) 74
+Vengeful Vampire (DKA) 78
+Wakedancer (DKA) 79
+Blood Feud (DKA) 83
+Burning Oil (DKA) 84
+Heckling Fiends (DKA) 92
+Markov Warlord (DKA) 97
+Pyreheart Wolf (DKA) 101
+Shattered Perception (DKA) 104
+Briarpack Alpha (DKA) 108
+Gravetiller Wurm (DKA) 116
+Grim Flowering (DKA) 117
+Strangleroot Geist (DKA) 127
+Tracker's Instincts (DKA) 128
+Village Survivors (DKA) 130
+Diregraf Captain (DKA) 135
+Drogskol Captain (DKA) 136
+Immerwolf (DKA) 141
+Stromkirk Captain (DKA) 143
+Altar of the Lost (DKA) 144
+Avacyn's Collar (DKA) 145
+Warden of the Wall (DKA) 153
+Wolfhunter's Quiver (DKA) 154
+`       1 sh_x
+[uncommon##avr]
+Archangel (AVR) 5
+Banishing Stroke (AVR) 7
+Builder's Blessing (AVR) 8
+Commander's Authority (AVR) 13
+Defy Death (AVR) 16
+Devout Chaplain (AVR) 17
+Emancipation Angel (AVR) 19
+Goldnight Commander (AVR) 22
+Goldnight Redeemer (AVR) 23
+Holy Justiciar (AVR) 25
+Nearheath Pilgrim (AVR) 31
+Favorable Winds (AVR) 51
+Fettergeist (AVR) 52
+Ghostly Touch (AVR) 58
+Into the Void (AVR) 62
+Latch Seeker (AVR) 63
+Mass Appeal (AVR) 66
+Nephalia Smuggler (AVR) 69
+Second Guess (AVR) 74
+Stern Mentor (AVR) 77
+Tandem Lookout (AVR) 80
+Vanishment (AVR) 82
+Appetite for Brains (AVR) 84
+Barter in Blood (AVR) 85
+Blood Artist (AVR) 86
+Corpse Traders (AVR) 90
+Demonic Taskmaster (AVR) 95
+Evernight Shade (AVR) 101
+Homicidal Seclusion (AVR) 108
+Human Frailty (AVR) 109
+Maalfeld Twins (AVR) 112
+Marrow Bats (AVR) 113
+Triumph of Cruelty (AVR) 122
+Aggravate (AVR) 125
+Falkenrath Exterminator (AVR) 134
+Gang of Devils (AVR) 136
+Havengul Vampire (AVR) 139
+Kessig Malcontents (AVR) 142
+Lightning Mauler (AVR) 144
+Lightning Prowess (AVR) 145
+Rush of Blood (AVR) 154
+Stonewright (AVR) 157
+Thunderous Wrath (AVR) 160
+Vigilante Justice (AVR) 165
+Blessings of Nature (AVR) 168
+Bower Passage (AVR) 170
+Druid's Familiar (AVR) 175
+Eaten by Spiders (AVR) 177
+Gloomwidow (AVR) 180
+Howlgeist (AVR) 182
+Rain of Thorns (AVR) 190
+Triumph of Ferocity (AVR) 198
+Vorstclaw (AVR) 201
+Wolfir Avenger (AVR) 205
+Yew Spirit (AVR) 207
+Angel's Tomb (AVR) 211
+Angelic Armaments (AVR) 212
+Haunted Guardian (AVR) 216
+Tormentor's Trident (AVR) 222
+Vessel of Endless Rest (AVR) 224
+`       1 sh_x
+[uncommon##soi]
+Bound by Moonsilver (SOI) 7
+Gryff's Boon (SOI) 20
+Hope Against Hope (SOI) 22
+Humble the Brute (SOI) 23
+Nahiri's Machinations (SOI) 28
+Nearheath Chaplain (SOI) 29
+Not Forgotten (SOI) 30
+Open the Armory (SOI) 32
+Paranoid Parish-Blade (SOI) 33
+Reaper of Flight Moonsilver (SOI) 36
+Silverstrike (SOI) 37
+Spectral Shepherd (SOI) 38
+Tenacity (SOI) 42
+Topplegeist (SOI) 45
+Broken Concentration (SOI) 50
+Compelling Deterrence (SOI) 52
+Drunau Corpse Trawler (SOI) 57
+Erdwal Illuminator (SOI) 60
+Essence Flux (SOI) 61
+Fleeting Memories (SOI) 62
+Invasive Surgery (SOI) 68
+Manic Scribe (SOI) 73
+Ongoing Investigation (SOI) 77
+Pore Over the Pages (SOI) 79
+Reckless Scholar (SOI) 82
+Rise from the Tides (SOI) 83
+Stitchwing Skaab (SOI) 90
+Trail of Evidence (SOI) 93
+Behind the Scenes (SOI) 100
+Biting Rain (SOI) 102
+Call the Bloodline (SOI) 103
+Creeping Dread (SOI) 104
+Ghoulsteed (SOI) 113
+Gisa's Bidding (SOI) 114
+Indulgent Aristocrat (SOI) 118
+Liliana's Indignation (SOI) 120
+Morkrut Necropod (SOI) 125
+Olivia's Bloodsworn (SOI) 127
+Pale Rider of Trostad (SOI) 128
+Pick the Brain (SOI) 129
+Sinister Concoction (SOI) 135
+Tooth Collector (SOI) 140
+Dance with Devils (SOI) 150
+Dissension in the Ranks (SOI) 152
+Geistblast (SOI) 160
+Gibbering Fiend (SOI) 161
+Incorrigible Youths (SOI) 166
+Inner Struggle (SOI) 167
+Lightning Axe (SOI) 170
+Mad Prophet (SOI) 171
+Malevolent Whispers (SOI) 173
+Ravenous Bloodseeker (SOI) 175
+Spiteful Motives (SOI) 183
+Stensia Masquerade (SOI) 184
+Ulrich's Kindred (SOI) 187
+Briarbridge Patrol (SOI) 195
+Crawling Sensation (SOI) 199
+Cult of the Waxing Moon (SOI) 201
+Gloomwidow (SOI) 206
+Graf Mole (SOI) 207
+Groundskeeper (SOI) 208
+Howlpack Resurgence (SOI) 211
+Moonlight Hunt (SOI) 219
+Obsessive Skinner (SOI) 220
+Pack Guardian (SOI) 221
+Ulvenwald Mysteries (SOI) 236
+Veteran Cathar (SOI) 238
+Weirding Wood (SOI) 240
+Epitaph Golem (SOI) 254
+Haunted Cloak (SOI) 257
+Magnifying Glass (SOI) 258
+Murderer's Axe (SOI) 259
+Runaway Carriage (SOI) 261
+Skeleton Key (SOI) 263
+Wild-Field Scarecrow (SOI) 269
+Forsaken Sanctuary (SOI) 273
+Foul Orchard (SOI) 275
+Highland Lake (SOI) 277
+Stone Quarry (SOI) 279
+Woodland Stream (SOI) 282
+`       1 sh_x
+[uncommon##emn]
+Abundant Maw (EMN) 1
+Drownyard Behemoth (EMN) 4
+Lashweed Lurker (EMN) 9
+Mockery of Nature (EMN) 10
+Vexing Scuttler (EMN) 11
+Blessed Alliance (EMN) 13
+Courageous Outrider (EMN) 18
+Drogskol Shieldmate (EMN) 22
+Faith Unbroken (EMN) 24
+Geist of the Lonely Vigil (EMN) 27
+Give No Ground (EMN) 29
+Long Road Home (EMN) 34
+Peace of Mind (EMN) 36
+Repel the Abominable (EMN) 38
+Subjugator Angel (EMN) 45
+Advanced Stitchwing (EMN) 49
+Chilling Grasp (EMN) 50
+Fortune's Favor (EMN) 61
+Geist of the Archives (EMN) 62
+Lunar Force (EMN) 68
+Nebelgast Herald (EMN) 71
+Scour the Laboratory (EMN) 73
+Unsubstantiate (EMN) 79
+Dusk Feaster (EMN) 88
+Graf Harvest (EMN) 90
+Haunted Dead (EMN) 92
+Liliana's Elite (EMN) 94
+Markov Crusader (EMN) 95
+Murder (EMN) 97
+Prying Questions (EMN) 101
+Rise from the Grave (EMN) 102
+Ruthless Disposal (EMN) 103
+Vampire Cutthroat (EMN) 110
+Whispers of Emrakul (EMN) 114
+Abandon Reason (EMN) 115
+Blood Mist (EMN) 119
+Deranged Whelp (EMN) 125
+Furyblade Vampire (EMN) 128
+Incendiary Flow (EMN) 133
+Insatiable Gorgers (EMN) 134
+Savage Alliance (EMN) 140
+Shreds of Sanity (EMN) 141
+Spreading Flames (EMN) 143
+Weaver of Lightning (EMN) 149
+Clear Shot (EMN) 152
+Crop Sigil (EMN) 153
+Emrakul's Influence (EMN) 157
+Foul Emissary (EMN) 158
+Gnarlwood Dryad (EMN) 159
+Hamlet Captain (EMN) 161
+Noose Constrictor (EMN) 164
+Somberwald Stag (EMN) 169
+Campaign of Vengeance (EMN) 182
+Mercurial Geists (EMN) 186
+Mournwillow (EMN) 187
+Ride Down (EMN) 188
+Geist-Fueled Scarecrow (EMN) 196
+Slayer's Cleaver (EMN) 198
+Thirsting Axe (EMN) 202
+Nephalia Academy (EMN) 205
+`       1 sh_x
+[uncommon##mid]
+Borrowed Time (MID) 6
+Cathar's Call (MID) 11
+Duelcraft Trainer (MID) 16
+Gavony Dawnguard (MID) 20
+Loyal Gryff (MID) 26
+Odric's Outrider (MID) 29
+Ritual of Hope (MID) 31
+Sunset Revelry (MID) 38
+Dissipate (MID) 49
+Fading Hope (MID) 51
+Firmament Sage (MID) 53
+Nebelgast Intruder (MID) 64
+Ominous Roost (MID) 65
+Phantom Carriage (MID) 70
+Skaab Wrangler (MID) 75
+Vivisection (MID) 83
+Bloodtithe Collector (MID) 90
+Dreadhound (MID) 97
+Foul Play (MID) 101
+Ghoulish Procession (MID) 102
+Infernal Grasp (MID) 107
+Morbid Opportunist (MID) 113
+Necrosynthesis (MID) 115
+Stromkirk Bloodthief (MID) 123
+Cathartic Pyre (MID) 133
+Lunar Frenzy (MID) 147
+Obsessive Astronomer (MID) 152
+Play with Fire (MID) 154
+Purifying Dragon (MID) 155
+Seize the Storm (MID) 158
+Thermo-Alchemist (MID) 164
+Voldaren Ambusher (MID) 166
+Brood Weaver (MID) 173
+Clear Shot (MID) 176
+Contortionist Troupe (MID) 178
+Dawnhart Mentor (MID) 179
+Defend the Celestus (MID) 182
+Dryad's Revival (MID) 183
+Rise of the Ants (MID) 196
+Turn the Earth (MID) 205
+Arcane Infusion (MID) 210
+Bladestitched Skaab (MID) 212
+Corpse Cobble (MID) 214
+Dawnhart Wardens (MID) 216
+Diregraf Rebirth (MID) 220
+Faithful Mending (MID) 221
+Fleshtaker (MID) 222
+Grizzly Ghoul (MID) 226
+Hungry for More (MID) 228
+Join the Dance (MID) 229
+Rite of Oblivion (MID) 237
+Rootcoil Creeper (MID) 238
+Sacred Fire (MID) 239
+Storm Skreelix (MID) 243
+Sunrise Cavalier (MID) 244
+Unnatural Moonrise (MID) 247
+Vampire Socialite (MID) 249
+Winterthorn Blessing (MID) 251
+Moonsilver Key (MID) 255
+Field of Ruin (MID) 262
+`       1 sh_x
+[uncommon##vow]
+Angelic Quartermaster (VOW) 2
+Arm the Cathars (VOW) 3
+Bride's Gown (VOW) 4
+Circle of Confinement (VOW) 7
+Dawnhart Geist (VOW) 8
+Fleeting Spirit (VOW) 14
+Gryffwing Cavalry (VOW) 16
+Ollenbock Escort (VOW) 27
+Resistance Squad (VOW) 32
+Valorous Stance (VOW) 42
+Cobbled Lancer (VOW) 52
+Diver Skaab (VOW) 56
+Geistlight Snare (VOW) 60
+Lunar Rejection (VOW) 67
+Screaming Swarm (VOW) 75
+Stormchaser Drake (VOW) 82
+Thirst for Discovery (VOW) 85
+Wash Away (VOW) 87
+Whispering Wizard (VOW) 88
+Witness the Future (VOW) 90
+Archghoul of Thraben (VOW) 93
+Dread Fugue (VOW) 107
+Edgar's Awakening (VOW) 110
+Fell Stinger (VOW) 112
+Groom's Finery (VOW) 117
+Hero's Downfall (VOW) 120
+Parasitic Grasp (VOW) 123
+Skulking Killer (VOW) 130
+Undead Butler (VOW) 133
+Wedding Security (VOW) 138
+Blood Hypnotist (VOW) 145
+Frenzied Devils (VOW) 159
+Honeymoon Hearse (VOW) 160
+Into the Night (VOW) 163
+Magma Pummeler (VOW) 169
+Markov Retribution (VOW) 171
+Rending Flame (VOW) 175
+Runebound Wolf (VOW) 176
+Sanguine Statuette (VOW) 177
+Vampires' Vengeance (VOW) 180
+Bramble Wurm (VOW) 189
+Cartographer's Survey (VOW) 190
+Cloaked Cadet (VOW) 192
+Crawling Infestation (VOW) 193
+Laid to Rest (VOW) 207
+Packsong Pup (VOW) 213
+Reclusive Taxidermist (VOW) 214
+Retrieve (VOW) 215
+Sawblade Slinger (VOW) 217
+Spiked Ripsaw (VOW) 220
+Ancient Lumberknot (VOW) 230
+Bloodtithe Harvester (VOW) 232
+Markov Purifier (VOW) 241
+Markov Waltzer (VOW) 242
+Sigardian Paladin (VOW) 247
+Skull Skaab (VOW) 248
+Vilespawn Spider (VOW) 250
+Wandering Mind (VOW) 251
+Boarded Window (VOW) 253
+Lantern of the Lost (VOW) 259
+
+`       1 sh_r
+[uncDFC]
+`       1 sh_x
+[uncDFC##isd]
+Cloistered Youth // Unholy Fiend (ISD) 8
+Civilized Scholar // Homicidal Brute (ISD) 47
+Screeching Bat // Stalking Vampire (ISD) 114
+Hanweir Watchkeep // Bane of Hanweir (ISD) 145
+Reckless Waif // Merciless Predator (ISD) 159
+Gatstaf Shepherd // Gatstaf Howler (ISD) 182
+Ulvenwald Mystics // Ulvenwald Primordials (ISD) 208
+`       1 sh_x
+[uncDFC##dka]
+Soul Seizer // Ghastly Haunting (DKA) 50
+Afflicted Deserter // Werewolf Ransacker (DKA) 81
+Lambholt Elder // Silverpelt Werewolf (DKA) 122
+Chalice of Life // Chalice of Death (DKA) 146
+`       1 sh_x
+[uncDFC##soi]
+Avacynian Missionaries // Lunarch Inquisitors (SOI) 6
+Pious Evangel // Wayward Disciple (SOI) 34
+Town Gossipmonger // Incited Rabble (SOI) 46
+Aberrant Researcher // Perfected Form (SOI) 49
+Daring Sleuth // Bearer of Overwhelming Truths (SOI) 54
+Uninvited Geist // Unimpeded Trespasser (SOI) 94
+Accursed Witch // Infectious Curse (SOI) 97
+Heir of Falkenrath // Heir to the Night (SOI) 116
+Kindly Stranger // Demon-Possessed Witch (SOI) 119
+Breakneck Rider // Neck Breaker (SOI) 147
+Kessig Forgemaster // Flameheart Werewolf (SOI) 169
+Skin Invasion // Skin Shedder (SOI) 182
+Village Messenger // Moonrise Intruder (SOI) 190
+Autumnal Gloom // Ancient of the Equinox (SOI) 194
+Duskwatch Recruiter // Krallenhorde Howler (SOI) 203
+Hermit of the Natterknolls // Lone Wolf of the Natterknolls (SOI) 209
+Lambholt Pacifist // Lambholt Butcher (SOI) 215
+Harvest Hand // Scrounged Scythe (SOI) 256
+Neglected Heirloom // Ashmouth Blade (SOI) 260
+Thraben Gargoyle // Stonewing Antagonizer (SOI) 266
+`       1 sh_x
+[uncDFC##emn]
+Extricator of Sin // Extricator of Flesh (EMN) 23
+Lone Rider // It That Rides as One (EMN) 33
+Curious Homunculus // Voracious Reader (EMN) 54
+Grizzled Angler // Grisly Anglerfish (EMN) 63
+Conduit of Storms // Conduit of Emrakul (EMN) 124
+Smoldering Werewolf // Erupting Dreadwolf (EMN) 142
+Kessig Prowler // Sinuous Predator (EMN) 163
+Shrill Howler // Howling Chorus (EMN) 168
+Tangleclaw Werewolf // Fibrous Entangler (EMN) 174
+Cryptolith Fragment // Aurora of Emrakul (EMN) 193
+`       1 sh_x
+[uncommon##midD]
+Ambitious Farmhand // Seasoned Cathar (MID) 2
+Beloved Beggar // Generous Soul (MID) 3
+Bereaved Survivor // Dauntless Avenger (MID) 4
+Chaplain of Alms // Chapel Shieldgeist (MID) 13
+Covetous Castaway // Ghostly Castigator (MID) 45
+Delver of Secrets // Insectile Aberration (MID) 47
+Mysterious Tome // Chilling Chronicle (MID) 63
+Overwhelmed Archivist // Archive Haunt (MID) 68
+Baneblade Scoundrel // Baneclaw Marauder (MID) 85
+Covert Cutpurse // Covetous Geist (MID) 92
+Heirloom Mirror // Inherited Fiend (MID) 105
+Vengeful Strangler // Strangling Grasp (MID) 126
+Fangblade Brigand // Fangblade Eviscerator (MID) 139
+Flame Channeler // Embodiment of Flame (MID) 141
+Spellrune Painter // Spellrune Howler (MID) 160
+Village Watch // Village Reavers (MID) 165
+Burly Breaker // Dire-Strain Demolisher (MID) 174
+Deathbonnet Sprout // Deathbonnet Hulk (MID) 181
+Hound Tamer // Untamed Pup (MID) 187
+Outland Liberator // Frenzied Trapbreaker (MID) 190
+Devoted Grafkeeper // Departed Soulkeeper (MID) 218
+Kessig Naturalist // Lord of the Ulvenwald (MID) 231
+Mystic Skull // Mystic Monstrosity (MID) 256
+`       1 sh_x
+[uncommon##vowD]
+Distracting Geist // Clever Distraction (VOW) 9
+Panicked Bystander // Cackling Culprit (VOW) 28
+Radiant Grace // Radiant Restraints (VOW) 31
+Twinblade Geist // Twinblade Invocation (VOW) 40
+Biolume Egg // Biolume Serpent (VOW) 49
+Gutter Skulker // Gutter Shortcut (VOW) 62
+Mischievous Catgeist // Catlike Curiosity (VOW) 69
+Soulcipher Board // Cipherbound Spirit (VOW) 79
+Bloodsworn Squire // Bloodsworn Knight (VOW) 97
+Catapult Fodder // Catapult Captain (VOW) 99
+Innocent Traveler // Malicious Invader (VOW) 121
+Restless Bloodseeker // Bloodsoaked Reveler (VOW) 128
+Alluring Suitor // Deadly Dancer (VOW) 141
+Ballista Watcher // Ballista Wielder (VOW) 143
+Lambholt Raconteur // Lambholt Ravager (VOW) 167
+Voltaic Visionary // Volt-Charged Berserker (VOW) 183
+Dormant Grove // Gnarled Grovestrider (VOW) 198
+Infestation Expert // Infested Werewolf (VOW) 206
+Oakshade Stalker // Moonlit Ambusher (VOW) 212
+Wolfkin Outcast // Wedding Crasher (VOW) 229
+Brine Comber // Brinebound Gift (VOW) 233
+Child of the Pack // Savage Packmate (VOW) 234
+Foreboding Statue // Forsaken Thresher (VOW) 256
+
+`       1 sh_r
+[rare]
+`       1 sh_x
+[rare##isd]
+Angel of Flight Alabaster (ISD) 2
+Champion of the Parish (ISD) 6
+Dearly Departed (ISD) 9
+Divine Reckoning (ISD) 10
+Elite Inquisitor (ISD) 13
+Geist-Honored Monk (ISD) 17
+Mentor of the Meek (ISD) 21
+Nevermore (ISD) 25
+Stony Silence (ISD) 36
+Back from the Brink (ISD) 44
+Cackling Counterpart (ISD) 46
+Laboratory Maniac (ISD) 61
+Mindshrieker (ISD) 67
+Rooftop Storm (ISD) 71
+Snapcaster Mage (ISD) 78
+Sturmgeist (ISD) 82
+Undead Alchemist (ISD) 84
+Bloodgift Demon (ISD) 89
+Curse of Death's Hold (ISD) 94
+Endless Ranks of the Dead (ISD) 99
+Heartless Summoning (ISD) 104
+Sever the Bloodline (ISD) 115
+Skirsdag High Priest (ISD) 117
+Unbreathing Horde (ISD) 121
+Blasphemous Act (ISD) 130
+Charmbreaker Devils (ISD) 134
+Curse of Stalked Prey (ISD) 136
+Devil's Play (ISD) 140
+Falkenrath Marauders (ISD) 141
+Heretic's Punishment (ISD) 147
+Stromkirk Noble (ISD) 164
+Creeping Renaissance (ISD) 174
+Elder of Laurels (ISD) 177
+Gutter Grime (ISD) 186
+Kessig Cagebreakers (ISD) 189
+Moldgraf Monstrosity (ISD) 194
+Parallel Lives (ISD) 199
+Splinterfright (ISD) 205
+Evil Twin (ISD) 212
+Creepy Doll (ISD) 220
+Manor Gargoyle (ISD) 228
+Runechanter's Pike (ISD) 231
+Witchbane Orb (ISD) 236
+Clifftop Retreat (ISD) 238
+Gavony Township (ISD) 239
+Hinterland Harbor (ISD) 241
+Isolated Chapel (ISD) 242
+Kessig Wolf Run (ISD) 243
+Moorland Haunt (ISD) 244
+Nephalia Drownyard (ISD) 245
+Stensia Bloodhall (ISD) 247
+Sulfur Falls (ISD) 248
+Woodland Cemetery (ISD) 249
+`       1 sh_x
+[rare##dka]
+Increasing Devotion (DKA) 11
+Requiem Angel (DKA) 18
+Séance (DKA) 20
+Sudden Disappearance (DKA) 23
+Thalia, Guardian of Thraben (DKA) 24
+Thraben Doomsayer (DKA) 25
+Call to the Kindred (DKA) 30
+Counterlash (DKA) 33
+Curse of Echoes (DKA) 34
+Dungeon Geists (DKA) 36
+Geralf's Mindcrusher (DKA) 37
+Havengul Runebinder (DKA) 39
+Increasing Confusion (DKA) 41
+Curse of Misfortunes (DKA) 56
+Fiend of the Shadows (DKA) 62
+Geralf's Messenger (DKA) 63
+Gravecrawler (DKA) 64
+Increasing Ambition (DKA) 69
+Zombie Apocalypse (DKA) 80
+Alpha Brawl (DKA) 82
+Curse of Bloodletting (DKA) 85
+Flayer of the Hatebound (DKA) 89
+Hellrider (DKA) 93
+Increasing Vengeance (DKA) 95
+Markov Blademaster (DKA) 96
+Deranged Outcast (DKA) 112
+Feed the Pack (DKA) 114
+Ghoultree (DKA) 115
+Increasing Savagery (DKA) 120
+Lost in the Woods (DKA) 123
+Predator Ooze (DKA) 124
+Grafdigger's Cage (DKA) 149
+Jar of Eyeballs (DKA) 152
+Grim Backwoods (DKA) 156
+Vault of the Archangel (DKA) 158
+`       1 sh_x
+[rare##avr]
+Angel of Glory's Rise (AVR) 1
+Angel of Jubilation (AVR) 2
+Cathars' Crusade (AVR) 10
+Divine Deflection (AVR) 18
+Herald of War (AVR) 24
+Restoration Angel (AVR) 32
+Riders of Gavony (AVR) 33
+Silverblade Paladin (AVR) 36
+Terminus (AVR) 38
+Arcane Melee (AVR) 44
+Captain of the Mists (AVR) 45
+Deadeye Navigator (AVR) 47
+Devastation Tide (AVR) 48
+Infinite Reflection (AVR) 61
+Lone Revenant (AVR) 64
+Lunar Mystic (AVR) 65
+Spirit Away (AVR) 76
+Stolen Goods (AVR) 78
+Dark Impostor (AVR) 92
+Demonic Rising (AVR) 94
+Demonlord of Ashmouth (AVR) 96
+Dread Slaver (AVR) 98
+Exquisite Blood (AVR) 102
+Gloom Surgeon (AVR) 104
+Harvester of Souls (AVR) 107
+Killing Wave (AVR) 111
+Treacherous Pit-Dweller (AVR) 121
+Archwing Dragon (AVR) 126
+Burn at the Stake (AVR) 130
+Dual Casting (AVR) 133
+Hound of Griselbrand (AVR) 141
+Reforge the Soul (AVR) 151
+Rite of Ruin (AVR) 153
+Tyrant of Discord (AVR) 162
+Vexing Devil (AVR) 164
+Zealous Conscripts (AVR) 166
+Champion of Lambholt (AVR) 171
+Descendants' Path (AVR) 173
+Druids' Repository (AVR) 176
+Revenge of the Hunted (AVR) 191
+Somberwald Sage (AVR) 194
+Soul of the Harvest (AVR) 195
+Ulvenwald Tracker (AVR) 200
+Wild Defiance (AVR) 203
+Wolfir Silverheart (AVR) 206
+Conjurer's Closet (AVR) 214
+Gallows at Willow Hill (AVR) 215
+Moonsilver Spear (AVR) 217
+Otherworld Atlas (AVR) 219
+Alchemist's Refuge (AVR) 225
+Cavern of Souls (AVR) 226
+Desolate Lighthouse (AVR) 227
+Slayers' Stronghold (AVR) 229
+`       1 sh_x
+[rare##soi]
+Always Watching (SOI) 1
+Angel of Deliverance (SOI) 2
+Bygone Bishop (SOI) 8
+Declaration in Stone (SOI) 12
+Drogskol Cavalry (SOI) 15
+Eerie Interlude (SOI) 16
+Odric, Lunarch Marshal (SOI) 31
+Thalia's Lieutenant (SOI) 43
+Confirm Suspicions (SOI) 53
+Engulf the Shore (SOI) 58
+Epiphany at the Drownyard (SOI) 59
+Forgotten Creation (SOI) 63
+Nephalia Moondrakes (SOI) 75
+Rattlechains (SOI) 81
+Welcome to the Fold (SOI) 96
+Asylum Visitor (SOI) 99
+Diregraf Colossus (SOI) 107
+Ever After (SOI) 109
+From Under the Floorboards (SOI) 111
+Markov Dreadknight (SOI) 122
+To the Slaughter (SOI) 139
+Triskaidekaphobia (SOI) 141
+Avacyn's Judgment (SOI) 145
+Burn from Within (SOI) 148
+Devils' Playground (SOI) 151
+Falkenrath Gorger (SOI) 155
+Flameblade Angel (SOI) 157
+Harness the Storm (SOI) 163
+Scourge Wolf (SOI) 179
+Sin Prodder (SOI) 181
+Cryptolith Rite (SOI) 200
+Deathcap Cultivator (SOI) 202
+Inexorable Blob (SOI) 212
+Second Harvest (SOI) 227
+Silverfur Partisan (SOI) 228
+Soul Swallower (SOI) 230
+Tireless Tracker (SOI) 233
+Traverse the Ulvenwald (SOI) 234
+Altered Ego (SOI) 241
+Anguished Unmaking (SOI) 242
+Fevered Visions (SOI) 244
+Invocation of Saint Traft (SOI) 246
+Prized Amalgam (SOI) 249
+Brain in a Jar (SOI) 252
+Corrupted Grafstone (SOI) 253
+Slayer's Plate (SOI) 264
+Tamiyo's Journal (SOI) 265
+Choked Estuary (SOI) 270
+Drownyard Temple (SOI) 271
+Foreboding Ruins (SOI) 272
+Fortified Village (SOI) 274
+Game Trail (SOI) 276
+Port Town (SOI) 278
+`       1 sh_x
+[rare##emn]
+Distended Mindbender (EMN) 3
+Elder Deep-Fiend (EMN) 5
+Eternal Scourge (EMN) 7
+Collective Effort (EMN) 17
+Providence (EMN) 37
+Sanctifier of Souls (EMN) 39
+Selfless Spirit (EMN) 40
+Sigarda's Aid (EMN) 41
+Thalia, Heretic Cathar (EMN) 46
+Thalia's Lancers (EMN) 47
+Coax from the Blind Eternities (EMN) 51
+Identity Thief (EMN) 64
+Imprisoned in the Moon (EMN) 65
+Mausoleum Wanderer (EMN) 69
+Niblis of Frost (EMN) 72
+Summary Dismissal (EMN) 75
+Wharf Infiltrator (EMN) 80
+Collective Brutality (EMN) 85
+Cryptbreaker (EMN) 86
+Dark Salvation (EMN) 87
+Noosegraf Mob (EMN) 98
+Oath of Liliana (EMN) 99
+Stromkirk Condemned (EMN) 106
+Assembled Alphas (EMN) 117
+Bedlam Reveler (EMN) 118
+Collective Defiance (EMN) 123
+Harmless Offering (EMN) 131
+Impetuous Devils (EMN) 132
+Stromkirk Occultist (EMN) 146
+Eldritch Evolution (EMN) 155
+Emrakul's Evangel (EMN) 156
+Permeating Mass (EMN) 165
+Spirit of the Hunt (EMN) 170
+Splendid Reclamation (EMN) 171
+Ulvenwald Observer (EMN) 176
+Bloodhall Priest (EMN) 181
+Heron's Grace Champion (EMN) 185
+Spell Queller (EMN) 189
+Lupine Prototype (EMN) 197
+Soul Separator (EMN) 199
+Stitcher's Graft (EMN) 200
+Geier Reach Sanitarium (EMN) 203
+`       1 sh_x
+[rare##mid]
+Adeline, Resplendent Cathar (MID) 1
+Curse of Silence (MID) 15
+Fateful Absence (MID) 18
+Sigarda's Splendor (MID) 33
+Sungold Sentinel (MID) 37
+Vanquish the Horde (MID) 41
+Curse of Surveillance (MID) 46
+Grafted Identity (MID) 57
+Memory Deluge (MID) 62
+Patrician Geist (MID) 69
+Sludge Monster (MID) 76
+Triskaidekaphile (MID) 81
+Bloodline Culling (MID) 89
+Champion of the Perished (MID) 91
+Gisa, Glorious Resurrector (MID) 103
+Jadar, Ghoulcaller of Nephalia (MID) 108
+Mask of Griselbrand (MID) 111
+Slaughter Specialist (MID) 122
+Burn Down the House (MID) 131
+Curse of Shaken Faith (MID) 134
+Falkenrath Pit Fighter (MID) 137
+Geistflame Reservoir (MID) 142
+Light Up the Night (MID) 146
+Augur of Autumn (MID) 168
+Briarbridge Tracker (MID) 172
+Saryth, the Viper's Fang (MID) 197
+Storm the Festival (MID) 200
+Unnatural Growth (MID) 206
+Willow Geist (MID) 207
+Angelfire Ignition (MID) 209
+Can't Stay Away (MID) 213
+Croaking Counterpart (MID) 215
+Dire-Strain Rampage (MID) 219
+Florian, Voldaren Scion (MID) 223
+Galvanic Iteration (MID) 224
+Ghoulcaller's Harvest (MID) 225
+Hallowed Respite (MID) 227
+Katilda, Dawnhart Prime (MID) 230
+Liesa, Forgotten Archangel (MID) 232
+Old Stickfingers (MID) 234
+Rem Karolus, Stalwart Slayer (MID) 235
+Rite of Harmony (MID) 236
+Siphon Insight (MID) 241
+Slogurk, the Overslime (MID) 242
+Vadrik, Astral Archmage (MID) 248
+Wake to Slaughter (MID) 250
+The Celestus (MID) 252
+Pithing Needle (MID) 257
+Deserted Beach (MID) 260
+Haunted Ridge (MID) 263
+Overgrown Farmland (MID) 265
+Rockfall Vale (MID) 266
+Shipwreck Marsh (MID) 267
+`       1 sh_x
+[rare##vow]
+By Invitation Only (VOW) 5
+Hopeful Initiate (VOW) 20
+Lantern Flare (VOW) 23
+Sigarda's Summons (VOW) 36
+Thalia, Guardian of Thraben (VOW) 38
+Voice of the Blessed (VOW) 44
+Welcoming Vampire (VOW) 46
+Consuming Tide (VOW) 53
+Dreamshackle Geist (VOW) 58
+Geralf, Visionary Stitcher (VOW) 61
+Hullbreaker Horror (VOW) 63
+Inspired Idea (VOW) 64
+Overcharged Amalgam (VOW) 71
+Patchwork Crawler (VOW) 72
+Winged Portent (VOW) 89
+Bloodvial Purveyor (VOW) 98
+Demonic Bargain (VOW) 103
+Dreadfeast Demon (VOW) 108
+Dying to Serve (VOW) 109
+Falkenrath Forebear (VOW) 111
+Graf Reaver (VOW) 115
+Headless Rider (VOW) 118
+Path of Peril (VOW) 124
+Alchemist's Gambit (VOW) 140
+Change of Fortune (VOW) 150
+Creepy Puppeteer (VOW) 151
+Curse of Hospitality (VOW) 152
+Dominating Vampire (VOW) 154
+Kessig Wolfrider (VOW) 165
+Olivia's Attendants (VOW) 172
+Stensia Uprising (VOW) 178
+Ascendant Packleader (VOW) 186
+Dig Up (VOW) 197
+Glorious Sunrise (VOW) 200
+Hamlet Vanguard (VOW) 201
+Hiveheart Shaman (VOW) 202
+Howling Moon (VOW) 204
+Splendid Reclamation (VOW) 221
+Anje, Maid of Dishonor (VOW) 231
+Eruth, Tormented Prophet (VOW) 237
+Grolnok, the Omnivore (VOW) 238
+Halana and Alena, Partners (VOW) 239
+Odric, Blood-Cursed (VOW) 243
+Old Rutstein (VOW) 244
+Torens, Fist of the Angels (VOW) 249
+Dollhouse of Horrors (VOW) 255
+Investigator's Journal (VOW) 258
+Deathcap Glade (VOW) 261
+Dreamroot Cascade (VOW) 262
+Shattered Sanctum (VOW) 264
+Stormcarved Coast (VOW) 265
+Sundown Pass (VOW) 266
+Voldaren Estate (VOW) 267
+
+`       1 sh_r
+[mythic]
+`       1 sh_x
+[mythic##isd]
+Angelic Overseer (ISD) 3
+Mikaeus, the Lunarch (ISD) 23
+Mirror-Mad Phantasm (ISD) 68
+Skaab Ruinator (ISD) 77
+Army of the Damned (ISD) 87
+Liliana of the Veil (ISD) 105
+Reaper from the Abyss (ISD) 112
+Balefire Dragon (ISD) 129
+Past in Flames (ISD) 155
+Essence of the Wild (ISD) 178
+Tree of Redemption (ISD) 207
+Geist of Saint Traft (ISD) 213
+Grimgrin, Corpse-Born (ISD) 214
+Olivia Voldaren (ISD) 215
+Grimoire of the Dead (ISD) 226
+`       1 sh_x
+[mythic##dka]
+Archangel's Light (DKA) 1
+Beguiler of Wills (DKA) 28
+Mikaeus, the Unhallowed (DKA) 70
+Moonveil Dragon (DKA) 99
+Vorapede (DKA) 131
+Drogskol Reaver (DKA) 137
+Falkenrath Aristocrat (DKA) 138
+Havengul Lich (DKA) 139
+Sorin, Lord of Innistrad (DKA) 142
+Helvault (DKA) 151
+`       1 sh_x
+[mythic##avr]
+Avacyn, Angel of Hope (AVR) 6
+Entreat the Angels (AVR) 20
+Misthollow Griffin (AVR) 68
+Tamiyo, the Moon Sage (AVR) 79
+Temporal Mastery (AVR) 81
+Descent into Madness (AVR) 97
+Griselbrand (AVR) 106
+Bonfire of the Damned (AVR) 129
+Malignus (AVR) 148
+Tibalt, the Fiend-Blooded (AVR) 161
+Craterhoof Behemoth (AVR) 172
+Primal Surge (AVR) 189
+Bruna, Light of Alabaster (AVR) 208
+Gisela, Blade of Goldnight (AVR) 209
+Sigarda, Host of Herons (AVR) 210
+`       1 sh_x
+[mythic##soi]
+Descend upon the Sinful (SOI) 13
+Geralf's Masterpiece (SOI) 65
+Jace, Unraveler of Secrets (SOI) 69
+Behold the Beyond (SOI) 101
+Mindwrack Demon (SOI) 124
+Relentless Dead (SOI) 131
+Goldnight Castigator (SOI) 162
+Wolf of Devil's Breach (SOI) 192
+Seasons Past (SOI) 226
+Ulvenwald Hydra (SOI) 235
+The Gitrog Monster (SOI) 245
+Nahiri, the Harbinger (SOI) 247
+Olivia, Mobilized for War (SOI) 248
+Sigarda, Heron's Grace (SOI) 250
+Sorin, Grim Nemesis (SOI) 251
+`       1 sh_x
+[mythic##emn]
+Decimator of the Provinces (EMN) 2
+Emrakul, the Promised End (EMN) 6
+Deploy the Gatewatch (EMN) 20
+Mind's Dilation (EMN) 70
+Liliana, the Last Hope (EMN) 93
+Tree of Perdition (EMN) 109
+Mirrorwing Dragon (EMN) 136
+Nahiri's Wrath (EMN) 137
+Ishkanah, Grafwidow (EMN) 162
+Gisa and Geralf (EMN) 183
+Grim Flayer (EMN) 184
+Tamiyo, Field Researcher (EMN) 190
+`       1 sh_x
+[mythic##mid]
+Intrepid Adversary (MID) 25
+Sigardian Savior (MID) 34
+Lier, Disciple of the Drowned (MID) 59
+Spectral Adversary (MID) 77
+Lord of the Forsaken (MID) 110
+The Meathook Massacre (MID) 112
+Tainted Adversary (MID) 124
+Bloodthirsty Adversary (MID) 129
+Moonveil Regent (MID) 149
+Sunstreak Phoenix (MID) 162
+Consuming Blob (MID) 177
+Primal Adversary (MID) 194
+Wrenn and Seven (MID) 208
+Sigarda, Champion of Light (MID) 240
+Teferi, Who Slows the Sunset (MID) 245
+`       1 sh_x
+[mythic##vow]
+Cemetery Protector (VOW) 6
+Hallowed Haunting (VOW) 17
+Savior of Ollenbock (VOW) 34
+Cemetery Illuminator (VOW) 50
+Necroduality (VOW) 70
+Cemetery Desecrator (VOW) 100
+Sorin the Mirthless (VOW) 131
+Toxrill, the Corrosive (VOW) 132
+Cemetery Gatekeeper (VOW) 148
+Chandra, Dressed to Kill (VOW) 149
+Manaform Hellkite (VOW) 170
+Cemetery Prowler (VOW) 191
+Cultivator Colossus (VOW) 195
+Kaya, Geist Hunter (VOW) 240
+Olivia, Crimson Bride (VOW) 245
+
+`       1 sh_r
+[rarDFC]
+`       1 sh_x
+[rarDFC##isd]
+Ludevic's Test Subject // Ludevic's Abomination (ISD) 64
+Bloodline Keeper // Lord of Lineage (ISD) 90
+Instigator Gang // Wildblood Pack (ISD) 149
+Kruin Outlaw // Terror of Kruin Pass (ISD) 152
+Daybreak Ranger // Nightfall Predator (ISD) 176
+Mayor of Avabruck // Howlpack Alpha (ISD) 193
+`       1 sh_x
+[rarDFC##dka]
+Ravenous Demon // Archdemon of Greed (DKA) 71
+Mondronen Shaman // Tovolar's Magehunter (DKA) 98
+Wolfbitten Captive // Krallenhorde Killer (DKA) 133
+`       1 sh_x
+[rarDFC##soi]
+Hanweir Militia Captain // Westvale Cult Leader (SOI) 21
+Thing in the Ice // Awoken Horror (SOI) 92
+Elusive Tormentor // Insidious Mist (SOI) 108
+Geier Reach Bandit // Vildin-Pack Alpha (SOI) 159
+Sage of Ancient Lore // Werewolf of Ancient Hunger (SOI) 225
+Westvale Abbey // Ormendahl, Profane Prince (SOI) 281
+`       1 sh_x
+[rarDFC##emn]
+Bruna, the Fading Light (EMN) 15
+Docent of Perfection // Final Iteration (EMN) 56
+Voldaren Pariah // Abolisher of Bloodlines (EMN) 111
+Hanweir Garrison (EMN) 130
+Hanweir Battlements (EMN) 204
+`       1 sh_x
+[rare##midD]
+Brutal Cathar // Moonrage Brute (MID) 7
+Malevolent Hermit // Benevolent Geist (MID) 61
+Suspicious Stowaway // Seafaring Werewolf (MID) 80
+Curse of Leeches // Leeching Lurker (MID) 94
+Graveyard Trespasser // Graveyard Glutton (MID) 104
+Reckless Stormseeker // Storm-Charged Slasher (MID) 157
+Smoldering Egg // Ashmouth Dragon (MID) 159
+Tovolar's Huntmaster // Tovolar's Packleader (MID) 204
+Dennick, Pious Apprentice // Dennick, Pious Apparition (MID) 217
+Ludevic, Necrogenius // Olag, Ludevic's Hubris (MID) 233
+Tovolar, Dire Overlord // Tovolar, the Midnight Scourge (MID) 246
+`       1 sh_x
+[rare##vowD]
+Katilda, Dawnhart Martyr // Katilda's Rising Dawn (VOW) 21
+Wedding Announcement // Wedding Festivity (VOW) 45
+Mirrorhall Mimic // Ghastly Mimicry (VOW) 68
+Concealing Curtains // Revealing Eye (VOW) 101
+Voldaren Bloodcaster // Bloodbat Summoner (VOW) 137
+Ill-Tempered Loner // Howlpack Avenger (VOW) 162
+Howlpack Piper // Wildsong Howler (VOW) 205
+Ulvenwald Oddity // Ulvenwald Behemoth (VOW) 225
+Dorothea, Vengeful Victim // Dorothea's Retribution (VOW) 235
+Edgar, Charmed Groom // Edgar Markov's Coffin (VOW) 236
+Runo Stromkirk // Krothuss, Lord of the Deep (VOW) 246
+
+`       1 sh_r
+[mytDFC]
+`       1 sh_x
+[mytDFC##isd]
+Garruk Relentless // Garruk, the Veil-Cursed (ISD) 181
+`       1 sh_x
+[mytDFC##dka]
+Huntmaster of the Fells // Ravager of the Fells (DKA) 140
+Elbrus, the Binding Blade // Withengar Unbound (DKA) 147
+`       1 sh_x
+[mytDFC##soi]
+Archangel Avacyn // Avacyn, the Purifier (SOI) 5
+Startled Awake // Persistent Nightmare (SOI) 88
+Arlinn Kord // Arlinn, Embraced by the Moon (SOI) 243
+`       1 sh_x
+[mytDFC##emn]
+Gisela, the Broken Blade (EMN) 28
+Ulrich of the Krallenhorde // Ulrich, Uncontested Alpha (EMN) 191
+`       1 sh_x
+[mythic##midD]
+Enduring Angel // Angelic Enforcer (MID) 17
+Poppet Stitcher // Poppet Factory (MID) 71
+Jerren, Corrupted Bishop // Ormendahl, the Corrupter (MID) 109
+Arlinn, the Pack's Hope // Arlinn, the Moon's Fury (MID) 211
+Hostile Hostel // Creeping Inn (MID) 264
+`       1 sh_x
+[mythic##vowD]
+Faithbound Judge // Sinner's Judgment (VOW) 12
+Jacob Hauken, Inspector // Hauken's Insight (VOW) 65
+Henrika Domnathi // Henrika, Infernal Seer (VOW) 119
+Volatile Arsonist // Dire-Strain Anarchist (VOW) 181
+Avabruck Caretaker // Hollowhenge Huntmaster (VOW) 187
+
+`       1 sh_r
+[basic]
+`       1 sh_x
+[basic##isd]
+Plains (ISD) 250
+Plains (ISD) 251
+Plains (ISD) 252
+Island (ISD) 253
+Island (ISD) 254
+Island (ISD) 255
+Swamp (ISD) 256
+Swamp (ISD) 257
+Swamp (ISD) 258
+Mountain (ISD) 259
+Mountain (ISD) 260
+Mountain (ISD) 261
+Forest (ISD) 262
+Forest (ISD) 263
+Forest (ISD) 264
+`       1 sh_x
+[basic##avr]
+Plains (AVR) 230
+Plains (AVR) 231
+Plains (AVR) 232
+Island (AVR) 233
+Island (AVR) 234
+Island (AVR) 235
+Swamp (AVR) 236
+Swamp (AVR) 237
+Swamp (AVR) 238
+Mountain (AVR) 239
+Mountain (AVR) 240
+Mountain (AVR) 241
+Forest (AVR) 242
+Forest (AVR) 243
+Forest (AVR) 244
+`       1 sh_x
+[basic##soi]
+Plains (SOI) 283
+Plains (SOI) 284
+Plains (SOI) 285
+Island (SOI) 286
+Island (SOI) 287
+Island (SOI) 288
+Swamp (SOI) 289
+Swamp (SOI) 290
+Swamp (SOI) 291
+Mountain (SOI) 292
+Mountain (SOI) 293
+Mountain (SOI) 294
+Forest (SOI) 295
+Forest (SOI) 296
+Forest (SOI) 297
+`       1 sh_x
+[basic##mid]
+Plains (MID) 268
+Plains (MID) 269
+Island (MID) 270
+Island (MID) 271
+Swamp (MID) 272
+Swamp (MID) 273
+Mountain (MID) 274
+Mountain (MID) 275
+Forest (MID) 276
+Forest (MID) 277
+`       1 sh_x
+[basic##vow]
+Plains (VOW) 268
+Plains (VOW) 269
+Island (VOW) 270
+Island (VOW) 271
+Swamp (VOW) 272
+Swamp (VOW) 273
+Mountain (VOW) 274
+Mountain (VOW) 275
+Forest (VOW) 276
+Forest (VOW) 277
