@@ -1,0 +1,1596 @@
+[Settings]
+{
+`       6 init r_wedge lay_r sh_r
+# Wedge Reshuffled APC, EVE, KTK, FRF, IKO, STX
+# moved KTK gainlands into landslot with FRF gainland and IKO gainlands (already there).
+# left STX campuses in regular common slot
+# bonus slot for FRF (fetchland) STX (lesson and mystical archive)
+    "name": "Wedge reshuffled",
+    "colorBalance": true,
+`       5 init r_wedge lay_x sh_x
+# Wedge Redistributed APC, EVE, KTK, FRF, IKO, STX
+# moved KTK common lands and STX common lands to land slot
+# basic|common(land|non-mono) , 9x commons (W?U?R?G) , common|bonus(lesson|STA) , 3x uncommons , r/m
+    "name": "Wedge redistributed",
+    "colorBalance": false,
+    "duplicateProtection": true,
+    "withReplacement": true,
+    "showSheets": true,
+    "boostersPerPlayer": 3,
+    "layouts": {
+`       4 lay_r
+"cland":{"weight":27907,"slots":[{"name":"comLand","count":1},{"name":"common","count":10}, {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":618},{"name":"mythic","weight":60}]} ]},
+"bonus":{"weight":23177,"slots":[                             {"name":"common","count":10}, {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":618},{"name":"mythic","weight":60}]}, {"name":"bonus","count":1,"sheets":[{"name":"common##bonus","weight":5670},{"name":"uncommon##bonus","weight":7235},{"name":"rare##bonus","weight":2929},{"name":"mythic##bonus","weight":581}]} ]},
+"basic":{"weight":13740,"slots":[                             {"name":"common","count":10}, {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":618},{"name":"mythic","weight":60}]}, {"name":"basic","count":1} ]},
+"coms9":{"weight": 3288,"slots":[{"name":"comLand","count":1},{"name":"common","count": 9}, {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":618},{"name":"mythic","weight":60}]}, {"name":"basic","count":1} ]},
+`       * lay_x
+"uEVE":{"weight":4,"slots":[{"name":"comL","count":1,"sheets":[{"name":"common##apcX","weight":694},{"name":"common##eveX","weight":4475},{"name":"common##ktkX","weight":378},{"name":"common##frfX","weight":288},{"name":"common##ikoX","weight":206},{"name":"common##stxX","weight":976},{"name":"basic##ktk","weight":4848},{"name":"basic##iko","weight":202},{"name":"common##ktkL","weight":4800},{"name":"comLand##iko","weight":4646},{"name":"common##stxL","weight":2727},{"name":"comLand##frf","weight":4646},{"name":"rarLand##frf","weight":202} ]}
+                          , {"name":"comW","count":1,"sheets":[{"name":"common##apcW","weight":61},{"name":"common##eveW","weight":55},{"name":"common##ktkW","weight":61},{"name":"common##frfW","weight":61},{"name":"common##ikoW","weight":61},{"name":"common##stxW","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comU","count":1,"sheets":[{"name":"common##apcU","weight":61},{"name":"common##eveU","weight":55},{"name":"common##ktkU","weight":61},{"name":"common##frfU","weight":61},{"name":"common##ikoU","weight":61},{"name":"common##stxU","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comB","count":1,"sheets":[{"name":"common##apcB","weight":61},{"name":"common##eveB","weight":55},{"name":"common##ktkB","weight":61},{"name":"common##frfB","weight":61},{"name":"common##ikoB","weight":61},{"name":"common##stxB","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comR","count":1,"sheets":[{"name":"common##apcR","weight":61},{"name":"common##eveR","weight":55},{"name":"common##ktkR","weight":61},{"name":"common##frfR","weight":61},{"name":"common##ikoR","weight":61},{"name":"common##stxR","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comG","count":1,"sheets":[{"name":"common##apcG","weight":61},{"name":"common##eveG","weight":55},{"name":"common##ktkG","weight":61},{"name":"common##frfG","weight":61},{"name":"common##ikoG","weight":61},{"name":"common##stxG","weight":61} ]}
+                          , {"name":"bonus","count":1,"sheets":[{"name":"common##apcW","weight":31155},{"name":"common##ktkW","weight":22445},{"name":"common##frfW","weight":32495},{"name":"common##ikoW","weight":34505},{"name":"common##stxW","weight":4355},{"name":"common##apcU","weight":31155},{"name":"common##ktkU","weight":22445},{"name":"common##frfU","weight":32495},{"name":"common##ikoU","weight":34505},{"name":"common##stxU","weight":4355},{"name":"common##apcB","weight":31155},{"name":"common##ktkB","weight":22445},{"name":"common##frfB","weight":32495},{"name":"common##ikoB","weight":34505},{"name":"common##stxB","weight":4355},{"name":"common##apcR","weight":31155},{"name":"common##ktkR","weight":22445},{"name":"common##frfR","weight":32495},{"name":"common##ikoR","weight":34505},{"name":"common##stxR","weight":4355},{"name":"common##apcG","weight":31155},{"name":"common##ktkG","weight":22445},{"name":"common##frfG","weight":32495},{"name":"common##ikoG","weight":34505},{"name":"common##stxG","weight":4355},{"name":"common##apcX","weight":395970},{"name":"common##eveX","weight":1172165},{"name":"common##ktkX","weight":215740},{"name":"common##frfX","weight":165155},{"name":"common##ikoX","weight":117585},{"name":"common##stxX","weight":556770},{"name":"comLesson##stx","weight":572670},{"name":"uncomLesson##stx","weight":189375},{"name":"rarLesson##stx","weight":45450},{"name":"mytLesson##stx","weight":4545},{"name":"uncArchive##sta","weight":541360},{"name":"rarArchive##sta","weight":216544},{"name":"mytArchive##sta","weight":54136} ]}
+                          , {"name":"unc","count":1,"sheets":[{"name":"uncommon##apc","weight":1},{"name":"uncommon##eve","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##ktk","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##frf","weight":1},{"name":"uncommon##iko","weight":1},{"name":"uncommon##stx","weight":1} ]}
+                          , {"name":"rm","count":1,"sheets":[{"name":"rare##apc","weight":35816},{"name":"rare##eve","weight":35816},{"name":"rare##ktk","weight":31376},{"name":"mythic##ktk","weight":4440},{"name":"rare##frf","weight":31339},{"name":"mythic##frf","weight":4477},{"name":"rare##iko","weight":31376},{"name":"mythic##iko","weight":4440},{"name":"rare##stx","weight":30976},{"name":"mythic##stx","weight":4840} ]} ]},
+"uKTK":{"weight":6,"slots":[{"name":"comL","count":1,"sheets":[{"name":"common##apcX","weight":694},{"name":"common##eveX","weight":4475},{"name":"common##ktkX","weight":378},{"name":"common##frfX","weight":288},{"name":"common##ikoX","weight":206},{"name":"common##stxX","weight":976},{"name":"basic##ktk","weight":4848},{"name":"basic##iko","weight":202},{"name":"common##ktkL","weight":4800},{"name":"comLand##iko","weight":4646},{"name":"common##stxL","weight":2727},{"name":"comLand##frf","weight":4646},{"name":"rarLand##frf","weight":202} ]}
+                          , {"name":"comW","count":1,"sheets":[{"name":"common##apcW","weight":61},{"name":"common##eveW","weight":55},{"name":"common##ktkW","weight":61},{"name":"common##frfW","weight":61},{"name":"common##ikoW","weight":61},{"name":"common##stxW","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comU","count":1,"sheets":[{"name":"common##apcU","weight":61},{"name":"common##eveU","weight":55},{"name":"common##ktkU","weight":61},{"name":"common##frfU","weight":61},{"name":"common##ikoU","weight":61},{"name":"common##stxU","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comB","count":1,"sheets":[{"name":"common##apcB","weight":61},{"name":"common##eveB","weight":55},{"name":"common##ktkB","weight":61},{"name":"common##frfB","weight":61},{"name":"common##ikoB","weight":61},{"name":"common##stxB","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comR","count":1,"sheets":[{"name":"common##apcR","weight":61},{"name":"common##eveR","weight":55},{"name":"common##ktkR","weight":61},{"name":"common##frfR","weight":61},{"name":"common##ikoR","weight":61},{"name":"common##stxR","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comG","count":1,"sheets":[{"name":"common##apcG","weight":61},{"name":"common##eveG","weight":55},{"name":"common##ktkG","weight":61},{"name":"common##frfG","weight":61},{"name":"common##ikoG","weight":61},{"name":"common##stxG","weight":61} ]}
+                          , {"name":"bonus","count":1,"sheets":[{"name":"common##apcW","weight":31155},{"name":"common##ktkW","weight":22445},{"name":"common##frfW","weight":32495},{"name":"common##ikoW","weight":34505},{"name":"common##stxW","weight":4355},{"name":"common##apcU","weight":31155},{"name":"common##ktkU","weight":22445},{"name":"common##frfU","weight":32495},{"name":"common##ikoU","weight":34505},{"name":"common##stxU","weight":4355},{"name":"common##apcB","weight":31155},{"name":"common##ktkB","weight":22445},{"name":"common##frfB","weight":32495},{"name":"common##ikoB","weight":34505},{"name":"common##stxB","weight":4355},{"name":"common##apcR","weight":31155},{"name":"common##ktkR","weight":22445},{"name":"common##frfR","weight":32495},{"name":"common##ikoR","weight":34505},{"name":"common##stxR","weight":4355},{"name":"common##apcG","weight":31155},{"name":"common##ktkG","weight":22445},{"name":"common##frfG","weight":32495},{"name":"common##ikoG","weight":34505},{"name":"common##stxG","weight":4355},{"name":"common##apcX","weight":395970},{"name":"common##eveX","weight":1172165},{"name":"common##ktkX","weight":215740},{"name":"common##frfX","weight":165155},{"name":"common##ikoX","weight":117585},{"name":"common##stxX","weight":556770},{"name":"comLesson##stx","weight":572670},{"name":"uncomLesson##stx","weight":189375},{"name":"rarLesson##stx","weight":45450},{"name":"mytLesson##stx","weight":4545},{"name":"uncArchive##sta","weight":541360},{"name":"rarArchive##sta","weight":216544},{"name":"mytArchive##sta","weight":54136} ]}
+                          , {"name":"unc","count":1,"sheets":[{"name":"uncommon##apc","weight":1},{"name":"uncommon##eve","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##ktk","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##frf","weight":1},{"name":"uncommon##iko","weight":1},{"name":"uncommon##stx","weight":1} ]}
+                          , {"name":"rm","count":1,"sheets":[{"name":"rare##apc","weight":35816},{"name":"rare##eve","weight":35816},{"name":"rare##ktk","weight":31376},{"name":"mythic##ktk","weight":4440},{"name":"rare##frf","weight":31339},{"name":"mythic##frf","weight":4477},{"name":"rare##iko","weight":31376},{"name":"mythic##iko","weight":4440},{"name":"rare##stx","weight":30976},{"name":"mythic##stx","weight":4840} ]} ]},
+"uFRF":{"weight":6,"slots":[{"name":"comL","count":1,"sheets":[{"name":"common##apcX","weight":694},{"name":"common##eveX","weight":4475},{"name":"common##ktkX","weight":378},{"name":"common##frfX","weight":288},{"name":"common##ikoX","weight":206},{"name":"common##stxX","weight":976},{"name":"basic##ktk","weight":4848},{"name":"basic##iko","weight":202},{"name":"common##ktkL","weight":4800},{"name":"comLand##iko","weight":4646},{"name":"common##stxL","weight":2727},{"name":"comLand##frf","weight":4646},{"name":"rarLand##frf","weight":202} ]}
+                          , {"name":"comW","count":1,"sheets":[{"name":"common##apcW","weight":61},{"name":"common##eveW","weight":55},{"name":"common##ktkW","weight":61},{"name":"common##frfW","weight":61},{"name":"common##ikoW","weight":61},{"name":"common##stxW","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comU","count":1,"sheets":[{"name":"common##apcU","weight":61},{"name":"common##eveU","weight":55},{"name":"common##ktkU","weight":61},{"name":"common##frfU","weight":61},{"name":"common##ikoU","weight":61},{"name":"common##stxU","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comB","count":1,"sheets":[{"name":"common##apcB","weight":61},{"name":"common##eveB","weight":55},{"name":"common##ktkB","weight":61},{"name":"common##frfB","weight":61},{"name":"common##ikoB","weight":61},{"name":"common##stxB","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comR","count":1,"sheets":[{"name":"common##apcR","weight":61},{"name":"common##eveR","weight":55},{"name":"common##ktkR","weight":61},{"name":"common##frfR","weight":61},{"name":"common##ikoR","weight":61},{"name":"common##stxR","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comG","count":1,"sheets":[{"name":"common##apcG","weight":61},{"name":"common##eveG","weight":55},{"name":"common##ktkG","weight":61},{"name":"common##frfG","weight":61},{"name":"common##ikoG","weight":61},{"name":"common##stxG","weight":61} ]}
+                          , {"name":"bonus","count":1,"sheets":[{"name":"common##apcW","weight":31155},{"name":"common##ktkW","weight":22445},{"name":"common##frfW","weight":32495},{"name":"common##ikoW","weight":34505},{"name":"common##stxW","weight":4355},{"name":"common##apcU","weight":31155},{"name":"common##ktkU","weight":22445},{"name":"common##frfU","weight":32495},{"name":"common##ikoU","weight":34505},{"name":"common##stxU","weight":4355},{"name":"common##apcB","weight":31155},{"name":"common##ktkB","weight":22445},{"name":"common##frfB","weight":32495},{"name":"common##ikoB","weight":34505},{"name":"common##stxB","weight":4355},{"name":"common##apcR","weight":31155},{"name":"common##ktkR","weight":22445},{"name":"common##frfR","weight":32495},{"name":"common##ikoR","weight":34505},{"name":"common##stxR","weight":4355},{"name":"common##apcG","weight":31155},{"name":"common##ktkG","weight":22445},{"name":"common##frfG","weight":32495},{"name":"common##ikoG","weight":34505},{"name":"common##stxG","weight":4355},{"name":"common##apcX","weight":395970},{"name":"common##eveX","weight":1172165},{"name":"common##ktkX","weight":215740},{"name":"common##frfX","weight":165155},{"name":"common##ikoX","weight":117585},{"name":"common##stxX","weight":556770},{"name":"comLesson##stx","weight":572670},{"name":"uncomLesson##stx","weight":189375},{"name":"rarLesson##stx","weight":45450},{"name":"mytLesson##stx","weight":4545},{"name":"uncArchive##sta","weight":541360},{"name":"rarArchive##sta","weight":216544},{"name":"mytArchive##sta","weight":54136} ]}
+                          , {"name":"unc","count":1,"sheets":[{"name":"uncommon##apc","weight":1},{"name":"uncommon##eve","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##ktk","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##frf","weight":1},{"name":"uncommon##iko","weight":1},{"name":"uncommon##stx","weight":1} ]}
+                          , {"name":"rm","count":1,"sheets":[{"name":"rare##apc","weight":35816},{"name":"rare##eve","weight":35816},{"name":"rare##ktk","weight":31376},{"name":"mythic##ktk","weight":4440},{"name":"rare##frf","weight":31339},{"name":"mythic##frf","weight":4477},{"name":"rare##iko","weight":31376},{"name":"mythic##iko","weight":4440},{"name":"rare##stx","weight":30976},{"name":"mythic##stx","weight":4840} ]} ]},
+"uIKO":{"weight":4,"slots":[{"name":"comL","count":1,"sheets":[{"name":"common##apcX","weight":694},{"name":"common##eveX","weight":4475},{"name":"common##ktkX","weight":378},{"name":"common##frfX","weight":288},{"name":"common##ikoX","weight":206},{"name":"common##stxX","weight":976},{"name":"basic##ktk","weight":4848},{"name":"basic##iko","weight":202},{"name":"common##ktkL","weight":4800},{"name":"comLand##iko","weight":4646},{"name":"common##stxL","weight":2727},{"name":"comLand##frf","weight":4646},{"name":"rarLand##frf","weight":202} ]}
+                          , {"name":"comW","count":1,"sheets":[{"name":"common##apcW","weight":61},{"name":"common##eveW","weight":55},{"name":"common##ktkW","weight":61},{"name":"common##frfW","weight":61},{"name":"common##ikoW","weight":61},{"name":"common##stxW","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comU","count":1,"sheets":[{"name":"common##apcU","weight":61},{"name":"common##eveU","weight":55},{"name":"common##ktkU","weight":61},{"name":"common##frfU","weight":61},{"name":"common##ikoU","weight":61},{"name":"common##stxU","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comB","count":1,"sheets":[{"name":"common##apcB","weight":61},{"name":"common##eveB","weight":55},{"name":"common##ktkB","weight":61},{"name":"common##frfB","weight":61},{"name":"common##ikoB","weight":61},{"name":"common##stxB","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comR","count":1,"sheets":[{"name":"common##apcR","weight":61},{"name":"common##eveR","weight":55},{"name":"common##ktkR","weight":61},{"name":"common##frfR","weight":61},{"name":"common##ikoR","weight":61},{"name":"common##stxR","weight":61} ]}
+                          , {"name":"com","count":1,"sheets":[{"name":"common##apcW","weight":18058},{"name":"common##ktkW","weight":13086},{"name":"common##frfW","weight":18826},{"name":"common##ikoW","weight":19926},{"name":"common##stxW","weight":2496},{"name":"common##apcU","weight":18058},{"name":"common##ktkU","weight":13086},{"name":"common##frfU","weight":18826},{"name":"common##ikoU","weight":19926},{"name":"common##stxU","weight":2496},{"name":"common##apcB","weight":18058},{"name":"common##ktkB","weight":13086},{"name":"common##frfB","weight":18826},{"name":"common##ikoB","weight":19926},{"name":"common##stxB","weight":2496},{"name":"common##apcR","weight":18058},{"name":"common##ktkR","weight":13086},{"name":"common##frfR","weight":18826},{"name":"common##ikoR","weight":19926},{"name":"common##stxR","weight":2496},{"name":"common##apcG","weight":18058},{"name":"common##ktkG","weight":13086},{"name":"common##frfG","weight":18826},{"name":"common##ikoG","weight":19926},{"name":"common##stxG","weight":2496},{"name":"common##apcX","weight":33190},{"name":"common##eveX","weight":98175},{"name":"common##ktkX","weight":18070},{"name":"common##frfX","weight":13830},{"name":"common##ikoX","weight":9860},{"name":"common##stxX","weight":46675} ]}
+                          , {"name":"comG","count":1,"sheets":[{"name":"common##apcG","weight":61},{"name":"common##eveG","weight":55},{"name":"common##ktkG","weight":61},{"name":"common##frfG","weight":61},{"name":"common##ikoG","weight":61},{"name":"common##stxG","weight":61} ]}
+                          , {"name":"bonus","count":1,"sheets":[{"name":"common##apcW","weight":31155},{"name":"common##ktkW","weight":22445},{"name":"common##frfW","weight":32495},{"name":"common##ikoW","weight":34505},{"name":"common##stxW","weight":4355},{"name":"common##apcU","weight":31155},{"name":"common##ktkU","weight":22445},{"name":"common##frfU","weight":32495},{"name":"common##ikoU","weight":34505},{"name":"common##stxU","weight":4355},{"name":"common##apcB","weight":31155},{"name":"common##ktkB","weight":22445},{"name":"common##frfB","weight":32495},{"name":"common##ikoB","weight":34505},{"name":"common##stxB","weight":4355},{"name":"common##apcR","weight":31155},{"name":"common##ktkR","weight":22445},{"name":"common##frfR","weight":32495},{"name":"common##ikoR","weight":34505},{"name":"common##stxR","weight":4355},{"name":"common##apcG","weight":31155},{"name":"common##ktkG","weight":22445},{"name":"common##frfG","weight":32495},{"name":"common##ikoG","weight":34505},{"name":"common##stxG","weight":4355},{"name":"common##apcX","weight":395970},{"name":"common##eveX","weight":1172165},{"name":"common##ktkX","weight":215740},{"name":"common##frfX","weight":165155},{"name":"common##ikoX","weight":117585},{"name":"common##stxX","weight":556770},{"name":"comLesson##stx","weight":572670},{"name":"uncomLesson##stx","weight":189375},{"name":"rarLesson##stx","weight":45450},{"name":"mytLesson##stx","weight":4545},{"name":"uncArchive##sta","weight":541360},{"name":"rarArchive##sta","weight":216544},{"name":"mytArchive##sta","weight":54136} ]}
+                          , {"name":"unc","count":1,"sheets":[{"name":"uncommon##apc","weight":1},{"name":"uncommon##eve","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##ktk","weight":1} ]}, {"name":"unc","count":1,"sheets":[{"name":"uncommon##frf","weight":1},{"name":"uncommon##iko","weight":1},{"name":"uncommon##stx","weight":1} ]}
+                          , {"name":"rm","count":1,"sheets":[{"name":"rare##apc","weight":35816},{"name":"rare##eve","weight":35816},{"name":"rare##ktk","weight":31376},{"name":"mythic##ktk","weight":4440},{"name":"rare##frf","weight":31339},{"name":"mythic##frf","weight":4477},{"name":"rare##iko","weight":31376},{"name":"mythic##iko","weight":4440},{"name":"rare##stx","weight":30976},{"name":"mythic##stx","weight":4840} ]} ]},
+`       end
+    }
+}
+
+`       1 sh_r
+[common]
+`       1 sh_x
+[common##apcW]
+Angelfire Crusader (APC) 1
+Coalition Honor Guard (APC) 3
+Dega Disciple (APC) 4
+Divine Light (APC) 8
+Helionaut (APC) 13
+Manacles of Decay (APC) 14
+Orim's Thunder (APC) 15
+Shield of Duty and Reason (APC) 16
+Standard Bearer (APC) 18
+`       1 sh_x
+[common##apcU]
+Ceta Disciple (APC) 19
+Coastal Drake (APC) 22
+Index (APC) 25
+Jaded Response (APC) 26
+Jilt (APC) 27
+Living Airship (APC) 28
+Reef Shaman (APC) 29
+Shimmering Mirage (APC) 30
+Whirlpool Rider (APC) 35
+`       1 sh_x
+[common##apcB]
+Dead Ringers (APC) 37
+Last Caress (APC) 41
+Mind Extraction (APC) 42
+Mournful Zombie (APC) 43
+Necra Disciple (APC) 44
+Phyrexian Rager (APC) 49
+Quagmire Druid (APC) 51
+Urborg Uprising (APC) 53
+Zombie Boa (APC) 54
+`       1 sh_x
+[common##apcR]
+Bloodfire Dwarf (APC) 56
+Bloodfire Infusion (APC) 57
+Dwarven Landslide (APC) 60
+Kavu Glider (APC) 64
+Minotaur Tactician (APC) 65
+Raka Disciple (APC) 66
+Smash (APC) 69
+Tahngarth's Glare (APC) 70
+Tundra Kavu (APC) 71
+`       1 sh_x
+[common##apcG]
+Ana Disciple (APC) 73
+Bog Gnarr (APC) 76
+Glade Gnarr (APC) 78
+Lay of the Land (APC) 81
+Penumbra Bobcat (APC) 82
+Savage Gorilla (APC) 85
+Strength of Night (APC) 86
+Tranquil Path (APC) 89
+Urborg Elf (APC) 90
+`       1 sh_x
+[common##apcX]
+Consume Strength (APC) 93
+Gaea's Skyfolk (APC) 101
+Goblin Legionnaire (APC) 103
+Llanowar Dead (APC) 109
+Putrid Warrior (APC) 117
+Quicksilver Dagger (APC) 118
+Razorfin Hunter (APC) 119
+Soul Link (APC) 120
+Squee's Embrace (APC) 122
+Temporal Spring (APC) 125
+`       2 sh_x
+
+[common##eveW]
+Ballynock Trapper (EVE) 2
+Cenn's Enlistment (EVE) 3
+Kithkin Spellduster (EVE) 8
+Kithkin Zealot (EVE) 9
+Recumbent Bliss (EVE) 13
+`       1 sh_x
+[common##eveU]
+Banishing Knack (EVE) 17
+Dream Thief (EVE) 20
+Merrow Levitator (EVE) 26
+Oona's Grace (EVE) 27
+Wilderness Hypnotist (EVE) 32
+`       1 sh_x
+[common##eveB]
+Merrow Bonegnawer (EVE) 37
+Raven's Crime (EVE) 41
+Smoldering Butcher (EVE) 42
+Soul Reap (EVE) 44
+Talara's Bane (EVE) 47
+`       1 sh_x
+[common##eveR]
+Cinder Pyromancer (EVE) 50
+Flame Jab (EVE) 53
+Heartlash Cinder (EVE) 56
+Hotheaded Giant (EVE) 57
+Puncture Blast (EVE) 60
+`       1 sh_x
+[common##eveG]
+Aerie Ouphes (EVE) 65
+Monstrify (EVE) 70
+Nettle Sentinel (EVE) 71
+Tilling Treefolk (EVE) 78
+Wickerbough Elder (EVE) 80
+`       1 sh_x
+[common##eveX]
+Beckon Apparition (EVE) 82
+Edge of the Divinity (EVE) 87
+Harvest Gwyllion (EVE) 90
+Nightsky Mimic (EVE) 91
+Nip Gwyllion (EVE) 92
+Unmake (EVE) 96
+Clout of the Dominus (EVE) 99
+Inside Out (EVE) 103
+Noggle Bandit (EVE) 106
+Noggle Bridgebreaker (EVE) 107
+Riverfall Mimic (EVE) 111
+Stream Hopper (EVE) 113
+Desecrator Hag (EVE) 119
+Drain the Well (EVE) 121
+Gift of the Deity (EVE) 122
+Odious Trow (EVE) 125
+Rendclaw Trow (EVE) 127
+Woodlurker Mimic (EVE) 130
+Battlegate Mimic (EVE) 133
+Double Cleave (EVE) 135
+Duergar Assailant (EVE) 136
+Fire at Will (EVE) 140
+Hobgoblin Dragoon (EVE) 142
+Scourge of the Nobilis (EVE) 146
+Favor of the Overbeing (EVE) 151
+Grazing Kelpie (EVE) 153
+Shorecrasher Mimic (EVE) 159
+Slippery Bogle (EVE) 160
+Snakeform (EVE) 161
+Trapjaw Kelpie (EVE) 164
+Antler Skulkin (EVE) 167
+Fang Skulkin (EVE) 168
+Hoof Skulkin (EVE) 169
+Jawbone Skulkin (EVE) 170
+Shell Skulkin (EVE) 173
+`       2 sh_x
+
+[common##ktkW]
+Ainok Bond-Kin (KTK) 3
+Alabaster Kirin (KTK) 4
+Defiant Strike (KTK) 7
+Erase (KTK) 9
+Feat of Resistance (KTK) 10
+Firehoof Cavalry (KTK) 11
+Jeskai Student (KTK) 14
+Kill Shot (KTK) 15
+Mardu Hateblade (KTK) 16
+Mardu Hordechief (KTK) 17
+Rush of Battle (KTK) 19
+Sage-Eye Harrier (KTK) 20
+Salt Road Patrol (KTK) 21
+Siegecraft (KTK) 23
+Smite the Monstrous (KTK) 24
+War Behemoth (KTK) 29
+`       1 sh_x
+[common##ktkU]
+Cancel (KTK) 33
+Crippling Chill (KTK) 35
+Disdainful Stroke (KTK) 37
+Embodiment of Spring (KTK) 39
+Force Away (KTK) 40
+Glacial Stalker (KTK) 41
+Jeskai Windscout (KTK) 44
+Monastery Flock (KTK) 47
+Mystic of the Hidden Way (KTK) 48
+Scaldkin (KTK) 52
+Singing Bell Strike (KTK) 55
+Taigam's Scheming (KTK) 57
+Treasure Cruise (KTK) 59
+Weave Fate (KTK) 61
+Wetland Sambar (KTK) 62
+Whirlwind Adept (KTK) 63
+`       1 sh_x
+[common##ktkB]
+Bitter Revelation (KTK) 65
+Debilitating Injury (KTK) 68
+Disowned Ancestor (KTK) 70
+Dutiful Return (KTK) 71
+Kheru Dreadmaw (KTK) 76
+Krumar Bond-Kin (KTK) 77
+Mardu Skullhunter (KTK) 78
+Molting Snakeskin (KTK) 80
+Rakshasa's Secret (KTK) 84
+Rite of the Serpent (KTK) 86
+Rotting Mastodon (KTK) 87
+Shambling Attendants (KTK) 89
+Sidisi's Pet (KTK) 90
+Sultai Scavenger (KTK) 91
+Throttle (KTK) 93
+Unyielding Krumar (KTK) 94
+`       1 sh_x
+[common##ktkR]
+Act of Treason (KTK) 95
+Ainok Tracker (KTK) 96
+Arrow Storm (KTK) 98
+Barrage of Boulders (KTK) 100
+Bloodfire Expert (KTK) 101
+Bloodfire Mentor (KTK) 102
+Bring Low (KTK) 103
+Canyon Lurkers (KTK) 105
+Leaping Master (KTK) 114
+Mardu Warshrieker (KTK) 117
+Shatter (KTK) 120
+Summit Prowler (KTK) 121
+Swift Kick (KTK) 122
+Tormenting Voice (KTK) 123
+Trumpet Blast (KTK) 124
+Valley Dasher (KTK) 125
+`       1 sh_x
+[common##ktkG]
+Alpine Grizzly (KTK) 127
+Archers' Parapet (KTK) 128
+Awaken the Bear (KTK) 129
+Dragonscale Boon (KTK) 131
+Feed the Clan (KTK) 132
+Highland Game (KTK) 135
+Hooting Mandrills (KTK) 137
+Kin-Tree Warden (KTK) 139
+Longshot Squad (KTK) 140
+Naturalize (KTK) 142
+Sagu Archer (KTK) 146
+Savage Punch (KTK) 147
+Scout the Borders (KTK) 148
+Smoke Teller (KTK) 151
+Tusked Colossodon (KTK) 155
+Woolly Loxodon (KTK) 158
+`       1 sh_x
+[common##ktkX]
+Abomination of Gudul (KTK) 159
+Abzan Guide (KTK) 162
+Efreet Weaponmaster (KTK) 175
+Ponyback Brigade (KTK) 191
+Snowhorn Rider (KTK) 201
+Abzan Banner (KTK) 215
+Jeskai Banner (KTK) 222
+Lens of Clarity (KTK) 223
+Mardu Banner (KTK) 224
+Sultai Banner (KTK) 225
+Temur Banner (KTK) 226
+`       2 sh_x
+
+[common##frfW]
+Abzan Advantage (FRF) 2
+Abzan Runemark (FRF) 3
+Abzan Skycaptain (FRF) 4
+Arashin Cleric (FRF) 5
+Aven Skirmisher (FRF) 6
+Dragon Bell Monk (FRF) 10
+Great-Horn Krushok (FRF) 13
+Pressure Point (FRF) 21
+Sandblast (FRF) 24
+Sandsteppe Outcast (FRF) 25
+Soul Summons (FRF) 26
+`       1 sh_x
+[common##frfU]
+Aven Surveyor (FRF) 31
+Enhanced Awareness (FRF) 33
+Jeskai Runemark (FRF) 37
+Jeskai Sage (FRF) 38
+Lotus Path Djinn (FRF) 39
+Rakshasa's Disdain (FRF) 45
+Refocus (FRF) 47
+Sultai Skullkeeper (FRF) 53
+Whisk Away (FRF) 57
+Will of the Naga (FRF) 58
+Write into Being (FRF) 59
+`       1 sh_x
+[common##frfB]
+Alesha's Vanguard (FRF) 60
+Ancestral Vengeance (FRF) 61
+Douse in Gloom (FRF) 68
+Gurmag Angler (FRF) 72
+Hooded Assassin (FRF) 73
+Reach of Shadows (FRF) 81
+Sibsig Host (FRF) 82
+Sultai Emissary (FRF) 85
+Sultai Runemark (FRF) 86
+Tasigur's Cruelty (FRF) 88
+Typhoid Rats (FRF) 89
+`       1 sh_x
+[common##frfR]
+Bathe in Dragonfire (FRF) 92
+Collateral Damage (FRF) 95
+Defiant Ogre (FRF) 96
+Fierce Invocation (FRF) 98
+Goblin Heelcutter (FRF) 102
+Gore Swine (FRF) 103
+Lightning Shrieker (FRF) 106
+Mardu Runemark (FRF) 107
+Mardu Scout (FRF) 108
+Smoldering Efreet (FRF) 115
+Temur Battle Rage (FRF) 116
+`       1 sh_x
+[common##frfG]
+Ainok Guide (FRF) 121
+Ambush Krotiq (FRF) 122
+Archers of Qarsi (FRF) 124
+Feral Krushok (FRF) 128
+Formless Nurturing (FRF) 129
+Frontier Mastodon (FRF) 130
+Hunt the Weak (FRF) 133
+Map the Wastes (FRF) 134
+Return to the Earth (FRF) 135
+Temur Runemark (FRF) 140
+Whisperer of the Wilds (FRF) 144
+`       1 sh_x
+[common##frfX]
+Cunning Strike (FRF) 150
+Ethereal Ambush (FRF) 152
+Grim Contest (FRF) 153
+Harsh Sustenance (FRF) 154
+War Flare (FRF) 158
+`       2 sh_x
+
+[common##ikoW]
+Blade Banish (IKO) 4
+Checkpoint Officer (IKO) 5
+Coordinated Charge (IKO) 6
+Daysquad Marshal (IKO) 8
+Divine Arrow (IKO) 9
+Drannith Healer (IKO) 10
+Garrison Cat (IKO) 14
+Helica Glider (IKO) 15
+Imposing Vantasaur (IKO) 17
+Light of Hope (IKO) 20
+Maned Serval (IKO) 23
+Pacifism (IKO) 25
+Patagia Tiger (IKO) 26
+Perimeter Sergeant (IKO) 27
+Savai Sabertooth (IKO) 29
+Snare Tactician (IKO) 30
+Solid Footing (IKO) 31
+Spontaneous Flight (IKO) 33
+Vulpikeet (IKO) 37
+`       1 sh_x
+[common##ikoU]
+Aegis Turtle (IKO) 39
+Anticipate (IKO) 40
+Capture Sphere (IKO) 44
+Convolute (IKO) 45
+Crystacean (IKO) 46
+Dreamtail Heron (IKO) 47
+Essence Scatter (IKO) 49
+Facet Reader (IKO) 50
+Frost Lynx (IKO) 51
+Frostveil Ambush (IKO) 52
+Glimmerbell (IKO) 53
+Gust of Wind (IKO) 54
+Hampering Snare (IKO) 55
+Keep Safe (IKO) 56
+Of One Mind (IKO) 60
+Phase Dolphin (IKO) 62
+Startling Development (IKO) 68
+Thieving Otter (IKO) 69
+Wingfold Pteron (IKO) 71
+`       1 sh_x
+[common##ikoB]
+Blitz Leech (IKO) 74
+Blood Curdle (IKO) 75
+Boot Nipper (IKO) 76
+Bushmeat Poacher (IKO) 77
+Cavern Whisperer (IKO) 79
+Corpse Churn (IKO) 81
+Dark Bargain (IKO) 82
+Dead Weight (IKO) 83
+Durable Coilbug (IKO) 85
+Gloom Pangolin (IKO) 89
+Lurking Deadeye (IKO) 94
+Memory Leak (IKO) 95
+Mutual Destruction (IKO) 96
+Nightsquad Commando (IKO) 98
+Serrated Scorpion (IKO) 99
+Suffocating Fumes (IKO) 100
+Unexpected Fangs (IKO) 102
+Unlikely Aid (IKO) 103
+Whisper Squad (IKO) 105
+`       1 sh_x
+[common##ikoR]
+Blazing Volley (IKO) 107
+Blisterspit Gremlin (IKO) 108
+Cathartic Reunion (IKO) 110
+Cloudpiercer (IKO) 112
+Drannith Stinger (IKO) 113
+Ferocious Tigorilla (IKO) 115
+Fire Prophecy (IKO) 116
+Forbidden Friendship (IKO) 119
+Frenzied Raptor (IKO) 120
+Go for Blood (IKO) 122
+Heightened Reflexes (IKO) 123
+Lava Serpent (IKO) 124
+Prickly Marmoset (IKO) 129
+Pyroceratops (IKO) 130
+Raking Claws (IKO) 131
+Rumbling Rockslide (IKO) 134
+Shredded Sails (IKO) 136
+Spelleater Wolverine (IKO) 137
+Tentative Connection (IKO) 138
+`       1 sh_x
+[common##ikoG]
+Adventurous Impulse (IKO) 142
+Almighty Brushwagg (IKO) 143
+Bristling Boar (IKO) 146
+Essence Symbiote (IKO) 149
+Excavation Mole (IKO) 150
+Fertilid (IKO) 152
+Flycatcher Giraffid (IKO) 153
+Fully Grown (IKO) 154
+Greater Sandwurm (IKO) 157
+Honey Mammoth (IKO) 158
+Humble Naturalist (IKO) 160
+Migratory Greathorn (IKO) 165
+Mosscoat Goriak (IKO) 167
+Plummet (IKO) 169
+Ram Through (IKO) 170
+Sudden Spinnerets (IKO) 171
+Survivors' Bond (IKO) 172
+Thwart the Enemy (IKO) 173
+Wilt (IKO) 176
+`       1 sh_x
+[common##ikoX]
+Adaptive Shimmerer (IKO) 1
+Farfinder (IKO) 2
+Mysterious Egg (IKO) 3
+Sleeper Dart (IKO) 240
+Springjaw Trap (IKO) 241
+Evolving Wilds (IKO) 247
+`       2 sh_x
+
+[common##stxW]
+Ageless Guardian (STX) 8
+Beaming Defiance (STX) 9
+Combat Professor (STX) 11
+Defend the Campus (STX) 12
+Eager First-Year (STX) 16
+Expel (STX) 18
+Guiding Voice (STX) 19
+Pilgrim of the Ages (STX) 22
+Pillardrop Rescuer (STX) 23
+Star Pupil (STX) 30
+Stonerise Spirit (STX) 32
+Study Break (STX) 34
+`       1 sh_x
+[common##stxU]
+Arcane Subtraction (STX) 36
+Burrog Befuddler (STX) 38
+Bury in Books (STX) 39
+Curate (STX) 40
+Frost Trickster (STX) 43
+Pop Quiz (STX) 49
+Reject (STX) 50
+Resculpt (STX) 51
+Serpentine Curve (STX) 52
+Soothsayer Adept (STX) 55
+Vortex Runner (STX) 60
+Waterfall Aerialist (STX) 61
+`       1 sh_x
+[common##stxB]
+Arrogant Poet (STX) 63
+Crushing Disappointment (STX) 68
+Essence Infusion (STX) 69
+Hunt for Specimens (STX) 73
+Lash of Malice (STX) 74
+Leech Fanatic (STX) 75
+Mage Hunters' Onslaught (STX) 77
+Novice Dissector (STX) 79
+Professor's Warning (STX) 84
+Promising Duskmage (STX) 85
+Specter of the Fens (STX) 87
+Unwilling Ingredient (STX) 90
+`       1 sh_x
+[common##stxR]
+Blood Age General (STX) 93
+Dragon's Approach (STX) 97
+Enthusiastic Study (STX) 99
+First Day of Class (STX) 102
+Fuming Effigy (STX) 103
+Heated Debate (STX) 106
+Illustrious Historian (STX) 109
+Pigment Storm (STX) 111
+Pillardrop Warden (STX) 112
+Sudden Breakthrough (STX) 116
+Tome Shredder (STX) 117
+Twinscroll Shaman (STX) 118
+`       1 sh_x
+[common##stxG]
+Bayou Groff (STX) 121
+Big Play (STX) 122
+Charge Through (STX) 124
+Field Trip (STX) 131
+Leyline Invocation (STX) 136
+Mage Duel (STX) 137
+Professor of Zoomancy (STX) 140
+Reckless Amplimancer (STX) 141
+Scurrid Colony (STX) 142
+Spined Karok (STX) 143
+Springmane Cervin (STX) 144
+Tangletrap (STX) 145
+`       1 sh_x
+[common##stxX]
+Biomathematician (STX) 164
+Blood Researcher (STX) 166
+Cram Session (STX) 170
+Elemental Masterpiece (STX) 182
+Eureka Moment (STX) 184
+Exhilarating Elocution (STX) 185
+Infuse with Vitality (STX) 194
+Lorehold Pledgemage (STX) 201
+Make Your Mark (STX) 204
+Moldering Karok (STX) 206
+Needlethorn Drake (STX) 208
+Oggyar Battle-Seer (STX) 209
+Owlin Shieldmage (STX) 210
+Prismari Pledgemage (STX) 215
+Quandrix Pledgemage (STX) 219
+Relic Sloth (STX) 223
+Rise of Extus (STX) 226
+Silverquill Pledgemage (STX) 233
+Spectacle Mage (STX) 235
+Spiteful Squad (STX) 237
+Square Up (STX) 238
+Stonebound Mentor (STX) 239
+Teach by Example (STX) 241
+Thrilling Discovery (STX) 243
+Witherbloom Pledgemage (STX) 249
+Biblioplex Assistant (STX) 251
+Campus Guide (STX) 252
+Cogwork Archivist (STX) 254
+Excavated Wall (STX) 255
+Letter of Acceptance (STX) 256
+`       1 sh_x
+[common##stxL]
+Archway Commons (STX) 263
+Lorehold Campus (STX) 268
+Prismari Campus (STX) 270
+Quandrix Campus (STX) 271
+Silverquill Campus (STX) 273
+Witherbloom Campus (STX) 275
+
+`       1 sh_r
+[comLand]
+`       1 sh_x
+[common##ktkL]
+Bloodfell Caves (KTK) 229
+Blossoming Sands (KTK) 231
+Dismal Backwater (KTK) 232
+Jungle Hollow (KTK) 235
+Rugged Highlands (KTK) 240
+Scoured Barrens (KTK) 242
+Swiftwater Cliffs (KTK) 243
+Thornwood Falls (KTK) 244
+Tranquil Cove (KTK) 246
+Wind-Scarred Crag (KTK) 247
+`       1 sh_x
+[comLand##frf]
+Bloodfell Caves (FRF) 165
+Blossoming Sands (FRF) 166
+Dismal Backwater (FRF) 168
+Jungle Hollow (FRF) 169
+Rugged Highlands (FRF) 170
+Scoured Barrens (FRF) 171
+Swiftwater Cliffs (FRF) 172
+Thornwood Falls (FRF) 173
+Tranquil Cove (FRF) 174
+Wind-Scarred Crag (FRF) 175
+[comLand##iko]
+Bloodfell Caves (IKO) 243
+Blossoming Sands (IKO) 244
+Dismal Backwater (IKO) 246
+Jungle Hollow (IKO) 249
+Rugged Highlands (IKO) 252
+Scoured Barrens (IKO) 254
+Swiftwater Cliffs (IKO) 255
+Thornwood Falls (IKO) 256
+Tranquil Cove (IKO) 257
+Wind-Scarred Crag (IKO) 258
+
+[comLesson##stx]
+Environmental Sciences (STX) 1
+Expanded Anatomy (STX) 2
+Introduction to Annihilation (STX) 3
+Introduction to Prophecy (STX) 4
+Elemental Summoning (STX) 183
+Fractal Summoning (STX) 187
+Inkling Summoning (STX) 195
+Pest Summoning (STX) 211
+Spirit Summoning (STX) 236
+
+[uncommon##apc]
+Coalition Flag (APC) 2
+Dega Sanctuary (APC) 5
+Diversionary Tactics (APC) 7
+Enlistment Officer (APC) 9
+Haunted Angel (APC) 12
+Ceta Sanctuary (APC) 20
+Evasive Action (APC) 23
+Tidal Courier (APC) 31
+Vodalian Mystic (APC) 33
+Whirlpool Drake (APC) 34
+Foul Presence (APC) 39
+Grave Defiler (APC) 40
+Necra Sanctuary (APC) 45
+Phyrexian Gargantua (APC) 48
+Suppress (APC) 52
+Bloodfire Kavu (APC) 58
+Dwarven Patrol (APC) 61
+Goblin Ringleader (APC) 62
+Illuminate (APC) 63
+Raka Sanctuary (APC) 67
+Ana Sanctuary (APC) 74
+Gaea's Balance (APC) 77
+Kavu Howler (APC) 79
+Penumbra Kavu (APC) 83
+Sylvan Messenger (APC) 87
+Aether Mutation (APC) 91
+Captain's Maneuver (APC) 92
+Death Mutation (APC) 96
+Ebony Treefolk (APC) 97
+Flowstone Charger (APC) 99
+Gerrard's Verdict (APC) 102
+Jungle Barrier (APC) 106
+Martyrs' Tomb (APC) 110
+Minotaur Illusionist (APC) 111
+Squee's Revenge (APC) 123
+Fire // Ice (APC) 128
+Illusion // Reality (APC) 129
+Life // Death (APC) 130
+Night // Day (APC) 131
+Order // Chaos (APC) 132
+Brass Herald (APC) 133
+Dodecapod (APC) 134
+Dragon Arch (APC) 135
+Emblazoned Golem (APC) 136
+
+[uncommon##eve]
+Endure (EVE) 5
+Flickerwisp (EVE) 6
+Loyal Gyrfalcon (EVE) 11
+Patrol Signaler (EVE) 12
+Springjack Shepherd (EVE) 15
+Suture Spirit (EVE) 16
+Cache Raiders (EVE) 18
+Dream Fracture (EVE) 19
+Idle Thoughts (EVE) 23
+Indigo Faerie (EVE) 24
+Razorfin Abolisher (EVE) 28
+Talonrend (EVE) 30
+Creakwood Ghoul (EVE) 34
+Crumbling Ashes (EVE) 35
+Lingering Tormentor (EVE) 36
+Soot Imp (EVE) 43
+Soul Snuffers (EVE) 45
+Syphon Life (EVE) 46
+Chaotic Backlash (EVE) 49
+Duergar Cave-Guard (EVE) 51
+Hatchet Bully (EVE) 54
+Impelled Giant (EVE) 58
+Outrage Shaman (EVE) 59
+Unwilling Recruit (EVE) 64
+Duskdale Wurm (EVE) 67
+Marshdrinker Giant (EVE) 69
+Phosphorescent Feast (EVE) 72
+Savage Conception (EVE) 75
+Swirling Spriggan (EVE) 76
+Twinblade Slasher (EVE) 79
+Batwing Brume (EVE) 81
+Bloodied Ghost (EVE) 83
+Cauldron Haze (EVE) 84
+Gwyllion Hedge-Mage (EVE) 89
+Restless Apparition (EVE) 94
+Voracious Hatchling (EVE) 97
+Crag Puca (EVE) 101
+Noggle Hedge-Mage (EVE) 108
+Noggle Ransacker (EVE) 109
+Nucklavee (EVE) 110
+Shrewd Hatchling (EVE) 112
+Unnerving Assault (EVE) 114
+Canker Abomination (EVE) 115
+Cankerous Thirst (EVE) 116
+Hag Hedge-Mage (EVE) 123
+Noxious Hatchling (EVE) 124
+Quillspike (EVE) 126
+Stalker Hag (EVE) 129
+Belligerent Hatchling (EVE) 134
+Duergar Hedge-Mage (EVE) 137
+Duergar Mine-Captain (EVE) 138
+Hearthfire Hobgoblin (EVE) 141
+Moonhold (EVE) 143
+Spitemare (EVE) 147
+Gilder Bairn (EVE) 152
+Groundling Pouncer (EVE) 154
+Invert the Skies (EVE) 155
+Selkie Hedge-Mage (EVE) 158
+Sturdy Hatchling (EVE) 163
+Wistful Selkie (EVE) 165
+
+[uncommon##ktk]
+Abzan Battle Priest (KTK) 1
+Abzan Falconer (KTK) 2
+Brave the Sands (KTK) 5
+Dazzling Ramparts (KTK) 6
+Seeker of the Way (KTK) 22
+Suspension Field (KTK) 25
+Take Up Arms (KTK) 26
+Timely Hordemate (KTK) 27
+Venerable Lammasu (KTK) 28
+Watcher of the Roost (KTK) 30
+Blinding Spray (KTK) 32
+Dragon's Eye Savants (KTK) 38
+Jeskai Elder (KTK) 43
+Mistfire Weaver (KTK) 46
+Quiet Contemplation (KTK) 50
+Riverwheel Aerialists (KTK) 51
+Scion of Glaciers (KTK) 53
+Set Adrift (KTK) 54
+Stubborn Denial (KTK) 56
+Waterwhirl (KTK) 60
+Bellowing Saddlebrute (KTK) 64
+Dead Drop (KTK) 67
+Despise (KTK) 69
+Gurmag Swiftwing (KTK) 74
+Kheru Bloodsucker (KTK) 75
+Mer-Ek Nightblade (KTK) 79
+Murderous Cut (KTK) 81
+Raiders' Spoils (KTK) 83
+Ruthless Ripper (KTK) 88
+Swarm of Bloodflies (KTK) 92
+Arc Lightning (KTK) 97
+Burn Away (KTK) 104
+Dragon Grip (KTK) 107
+Goblinslide (KTK) 109
+Horde Ambusher (KTK) 110
+Hordeling Outburst (KTK) 111
+Mardu Blazebringer (KTK) 115
+Mardu Heart-Piercer (KTK) 116
+Monastery Swiftspear (KTK) 118
+War-Name Aspirant (KTK) 126
+Become Immense (KTK) 130
+Heir of the Wilds (KTK) 134
+Incremental Growth (KTK) 138
+Pine Walker (KTK) 143
+Roar of Challenge (KTK) 145
+Seek the Horizon (KTK) 150
+Sultai Flayer (KTK) 152
+Temur Charger (KTK) 153
+Tuskguard Captain (KTK) 156
+Windstorm (KTK) 157
+Abzan Charm (KTK) 161
+Armament Corps (KTK) 165
+Bear's Companion (KTK) 167
+Chief of the Edge (KTK) 169
+Chief of the Scale (KTK) 170
+Death Frenzy (KTK) 172
+Highspire Mantis (KTK) 177
+Icefeather Aven (KTK) 178
+Jeskai Charm (KTK) 181
+Kin-Tree Invocation (KTK) 183
+Mardu Charm (KTK) 186
+Mardu Roughrider (KTK) 187
+Master the Way (KTK) 188
+Ride Down (KTK) 194
+Secret Plans (KTK) 198
+Sultai Charm (KTK) 204
+Sultai Soothsayer (KTK) 205
+Temur Charm (KTK) 208
+Warden of the Eye (KTK) 212
+Winterflame (KTK) 213
+Briber's Purse (KTK) 217
+Cranial Archive (KTK) 218
+Heart-Piercer Bow (KTK) 221
+Witness of the Ages (KTK) 228
+Frontier Bivouac (KTK) 234
+Mystic Monastery (KTK) 236
+Nomad Outpost (KTK) 237
+Opulent Palace (KTK) 238
+Sandsteppe Citadel (KTK) 241
+Tomb of the Spirit Dragon (KTK) 245
+
+[uncommon##frf]
+Channel Harm (FRF) 7
+Elite Scaleguard (FRF) 12
+Honor's Reward (FRF) 14
+Jeskai Barricade (FRF) 15
+Lightform (FRF) 16
+Lotus-Eye Mystics (FRF) 17
+Mardu Woe-Reaper (FRF) 18
+Sage's Reverie (FRF) 23
+Valorous Stance (FRF) 28
+Wandering Champion (FRF) 29
+Wardscale Dragon (FRF) 30
+Cloudform (FRF) 32
+Fascination (FRF) 34
+Frost Walker (FRF) 35
+Marang River Prowler (FRF) 40
+Mindscour Dragon (FRF) 41
+Mistfire Adept (FRF) 42
+Neutralizing Blast (FRF) 44
+Reality Shift (FRF) 46
+Renowned Weaponsmith (FRF) 48
+Rite of Undoing (FRF) 49
+Shifting Loyalties (FRF) 51
+Battle Brawler (FRF) 63
+Dark Deal (FRF) 66
+Diplomacy of the Wastes (FRF) 67
+Fearsome Awakening (FRF) 69
+Grave Strength (FRF) 71
+Mardu Shadowspear (FRF) 74
+Merciless Executioner (FRF) 76
+Noxious Dragon (FRF) 77
+Orc Sureshot (FRF) 78
+Qarsi High Priest (FRF) 80
+Sibsig Muckdraggers (FRF) 83
+Bloodfire Enforcers (FRF) 93
+Break Through the Line (FRF) 94
+Dragonrage (FRF) 97
+Friendly Fire (FRF) 101
+Humble Defector (FRF) 104
+Hungering Yeti (FRF) 105
+Pyrotechnics (FRF) 111
+Rageform (FRF) 112
+Shockmaw Dragon (FRF) 114
+Vaultbreaker (FRF) 117
+Wild Slash (FRF) 118
+Abzan Beastmaster (FRF) 119
+Abzan Kin-Guard (FRF) 120
+Arashin War Beast (FRF) 123
+Battlefront Krushok (FRF) 125
+Cached Defenses (FRF) 126
+Destructor Dragon (FRF) 127
+Fruit of the First Tree (FRF) 132
+Ruthless Instincts (FRF) 136
+Sudden Reclamation (FRF) 139
+Temur Sabertooth (FRF) 141
+Winds of Qal Sisma (FRF) 147
+Goblin Boom Keg (FRF) 159
+Hero's Blade (FRF) 160
+Hewed Stone Retainers (FRF) 161
+Pilgrim of the Fires (FRF) 162
+Ugin's Construct (FRF) 164
+
+[uncommon##iko]
+Fight as One (IKO) 12
+Flourishing Fox (IKO) 13
+Huntmaster Liger (IKO) 16
+Keensight Mentor (IKO) 18
+Majestic Auricorn (IKO) 22
+Sanctuary Lockdown (IKO) 28
+Splendor Mare (IKO) 32
+Stormwild Capridor (IKO) 34
+Swallow Whole (IKO) 35
+Valiant Rescuer (IKO) 36
+Will of the All-Hunter (IKO) 38
+Archipelagore (IKO) 41
+Avian Oddity (IKO) 42
+Boon of the Wish-Giver (IKO) 43
+Escape Protocol (IKO) 48
+Mystic Subdual (IKO) 57
+Neutralize (IKO) 59
+Ominous Seas (IKO) 61
+Pollywog Symbiote (IKO) 63
+Pouncing Shoreshark (IKO) 64
+Reconnaissance Mission (IKO) 65
+Wingspan Mentor (IKO) 72
+Bastion of Remembrance (IKO) 73
+Call of the Death-Dweller (IKO) 78
+Chittering Harvester (IKO) 80
+Duskfang Mentor (IKO) 86
+Easy Prey (IKO) 87
+Grimdancer (IKO) 90
+Heartless Act (IKO) 91
+Insatiable Hemophage (IKO) 93
+Unbreakable Bond (IKO) 101
+Void Beckoner (IKO) 104
+Zagoth Mamba (IKO) 106
+Blitz of the Thunder-Raptor (IKO) 109
+Clash of Titans (IKO) 111
+Flame Spill (IKO) 117
+Footfall Crater (IKO) 118
+Frillscare Mentor (IKO) 121
+Momentum Rumbler (IKO) 126
+Porcuparrot (IKO) 128
+Reptilian Reflection (IKO) 132
+Rooting Moloch (IKO) 133
+Sanctuary Smasher (IKO) 135
+Weaponize the Monsters (IKO) 140
+Auspicious Starrix (IKO) 144
+Barrier Breach (IKO) 145
+Charge of the Forever-Beast (IKO) 147
+Exuberant Wolfbear (IKO) 151
+Glowstone Recluse (IKO) 156
+Hornbash Mentor (IKO) 159
+Ivy Elemental (IKO) 161
+Lead the Stampede (IKO) 163
+Migration Path (IKO) 164
+Monstrous Step (IKO) 166
+Titanoth Rex (IKO) 174
+Back for More (IKO) 177
+Boneyard Lurker (IKO) 178
+Channeled Force (IKO) 180
+Dire Tactics (IKO) 183
+General's Enforcer (IKO) 188
+Lore Drakkis (IKO) 194
+Necropanther (IKO) 196
+Parcelbeast (IKO) 199
+Primal Empathy (IKO) 200
+Regal Leosaur (IKO) 202
+Savai Thundermane (IKO) 205
+Skull Prophet (IKO) 206
+Sprite Dragon (IKO) 211
+Trumpeting Gnarr (IKO) 213
+Zenith Flare (IKO) 217
+Alert Heedbonder (IKO) 218
+Cunning Nightbonder (IKO) 219
+Jubilant Skybonder (IKO) 223
+Proud Wildbonder (IKO) 229
+Sonorous Howlbonder (IKO) 230
+Indatha Crystal (IKO) 235
+Ketria Crystal (IKO) 236
+Raugrin Crystal (IKO) 238
+Savai Crystal (IKO) 239
+Zagoth Crystal (IKO) 242
+
+[uncommon##stx]
+Clever Lumimancer (STX) 10
+Detention Vortex (STX) 13
+Dueling Coach (STX) 15
+Professor of Symbology (STX) 24
+Secret Rendezvous (STX) 26
+Show of Confidence (STX) 28
+Stonebinder's Familiar (STX) 31
+Thunderous Orator (STX) 35
+Divide by Zero (STX) 41
+Kelpie Guide (STX) 45
+Mentor's Guidance (STX) 46
+Snow Day (STX) 53
+Solve the Equation (STX) 54
+Symmetry Sage (STX) 56
+Test of Talents (STX) 59
+Wormhole Serpent (STX) 62
+Brackish Trudge (STX) 65
+Eyetwitch (STX) 70
+Flunk (STX) 71
+Go Blank (STX) 72
+Mage Hunter (STX) 76
+Plumb the Forbidden (STX) 81
+Tenured Inkcaster (STX) 88
+Umbral Juke (STX) 89
+Academic Dispute (STX) 91
+Ardent Dustspeaker (STX) 92
+Explosive Welcome (STX) 100
+Grinning Ignus (STX) 104
+Hall Monitor (STX) 105
+Igneous Inspiration (STX) 107
+Mascot Interception (STX) 110
+Storm-Kiln Artist (STX) 115
+Bookwurm (STX) 123
+Devouring Tendrils (STX) 126
+Emergent Sequence (STX) 129
+Fortifying Draught (STX) 132
+Honor Troll (STX) 134
+Karok Wrangler (STX) 135
+Master Symmetrist (STX) 138
+Overgrown Arch (STX) 139
+Aether Helix (STX) 162
+Closing Statement (STX) 169
+Creative Outburst (STX) 171
+Daemogoth Woe-Eater (STX) 175
+Deadly Brew (STX) 176
+Decisive Denial (STX) 177
+Dina, Soul Steeper (STX) 178
+Expressive Iteration (STX) 186
+Fracture (STX) 188
+Golden Ratio (STX) 190
+Humiliate (STX) 193
+Killian, Ink Duelist (STX) 197
+Lorehold Apprentice (STX) 198
+Lorehold Excavation (STX) 200
+Maelstrom Muse (STX) 202
+Mortality Spear (STX) 207
+Practical Research (STX) 212
+Prismari Apprentice (STX) 213
+Quandrix Apprentice (STX) 216
+Quandrix Cultivator (STX) 218
+Quintorius, Field Historian (STX) 220
+Reconstruct History (STX) 222
+Returned Pastcaller (STX) 224
+Rip Apart (STX) 225
+Rootha, Mercurial Artist (STX) 227
+Shadewing Laureate (STX) 229
+Silverquill Apprentice (STX) 231
+Tend the Pests (STX) 242
+Witherbloom Apprentice (STX) 247
+Zimone, Quandrix Prodigy (STX) 250
+Reflective Golem (STX) 257
+Spell Satchel (STX) 258
+Team Pennant (STX) 260
+Zephyr Boots (STX) 261
+Access Tunnel (STX) 262
+Fracture (STX) 378
+Expressive Iteration (STX) 379
+Mortality Spear (STX) 380
+Rip Apart (STX) 381
+Decisive Denial (STX) 382
+[uncomLesson##stx]
+Reduce to Memory (STX) 25
+Mercurial Transformation (STX) 47
+Necrotic Fumes (STX) 78
+Start from Scratch (STX) 114
+Containment Breach (STX) 125
+[uncArchive##sta]
+Defiant Strike (STA) 3
+Divine Gambit (STA) 4
+Revitalize (STA) 9
+Negate (STA) 18
+Opt (STA) 19
+Strategic Planning (STA) 20
+Whirlwind Denial (STA) 23
+Agonizing Remorse (STA) 24
+Duress (STA) 29
+Eliminate (STA) 30
+Village Rites (STA) 35
+Claim the Firstborn (STA) 37
+Infuriate (STA) 41
+Shock (STA) 44
+Thrill of Possibility (STA) 46
+Adventurous Impulse (STA) 49
+Cultivate (STA) 51
+Snakeskin Veil (STA) 57
+
+[rare##apc]
+Degavolver (APC) 6
+False Dawn (APC) 10
+Gerrard Capashen (APC) 11
+Spectral Lynx (APC) 17
+Cetavolver (APC) 21
+Ice Cave (APC) 24
+Unnatural Selection (APC) 32
+Whirlpool Warrior (APC) 36
+Desolation Angel (APC) 38
+Necravolver (APC) 46
+Phyrexian Arena (APC) 47
+Planar Despair (APC) 50
+Bloodfire Colossus (APC) 55
+Desolation Giant (APC) 59
+Rakavolver (APC) 68
+Wild Research (APC) 72
+Anavolver (APC) 75
+Kavu Mauler (APC) 80
+Penumbra Wurm (APC) 84
+Symbiotic Deployment (APC) 88
+Cromat (APC) 94
+Death Grasp (APC) 95
+Fervent Charge (APC) 98
+Fungal Shambler (APC) 100
+Goblin Trenches (APC) 104
+Guided Passage (APC) 105
+Last Stand (APC) 107
+Lightning Angel (APC) 108
+Mystic Snake (APC) 112
+Overgrown Estate (APC) 113
+Pernicious Deed (APC) 114
+Powerstone Minefield (APC) 115
+Prophetic Bolt (APC) 116
+Spiritmonger (APC) 121
+Suffocating Blast (APC) 124
+Vindicate (APC) 126
+Yavimaya's Embrace (APC) 127
+Legacy Weapon (APC) 137
+Mask of Intolerance (APC) 138
+Battlefield Forge (APC) 139
+Caves of Koilos (APC) 140
+Llanowar Wastes (APC) 141
+Shivan Reef (APC) 142
+Yavimaya Coast (APC) 143
+[rare##eve]
+Archon of Justice (EVE) 1
+Endless Horizons (EVE) 4
+Hallowed Burial (EVE) 7
+Light from Within (EVE) 10
+Spirit of the Hearth (EVE) 14
+Glamerdye (EVE) 21
+Glen Elendra Archmage (EVE) 22
+Inundate (EVE) 25
+Sanity Grinding (EVE) 29
+Wake Thrasher (EVE) 31
+Ashling, the Extinguisher (EVE) 33
+Necroskitter (EVE) 38
+Needle Specter (EVE) 39
+Nightmare Incursion (EVE) 40
+Umbra Stalker (EVE) 48
+Fiery Bombardment (EVE) 52
+Hateflayer (EVE) 55
+Rekindled Flame (EVE) 61
+Stigma Lasher (EVE) 62
+Thunderblust (EVE) 63
+Bloom Tender (EVE) 66
+Helix Pinnacle (EVE) 68
+Primalcrux (EVE) 73
+Regal Force (EVE) 74
+Talara's Battalion (EVE) 77
+Deathbringer Liege (EVE) 85
+Divinity of Pride (EVE) 86
+Evershrike (EVE) 88
+Pyrrhic Revival (EVE) 93
+Stillmoon Cavalier (EVE) 95
+Call the Skybreaker (EVE) 98
+Crackleburr (EVE) 100
+Dominus of Fealty (EVE) 102
+Mindwrack Liege (EVE) 104
+Mirror Sheen (EVE) 105
+Creakwood Liege (EVE) 117
+Deity of Scars (EVE) 118
+Doomgape (EVE) 120
+Sapling of Colfenor (EVE) 128
+Worm Harvest (EVE) 131
+Balefire Liege (EVE) 132
+Figure of Destiny (EVE) 139
+Nobilis of War (EVE) 144
+Rise of the Hobgoblins (EVE) 145
+Waves of Aggression (EVE) 148
+Cold-Eyed Selkie (EVE) 149
+Fable of Wolf and Owl (EVE) 150
+Murkfiend Liege (EVE) 156
+Overbeing of Myth (EVE) 157
+Spitting Image (EVE) 162
+Altar Golem (EVE) 166
+Leering Emblem (EVE) 171
+Scarecrone (EVE) 172
+Ward of Bones (EVE) 174
+Cascade Bluffs (EVE) 175
+Fetid Heath (EVE) 176
+Flooded Grove (EVE) 177
+Rugged Prairie (EVE) 178
+Springjack Pasture (EVE) 179
+Twilight Mire (EVE) 180
+[rare##ktk]
+End Hostilities (KTK) 8
+Herald of Anafenza (KTK) 12
+High Sentinels of Arashin (KTK) 13
+Master of Pearls (KTK) 18
+Dig Through Time (KTK) 36
+Icy Blast (KTK) 42
+Kheru Spellsnatcher (KTK) 45
+Thousand Winds (KTK) 58
+Bloodsoaked Champion (KTK) 66
+Grim Haruspex (KTK) 73
+Necropolis Fiend (KTK) 82
+Retribution of the Ancients (KTK) 85
+Crater's Claws (KTK) 106
+Dragon-Style Twins (KTK) 108
+Howl of the Horde (KTK) 112
+Jeering Instigator (KTK) 113
+Hardened Scales (KTK) 133
+Meandering Towershell (KTK) 141
+Rattleclaw Mystic (KTK) 144
+Trail of Mystery (KTK) 154
+Abzan Ascendancy (KTK) 160
+Ankle Shanker (KTK) 164
+Avalanche Tusker (KTK) 166
+Butcher of the Horde (KTK) 168
+Crackling Doom (KTK) 171
+Deflecting Palm (KTK) 173
+Duneblast (KTK) 174
+Flying Crane Technique (KTK) 176
+Ivorytusk Fortress (KTK) 179
+Jeskai Ascendancy (KTK) 180
+Kheru Lich Lord (KTK) 182
+Mantis Rider (KTK) 184
+Mardu Ascendancy (KTK) 185
+Mindswipe (KTK) 189
+Rakshasa Deathdealer (KTK) 192
+Rakshasa Vizier (KTK) 193
+Sage of the Inward Eye (KTK) 195
+Sagu Mauler (KTK) 196
+Savage Knuckleblade (KTK) 197
+Siege Rhino (KTK) 200
+Sultai Ascendancy (KTK) 203
+Temur Ascendancy (KTK) 207
+Trap Essence (KTK) 209
+Utter End (KTK) 210
+Villainous Wealth (KTK) 211
+Altar of the Brood (KTK) 216
+Dragon Throne of Tarkir (KTK) 219
+Ghostfire Blade (KTK) 220
+Bloodstained Mire (KTK) 230
+Flooded Strand (KTK) 233
+Polluted Delta (KTK) 239
+Windswept Heath (KTK) 248
+Wooded Foothills (KTK) 249
+[rare##frf]
+Citadel Siege (FRF) 8
+Daghatar the Adamant (FRF) 9
+Dragonscale General (FRF) 11
+Mastery of the Unseen (FRF) 19
+Rally the Ancestors (FRF) 22
+Jeskai Infiltrator (FRF) 36
+Monastery Siege (FRF) 43
+Sage-Eye Avengers (FRF) 50
+Shu Yun, the Silent Tempest (FRF) 52
+Supplant Form (FRF) 54
+Archfiend of Depravity (FRF) 62
+Crux of Fate (FRF) 65
+Mardu Strike Leader (FRF) 75
+Palace Siege (FRF) 79
+Soulflayer (FRF) 84
+Tasigur, the Golden Fang (FRF) 87
+Alesha, Who Smiles at Death (FRF) 90
+Arcbond (FRF) 91
+Flamerush Rider (FRF) 99
+Flamewake Phoenix (FRF) 100
+Mob Rule (FRF) 109
+Outpost Siege (FRF) 110
+Frontier Siege (FRF) 131
+Sandsteppe Mastodon (FRF) 137
+Shamanic Revelation (FRF) 138
+Temur War Shaman (FRF) 142
+Wildcall (FRF) 146
+Yasova Dragonclaw (FRF) 148
+Atarka, World Render (FRF) 149
+Dromoka, the Eternal (FRF) 151
+Kolaghan, the Storm's Fury (FRF) 155
+Ojutai, Soul of Winter (FRF) 156
+Silumgar, the Drifting Death (FRF) 157
+Scroll of the Masters (FRF) 163
+Crucible of the Spirit Dragon (FRF) 167
+[rarLand##frf]
+Bloodstained Mire (KTK) 230
+Flooded Strand (KTK) 233
+Polluted Delta (KTK) 239
+Windswept Heath (KTK) 248
+Wooded Foothills (KTK) 249
+[rare##iko]
+Cubwarden (IKO) 7
+Drannith Magistrate (IKO) 11
+Lavabrink Venturer (IKO) 19
+Mythos of Snapdax (IKO) 24
+Mythos of Illuna (IKO) 58
+Sea-Dasher Octopus (IKO) 66
+Shark Typhoon (IKO) 67
+Voracious Greatshark (IKO) 70
+Dirge Bat (IKO) 84
+Extinction Event (IKO) 88
+Hunted Nightmare (IKO) 92
+Mythos of Nethroi (IKO) 97
+Everquill Phoenix (IKO) 114
+Mythos of Vadrok (IKO) 127
+Unpredictable Cyclone (IKO) 139
+Yidaro, Wandering Monster (IKO) 141
+Colossification (IKO) 148
+Gemrazer (IKO) 155
+Kogla, the Titan Ape (IKO) 162
+Mythos of Brokkos (IKO) 168
+Death's Oasis (IKO) 182
+Eerie Ultimatum (IKO) 184
+Emergent Ultimatum (IKO) 185
+Frondland Felidar (IKO) 186
+Genesis Ultimatum (IKO) 189
+Inspired Ultimatum (IKO) 191
+Labyrinth Raptor (IKO) 193
+Offspring's Revenge (IKO) 198
+Quartzwood Crasher (IKO) 201
+Ruinous Ultimatum (IKO) 204
+Skycat Sovereign (IKO) 207
+Slitherwisp (IKO) 208
+Song of Creation (IKO) 210
+Titans' Nest (IKO) 212
+Whirlwind of Thought (IKO) 215
+Gyruda, Doom of Depths (IKO) 221
+Jegantha, the Wellspring (IKO) 222
+Kaheera, the Orphanguard (IKO) 224
+Keruga, the Macrosage (IKO) 225
+Lurrus of the Dream-Den (IKO) 226
+Lutri, the Spellchaser (IKO) 227
+Obosh, the Preypiercer (IKO) 228
+Umori, the Collector (IKO) 231
+Yorion, Sky Nomad (IKO) 232
+Zirda, the Dawnwaker (IKO) 233
+Crystalline Giant (IKO) 234
+The Ozolith (IKO) 237
+Bonders' Enclave (IKO) 245
+Indatha Triome (IKO) 248
+Ketria Triome (IKO) 250
+Raugrin Triome (IKO) 251
+Savai Triome (IKO) 253
+Zagoth Triome (IKO) 259
+[rare##stx]
+Wandering Archaic // Explore the Vastlands (STX) 6
+Devastating Mastery (STX) 14
+Elite Spellbinder (STX) 17
+Leonin Lightscribe (STX) 20
+Semester's End (STX) 27
+Sparring Regimen (STX) 29
+Strict Proctor (STX) 33
+Archmage Emeritus (STX) 37
+Dream Strix (STX) 42
+Ingenious Mastery (STX) 44
+Multiple Choice (STX) 48
+Tempted by the Oriq (STX) 58
+Baleful Mastery (STX) 64
+Callous Bloodmage (STX) 66
+Oriq Loremage (STX) 80
+Poet's Quill (STX) 82
+Sedgemoor Witch (STX) 86
+Conspiracy Theorist (STX) 94
+Draconic Intervention (STX) 96
+Efreet Flamepainter (STX) 98
+Fervent Mastery (STX) 101
+Retriever Phoenix (STX) 113
+Accomplished Alchemist (STX) 119
+Dragonsguard Elite (STX) 127
+Exponential Growth (STX) 130
+Gnarled Professor (STX) 133
+Verdant Mastery (STX) 146
+Augmenter Pugilist // Echoing Equation (STX) 147
+Flamescroll Celebrant // Revel in Silence (STX) 150
+Kianne, Dean of Substance // Imbraham, Dean of Theory (STX) 152
+Pestilent Cauldron // Restorative Burst (STX) 154
+Plargg, Dean of Chaos // Augusta, Dean of Order (STX) 155
+Selfless Glyphweaver // Deadly Vanity (STX) 157
+Shaile, Dean of Radiance // Embrose, Dean of Shadow (STX) 158
+Torrent Sculptor // Flamethrower Sonata (STX) 159
+Uvilda, Dean of Perfection // Nassari, Dean of Expression (STX) 160
+Valentin, Dean of the Vein // Lisette, Dean of the Root (STX) 161
+Blade Historian (STX) 165
+Culling Ritual (STX) 172
+Culmination of Studies (STX) 173
+Daemogoth Titan (STX) 174
+Double Major (STX) 179
+Dramatic Finale (STX) 180
+Elemental Expressionist (STX) 181
+Lorehold Command (STX) 199
+Manifestation Sage (STX) 205
+Prismari Command (STX) 214
+Quandrix Command (STX) 217
+Radiant Scrollwielder (STX) 221
+Rushed Rebirth (STX) 228
+Silverquill Command (STX) 232
+Silverquill Silencer (STX) 234
+Vanishing Verse (STX) 244
+Venerable Warsinger (STX) 246
+Witherbloom Command (STX) 248
+Codie, Vociferous Codex (STX) 253
+Strixhaven Stadium (STX) 259
+The Biblioplex (STX) 264
+Frostboil Snarl (STX) 265
+Furycalm Snarl (STX) 266
+Hall of Oracles (STX) 267
+Necroblossom Snarl (STX) 269
+Shineshadow Snarl (STX) 272
+Vineglimmer Snarl (STX) 274
+[rarLesson##stx]
+Academic Probation (STX) 7
+Basic Conjuration (STX) 120
+Confront the Past (STX) 67
+Illuminate History (STX) 108
+Teachings of the Archaics (STX) 57
+[rarArchive##sta]
+Ephemerate (STA) 5
+Gift of Estates (STA) 6
+Gods Willing (STA) 7
+Mana Tithe (STA) 8
+Swords to Plowshares (STA) 10
+Brainstorm (STA) 13
+Compulsive Research (STA) 14
+Counterspell (STA) 15
+Memory Lapse (STA) 16
+Tezzeret's Gambit (STA) 21
+Dark Ritual (STA) 26
+Doom Blade (STA) 28
+Inquisition of Kozilek (STA) 31
+Sign in Blood (STA) 32
+Tendrils of Agony (STA) 34
+Faithless Looting (STA) 38
+Grapeshot (STA) 39
+Lightning Bolt (STA) 42
+Stone Rain (STA) 45
+Urza's Rage (STA) 47
+Abundant Harvest (STA) 48
+Harmonize (STA) 52
+Krosan Grip (STA) 53
+Regrowth (STA) 56
+Weather the Storm (STA) 58
+Despark (STA) 59
+Electrolyze (STA) 60
+Growth Spiral (STA) 61
+Lightning Helix (STA) 62
+Putrefy (STA) 63
+
+[mythic##ktk]
+Wingmate Roc (KTK) 31
+Clever Impersonator (KTK) 34
+Pearl Lake Ancient (KTK) 49
+Empty the Pits (KTK) 72
+Ashcloud Phoenix (KTK) 99
+Sarkhan, the Dragonspeaker (KTK) 119
+Hooded Hydra (KTK) 136
+See the Unwritten (KTK) 149
+Anafenza, the Foremost (KTK) 163
+Narset, Enlightened Master (KTK) 190
+Sidisi, Brood Tyrant (KTK) 199
+Sorin, Solemn Visitor (KTK) 202
+Surrak Dragonclaw (KTK) 206
+Zurgo Helmsmasher (KTK) 214
+Ugin's Nexus (KTK) 227
+[mythic##frf]
+Ugin, the Spirit Dragon (FRF) 1
+Monastery Mentor (FRF) 20
+Soulfire Grand Master (FRF) 27
+Temporal Trespass (FRF) 55
+Torrent Elemental (FRF) 56
+Brutal Hordechief (FRF) 64
+Ghastly Conscription (FRF) 70
+Shaman of the Great Hunt (FRF) 113
+Warden of the First Tree (FRF) 143
+Whisperwood Elemental (FRF) 145
+[mythic##iko]
+Luminous Broodmoth (IKO) 21
+Lukka, Coppercoat Outcast (IKO) 125
+Vivien, Monsters' Advocate (IKO) 175
+Brokkos, Apex of Forever (IKO) 179
+Chevill, Bane of Monsters (IKO) 181
+General Kudro of Drannith (IKO) 187
+Illuna, Apex of Wishes (IKO) 190
+Kinnan, Bonder Prodigy (IKO) 192
+Narset of the Ancient Way (IKO) 195
+Nethroi, Apex of Death (IKO) 197
+Rielle, the Everwise (IKO) 203
+Snapdax, Apex of the Hunt (IKO) 209
+Vadrok, Apex of Thunder (IKO) 214
+Winota, Joiner of Forces (IKO) 216
+Fiend Artisan (IKO) 220
+[mythic##stx]
+Mavinda, Students' Advocate (STX) 21
+Professor Onyx (STX) 83
+Crackle with Power (STX) 95
+Ecological Appreciation (STX) 128
+Blex, Vexing Pest // Search for Blex (STX) 148
+Extus, Oriq Overlord // Awaken the Blood Avatar (STX) 149
+Jadzi, Oracle of Arcavios // Journey to the Oracle (STX) 151
+Mila, Crafty Companion // Lukka, Wayward Bonder (STX) 153
+Rowan, Scholar of Sparks // Will, Scholar of Frost (STX) 156
+Beledros Witherbloom (STX) 163
+Blot Out the Sky (STX) 167
+Body of Research (STX) 168
+Galazeth Prismari (STX) 189
+Harness Infinity (STX) 191
+Hofri Ghostforge (STX) 192
+Kasmina, Enigma Sage (STX) 196
+Magma Opus (STX) 203
+Shadrix Silverquill (STX) 230
+Tanazir Quandrix (STX) 240
+Velomachus Lorehold (STX) 245
+[mytLesson##stx]
+Mascot Exhibition (STX) 5
+[mytArchive##sta]
+Approach of the Second Sun (STA) 1
+Day of Judgment (STA) 2
+Teferi's Protection (STA) 11
+Blue Sun's Zenith (STA) 12
+Mind's Desire (STA) 17
+Time Warp (STA) 22
+Crux of Fate (STA) 25
+Demonic Tutor (STA) 27
+Tainted Pact (STA) 33
+Chaos Warp (STA) 36
+Increasing Vengeance (STA) 40
+Mizzix's Mastery (STA) 43
+Channel (STA) 50
+Natural Order (STA) 54
+Primal Command (STA) 55
+
+[basic##ktk]
+Plains (KTK) 250
+Plains (KTK) 251
+Plains (KTK) 252
+Plains (KTK) 253
+Island (KTK) 254
+Island (KTK) 255
+Island (KTK) 256
+Island (KTK) 257
+Swamp (KTK) 258
+Swamp (KTK) 259
+Swamp (KTK) 260
+Swamp (KTK) 261
+Mountain (KTK) 262
+Mountain (KTK) 263
+Mountain (KTK) 264
+Mountain (KTK) 265
+Forest (KTK) 266
+Forest (KTK) 267
+Forest (KTK) 268
+Forest (KTK) 269
+[basic##iko]
+Plains (IKO) 260
+Plains (IKO) 261
+Plains (IKO) 262
+Island (IKO) 263
+Island (IKO) 264
+Island (IKO) 265
+Swamp (IKO) 266
+Swamp (IKO) 267
+Swamp (IKO) 268
+Mountain (IKO) 269
+Mountain (IKO) 270
+Mountain (IKO) 271
+Forest (IKO) 272
+Forest (IKO) 273
+Forest (IKO) 274
