@@ -799,6 +799,7 @@ Raffine's Informant (SNC) 26
 Revelation of Power (SNC) 28
 Sky Crier (SNC) 31
 Speakeasy Server (SNC) 32
+`       1 sh_x
 [common##sncU]
 Backstreet Bruiser (SNC) 35
 Brokers Veteran (SNC) 36
@@ -1987,6 +1988,7 @@ Sedris, the Traitor King (ALA) 193
 Sharuum the Hegemon (ALA) 194
 Sphinx Sovereign (ALA) 196
 Lich's Mirror (ALA) 210
+`       1 sh_x
 [mythic##con]
 Mirror-Sigil Sergeant (CON) 12
 Ethersworn Adjudicator (CON) 26
@@ -1998,6 +2000,7 @@ Maelstrom Archangel (CON) 115
 Malfegor (CON) 117
 Nicol Bolas, Planeswalker (CON) 120
 Progenitus (CON) 121
+`       1 sh_x
 [mythic##arb]
 Defiler of Souls (ARB) 37
 Dragon Broodmother (ARB) 53
