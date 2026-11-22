@@ -19,7 +19,7 @@
     "boostersPerPlayer": 3,
     "layouts": {
 `       1 lay_r
-"default":{"weight":1,"slots":[{"name":"common","count":10}, {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":94},{"name":"mythic","weight":7}]}, {"name":"land","count":1,"sheets":[{"name":"common##land","weight":270},{"name":"basic","weight":413} ]} ]},
+"default":{"weight":1,"slots":[{"name":"common","count":10}, {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":469},{"name":"mythic","weight":35}]}, {"name":"land","count":1,"sheets":[{"name":"common##land","weight":270},{"name":"basic","weight":413} ]} ]},
 `       * lay_x
 "uPLS":{"weight":6,"slots":[{"name":"comL","count":1,"sheets":[{"name":"common##invL","weight":303},{"name":"common##alaL","weight":300},{"name":"common##conL","weight":101},{"name":"common##arbL","weight":505},{"name":"common##dtkL","weight":9},{"name":"common##sncL","weight":600},{"name":"basic##ala","weight":1818},{"name":"basic##dtk","weight":606},{"name":"basic##snc","weight":606} ]}
                           , {"name":"comW","count":1,"sheets":[{"name":"common##invW","weight":1},{"name":"common##plsW","weight":1},{"name":"common##shmW","weight":1},{"name":"common##alaW","weight":1},{"name":"common##conW","weight":1},{"name":"common##dtkW","weight":1},{"name":"common##sncW","weight":1}]}
