@@ -122,7 +122,7 @@
 `      1 p_midBn
 "mid_αδ","mid_βδ","mid_αβ"
 `      1 p_midJ
-"mid_αδA","mid_βδA","mid_αβA","mid_αδB","mid_βδB","mid_αβB","mid_αδC","mid_βδC","mid_αβC","mid_αδA_","mid_βδA_","mid_αβA_","mid_αδB_","mid_βδB_","mid_αβB_","mid_αδC_","mid_βδC_","mid_αβC_"
+"mid_αδB","mid_βδB","mid_αβB","mid_αδC","mid_βδC","mid_αβC","mid_αδA","mid_βδA","mid_αβA","mid_αδB_","mid_βδB_","mid_αβB_","mid_αδC_","mid_βδC_","mid_αβC_"
 `      1 p_midJn
 "mid_αδA","mid_βδA","mid_αβA","mid_αδB","mid_βδB","mid_αβB","mid_αδC","mid_βδC","mid_αβC"
     ],[
@@ -135,7 +135,7 @@
 `      1 p_midBn
 "mid_αδ","mid_βδ","mid_αβ"
 `      1 p_midJ
-"mid_αδA","mid_βδA","mid_αβA","mid_αδB","mid_βδB","mid_αβB","mid_αδC","mid_βδC","mid_αβC","mid_αδA_","mid_βδA_","mid_αβA_","mid_αδB_","mid_βδB_","mid_αβB_","mid_αδC_","mid_βδC_","mid_αβC_"
+"mid_αδB","mid_βδB","mid_αβB","mid_αδC","mid_βδC","mid_αβC","mid_αδA","mid_βδA","mid_αβA","mid_αδB_","mid_βδB_","mid_αβB_","mid_αδC_","mid_βδC_","mid_αβC_"
 `      1 p_midJn
 "mid_αδA","mid_βδA","mid_αβA","mid_αδB","mid_βδB","mid_αβB","mid_αδC","mid_βδC","mid_αβC"
     ],[
@@ -148,7 +148,7 @@
 `      1 p_midBn
 "mid_αδ","mid_βδ","mid_αβ"
 `      1 p_midJ
-"mid_αδA","mid_βδA","mid_αβA","mid_αδB","mid_βδB","mid_αβB","mid_αδC","mid_βδC","mid_αβC","mid_αδA_","mid_βδA_","mid_αβA_","mid_αδB_","mid_βδB_","mid_αβB_","mid_αδC_","mid_βδC_","mid_αβC_"
+"mid_αδB","mid_βδB","mid_αβB","mid_αδC","mid_βδC","mid_αβC","mid_αδA","mid_βδA","mid_αβA","mid_αδB_","mid_βδB_","mid_αβB_","mid_αδC_","mid_βδC_","mid_αβC_"
 `      1 p_midJn
 "mid_αδA","mid_βδA","mid_αβA","mid_αδB","mid_βδB","mid_αβB","mid_αδC","mid_βδC","mid_αβC"
     ]]
