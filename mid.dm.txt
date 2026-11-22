@@ -10,27 +10,27 @@
 [Settings]
 {
 `      3 init midA lay_midA p_midA c_midA u_midA r_mid
-# Innistrad: Midnight Hunt cu(A) inc foil
+# Innistrad: Midnight Hunt (A) inc foil
 # Common: colour balance 5(68.13%)4(98.83%)3(100%)...(-G:16.25%,-R:9.48%,-B:3.24%,-U:2.32%,-W:1.76%)
     "name": "MID cu(A) inc foil",
 `      3 init midAn lay_midAn p_midAn c_midA u_midA r_mid
-# Innistrad: Midnight Hunt cu(A) nofoil
+# Innistrad: Midnight Hunt (A) nofoil
 # Common: colour balance 5(71.07%)4(99.14%)3(100%)...(-G:15.18%,-R:8.67%,-B:2.38%,-U:2.01%,-W:1.56%)
     "name": "MID cu(A) nofoil",
 `      3 init midJ lay_midJ p_midJ c_midJ u_midA r_mid
-# Innistrad: Midnight Hunt c(J)u(A) inc foil
+# Innistrad: Midnight Hunt (J) inc foil
 # Common colour balance 5(64.03%)4(98.64%)3(100%)...(-G:15.03%,-R:10.55%,-B:9.13%,-U:2.62%)
     "name": "MID c(J)u(B) inc foil",
 `      3 init midJn lay_midJn p_midJn c_midJ u_midA r_mid
-# Innistrad: Midnight Hunt c(J)u(A) nofoil
+# Innistrad: Midnight Hunt (J) nofoil
 # Common colour balance 5(66.78%)4(98.95%)3(100%)...(-G:13.86%,-R:9.64%,-B:8.48%,-U:2.40%)
     "name": "MID c(J)u(B) nofoil",
 `      3 init midB lay_midB p_midB c_midB u_midA r_mid
-# Innistrad: Midnight Hunt c(B)u(A) inc foil
+# Innistrad: Midnight Hunt (B) inc foil
 # Common colour balance 5(60.42%)4(97.83%)3(99.99%)2(100%)...(-G:19.68%,-R:12.16%,-B:6.76%,-U:3.16%)
     "name": "MID cu(B) inc foil",
 `      3 init midBn lay_midBn p_midBn c_midB u_midA r_mid
-# Innistrad: Midnight Hunt c(B)u(A) nofoil
+# Innistrad: Midnight Hunt (B) nofoil
 # Common colour balance 5(62.81%)4(98.30%)3(100%)...(-G:18.73%,-R:11.24%,-B:6.17%,-U:2.75%)
     "name": "MID cu(B) nofoil",
     "duplicateProtection": false, "colorBalance": false,
