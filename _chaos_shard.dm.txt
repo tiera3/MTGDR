@@ -1,8 +1,9 @@
 [Settings]
 {
-`       5 init r_shard lay_r p_r sh_r
+`       6 init r_shard lay_r p_r sh_r
 # Shard Reshuffled INV, PLS, SHM, ALA, CON, ARB, DTK, SNC
-# moved lands and borderposts into land slot to account for 11 commons vs 10 commons
+# moved lands (all rarities) and borderposts into land slot, scaled up to fill slot, so lands 1.74x as likely as nonlands of the same rarity.
+# to have land and nonlands of same rarity be equal, pad land slot with ,{"name":"basic","weight":4488881}
 # removed Crystal Spray (inv) 50 due to not being implemented in xmage
     "name": "Shard reshuffled",
     "colorBalance": true,
@@ -19,7 +20,7 @@
     "boostersPerPlayer": 3,
     "layouts": {
 `       1 lay_r
-"default":{"weight":1,"slots":[{"name":"common","count":10}, {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":469},{"name":"mythic","weight":35}]}, {"name":"land","count":1,"sheets":[{"name":"common##land","weight":270},{"name":"basic","weight":413} ]} ]},
+"default":{"weight":1,"slots":[{"name":"common","count":10}, {"name":"uncommon","count":3}, {"name":"rm","count":1,"sheets":[{"name":"rare","weight":469},{"name":"mythic","weight":35}]}, {"name":"land","count":1,"sheets":[{"name":"comLand","weight":4191615},{"name":"uncLand","weight":1560075},{"name":"rarLand","weight":347138} ]} ]},
 `       * lay_x
 "uPLS":{"weight":6,"slots":[{"name":"comL","count":1,"sheets":[{"name":"common##invL","weight":303},{"name":"common##alaL","weight":300},{"name":"common##conL","weight":101},{"name":"common##arbL","weight":505},{"name":"common##dtkL","weight":9},{"name":"common##sncL","weight":600},{"name":"basic##ala","weight":1818},{"name":"basic##dtk","weight":606},{"name":"basic##snc","weight":606} ]}
                           , {"name":"comW","count":1,"sheets":[{"name":"common##invW","weight":1},{"name":"common##plsW","weight":1},{"name":"common##shmW","weight":1},{"name":"common##alaW","weight":1},{"name":"common##conW","weight":1},{"name":"common##dtkW","weight":1},{"name":"common##sncW","weight":1}]}
@@ -885,8 +886,9 @@ Halo Scarab (SNC) 239
 Ominous Parcel (SNC) 241
 Paragon of Modernity (SNC) 242
 Quick-Draw Dagger (SNC) 243
+
 `       1 sh_r
-[common##land]
+[comLand]
 `       1 sh_x
 [common##invL]
 Ancient Spring (INV) 319
@@ -1035,6 +1037,7 @@ Sparring Golem (INV) 312
 Tigereye Cameo (INV) 314
 Treva's Attendant (INV) 315
 Troll-Horn Cameo (INV) 316
+`       6 sh_x
 Archaeological Dig (INV) 320
 Coastal Tower (INV) 321
 Elfhame Palace (INV) 322
@@ -1081,6 +1084,7 @@ Treva's Charm (PLS) 129
 Mana Cylix (PLS) 132
 Star Compass (PLS) 134
 Stratadon (PLS) 135
+`       6 sh_x
 Crosis's Catacombs (PLS) 136
 Darigaaz's Caldera (PLS) 137
 Dromar's Cavern (PLS) 138
@@ -1164,6 +1168,7 @@ Tatterkite (SHM) 264
 Trip Noose (SHM) 266
 Umbral Mantle (SHM) 267
 Wicker Warcrawler (SHM) 269
+`       5 sh_x
 Leechridden Swamp (SHM) 273
 Madblind Mountain (SHM) 274
 Mistveil Plains (SHM) 275
@@ -1226,6 +1231,7 @@ Thoughtcutter Agent (ALA) 201
 Tidehollow Sculler (ALA) 202
 Tower Gargoyle (ALA) 205
 Woolly Thoctar (ALA) 209
+`       5 sh_x
 Arcane Sanctum (ALA) 220
 Crumbling Necropolis (ALA) 222
 Jungle Shrine (ALA) 226
@@ -1270,6 +1276,7 @@ Skyward Eye Prophets (CON) 125
 Sludge Strider (CON) 126
 Vagrant Plowbeasts (CON) 129
 Manaforce Mace (CON) 139
+`       3 sh_x
 Ancient Ziggurat (CON) 141
 Reliquary Tower (CON) 143
 Unstable Frontier (CON) 145
@@ -1480,6 +1487,34 @@ Cement Shoes (SNC) 235
 Scuttling Butler (SNC) 244
 Suspicious Bookcase (SNC) 245
 
+`       27 sh_r
+[uncLand]
+Archaeological Dig (INV) 320
+Coastal Tower (INV) 321
+Elfhame Palace (INV) 322
+Salt Marsh (INV) 326
+Shivan Oasis (INV) 327
+Urborg Volcano (INV) 330
+Crosis's Catacombs (PLS) 136
+Darigaaz's Caldera (PLS) 137
+Dromar's Cavern (PLS) 138
+Rith's Grove (PLS) 141
+Terminal Moraine (PLS) 142
+Treva's Ruins (PLS) 143
+Leechridden Swamp (SHM) 273
+Madblind Mountain (SHM) 274
+Mistveil Plains (SHM) 275
+Moonring Island (SHM) 276
+Sapseep Forest (SHM) 279
+Arcane Sanctum (ALA) 220
+Crumbling Necropolis (ALA) 222
+Jungle Shrine (ALA) 226
+Savage Lands (ALA) 228
+Seaside Citadel (ALA) 229
+Ancient Ziggurat (CON) 141
+Reliquary Tower (CON) 143
+Unstable Frontier (CON) 145
+
 `       1 sh_r
 [rare]
 `       1 sh_x
@@ -1593,6 +1628,7 @@ Planar Portal (INV) 308
 Tek (INV) 313
 Tsabo's Web (INV) 317
 Urza's Filter (INV) 318
+`       1 sh_x
 Keldon Necropolis (INV) 325
 `       1 sh_x
 [rare##pls]
@@ -1638,6 +1674,7 @@ Shivan Wurm (PLS) 124
 Urza's Guilt (PLS) 130
 Draco (PLS) 131
 Skyship Weatherlight (PLS) 133
+`       2 sh_x
 Forsaken City (PLS) 139
 Meteor Crater (PLS) 140
 `       1 sh_x
@@ -1716,6 +1753,7 @@ Cauldron of Souls (SHM) 248
 Grim Poppet (SHM) 252
 Painter's Servant (SHM) 257
 Reaper King (SHM) 260
+`       6 sh_x
 Fire-Lit Thicket (SHM) 271
 Graven Cairns (SHM) 272
 Mystic Gate (SHM) 277
@@ -1813,6 +1851,7 @@ Meglonoth (CON) 118
 Sphinx Summoner (CON) 127
 Font of Mythos (CON) 136
 Obelisk of Alara (CON) 140
+`       1 sh_x
 Exotic Orchard (CON) 142
 `       1 sh_x
 [rare##arb]
@@ -1905,6 +1944,7 @@ Necromaster Dragon (DTK) 226
 Ojutai's Command (DTK) 227
 Pristine Skywise (DTK) 228
 Silumgar's Command (DTK) 232
+`       1 sh_x
 Haven of the Spirit Dragon (DTK) 249
 `       1 sh_x
 [rare##snc]
@@ -1963,6 +2003,26 @@ Void Rend (SNC) 230
 Ziatora's Envoy (SNC) 232
 Getaway Car (SNC) 237
 Unlicensed Hearse (SNC) 246
+`       5 sh_x
+Jetmir's Garden (SNC) 250
+Raffine's Tower (SNC) 254
+Spara's Headquarters (SNC) 257
+Xander's Lounge (SNC) 260
+Ziatora's Proving Ground (SNC) 261
+
+`       18 sh_r
+[rarLand]
+Keldon Necropolis (INV) 325
+Forsaken City (PLS) 139
+Meteor Crater (PLS) 140
+Exotic Orchard (CON) 142
+Fire-Lit Thicket (SHM) 271
+Graven Cairns (SHM) 272
+Mystic Gate (SHM) 277
+Reflecting Pool (SHM) 278
+Sunken Ruins (SHM) 280
+Wooded Bastion (SHM) 281
+Haven of the Spirit Dragon (DTK) 249
 Jetmir's Garden (SNC) 250
 Raffine's Tower (SNC) 254
 Spara's Headquarters (SNC) 257
