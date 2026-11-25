@@ -18,11 +18,11 @@
 # Common: colour balance 5(100%)
     "name": "MID cu(A) nofoil",
 `      3 init midJ lay_midJ p_midJ c_midJ u_midA r_mid
-# Innistrad: Midnight Hunt (J) inc foil
+# Innistrad: Midnight Hunt (J) inc foil - Belgian uncommons
 # Common colour balance 5(100%)
     "name": "MID c(J)u(B) inc foil",
 `      3 init midJn lay_midJn p_midJn c_midJ u_midA r_mid
-# Innistrad: Midnight Hunt (J) nofoil
+# Innistrad: Midnight Hunt (J) nofoil - Belgian uncommons
 # Common colour balance 5(100%)
     "name": "MID c(J)u(B) nofoil",
 `      3 init midB lay_midB p_midB c_midB u_midA r_mid
