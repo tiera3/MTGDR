@@ -1503,13 +1503,13 @@ Wrenn and Seven (MID) 278
 
 `      end
 [basic##mid]
-Plains (VOW) 268
-Plains (VOW) 269
-Island (VOW) 270
-Island (VOW) 271
-Swamp (VOW) 272
-Swamp (VOW) 273
-Mountain (VOW) 274
-Mountain (VOW) 275
-Forest (VOW) 276
-Forest (VOW) 277
+Plains (mid) 268
+Plains (mid) 269
+Island (mid) 270
+Island (mid) 271
+Swamp (mid) 272
+Swamp (mid) 273
+Mountain (mid) 274
+Mountain (mid) 275
+Forest (mid) 276
+Forest (mid) 277
